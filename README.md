@@ -53,12 +53,22 @@ Basic plan and some typical questions and code samples for Android interview.
 * ViewModel, LiveData
 * How to make some part of the code run only in debug? (if (BuildConfig.DEBUG) {...} else {...})
 
+## Gradle
+* What to do, if external dependency is not found? (Add appropriate repository into: allprojects { repositories {...} })
+* Difference between "implementation" and "compile" 
+* What is multidex?
+* How to build slightly different applications from one project? (Use flavors) 
+
 ## Network
 * What is JSON?
 * How to set up a name of the serialized property different from the property name? (Use @SerializedName("name") annotation)
 * How to exclude a property from the serialization? (mark property as transient (keyword in Java or annotation in Kotlin))
 * Retrofit - what to do, if an app needs to interact with 2 different hosts? (create 2 different retrofit objects)
 * How to append some parameter (for example "platform=android") to all network queries? (Use interceptors)
+* How to load images? (Use Glide, Picasso or Fresco)
+
+## Room
+* The app starts crashing after new entity has been added. What I forgot to do? (Update database version)
 
 ## Dagger
 * Modules and Components
@@ -77,6 +87,9 @@ Basic plan and some typical questions and code samples for Android interview.
 * What is the purpose of buffer?
 * Difference between debounce and throttleFirst
 * Map, Zip, Merge, Concat etc.
+
+## Moxy
+* Strategies
 
 ## Practical tasks
 * Problems and improvements in the provided code samples.
