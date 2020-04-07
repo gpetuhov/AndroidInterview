@@ -35,6 +35,7 @@ Basic plan and some typical questions and code samples for Android interview.
 * What is boxing, unboxing (Int, Double, ...)
 * Can enums contain values? (Yes: enum class Action(val value: Int) { WALK(0), RUN(1), ... }
 * What is "finally" block used for in try-catch?
+* Kotlin default and named arguments
 
 ## Android
 * Basic components
@@ -52,6 +53,11 @@ Basic plan and some typical questions and code samples for Android interview.
 * What is Data Binding?
 * ViewModel, LiveData
 * How to make some part of the code run only in debug? (if (BuildConfig.DEBUG) {...} else {...})
+* Notifications since Android 8 (Notification channel required)
+* Pending intent
+* Shared preferences persist after app has been uninstalled. How to prevent it? (Add android:allowBackup="false" in the application in the manifest)
+* How to make an activity start on some intent from other apps? (Add intent filter in the manifest)
+* Activity lifecycle
 
 ## Gradle
 * What to do, if external dependency is not found? (Add appropriate repository into: allprojects { repositories {...} })
@@ -63,14 +69,19 @@ Basic plan and some typical questions and code samples for Android interview.
 * What is JSON?
 * How to set up a name of the serialized property different from the property name? (Use @SerializedName("name") annotation)
 * How to exclude a property from the serialization? (mark property as transient (keyword in Java or annotation in Kotlin))
+* The app starts crashing on network call. What can be wrong? (Network call on the main thread, not added <uses-permission android:name="android.permission.INTERNET" /> in the manifest)
 * Retrofit - what to do, if an app needs to interact with 2 different hosts? (create 2 different retrofit objects)
 * How to append some parameter (for example "platform=android") to all network queries? (Use interceptors)
 * How to load images? (Use Glide, Picasso or Fresco)
 
 ## Room
-* The app starts crashing after new entity has been added. What I forgot to do? (Update database version)
+* What does @Entity annotation do?
+* What is @PrimaryKey?
+* How to select only different items from the db? (SELECT DISTINCT)
+* The app starts crashing after new entity has been added. What I forgot to do? (Update database version, add migration)
 
 ## Dagger
+* What is the purpose of @Inject annotation?
 * Modules and Components
 * Is it possible not to use Modules and how?
 
@@ -89,6 +100,7 @@ Basic plan and some typical questions and code samples for Android interview.
 * Map, Zip, Merge, Concat etc.
 
 ## Moxy
+* How to organize application? (View, Presenter)
 * Strategies
 
 ## Practical tasks
