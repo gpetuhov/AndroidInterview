@@ -41,11 +41,14 @@ Basic plan and some typical questions and code samples for Android interview.
 * Basic components
 * What is Intent used for? (to start activities, services and send broadcasts)
 * What is the purpose of Fragments? Limitations (2-3 fragments per activity)
+* How to pass data into Fragments? (Via arguments)
 * What are the means of data transfer between activities? (Intents, Shared preferences, DB, file, Eventbus, Singleton class)
 * How to transfer a class between activities? (it must be Serializable)
+* Difference between Serializable and Parcelable
 * How to return a result from the activity?
 * Data persistence (shared preferences, db, file)
 * What is the purpose of Services?
+* I am starting a network request from the Service. What problem can this cause? (Service runs on the main thread by default)
 * Difference between Service and IntentService.
 * How to save screen state on screen rotation (saveInstanceState, Moxy)? How to save state of an EditText? (provide an id)
 * How to provide data to external apps? (ContentProviders)
@@ -58,6 +61,9 @@ Basic plan and some typical questions and code samples for Android interview.
 * Shared preferences persist after app has been uninstalled. How to prevent it? (Add android:allowBackup="false" in the application in the manifest)
 * How to make an activity start on some intent from other apps? (Add intent filter in the manifest)
 * Activity lifecycle
+* Can I access data in another application's content provider via intent? (No, use ContentResolver instead)
+* Activity launch modes
+* What is a broadcast receiver?
 
 ## Gradle
 * What to do, if external dependency is not found? (Add appropriate repository into: allprojects { repositories {...} })
@@ -94,10 +100,11 @@ Basic plan and some typical questions and code samples for Android interview.
 
 ## RxJava
 * Observable, Single, Completable, Flowable
-* How to change threads? (observeOn, subscribeOn)
 * What is the purpose of buffer?
 * Difference between debounce and throttleFirst
 * Map, Zip, Merge, Concat etc.
+* How to change threads? (observeOn, subscribeOn)
+* Difference between Schedulers.io and Schedulers.computation
 
 ## Moxy
 * How to organize application? (View, Presenter)
