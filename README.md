@@ -64,6 +64,7 @@ Basic plan and some typical questions and code samples for Android interview.
 * Can I access data in another application's content provider via intent? (No, use ContentResolver instead)
 * Activity launch modes
 * What is a broadcast receiver?
+* RecyclerView: when onCreateViewHolder and onBindViewHolder are called?
 
 ## Gradle
 * What to do, if external dependency is not found? (Add appropriate repository into: allprojects { repositories {...} })
