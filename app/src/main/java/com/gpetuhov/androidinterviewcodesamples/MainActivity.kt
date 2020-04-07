@@ -2,18 +2,50 @@ package com.gpetuhov.androidinterviewcodesamples
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-
-// TODO: make this a God Object example with network interactions, bad code practices, etc...
+import android.view.View
+import android.widget.Button
+import android.widget.TextView
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import okhttp3.OkHttpClient
+import okhttp3.logging.HttpLoggingInterceptor
+import retrofit2.HttpException
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.converter.scalars.ScalarsConverterFactory
+import retrofit2.http.GET
+import retrofit2.http.Query
+import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
 
-    var a = false
+    interface MyService {
+        @GET(".")
+        suspend fun getData(): String
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // TODO: add button, load something from network on click, show progress, show result,
-        //  lose result on screen rotation, use "it" many times, use nested closures, use bad variable names
+        findViewById<Button>(R.id.start_load_button).setOnClickListener {
+            val interceptor = HttpLoggingInterceptor()
+            interceptor.level = HttpLoggingInterceptor.Level.BASIC
+
+            val o = OkHttpClient.Builder().addNetworkInterceptor(interceptor).build()
+            val retrofit = Retrofit.Builder().baseUrl("https://www.google.com/").client(o).addConverterFactory(ScalarsConverterFactory.create()).build()
+            val myService = retrofit.create(MyService::class.java)
+
+            GlobalScope.launch(Dispatchers.IO) {
+                val data = myService.getData()
+                runOnUiThread {
+                    findViewById<TextView>(R.id.result_text_view).text = data.take(100)
+                    findViewById<TextView>(R.id.result_text_view).visibility = View.VISIBLE
+                }
+            }
+        }
+
+        // TODO: use "it" many times
     }
 }
