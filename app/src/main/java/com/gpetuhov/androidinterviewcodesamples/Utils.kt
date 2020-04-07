@@ -3,6 +3,22 @@ package com.gpetuhov.androidinterviewcodesamples
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
+import java.lang.NumberFormatException
+
+// =====================================================
+// Is there any potential problem in this code?
+fun getDoubleFromString(number: String): Double {
+    return number.toDouble()
+}
+
+// Answer
+fun getDoubleFromString2(number: String): Double {
+    return try {
+        number.toDouble()
+    } catch (e: NumberFormatException) {
+        0.0
+    }
+}
 
 // =====================================================
 // Is there any potential problem in this code?
@@ -27,3 +43,4 @@ fun openWebsite2(context: Context?, websiteUrl: String?) {
 }
 
 // =====================================================
+

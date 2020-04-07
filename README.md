@@ -33,6 +33,8 @@ Basic plan and some typical questions and code samples for Android interview.
 * Does Kotlin allow working with functions as with variables?
 * Extension functions in Kotlin.
 * What is boxing, unboxing (Int, Double, ...)
+* Can enums contain values? (Yes: enum class Action(val value: Int) { WALK(0), RUN(1), ... }
+* What is "finally" block used for in try-catch?
 
 ## Android
 * Basic components
@@ -49,10 +51,14 @@ Basic plan and some typical questions and code samples for Android interview.
 * Permissions since Android 6.
 * What is Data Binding?
 * ViewModel, LiveData
+* How to make some part of the code run only in debug? (if (BuildConfig.DEBUG) {...} else {...})
 
 ## Network
 * What is JSON?
+* How to set up a name of the serialized property different from the property name? (Use @SerializedName("name") annotation)
+* How to exclude a property from the serialization? (mark property as transient (keyword in Java or annotation in Kotlin))
 * Retrofit - what to do, if an app needs to interact with 2 different hosts? (create 2 different retrofit objects)
+* How to append some parameter (for example "platform=android") to all network queries? (Use interceptors)
 
 ## Dagger
 * Modules and Components
