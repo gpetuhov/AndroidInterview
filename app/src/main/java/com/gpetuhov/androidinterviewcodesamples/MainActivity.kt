@@ -40,6 +40,8 @@ class MainActivity : AppCompatActivity() {
             GlobalScope.launch(Dispatchers.IO) {
                 val data = myService.getData()
                 runOnUiThread {
+                    it.visibility = if (data.length > 0) View.GONE else View.VISIBLE
+
                     findViewById<TextView>(R.id.result_text_view).text = data.take(100)
                     findViewById<TextView>(R.id.result_text_view).visibility = View.VISIBLE
                 }
