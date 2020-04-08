@@ -38,7 +38,7 @@ Basic plan and some typical questions and code samples for Android interview.
 * Kotlin default and named arguments
 
 ## Android
-* Basic components
+* Basic components (Activity, Service, Content Provider, Intent, Broadcast Receiver, Widget, Notification)
 * What is Intent used for? (to start activities, services and send broadcasts)
 * What is the purpose of Fragments? Limitations (2-3 fragments per activity)
 * How to pass data into Fragments? (Via arguments)
@@ -50,6 +50,8 @@ Basic plan and some typical questions and code samples for Android interview.
 * What is the purpose of Services?
 * I am starting a network request from the Service. What problem can this cause? (Service runs on the main thread by default)
 * Difference between Service and IntentService.
+* How to prevent a Service from being destroyed by Android? (Use startForeground() with notification)
+* When onStartCommand() gets triggered? (Every time when startService() is called, even if Service is already started)
 * How to save screen state on screen rotation (saveInstanceState, Moxy)? How to save state of an EditText? (provide an id)
 * How to provide data to external apps? (ContentProviders)
 * Permissions since Android 6.

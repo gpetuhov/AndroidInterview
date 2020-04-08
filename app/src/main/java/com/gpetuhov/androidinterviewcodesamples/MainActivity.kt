@@ -46,6 +46,11 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        // TODO: use "it" many times
+        // TODO: use "it" many times in .map {...}.filter {...} etc.
+
+        // TODO: hardcode string instead of using strings.xml
+
+        // TODO: use the same string or int in several places instead of using constants
+        //  (in intents, activity on result or request code)
     }
 }
