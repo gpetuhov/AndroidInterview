@@ -29,6 +29,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        findViewById<TextView>(R.id.load_from).text = "Загрузка с адреса"
+        findViewById<TextView>(R.id.url_label).text = "https://www.google.com/"
+
         findViewById<Button>(R.id.start_load_button).setOnClickListener {
             val interceptor = HttpLoggingInterceptor()
             interceptor.level = HttpLoggingInterceptor.Level.BASIC
@@ -51,10 +54,6 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
-
-        // TODO: use "it" many times in .map {...}.filter {...} etc.
-
-        // TODO: hardcode string instead of using strings.xml
 
         // TODO: use the same string or int in several places instead of using constants
         //  (in intents, activity on result or request code)

@@ -9,6 +9,18 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/load_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Load from"/>
+
+    <TextView
+        android:id="@+id/url_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Url"/>
+
+    <TextView
         android:id="@+id/result_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
