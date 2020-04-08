@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -51,11 +52,10 @@ class MainActivity : AppCompatActivity() {
 
                     findViewById<TextView>(R.id.result_text_view).text = data.take(100)
                     findViewById<TextView>(R.id.result_text_view).visibility = View.VISIBLE
+
+                    Toast.makeText(this@MainActivity, "Загрузка с адреса https://www.google.com/ завершена", Toast.LENGTH_SHORT).show()
                 }
             }
         }
-
-        // TODO: use the same string or int in several places instead of using constants
-        //  (in intents, activity on result or request code)
     }
 }
