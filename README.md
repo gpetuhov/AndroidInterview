@@ -39,7 +39,11 @@ Basic plan and some typical questions and code samples for Android interview.
 
 ## Android
 * Basic components (Activity, Service, Content Provider, Intent, Broadcast Receiver, Widget, Notification)
+* Project structure of an Android application (modules, manifests, source, res, assets, Gradle scripts)
+* What is Context? Difference between Application Context and Activity Context.
+* What is AndroidManifest.xml?
 * What is Intent used for? (to start activities, services and send broadcasts)
+* Difference between implicit and explicit intents.
 * What is the purpose of Fragments? Limitations (2-3 fragments per activity)
 * How to pass data into Fragments? (Via arguments)
 * What are the means of data transfer between activities? (Intents, Shared preferences, DB, file, Eventbus, Singleton class)
