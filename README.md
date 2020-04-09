@@ -46,6 +46,7 @@ Basic plan and some typical questions and code samples for Android interview.
 * How to transfer a class between activities? (it must be Serializable)
 * Difference between Serializable and Parcelable
 * How to return a result from the activity?
+* What can go wrong when calling activity.startActivityForResult() inside fragment? (The result will be delivered to onActivityResult() of the activity, not the fragment)
 * Data persistence (shared preferences, db, file)
 * What is the purpose of Services?
 * I am starting a network request from the Service. What problem can this cause? (Service runs on the main thread by default)
