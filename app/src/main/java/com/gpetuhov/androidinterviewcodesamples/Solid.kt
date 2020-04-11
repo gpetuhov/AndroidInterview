@@ -3,6 +3,8 @@ package com.gpetuhov.androidinterviewcodesamples
 // Reference:
 // https://academy.realm.io/posts/learning-path-solid-principles-for-android/
 
+// ============================================
+
 // RecyclerView adapter has this code in onBindViewHolder method.
 // Does it violate any SOLID principles?
 
@@ -24,3 +26,18 @@ package com.gpetuhov.androidinterviewcodesamples
 
 // Answer:
 // The code above violates the Single Responsibility Principle.
+
+// ============================================
+
+// Does this code violate any SOLID principles?
+
+/*
+public interface OnClickListener {
+    void onClick(View v);
+    void onLongClick(View v);
+    void onTouch(View v, MotionEvent event);
+}
+*/
+
+// Answer:
+// It violates the Interface Segregation Principle?
