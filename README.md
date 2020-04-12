@@ -120,6 +120,7 @@ Basic plan and some typical questions and code samples for Android interview.
 * Kotlin coroutines
 
 ## RxJava
+* What design pattern does RxJava implement? (Observer Pattern)
 * Observable, Single, Completable, Flowable
 * What is the purpose of buffer?
 * Difference between debounce and throttleFirst
