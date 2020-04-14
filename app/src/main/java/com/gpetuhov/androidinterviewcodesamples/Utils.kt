@@ -20,6 +20,11 @@ fun getDoubleFromString2(number: String): Double {
     }
 }
 
+// Another answer
+fun getDoubleFromString3(number: String): Double? {
+    return number.toDoubleOrNull()
+}
+
 // =====================================================
 // Is there any potential problem in this code?
 fun openWebsite(context: Context?, websiteUrl: String?) {
