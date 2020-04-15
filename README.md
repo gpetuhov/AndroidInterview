@@ -121,6 +121,7 @@ Basic plan and some typical questions and code samples for Android interview.
 
 ## RxJava
 * What design pattern does RxJava implement? (Observer Pattern)
+* Difference between cold and hot observables.
 * Observable, Single, Completable, Flowable
 * What is the purpose of buffer?
 * Difference between debounce and throttleFirst
