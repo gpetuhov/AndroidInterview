@@ -25,9 +25,9 @@ Basic plan and some typical questions and code samples for Android interview.
 * Difference between ArrayList and LinkedList. Which one takes less time to add an item in the middle? Which one takes less time to get n-th element?
 * hashcode, equals
 * Hashmap. What happens, if 2 elements have the same hashcode? What will Hashmap become, if all the elements will have the same hashcode?
-* What is the difference between lists on Java and Kotlin?
+* What is the difference between lists in Java and Kotlin?
 * What are static methods in Java? What is the analog in Kotlin?
-* How to create a singlton in Java and Kotlin?
+* How to create a singleton in Java and Kotlin?
 * What are the advantages of Kotlin?
 * Difference between val and const val?
 * Does Kotlin allow working with functions as with variables?
