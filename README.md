@@ -65,6 +65,9 @@ Basic plan and some typical questions and code samples for Android interview.
 * How to pass data into Fragments? (Via arguments)
 * What can go wrong when calling activity.startActivityForResult() inside fragment? (The result will be delivered to onActivityResult() of the activity, not the fragment)
 
+### Layouts
+* Difference between LinearLayout and ConstraintLayout
+
 ### Data persistence
 * Data persistence (shared preferences, db, file)
 
