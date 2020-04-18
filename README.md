@@ -126,6 +126,10 @@ Basic plan and some typical questions and code samples for Android interview.
 * What design pattern does RxJava implement? (Observer Pattern)
 * Difference between cold and hot observables.
 * Single, Maybe, Completable
+* Difference between scan() and reduce()
+* Difference between merge() and concat()
+* Difference between map() and flatMap()
+* Difference between zip() and combineLatest()
 * What is the purpose of buffer?
 * Difference between debounce and throttleFirst
 * Map, Zip, Merge, Concat etc.
