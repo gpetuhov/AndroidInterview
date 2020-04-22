@@ -130,6 +130,7 @@ Basic plan and some typical questions and code samples for Android interview.
 * Difference between merge() and concat()
 * Difference between map() and flatMap()
 * Difference between zip() and combineLatest()
+* What is PublishSubject?
 * What is the purpose of buffer?
 * Difference between debounce and throttleFirst
 * Map, Zip, Merge, Concat etc.
