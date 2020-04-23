@@ -131,11 +131,10 @@ Basic plan and some typical questions and code samples for Android interview.
 * Difference between map() and flatMap()
 * Difference between zip() and combineLatest()
 * What is PublishSubject?
+* Difference between Schedulers.io() and Schedulers.computation()
 * What is the purpose of buffer?
 * Difference between debounce and throttleFirst
-* Map, Zip, Merge, Concat etc.
 * How to change threads? (observeOn, subscribeOn)
-* Difference between Schedulers.io and Schedulers.computation
 
 ## Moxy
 * How to organize application? (View, Presenter)
