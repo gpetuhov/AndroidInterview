@@ -128,13 +128,13 @@ Basic plan and some typical questions and code samples for Android interview.
 * Single, Maybe, Completable
 * Difference between scan() and reduce()
 * Difference between merge() and concat()
-* Difference between map() and flatMap()
 * Difference between zip() and combineLatest()
+* Difference between flatMap() and switchMap()
 * What is PublishSubject?
+* How to change threads? (subscribeOn, observeOn)
 * Difference between Schedulers.io() and Schedulers.computation()
-* What is the purpose of buffer?
-* Difference between debounce and throttleFirst
-* How to change threads? (observeOn, subscribeOn)
+* What is the purpose of buffer()?
+* Difference between throttleFirst() and debounce() (aka throttleWithTimeout())
 
 ## Moxy
 * How to organize application? (View, Presenter)
