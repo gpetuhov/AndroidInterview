@@ -351,6 +351,7 @@ https://stackoverflow.com/questions/4128589/difference-between-activity-context-
 https://medium.com/@banmarkovic/what-is-context-in-android-and-which-one-should-you-use-e1a8c6529652
 
 * Отображение AlertDialog из app context - https://nhancv.medium.com/android-show-dialog-without-activity-context-94661d48400f
+* raw vs assets - что где хранить, отличия? (в raw доступ через R.raw.id, в assets через asset manager) - https://stackoverflow.com/questions/5583608/difference-between-res-and-assets-directories
 
 
 
@@ -408,6 +409,28 @@ https://medium.com/@veeresh.charantimath8/playing-with-android-task-affinity-and
 
 
 
+### Intents
+* What is Intent used for? (to start activities, services and send broadcasts)
+* Как передать данные через интент? - Bundle
+* Что можно положить в Bundle? - Основные типы, Serializable, Parcelable
+* Ограничения на размер Bundle - 500 КБ (2 МБ по другим источникам) - https://stackoverflow.com/questions/8552514/is-there-any-limit-of-bundle-in-android
+* Serializable vs Parcelable - https://stackoverflow.com/questions/3323074/android-difference-between-parcelable-and-serializable
+* Проблемы Serializable - 1. Рефлексия, 2. Если поле в Serializable классе будет не Serializable, то при десериализации оно будет просто null (а в случае Parcelable компилятор сразу это подсвечивает)
+* Difference between implicit and explicit intents.
+* How to open url in browser?
+
+```
+val uri = Uri.parse(websiteUrl)
+val intent = Intent(Intent.ACTION_VIEW, uri)
+```
+
+* Pending intent
+* How to make an activity start on some intent from other apps? (Add intent filter in the manifest)
+* Механизм резолюшна интент-фильтра (последовательность действий, что с чем сравнивается) - https://www.androidcookbook.info/application-development/how-android-resolves-intent-filters.html
+* Can I access data in another application's content provider via intent? (No, use ContentResolver instead)
+
+
+
 ### Fragments
 * What is the purpose of Fragments? Limitations (2-3 fragments per activity)
 * Способы добавления фрагмента в активити - Вручную с помощью FragmentManager, прописать жестко фрагмент в макете (но под капотом все равное будет использован FragmentManager), Jetpack Navigation, Cicerone 
@@ -437,43 +460,19 @@ https://medium.com/@bherbst/the-many-flavors-of-commit-186608a015b1
 
 
 
-### Intents
-* What is Intent used for? (to start activities, services and send broadcasts)
-* Как передать данные через интент? - Bundle
-* Что можно положить в Bundle? - Основные типы, Serializable, Parcelable
-* Ограничения на размер Bundle - 500 КБ (2 МБ по другим источникам) - https://stackoverflow.com/questions/8552514/is-there-any-limit-of-bundle-in-android
-* Serializable vs Parcelable - https://stackoverflow.com/questions/3323074/android-difference-between-parcelable-and-serializable
-* Проблемы Serializable - 1. Рефлексия, 2. Если поле в Serializable классе будет не Serializable, то при десериализации оно будет просто null (а в случае Parcelable компилятор сразу это подсвечивает)
-* Difference between implicit and explicit intents.
-* How to open url in browser?
-
-```
-val uri = Uri.parse(websiteUrl)
-val intent = Intent(Intent.ACTION_VIEW, uri)
-```
-
-* Pending intent
-* How to make an activity start on some intent from other apps? (Add intent filter in the manifest)
-* Механизм резолюшна интент-фильтра (последовательность действий, что с чем сравнивается) - https://www.androidcookbook.info/application-development/how-android-resolves-intent-filters.html
-* Can I access data in another application's content provider via intent? (No, use ContentResolver instead)
-
-
-
 ### Services
 * What is the purpose of Services?
 * I am starting a network request from the Service. What problem can this cause? (Service runs on the main thread by default)
+* Как стартовать сервис в бэкграунде, поможет ли вызов startService в бэкграунд потоке? - нет - https://stackoverflow.com/questions/18526131/how-to-run-service-not-on-main-thread
 * Difference between Service and IntentService.
-* How to prevent a Service from being destroyed by Android? (Use startForeground() with notification)
 * When onStartCommand() gets triggered? (Every time when startService() is called, even if Service is already started)
 * Типы сервисов - background, foreground, bound
-* Bound services
 * Bound services lifecycle - https://developer.android.com/guide/components/bound-services
 * Started (unbound) Service lifecycle
 * Начиная с Андроид 8, какие сервисы можно запускать
 * Android 12 - что поменялось в плане startForegroundService?
 * Время, в течение которого надо успеть показать уведомление из foreground Service - 5 секунд - https://stackoverflow.com/questions/57272203/context-startforegroundservice-did-not-then-call-service-startforeground-s
 * Doze mode
-* Как стартовать сервис в бэкграунде, поможет ли вызов startService в бэкграунд потоке? - нет - https://stackoverflow.com/questions/18526131/how-to-run-service-not-on-main-thread
 * Interprocess communication (IPC) - https://habr.com/ru/post/139432/
 * Как запустить сервис в отдельном процессе? - https://stackoverflow.com/questions/22514373/start-a-service-in-a-separate-process-android   
 * Для чего запускать сервис в отдельном процессе?
@@ -482,7 +481,7 @@ https://stackoverflow.com/questions/48765700/what-is-the-advantage-of-running-a-
 
 https://habr.com/ru/post/139432/
 
-* Можно ли запускать активити из сервисов? - Начиная с Андроид 10 только при определенных условиях - https://developer.android.com/guide/components/activities/background-starts
+* Можно ли запускать активити из сервисов? - Начиная с Андроид 10 - только при определенных условиях - https://developer.android.com/guide/components/activities/background-starts
 
 
 
@@ -516,6 +515,12 @@ https://habr.com/ru/post/139432/
 
 
 
+### Animation
+* Виды анимации
+* Анимация с помощью ConstraintSet
+
+
+
 ### Views
 * View Lifecycle
 
@@ -534,13 +539,26 @@ https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
 * View Binding - https://developer.android.com/topic/libraries/view-binding
 * Data Binding (отличие от View Binding) - https://developer.android.com/topic/libraries/data-binding
 * Data Binding Adapters
+* RecyclerView: when onCreateViewHolder and onBindViewHolder are called?
+
+
+
+### Notifications
+* Notifications since Android 8 (Notification channel required)
+* Actions in Notifications (for example reply) - https://developer.android.com/training/notify-user/build-notification
+
+
+
+### Permissions
+* Обычные и опасные разрешения
+* Последовательность запроса Permissions - https://developer.android.com/training/permissions/requesting
 
 
 
 ### Multithreading in Android
 * Which operations are prohibited to run on the main thread?
-* What is the disadvantage of AsyncTask?
-* Handler, Looper, Handler Thread - https://blog.mindorks.com/android-core-looper-handler-and-handlerthread-bd54d69fe91a
+* What is the disadvantage of AsyncTask? - 1. Пересоздается при пересоздании активити, 2. Держит ссылку на активити, что влечет за собой memory leaks 
+* Handler, Looper, HandlerThread - https://blog.mindorks.com/android-core-looper-handler-and-handlerthread-bd54d69fe91a
 * Как устроена MessageQueue? - MessageQueue обеспечивает асинхронный механизм выполнения и позволяет запланировать выполнение операций вместо того, чтобы они терялись. Упорядочен по timestamp. Если вызываем Handler.postDelayed, то message записывается в очередь со значением currentTimeStamp + delay. Если в очереди остались только элементы, запланированные в будуем (у которых timestamp > currentTimeStamp), то лупер будет просто в цикле крутиться и не будет забирать элементы из очереди
 * Как будет работать MessageQueue, если вызывать Handler.postDelayed() - Очередь упорядочивается по времени - https://stackoverflow.com/questions/27240015/does-postdelayed-cause-the-message-to-jump-to-the-front-of-the-queue
 * Если в Handler передать Runnable, то где он будет храниться? - У Message есть поле callback типа Runnable, там и будет храниться (см исходники Handler и Message)
@@ -549,59 +567,7 @@ https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
 
 
 
-### Notifications
-* Actions in Notifications (for example reply) - https://developer.android.com/training/notify-user/build-notification
-
-
-### Data persistence
-* Какие есть способы сохранить данные - shared preferences, db, file
-
-
-### Room
-* Последовательность работы с Room: какие классы нужно создать и что в них нужно описать?
-* What does @Entity annotation do?
-* What is @PrimaryKey?
-* How to select only different items from the db? (SELECT DISTINCT)
-* The app starts crashing after new entity has been added. What I forgot to do? (Update database version, add migration)
-* Что такое индекс в SQL? - https://www.datacamp.com/community/tutorials/introduction-indexing-sql?utm_source=adwords_ppc&utm_campaignid=1455363063&utm_adgroupid=65083631748&utm_device=c&utm_keyword=&utm_matchtype=b&utm_network=g&utm_adpostion=&utm_creative=278443377095&utm_targetid=aud-392016246653:dsa-429603003980&utm_loc_interest_ms=&utm_loc_physical_ms=9047030&gclid=Cj0KCQjwlMaGBhD3ARIsAPvWd6jxN4Dh86nixmxgtpWlbxipHxNrFAwjlVBqy7m4DYtR94rB9_rQXjsaAv9dEALw_wcB
-
-
-
-### Testing
-* Когда вызываются @Before, @After
-* Когда вызывается @BeforeClass
-* Как в Espresso нажать на элемент списка
-
-
-
-### Other
-* How to provide data to external apps? (ContentProviders)
-* Permissions since Android 6.
-* What is Data Binding?
-* ViewModel, LiveData
-* How to make some part of the code run only in debug? (if (BuildConfig.DEBUG) {...} else {...})
-* Notifications since Android 8 (Notification channel required)
-* Shared preferences persist after app has been uninstalled. How to prevent it? (Add android:allowBackup="false" in the application in the manifest)
-* What is a broadcast receiver?
-* RecyclerView: when onCreateViewHolder and onBindViewHolder are called?
-* Getting geolocation
-* Deep links
-* raw vs assets - что где хранить, отличия? (в raw доступ через R.raw.id, в assets через asset manager) - https://stackoverflow.com/questions/5583608/difference-between-res-and-assets-directories
-
-
-
-## Gradle
-* What to do, if external dependency is not found? (Add appropriate repository into: allprojects { repositories {...} })
-* Difference between "implementation" and "compile" 
-* What is multidex?
-* How to build slightly different applications from one project? (Use flavors)
-* Gradle implementation vs api? - При использовании api мы можем использовать внутренние зависимости библиотеки в нашем основном проекте - https://stackoverflow.com/questions/44413952/gradle-implementation-vs-api-configuration
-* Gradle build type vs flavor - https://wajahatkarim.com/2018/04/difference-between-build-type-flavour-and-build-variant-in-android/
-* Можем ли мы создать свой build type? - Можем - https://stackoverflow.com/questions/49286743/how-to-add-more-build-types-in-app-than-library/49288390
-
-
-
-## Network
+### Network
 * HTTP methods - https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
 * HTTP vs WebSocket
 * Socket vs WebSocket - https://stackoverflow.com/questions/4973622/difference-between-socket-and-websocket
@@ -624,23 +590,23 @@ https://stackoverflow.com/questions/14703627/websockets-protocol-vs-http
 * Как в JSON передавать бинарные данные без использования Base64
 
 
-
-## Permissions
-* Обычные и опасные разрешения
-* Последовательность запроса Permissions - https://developer.android.com/training/permissions/requesting
-
-
-
-## Animation
-* Виды анимации
-* Анимация с помощью ConstraintSet
+### Data persistence
+* Какие есть способы сохранить данные - shared preferences, db, file
+* Shared preferences persist after app has been uninstalled. How to prevent it? (Add android:allowBackup="false" in the application in the manifest)
 
 
 
+### Room
+* Последовательность работы с Room: какие классы нужно создать и что в них нужно описать?
+* What does @Entity annotation do?
+* What is @PrimaryKey?
+* Что такое индекс в SQL? - https://www.datacamp.com/community/tutorials/introduction-indexing-sql?utm_source=adwords_ppc&utm_campaignid=1455363063&utm_adgroupid=65083631748&utm_device=c&utm_keyword=&utm_matchtype=b&utm_network=g&utm_adpostion=&utm_creative=278443377095&utm_targetid=aud-392016246653:dsa-429603003980&utm_loc_interest_ms=&utm_loc_physical_ms=9047030&gclid=Cj0KCQjwlMaGBhD3ARIsAPvWd6jxN4Dh86nixmxgtpWlbxipHxNrFAwjlVBqy7m4DYtR94rB9_rQXjsaAv9dEALw_wcB
+* How to select only different items from the db? (SELECT DISTINCT)
+* The app starts crashing after new entity has been added. What I forgot to do? (Update database version, add migration)
 
 
 
-## Dagger
+### Dagger
 * What is Dependency Injection?
 * Преимущества Dependency Inversion (Dagger) - зависимости предоставляются извне - легко менять составные части объектов, Dagger берет на себя генерацию графа зависимостей, упрощается тестирование - в тестах вместо реальных объектов можно подсовывать замоканные
 * Dependency Injection vs Service Locator - https://habr.com/ru/post/465395/
@@ -657,7 +623,7 @@ https://stackoverflow.com/questions/14703627/websockets-protocol-vs-http
 
 
 
-## Clean architecture
+### Clean architecture
 * Clean Architecture - https://habr.com/ru/company/mobileup/blog/335382/
 * Для чего нужна Clean Architecture? - Развязывание классов (отсутствие сильной связанности, возможность замены компонентов), тестопригодность, уменьшение порога входа в проект для новых разработчиков (все понимают, что на каждом слое находится)
 * MVP
@@ -673,9 +639,34 @@ https://www.raywenderlich.com/7026-getting-started-with-mvp-model-view-presenter
 
 
 
-## Moxy
+### Moxy
 * How to organize application? (View, Presenter)
 * Strategies
+
+
+
+### Testing
+* Когда вызываются @Before, @After
+* Когда вызывается @BeforeClass
+* Как в Espresso нажать на элемент списка
+
+
+
+### Gradle
+* What to do, if external dependency is not found? (Add appropriate repository into: allprojects { repositories {...} })
+* Difference between "implementation" and "compile" 
+* What is multidex?
+* How to build slightly different applications from one project? (Use flavors)
+* Gradle implementation vs api? - При использовании api мы можем использовать внутренние зависимости библиотеки в нашем основном проекте - https://stackoverflow.com/questions/44413952/gradle-implementation-vs-api-configuration
+* Gradle build type vs flavor - https://wajahatkarim.com/2018/04/difference-between-build-type-flavour-and-build-variant-in-android/
+* Можем ли мы создать свой build type? - Можем - https://stackoverflow.com/questions/49286743/how-to-add-more-build-types-in-app-than-library/49288390
+* How to make some part of the code run only in debug? (if (BuildConfig.DEBUG) {...} else {...})
+
+
+
+### Other
+* Getting geolocation
+* Deep links
 
 
 
