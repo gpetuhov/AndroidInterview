@@ -14,7 +14,7 @@ Basic plan and some typical questions and code samples for Android interview.
 ## OOP and SOLID
 * OOP: abstraction, encapsulation, inheritance, polymorphism
 * SOLID
-* Design Patterns: creational, behavioral, structural
+* Design Patterns: creational, behavioral, structural - https://habr.com/ru/post/210288/
 * What Design Patterns did you use in your projects?
 * RecyclerView Adapter является ли реализацией паттерна Адаптер? - нет - https://stackoverflow.com/questions/41626980/are-android-adapters-an-example-of-adapter-design-pattern
 * Почему композиция лучше наследования? - https://stackoverflow.com/questions/49002/prefer-composition-over-inheritance
@@ -381,11 +381,27 @@ val intent = Intent(Intent.ACTION_VIEW, uri)
 * Время, в течение которого надо успеть показать уведомление из foreground Service - 5 секунд - https://stackoverflow.com/questions/57272203/context-startforegroundservice-did-not-then-call-service-startforeground-s
 * Doze mode
 * Как стартовать сервис в бэкграунде, поможет ли вызов startService в бэкграунд потоке? - нет - https://stackoverflow.com/questions/18526131/how-to-run-service-not-on-main-thread
+* Interprocess communication (IPC) - https://habr.com/ru/post/139432/
+* Как запустить сервис в отдельном процессе? - https://stackoverflow.com/questions/22514373/start-a-service-in-a-separate-process-android   
+* Для чего запускать сервис в отдельном процессе?
+
+https://stackoverflow.com/questions/48765700/what-is-the-advantage-of-running-a-service-in-a-different-process 
+
+https://habr.com/ru/post/139432/
+
+* Можно ли запускать активити из сервисов? - Начиная с Андроид 10 только при определенных условиях - https://developer.android.com/guide/components/activities/background-starts
 
 
 
 ### Broadcast receivers
+* Broadcast Receivers - http://developer.alexanderklimov.ru/android/broadcast.php
 * Sticky Broadcast
+
+
+
+### Content Providers
+* Content Providers - https://developer.android.com/guide/topics/providers/content-provider-basics?hl=ru
+
 
 
 ### Views
@@ -480,7 +496,7 @@ https://stackoverflow.com/questions/14703627/websockets-protocol-vs-http
 * How to append some parameter (for example "platform=android") to all network queries? (Use interceptors)
 * How to load images? (Use Glide, Picasso or Fresco)
 * GraphQL
-* Protobuf
+* Protobuf, для чего файл proto?
 * Последовательность работы с Retrofit: какие классы нужно создать и что в них нужно описать?
 * Multipart передача данных
 
