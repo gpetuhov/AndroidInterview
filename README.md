@@ -12,7 +12,7 @@ Basic plan and some typical questions and code samples for Android interview.
 
 
 ## OOP and SOLID
-* OOP: abstraction, encapsulation, inheritance, polymorphism
+* OOP: abstraction, encapsulation, inheritance, polymorphism - https://tproger.ru/translations/oop-principles-cheatsheet/
 * Отличие переопределения и перегрузки методов (overload vs override)
 * Можно ли переопределить и перегрузить статические методы? - Перегрузить - да, переопределить - нет - https://stackoverflow.com/questions/2475259/can-i-override-and-overload-static-methods-in-java/5436790#:~:text=Static%20methods%20cannot%20be%20overridden,decides%20which%20method%20gets%20called.&text=Static%20methods%20can%20be%20overloaded%20(meaning%20that%20you%20can%20have,they%20have%20different%20parameter%20types).
 * SOLID
@@ -21,6 +21,7 @@ Basic plan and some typical questions and code samples for Android interview.
 * RecyclerView Adapter является ли реализацией паттерна Адаптер? - нет - https://stackoverflow.com/questions/41626980/are-android-adapters-an-example-of-adapter-design-pattern
 * Почему композиция лучше наследования? - https://stackoverflow.com/questions/49002/prefer-composition-over-inheritance
 * Clean code
+* Как в алгоритмах оценивают потребление памяти? - Тоже в терминах O() - https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/
 
 
 
@@ -92,10 +93,13 @@ https://stackoverflow.com/questions/25444226/difference-between-sparsearray-vs-a
 * HashMap - защита от коллизий - Запись в LinkedList в случае коллизий
 * Можно ли в HashMap положить элемент с ключом null? - можно - https://stackoverflow.com/questions/25932730/hashmap-with-null-key-and-null-value#:~:text=HashMap%20puts%20null%20key%20in,linked%20list%20data%20structure%20internally.&text=In%20Entry%20class%20the%20K,value%20passed%20in%20put%20method.
 * HashMap - что такое бакеты? - Это и есть те элементы, которые адресуются на основе хешкода (бакетами могут быть связанные списки или бинарные деревья) - https://www.baeldung.com/java-hashmap
+* Всегда ли в бакетах в HashMap используется LinkedList? - Нет. При большом количестве элементов в бакете LinkedList заменяется на binary tree. Тогда время поиска элемента становится O(logn) вместо O(n) Примечение: log по основанию 2
 * Левоассоциативность (И, ИЛИ) - https://ru.wikipedia.org/wiki/%D0%9E%D1%87%D0%B5%D1%80%D1%91%D0%B4%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B9
 * Аннотации - что это? - https://www.baeldung.com/java-custom-annotation
 * RetentionPolicy в аннотациях - https://www.java2novice.com/java-annotations/retention-policy/#:~:text=Description%3A,point%20annotation%20should%20be%20discarded.&text=Annotation%20with%20retention%20policy%20RUNTIME,pass%20the%20retention%20policy%20type.
 * Модификаторы доступа в Java - public, protected, private, package private (когда нет никакого ключевого слова) - https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
+* Java checked exceptions - Это когда в сигнатуре метода есть throws Exception и тогда компилятор при вызове данного метода попросит обернуть в try-catch - https://www.geeksforgeeks.org/checked-vs-unchecked-exceptions-in-java/#:~:text=In%20Java%2C%20there%20are%20two,the%20exception%20using%20throws%20keyword.
+* int i - это value или reference? - value
 
 
 
@@ -120,6 +124,7 @@ https://www.baeldung.com/java-synchronized
 
 https://stackoverflow.com/questions/3519664/difference-between-volatile-and-synchronized-in-java
 
+* Поможет ли volatile от гонки? - нет - https://www.javatpoint.com/volatile-keyword-in-java
 * Можно ли все переменные сделать volatile? - В зависимости от процессора volatile может дать увеличение времени из-за чтения не из кэша ядра, а из основной памяти - https://stackoverflow.com/questions/4633866/is-volatile-expensive
 * Атомарные операции. CompareAndSet
 
@@ -130,7 +135,13 @@ https://www.baeldung.com/java-atomic-variables
 * AtomicInteger
 * Что выдаст Future.get(), если Callable завершится аварийно - Будет ExecutionException
 * Java concurrent list - CopyOnWriteArrayList - https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html
-* Java ConcurrentHashMap - https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentHashMap.html
+* Java ConcurrentHashMap - 
+* Как реализован CuncurrentHashMap?
+ 
+https://www.baeldung.com/java-concurrent-map
+
+https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentHashMap.html
+
 * ThreadLocal - https://www.baeldung.com/java-threadlocal
 * Семафоры, мониторы - https://www.baeldung.com/cs/monitor
 * CountDownLatch, Barrier
@@ -177,6 +188,7 @@ https://www.baeldung.com/java-cyclic-barrier
 * Generics в Kotlin - что такое in, out? - https://kotlinlang.org/docs/generics.html#declaration-site-variance
 * Java stream, Kotlin sequence - в чем отличие от списка - Операции выполняются lazy, только когда результат уже нужен, и выполняются сразу все операции с каждым элементом без вычисления промежуточных коллекций - https://kotlinlang.org/docs/sequences.html
 * Kotlin SAM - https://kotlinlang.org/docs/fun-interfaces.html#sam-conversions
+* Есть ли в Kotlin checked exceptions, как в Java? - Нет. Аннотация @Throws нужна только если метод будет вызван из Java кода
 
 
 
@@ -552,6 +564,7 @@ https://stackoverflow.com/questions/14703627/websockets-protocol-vs-http
 * Protobuf, для чего файл proto?
 * Последовательность работы с Retrofit: какие классы нужно создать и что в них нужно описать?
 * Multipart передача данных
+* Как в JSON передавать бинарные данные без использования Base64
 
 
 
@@ -573,12 +586,14 @@ https://stackoverflow.com/questions/14703627/websockets-protocol-vs-http
 * What is @PrimaryKey?
 * How to select only different items from the db? (SELECT DISTINCT)
 * The app starts crashing after new entity has been added. What I forgot to do? (Update database version, add migration)
+* Что такое индекс в SQL? - https://www.datacamp.com/community/tutorials/introduction-indexing-sql?utm_source=adwords_ppc&utm_campaignid=1455363063&utm_adgroupid=65083631748&utm_device=c&utm_keyword=&utm_matchtype=b&utm_network=g&utm_adpostion=&utm_creative=278443377095&utm_targetid=aud-392016246653:dsa-429603003980&utm_loc_interest_ms=&utm_loc_physical_ms=9047030&gclid=Cj0KCQjwlMaGBhD3ARIsAPvWd6jxN4Dh86nixmxgtpWlbxipHxNrFAwjlVBqy7m4DYtR94rB9_rQXjsaAv9dEALw_wcB
 
 
 
 ## Dagger
 * What is Dependency Injection?
 * Преимущества Dependency Inversion (Dagger) - зависимости предоставляются извне - легко менять составные части объектов, Dagger берет на себя генерацию графа зависимостей, упрощается тестирование - в тестах вместо реальных объектов можно подсовывать замоканные
+* Dependency Injection vs Service Locator - https://habr.com/ru/post/465395/
 * What is the purpose of @Inject annotation?
 * Modules and Components
 * Is it possible not to use Modules and how?
@@ -614,7 +629,7 @@ https://github.com/gpetuhov/AndroidInterview/blob/master/app/src/main/java/com/g
 
 
 ## Algorithm coding task
-Требуется умение писать код на бумаге с первого раз без переписываний, дебажить в голове, проверять краевые условия
+Требуется умение писать код на бумаге с первого раз без переписываний, дебажить в голове, проверять краевые условия, оценивать вычислительную сложность и потребление памяти в терминах O()
 
 * In text editor: https://code.yandex-team.ru/ or https://codeshare.io/
 
