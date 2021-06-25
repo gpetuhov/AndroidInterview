@@ -3,29 +3,30 @@ Basic plan and some typical questions and code samples for Android interview.
 
 ## Previous experience
 * Tell us about yourself and your previous experience.
-* What is the project you worked on your previous job?
+* What was the project you worked on your previous job?
 * What was your role in the project?
 * Which part of the project you worked on?
 * Is there anything you are particularly proud of?
+* Who was in the team?
 * How collaboration inside the team was organized? Who set tasks?
 
 
 
 ## OOP and SOLID
 * OOP: abstraction, encapsulation, inheritance, polymorphism - https://tproger.ru/translations/oop-principles-cheatsheet/
-* Отличие переопределения и перегрузки методов (overload vs override)
+* Отличие переопределения и перегрузки методов (override vs overload)
 * Overload - статический полиморфизм, Override - динамический полиморфизм - https://javarush.ru/groups/posts/2025-polimorfizm-i-ego-druzjhja
 * Можно ли переопределить и перегрузить статические методы? - Перегрузить - да, переопределить - нет - https://stackoverflow.com/questions/2475259/can-i-override-and-overload-static-methods-in-java/5436790#:~:text=Static%20methods%20cannot%20be%20overridden,decides%20which%20method%20gets%20called.&text=Static%20methods%20can%20be%20overloaded%20(meaning%20that%20you%20can%20have,they%20have%20different%20parameter%20types).
 * SOLID
 * Почему композиция лучше наследования? - https://stackoverflow.com/questions/49002/prefer-composition-over-inheritance
 * Clean code
-* Как в алгоритмах оценивают потребление памяти? - Тоже в терминах O() - https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/
+* Как в алгоритмах оценивают потребление памяти? - Тоже в терминах O(), как и вычислительную сложность - https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/
 
 
 
 ### Design Patterns
 * Design Patterns: creational, behavioral, structural - https://habr.com/ru/post/210288/
-* What Design Patterns did you use in your projects?
+* Which Design Patterns did you use in your projects?
 * RecyclerView Adapter является ли реализацией паттерна Адаптер? - нет - https://stackoverflow.com/questions/41626980/are-android-adapters-an-example-of-adapter-design-pattern
 * Подводные камни singleton - https://stackoverflow.com/questions/137975/what-are-drawbacks-or-disadvantages-of-singleton-pattern
 
@@ -142,6 +143,23 @@ https://habr.com/ru/post/129494/
 
 https://www.baeldung.com/java-singleton
 
+* What is boxing, unboxing (Integer, Double, ...)
+* What is an interface?
+* Допускается ли множественное наследование? - Наследование нет, но класс может реализовывать несколько интерфейсов
+* Difference between ArrayList and LinkedList. Which one takes less time to add an item in the middle? Which one takes less time to get n-th element?
+* What will Hashmap become, if all the elements will have the same hashcode? - HashMap will become a LinkedList
+* What is "finally" block used for in try-catch?
+
+
+
+## Generics
+* Что такое Generics - https://habr.com/ru/company/sberbank/blog/416413/
+* С какой версии Java появились дженерики? - Java 5
+* Стирание типов - https://javarush.ru/groups/posts/2315-stiranie-tipov
+* PECS - https://stackoverflow.com/questions/2723397/what-is-pecs-producer-extends-consumer-super
+* Ковариантность (extends T), контрвариантность (super T), инвариантность (просто T)
+* Можно сделать так: instanceOf List<String> - нельзя из-за стирания типов
+
 
 
 ## Multithreading
@@ -201,17 +219,13 @@ https://www.baeldung.com/java-cyclic-barrier
 
 
 
-## Generics
-* Что такое Generics - https://habr.com/ru/company/sberbank/blog/416413/
-* С какой версии Java появились дженерики? - Java 5
-* Стирание типов - https://javarush.ru/groups/posts/2315-stiranie-tipov
-* PECS - https://stackoverflow.com/questions/2723397/what-is-pecs-producer-extends-consumer-super
-* Ковариантность (extends T), контрвариантность (super T), инвариантность (просто T)
-* Можно сделать так: instanceOf List<String> - нельзя из-за стирания типов
-
-
-
 ## Kotlin
+* What are the advantages of Kotlin?
+* Kotlin default and named arguments
+* How to create a singleton Kotlin? - object
+* Difference between val and const val?
+* Во что компилируется лямбда? - в анонимный внутренний класс Java
+* Can enums contain values? (Yes: enum class Action(val value: Int) { WALK(0), RUN(1), ... }
 * lateinit vs lazy
 * Delegates - как там реализована потокобезопасность?
 * Nothing - https://gb.ru/posts/razbiraemsya-v-tipah-kotlin-unit-nothing-any-i-null
@@ -296,27 +310,6 @@ https://github.com/gpetuhov/RxJavaTutorial
 * Корутины под капотом - https://rohit.fyi/blog/kotlin-coroutines-under-the-hood-part-1/
 * Нужна ли синхронизация при использовании корутин? - Нужна - https://kotlinlang.org/docs/shared-mutable-state-and-concurrency.html
 * RxJava vs Coroutines - https://stackoverflow.com/questions/42066066/how-kotlin-coroutines-are-better-than-rxkotlin
-
-
-
-## Java, Kotlin
-* What is an interface?
-* Inheritance in Java and Kotlin.
-* When garbage collector can remove an object from memory?
-* Difference between ArrayList and LinkedList. Which one takes less time to add an item in the middle? Which one takes less time to get n-th element?
-* hashcode, equals
-* Hashmap. What happens, if 2 elements have the same hashcode? What will Hashmap become, if all the elements will have the same hashcode?
-* What is the difference between lists in Java and Kotlin?
-* What are static methods in Java? What is the analog in Kotlin?
-* How to create a singleton in Java and Kotlin?
-* What are the advantages of Kotlin?
-* Difference between val and const val?
-* Does Kotlin allow working with functions as with variables?
-* Extension functions in Kotlin.
-* What is boxing, unboxing (Int, Double, ...)
-* Can enums contain values? (Yes: enum class Action(val value: Int) { WALK(0), RUN(1), ... }
-* What is "finally" block used for in try-catch?
-* Kotlin default and named arguments
 
 
 
