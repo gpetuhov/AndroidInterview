@@ -27,6 +27,10 @@ Basic plan and some typical questions and code samples for Android interview.
 
 
 ## Java
+* Classloader, getClass
+* Garbage collection - https://www.geeksforgeeks.org/garbage-collection-java/
+* В какой момент Garbage Collector может собрать объект?
+* Что является root для Garbage Collection?
 * Для чего нужен Object? - Объявляет ряд базовых методов, в том числе для организации многопоточности, также нужен для того, чтобы garbage collector мог собрать объекты
 * Методы Object - https://www.geeksforgeeks.org/object-class-in-java/
 * Зачем нужны методы equals и hashcode
@@ -37,15 +41,9 @@ Basic plan and some typical questions and code samples for Android interview.
 
 * Асимптотическая сложность конкатенации строк - O(n^2) - https://overcoder.net/q/186163/%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C-%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0%D1%82%D0%B5%D0%BD%D0%B0%D1%86%D0%B8%D0%B8-%D1%81%D1%82%D1%80%D0%BE%D0%BA-%D0%B2-c-%D0%B8-java
 * StringBuilder - чем он лучше простой конкатенации строк - https://stackoverflow.com/questions/1532461/stringbuilder-vs-string-concatenation-in-tostring-in-java === https://www.baeldung.com/java-strings-concatenation
-
-
-
-
-
-## Kotlin
-
-
-
+* Квалификатор final
+* Для чего полезна иммутабельность? - https://www.baeldung.com/java-immutable-object
+* Java Reflection
 
 
 
@@ -71,9 +69,30 @@ https://www.baeldung.com/java-synchronized
 
 https://stackoverflow.com/questions/3519664/difference-between-volatile-and-synchronized-in-java
 
+* Что такое атомарные операции? - https://ru.stackoverflow.com/questions/616278/%D0%90%D1%82%D0%BE%D0%BC%D0%B0%D1%80%D0%BD%D1%8B%D0%B5-%D0%B8-%D0%BD%D0%B5%D0%B0%D1%82%D0%BE%D0%BC%D0%B0%D1%80%D0%BD%D1%8B%D0%B5-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8-java
+
+* AtomicInteger
+
+
+
+## Generics
+* Что такое Generics - https://habr.com/ru/company/sberbank/blog/416413/
+* Стирание типов - https://javarush.ru/groups/posts/2315-stiranie-tipov
+
+
+
+## Kotlin
+* lateinit vs lazy
+* Kotlin delegates - как там реализована потокобезопасность?
+* Kotlin Nothing - https://gb.ru/posts/razbiraemsya-v-tipah-kotlin-unit-nothing-any-i-null
+* inline
+
 
 
 ## RxJava
+
+https://github.com/gpetuhov/RxJavaTutorial
+
 * What design pattern does RxJava implement? (Observer Pattern)
 * Difference between cold and hot observables.
 * Single, Maybe, Completable
@@ -86,7 +105,13 @@ https://stackoverflow.com/questions/3519664/difference-between-volatile-and-sync
 * Difference between Schedulers.io() and Schedulers.computation()
 * What is the purpose of buffer()?
 * Difference between throttleFirst() and debounce() (aka throttleWithTimeout())
-
+* Что такое Subject?
+* Типы Subject и их отличие - https://medium.com/@nazarivanchuk/types-of-subjects-in-rxjava-96f3a0c068e4
+* Отличие Observable и Flowable
+* Что такое backpressure
+* Способы работы с backpressure - https://www.baeldung.com/rxjava-backpressure
+* Стратегии Flowable для работы с backpressure
+* Типы Observable - https://medium.com/mindorks/rxjava-types-of-observables-404d75605e35
 
 
 
@@ -94,7 +119,7 @@ https://stackoverflow.com/questions/3519664/difference-between-volatile-and-sync
 
 ## Kotlin coroutines
 * Coroutine Scope, Coroutine Context - https://elizarov.medium.com/coroutine-context-and-scope-c8b255d59055
-
+* Coroutine Exception Handler
 
 
 
@@ -151,8 +176,9 @@ https://habr.com/ru/post/327782/
 ### Basics
 * Android components and what are they used for (Activity, Service, Content Provider, Broadcast Receiver)
 * Project structure of an Android application (modules, manifest, source, res, assets, Gradle scripts)
-* What is Context? Difference between Application Context and Activity Context.
 * What is AndroidManifest.xml?
+* Context - https://developer.android.com/reference/android/content/Context
+* Difference between Application Context and Activity Context.
 
 
 
@@ -226,6 +252,7 @@ val intent = Intent(Intent.ACTION_VIEW, uri)
 
 ### Layouts
 * Difference between LinearLayout and ConstraintLayout
+* CoordinatorLayout
 
 
 
@@ -250,12 +277,15 @@ https://proandroiddev.com/the-life-cycle-of-a-view-in-android-6a2c4665b95e
 
 https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
 
+* Custom Views - https://developer.android.com/guide/topics/ui/custom-components
+* Какие методы надо переопределить в кастомном вью?
+
 
 
 ### Multithreading in Android
 * Which operations are prohibited to run on the main thread?
 * What is the disadvantage of AsyncTask?
-* Handler, Looper, Handler Thread
+* Handler, Looper, Handler Thread - https://blog.mindorks.com/android-core-looper-handler-and-handlerthread-bd54d69fe91a
 
 
 
@@ -299,6 +329,8 @@ https://stackoverflow.com/questions/14703627/websockets-protocol-vs-http
 * Retrofit - what to do, if an app needs to interact with 2 different hosts? (create 2 different retrofit objects)
 * How to append some parameter (for example "platform=android") to all network queries? (Use interceptors)
 * How to load images? (Use Glide, Picasso or Fresco)
+* GraphQL
+* Protobuf
 
 
 
@@ -345,8 +377,9 @@ https://github.com/gpetuhov/AndroidInterview/blob/master/app/src/main/java/com/g
 
 
 
-## Algorithms
-Algorithm coding task:
+## Algorithm coding task
+Требуется умение писать код на бумаге с первого раз без переписываний, дебажить в голове, проверять краевые условия
+
 * In text editor: https://code.yandex-team.ru/ or https://codeshare.io/
 
 OR
