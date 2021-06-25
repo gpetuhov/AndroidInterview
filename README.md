@@ -170,14 +170,6 @@ https://www.baeldung.com/java-singleton
 https://www.baeldung.com/java-executor-service-tutorial
 
 * Race condition - точное определение
-* Deadlock - что это и как бороться?
-
-https://www.baeldung.com/java-deadlock-livelock
-
-https://www.baeldung.com/java-dining-philoshophers
-
-* Как использовать tryLock, чтобы избежать deadlock? - https://www.baeldung.com/java-deadlock-livelock
-
 * synchronized vs volatile
 
 https://www.baeldung.com/java-synchronized
@@ -186,6 +178,13 @@ https://stackoverflow.com/questions/3519664/difference-between-volatile-and-sync
 
 * Поможет ли volatile от гонки? - нет - https://www.javatpoint.com/volatile-keyword-in-java
 * Можно ли все переменные сделать volatile? - В зависимости от процессора volatile может дать увеличение времени из-за чтения не из кэша ядра, а из основной памяти - https://stackoverflow.com/questions/4633866/is-volatile-expensive
+* Deadlock - что это и как бороться?
+
+https://www.baeldung.com/java-deadlock-livelock
+
+https://www.baeldung.com/java-dining-philoshophers
+
+* Как использовать tryLock, чтобы избежать deadlock? - https://www.baeldung.com/java-deadlock-livelock
 * Атомарные операции. CompareAndSet
 
 https://ru.stackoverflow.com/questions/616278/%D0%90%D1%82%D0%BE%D0%BC%D0%B0%D1%80%D0%BD%D1%8B%D0%B5-%D0%B8-%D0%BD%D0%B5%D0%B0%D1%82%D0%BE%D0%BC%D0%B0%D1%80%D0%BD%D1%8B%D0%B5-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8-java 
@@ -195,8 +194,7 @@ https://www.baeldung.com/java-atomic-variables
 * AtomicInteger
 * Что выдаст Future.get(), если Callable завершится аварийно - Будет ExecutionException
 * Java concurrent list - CopyOnWriteArrayList - https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html
-* Java ConcurrentHashMap - 
-* Как реализован CuncurrentHashMap?
+* Java ConcurrentHashMap 
  
 https://www.baeldung.com/java-concurrent-map
 
@@ -224,7 +222,8 @@ https://www.baeldung.com/java-cyclic-barrier
 * What are the advantages of Kotlin?
 * Модификаторы доступа в Kotlin
 * Kotlin default and named arguments
-* How to create a singleton Kotlin? - object
+* How to create a singleton in Kotlin? - object
+* Companion objects
 * Difference between val and const val?
 * Во что компилируется лямбда? - в анонимный внутренний класс Java
 * Can enums contain values? (Yes: enum class Action(val value: Int) { WALK(0), RUN(1), ... }
@@ -245,6 +244,8 @@ https://www.baeldung.com/java-cyclic-barrier
 * Как в Kotlin сделать, чтобы property не участвовал в вычислении hashCode в data class? - Прописать параметр в теле класса, а не в конструкторе - https://kotlinlang.org/docs/data-classes.html#properties-declared-in-the-class-body
 * Есть ли equals и hashcode у лямбды в Kotlin? - да, так как это обычный класс - https://stackoverflow.com/questions/24095875/is-there-a-way-to-compare-lambdas
 * Можно ли передать лямбду в конструкторе data class? - можно - https://iamjonfry.com/posts/lambdas-in-data-classes/
+* Удалось ли в Kotlin уйти от null? - Нет, так как lateinit под капотом принимает изначальное значение null
+* Минусы null safety - В машинном коде на самом деле разбросаны проверки на null и вызов Kotlin NPE. Так было раньше. Начиная с 1.4 стало лучше после того, как стали кидать обычный Java NPE
 * Какие могут быть проблемы из-за интероперабельности Kotlin и Java? - могут быть проблемы из-за null safety при вызове Java кода из Kotlin - https://kotlinlang.org/docs/null-safety.html#nullable-types-and-non-null-types
 * Kotlin !! operator - какой кидает exception: Java или Kotlin? - KotlinNullPointerException
 * Что такое sealed classes?
@@ -257,8 +258,6 @@ https://www.baeldung.com/java-cyclic-barrier
 * Kotlin SAM - https://kotlinlang.org/docs/fun-interfaces.html#sam-conversions
 * Есть ли в Kotlin checked exceptions, как в Java? - Нет. Аннотация @Throws нужна только если метод будет вызван из Java кода
 * Kotlin scope functions (let, run, apply, also, with) - https://kotlinlang.org/docs/scope-functions.html
-* Удалось ли в Kotlin уйти от null? - Нет, так как lateinit под капотом принимает изначальное значение null
-* Минусы null safety - В машинном коде на самом деле разбросаны проверки на null и вызов Kotlin NPE. Так было раньше. Начиная с 1.4 стало лучше после того, как стали кидать обычный Java NPE
 * Иерархия коллекций в Kotlin
 * Немутабельные и мутабельные коллекции в Kotlin и Java - в Kotlin под капотом немутабельной коллекции лежит мутабельная, поэтому list.toMutableList() += 5 сработает, а в Java - нет (см. Collection.unModifiableList())
 * Kotlin @Synchronized
@@ -270,29 +269,8 @@ https://www.baeldung.com/java-cyclic-barrier
 https://github.com/gpetuhov/RxJavaTutorial
 
 * What design pattern does RxJava implement? (Observer Pattern)
-* Difference between cold and hot observables.
-* Single, Maybe, Completable
-* Difference between scan() and reduce()
-* Difference between merge() and concat()
-* Difference between zip() and combineLatest()
-* Difference between flatMap(), concatMap() and switchMap() - https://medium.com/appunite-edu-collection/rxjava-flatmap-switchmap-and-concatmap-differences-examples-6d1f3ff88ee0
-* Пример использования switchMap - поисковая строка (каждый последующий символ отменяет предыдущий запрос в сеть)
-* What is PublishSubject?
-* How to change threads? (subscribeOn, observeOn)
-* Difference between Schedulers.io() and Schedulers.computation()
-* What is the purpose of buffer()?
-* Difference between throttleFirst() and debounce() (aka throttleWithTimeout())
-* Что такое Subject?
-* Типы Subject и их отличие - https://medium.com/@nazarivanchuk/types-of-subjects-in-rxjava-96f3a0c068e4
-* Отличие Observable и Flowable
-* Что такое backpressure
-* Стратегии работы с backpressure - https://www.baeldung.com/rxjava-backpressure
-* Backpressure в RxJava 1 - https://eng.uber.com/rxjava-backpressure/
-* Стратегии Flowable для работы с backpressure
 * Типы Observable - https://medium.com/mindorks/rxjava-types-of-observables-404d75605e35
-* Что будет если много раз выполнить оператор subscribeOn() в цепочке? - Только первый оператор даст желаемый эффект. Остальные же эффекта не дадут, кроме траты ресурсов
-* Что будет если много раз выполнить оператор observeOn() в цепочке? - Каждый observeOn() включает планировщик (поток), в котором будут выполняться все последующие операторы. Сложные потоки RxJava могут выиграть от нескольких операторов observeOn()
-* Hot and cold observable
+* Difference between cold and hot observables.
 * ConnectableObservable - это холодный observable, начинает эмитить только после вызова метода connect() - http://reactivex.io/RxJava/javadoc/rx/observables/ConnectableObservable.html
 * Какой метод вызвать для начала эмита у горячего Observable - метод ConnectableObservable.connect() - https://medium.com/tompee/rxjava-ninja-hot-and-cold-observables-19b30d6cc2fa
 * Как преобразовать холодный Observable в горячий - Вызвать publish() - https://medium.com/tompee/rxjava-ninja-hot-and-cold-observables-19b30d6cc2fa
@@ -300,7 +278,25 @@ https://github.com/gpetuhov/RxJavaTutorial
 * Что такое RxJava defer - https://blog.mindorks.com/understanding-rxjava-defer-operator
 * Что такое RxJava share - https://medium.com/mindorks/how-to-use-rxjava-share-operator-26b08973771a
 * Что такое RxJava PublishProcessor - http://reactivex.io/RxJava/javadoc/io/reactivex/processors/PublishProcessor.html
+* Что такое Subject?
+* Типы Subject и их отличие - https://medium.com/@nazarivanchuk/types-of-subjects-in-rxjava-96f3a0c068e4
+* Что такое backpressure
+* Стратегии работы с backpressure - https://www.baeldung.com/rxjava-backpressure
+* What is the purpose of buffer()?
+* Backpressure в RxJava 1 - https://eng.uber.com/rxjava-backpressure/
+* Отличие Observable и Flowable
+* Стратегии Flowable для работы с backpressure
+* How to change threads? (subscribeOn, observeOn)
+* Difference between Schedulers.io() and Schedulers.computation()
+* Что будет если много раз выполнить оператор subscribeOn() в цепочке? - Только первый оператор даст желаемый эффект. Остальные же эффекта не дадут, кроме траты ресурсов
+* Что будет если много раз выполнить оператор observeOn() в цепочке? - Каждый observeOn() включает планировщик (поток), в котором будут выполняться все последующие операторы. Сложные потоки RxJava могут выиграть от нескольких операторов observeOn()
+* Difference between scan() and reduce()
+* Difference between merge() and concat()
+* Difference between zip() and combineLatest()
 * Zip под капотом как работает
+* Difference between flatMap(), concatMap() and switchMap() - https://medium.com/appunite-edu-collection/rxjava-flatmap-switchmap-and-concatmap-differences-examples-6d1f3ff88ee0
+* Пример использования switchMap - поисковая строка (каждый последующий символ отменяет предыдущий запрос в сеть)
+* Difference between throttleFirst() and debounce() (aka throttleWithTimeout())
 
 
 
