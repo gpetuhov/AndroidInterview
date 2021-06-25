@@ -1,6 +1,8 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
+Latest update: 2021.06.25
+
 ## Previous experience
 * Tell us about yourself and your previous experience.
 * What was the project you worked on your previous job?
@@ -39,6 +41,11 @@ Basic plan and some typical questions and code samples for Android interview.
 
 
 ## Java
+* Модификаторы доступа в Java - public, protected, private, package private (когда нет никакого ключевого слова) - https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
+* Как можно менять модификаторы доступа в потомках? - Можно расширять, но нельзя сужать - https://docs.oracle.com/javase/tutorial/java/IandI/override.html
+* What is an interface?
+* Допускается ли множественное наследование? - Наследование нет, но класс может реализовывать несколько интерфейсов
+* Отличие interface от abstract class - в интерфейсе все методы public, не может быть private
 * ClassLoader, getClass - https://www.baeldung.com/java-classloaders
 * Когда ClassLoader грузит класс - при первом обращении к классу
 * Структура памяти в JVM - http://tutorials.jenkov.com/java-concurrency/java-memory-model.html
@@ -53,7 +60,7 @@ https://stackoverflow.com/questions/27186799/what-are-gc-roots-for-classes
 https://www.yourkit.com/docs/java/help/gc_roots.jsp
 
 * Что является root для Garbage Collection?
-* В памяти находятся два объекта и ссылаются друг на друга, больше на них никто не ссылается. Соберет ли их GC? - да
+* В памяти находятся два объекта и ссылаются друг на друга, больше на них никто не ссылается. Соберет ли их GC? - да, это называется island of isolation
 * Для чего нужен Object? - Объявляет ряд базовых методов, в том числе для организации многопоточности, также нужен для того, чтобы garbage collector мог собрать объекты
 * Методы Object - https://www.geeksforgeeks.org/object-class-in-java/
 * Object.clone() можно ли вызвать? - Нет, если не имплеменить Cloneable интерфейс - https://en.wikipedia.org/wiki/Clone_(Java_method)
@@ -97,7 +104,6 @@ https://stackoverflow.com/questions/53822132/java-phantomreference-vs-finalize
 * Квалификатор final
 * Для чего полезна иммутабельность? - https://www.baeldung.com/java-immutable-object
 * Java reflection - https://www.baeldung.com/java-reflection
-* Отличие interface от abstract class - в интерфейсе все методы public, не может быть private
 * Дерево коллекций
 
 http://www.quizful.net/post/Java-Collections
@@ -105,7 +111,10 @@ http://www.quizful.net/post/Java-Collections
 https://habr.com/ru/post/162017/
 
 * Почему Map не Collection - у Collection есть методы доступа по индексу, которые не нужны в Map
-* ArrayList vs LinkedList
+* int i - это value или reference? - value
+* What is boxing, unboxing (Integer, Double, ...)
+* Можно ли примитивы класть в коллекции (int, double, ...) - нет
+* ArrayList vs LinkedList. Which one takes less time to add an item in the middle? Which one takes less time to get n-th element?
 * ArrayList под капотом - это динамический массив с изначальным размером 10
 * SparseArray
 
@@ -113,11 +122,13 @@ https://developer.android.com/reference/android/util/SparseArray
 
 https://stackoverflow.com/questions/25444226/difference-between-sparsearray-vs-arraylist#:~:text=2%20Answers&text=The%20purpose%20of%20a%20SparseArray,that%20will%20be%20quite%20wasteful.
 
-* Java Throwable Hierarchy (Errors and Exceptions) - https://airbrake.io/blog/java-exception-handling/the-java-exception-class-hierarchy
+* Binary search - https://www.baeldung.com/java-binary-search
+* Какие свойства должны быть у коллекции для бинарного поиска
 * Как работает HashMap?
 * Что будет, если в Map положить два значения с одинаковым ключом? - Последнее значение перезапишет предыдущеe
 * Что такое коллизия?
 * HashMap - защита от коллизий - Запись в LinkedList в случае коллизий
+* What will Hashmap become, if all the elements will have the same hashcode? - HashMap will become a LinkedList
 * Можно ли в HashMap положить элемент с ключом null? - можно - https://stackoverflow.com/questions/25932730/hashmap-with-null-key-and-null-value#:~:text=HashMap%20puts%20null%20key%20in,linked%20list%20data%20structure%20internally.&text=In%20Entry%20class%20the%20K,value%20passed%20in%20put%20method.
 * Есть ли в HashMap LinkedList по ключу null - Нет, там только один элемент, так как у null не может быть equals
 * HashMap - что такое бакеты? - Это и есть те элементы, которые адресуются на основе хешкода (бакетами могут быть связанные списки или бинарные деревья) - https://www.baeldung.com/java-hashmap
@@ -127,14 +138,11 @@ https://stackoverflow.com/questions/25444226/difference-between-sparsearray-vs-a
 * Левоассоциативность (И, ИЛИ) - https://ru.wikipedia.org/wiki/%D0%9E%D1%87%D0%B5%D1%80%D1%91%D0%B4%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B9
 * Аннотации - что это? - https://www.baeldung.com/java-custom-annotation
 * RetentionPolicy в аннотациях - https://www.java2novice.com/java-annotations/retention-policy/#:~:text=Description%3A,point%20annotation%20should%20be%20discarded.&text=Annotation%20with%20retention%20policy%20RUNTIME,pass%20the%20retention%20policy%20type.
-* Модификаторы доступа в Java - public, protected, private, package private (когда нет никакого ключевого слова) - https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
-* Как можно менять модификаторы доступа в потомках? - Можно расширять, но нельзя сужать - https://docs.oracle.com/javase/tutorial/java/IandI/override.html
+* Java Throwable Hierarchy (Errors and Exceptions) - https://airbrake.io/blog/java-exception-handling/the-java-exception-class-hierarchy
 * Java checked exceptions - Это когда в сигнатуре метода есть throws Exception и тогда компилятор при вызове данного метода попросит обернуть в try-catch - https://www.geeksforgeeks.org/checked-vs-unchecked-exceptions-in-java/#:~:text=In%20Java%2C%20there%20are%20two,the%20exception%20using%20throws%20keyword.
-* int i - это value или reference? - value
+* What is "finally" block used for in try-catch?
 * Static classes vs inner classes - https://stackoverflow.com/questions/70324/java-inner-class-and-static-nested-class
 * Плюсы и минусы анонимных классов - https://www.techartifact.com/blogs/2009/08/anonymous-classes-in-java.html
-* Binary search - https://www.baeldung.com/java-binary-search
-* Какие свойства должны быть у коллекции для бинарного поиска
 * Различные способы реализации Singleton
 
 https://www.journaldev.com/1377/java-singleton-design-pattern-best-practices-examples
@@ -142,13 +150,6 @@ https://www.journaldev.com/1377/java-singleton-design-pattern-best-practices-exa
 https://habr.com/ru/post/129494/
 
 https://www.baeldung.com/java-singleton
-
-* What is boxing, unboxing (Integer, Double, ...)
-* What is an interface?
-* Допускается ли множественное наследование? - Наследование нет, но класс может реализовывать несколько интерфейсов
-* Difference between ArrayList and LinkedList. Which one takes less time to add an item in the middle? Which one takes less time to get n-th element?
-* What will Hashmap become, if all the elements will have the same hashcode? - HashMap will become a LinkedList
-* What is "finally" block used for in try-catch?
 
 
 
@@ -221,6 +222,7 @@ https://www.baeldung.com/java-cyclic-barrier
 
 ## Kotlin
 * What are the advantages of Kotlin?
+* Модификаторы доступа в Kotlin
 * Kotlin default and named arguments
 * How to create a singleton Kotlin? - object
 * Difference between val and const val?
