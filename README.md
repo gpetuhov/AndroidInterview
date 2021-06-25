@@ -580,14 +580,15 @@ https://stackoverflow.com/questions/14703627/websockets-protocol-vs-http
 * How to set up a name of the serialized property different from the property name? (Use @SerializedName("name") annotation)
 * How to exclude a property from the serialization? (mark property as transient (keyword in Java or annotation in Kotlin))
 * The app starts crashing on network call. What can be wrong? (Network call on the main thread, not added <uses-permission android:name="android.permission.INTERNET" /> in the manifest)
+* Последовательность работы с Retrofit: какие классы нужно создать и что в них нужно описать?
 * Retrofit - what to do, if an app needs to interact with 2 different hosts? (create 2 different retrofit objects)
 * How to append some parameter (for example "platform=android") to all network queries? (Use interceptors)
+* Multipart передача данных
+* Как в JSON передавать бинарные данные без использования Base64
 * How to load images? (Use Glide, Picasso or Fresco)
 * GraphQL
 * Protobuf, для чего файл proto?
-* Последовательность работы с Retrofit: какие классы нужно создать и что в них нужно описать?
-* Multipart передача данных
-* Как в JSON передавать бинарные данные без использования Base64
+
 
 
 ### Data persistence
@@ -625,6 +626,7 @@ https://stackoverflow.com/questions/14703627/websockets-protocol-vs-http
 
 ### Clean architecture
 * Clean Architecture - https://habr.com/ru/company/mobileup/blog/335382/
+* UseCases лучше разбивать на отдельные функции (под каждую функцию свой UseCase)
 * Для чего нужна Clean Architecture? - Развязывание классов (отсутствие сильной связанности, возможность замены компонентов), тестопригодность, уменьшение порога входа в проект для новых разработчиков (все понимают, что на каждом слое находится)
 * MVP
 * MVVM
@@ -635,12 +637,11 @@ https://startandroid.ru/ru/blog/473-mvp-na-primere-jekrana-s-pin-kodom.html
 
 https://www.raywenderlich.com/7026-getting-started-with-mvp-model-view-presenter-on-android
 
-* UseCases лучше разбивать на отдельные функции (под каждую функцию свой UseCase)
-
 
 
 ### Moxy
 * How to organize application? (View, Presenter)
+* Что такое очередь команд?
 * Strategies
 
 
@@ -648,19 +649,19 @@ https://www.raywenderlich.com/7026-getting-started-with-mvp-model-view-presenter
 ### Testing
 * Когда вызываются @Before, @After
 * Когда вызывается @BeforeClass
+* Как выполнить юнит-тестирование класса, если он зависит от класса, обращающегося к сети? - Использовать Mockito для создания класса-заглушки
 * Как в Espresso нажать на элемент списка
 
 
 
 ### Gradle
 * What to do, if external dependency is not found? (Add appropriate repository into: allprojects { repositories {...} })
-* Difference between "implementation" and "compile" 
-* What is multidex?
+* implementation vs api (compile)? - При использовании api мы можем использовать внутренние зависимости библиотеки в нашем основном проекте - https://stackoverflow.com/questions/44413952/gradle-implementation-vs-api-configuration
 * How to build slightly different applications from one project? (Use flavors)
-* Gradle implementation vs api? - При использовании api мы можем использовать внутренние зависимости библиотеки в нашем основном проекте - https://stackoverflow.com/questions/44413952/gradle-implementation-vs-api-configuration
 * Gradle build type vs flavor - https://wajahatkarim.com/2018/04/difference-between-build-type-flavour-and-build-variant-in-android/
 * Можем ли мы создать свой build type? - Можем - https://stackoverflow.com/questions/49286743/how-to-add-more-build-types-in-app-than-library/49288390
 * How to make some part of the code run only in debug? (if (BuildConfig.DEBUG) {...} else {...})
+* What is multidex?
 
 
 
