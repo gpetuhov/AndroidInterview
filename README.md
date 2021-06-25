@@ -56,6 +56,7 @@ https://www.baeldung.com/java-executor-service-tutorial
 
 
 ## Kotlin coroutines
+* Coroutine Scope, Coroutine Context - https://elizarov.medium.com/coroutine-context-and-scope-c8b255d59055
 
 
 
@@ -88,6 +89,12 @@ https://www.baeldung.com/java-executor-service-tutorial
 * What is AndroidManifest.xml?
 
 ### Activity
+* Single Activity vs Multiple Activity
+
+https://stackoverflow.com/questions/44880822/multiple-activity-or-single-activity-and-multiple-fragments
+
+https://oozou.com/blog/reasons-to-use-android-single-activity-architecture-with-navigation-component-36
+
 * Activity lifecycle
 
 https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-i-single-activities-e49fd3d202ab
@@ -103,8 +110,14 @@ https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-iv-4
 
 
 ### Fragments
-* How to add fragment to an activity? - Fragment Manager
+* How to add fragment to an activity? - Fragment Manager - https://developer.android.com/guide/fragments/fragmentmanager
 * getSupportFragmentManager() vs getChildFragmentManager() - https://stackoverflow.com/questions/14740445/what-is-difference-between-getsupportfragmentmanager-and-getchildfragmentmanag/14775322
+* How to create UI with BottomNavigationView where root fragments have child fragments and root fragments are not destroyed?
+* Fragment Result API - https://developer.android.com/guide/fragments/communicate#fragment-result
+* How to share data between fragments? - https://developer.android.com/guide/fragments/communicate
+* Shared ViewModel - https://blog.mindorks.com/shared-viewmodel-in-android-shared-between-fragments
+
+
 
 
 
@@ -112,6 +125,13 @@ https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-iv-4
 ### Intents
 * What is Intent used for? (to start activities, services and send broadcasts)
 * Difference between implicit and explicit intents.
+* How to open url in browser?
+
+```
+val uri = Uri.parse(websiteUrl)
+val intent = Intent(Intent.ACTION_VIEW, uri)
+```
+
 * Pending intent
 * How to make an activity start on some intent from other apps? (Add intent filter in the manifest)
 * Can I access data in another application's content provider via intent? (No, use ContentResolver instead)
