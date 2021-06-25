@@ -13,6 +13,8 @@ Basic plan and some typical questions and code samples for Android interview.
 
 ## OOP and SOLID
 * OOP: abstraction, encapsulation, inheritance, polymorphism
+* Отличие переопределения и перегрузки методов (overload vs override)
+* Можно ли переопределить и перегрузить статические методы? - Перегрузить - да, переопределить - нет - https://stackoverflow.com/questions/2475259/can-i-override-and-overload-static-methods-in-java/5436790#:~:text=Static%20methods%20cannot%20be%20overridden,decides%20which%20method%20gets%20called.&text=Static%20methods%20can%20be%20overloaded%20(meaning%20that%20you%20can%20have,they%20have%20different%20parameter%20types).
 * SOLID
 * Design Patterns: creational, behavioral, structural - https://habr.com/ru/post/210288/
 * What Design Patterns did you use in your projects?
@@ -37,6 +39,12 @@ Basic plan and some typical questions and code samples for Android interview.
 * Для чего нужен Object? - Объявляет ряд базовых методов, в том числе для организации многопоточности, также нужен для того, чтобы garbage collector мог собрать объекты
 * Методы Object - https://www.geeksforgeeks.org/object-class-in-java/
 * Object.clone() можно ли вызвать? - Нет, если не имплеменить Cloneable интерфейс - https://en.wikipedia.org/wiki/Clone_(Java_method)
+* Object.finalize()
+
+https://www.tutorialspoint.com/java/lang/object_finalize.htm#:~:text=finalize()%20is%20called%20by,or%20to%20perform%20other%20cleanup. 
+
+https://www.baeldung.com/java-finalize
+
 * Зачем нужны методы equals и hashcode
 * Если переопределил equals, то надо ли переопределять hashcode? - надо
 * Контракт между equals и hashcode - https://www.baeldung.com/java-equals-hashcode-contracts
@@ -62,7 +70,7 @@ https://stackoverflow.com/questions/299659/whats-the-difference-between-softrefe
 * StringBuilder - чем он лучше простой конкатенации строк - https://stackoverflow.com/questions/1532461/stringbuilder-vs-string-concatenation-in-tostring-in-java === https://www.baeldung.com/java-strings-concatenation
 * Квалификатор final
 * Для чего полезна иммутабельность? - https://www.baeldung.com/java-immutable-object
-* Java Reflection
+* Java reflection - https://www.baeldung.com/java-reflection
 * Отличие interface от abstract class - в интерфейсе все методы public, не может быть private
 * Дерево коллекций
 
@@ -108,6 +116,7 @@ https://www.baeldung.com/java-synchronized
 
 https://stackoverflow.com/questions/3519664/difference-between-volatile-and-synchronized-in-java
 
+* Можно ли все переменные сделать volatile? - В зависимости от процессора volatile может дать увеличение времени из-за чтения не из кэша ядра, а из основной памяти - https://stackoverflow.com/questions/4633866/is-volatile-expensive
 * Что такое атомарные операции? - https://ru.stackoverflow.com/questions/616278/%D0%90%D1%82%D0%BE%D0%BC%D0%B0%D1%80%D0%BD%D1%8B%D0%B5-%D0%B8-%D0%BD%D0%B5%D0%B0%D1%82%D0%BE%D0%BC%D0%B0%D1%80%D0%BD%D1%8B%D0%B5-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8-java
 
 * AtomicInteger
@@ -156,7 +165,7 @@ https://www.baeldung.com/java-cyclic-barrier
 * Что такое sealed classes?
 * enum vs sealed classes - enum не позволяет создавать отдельные экземпляры, в отличие от sealed классов - https://blog.kotlin-academy.com/enum-vs-sealed-class-which-one-to-choose-dc92ce7a4df5
 * Разница между == и === в Kotlin? - Первый сравнивает значение, второй ссылки (reference)
-
+* Generics в Kotlin - что такое in, out?
 
 
 ## RxJava
@@ -192,6 +201,7 @@ https://github.com/gpetuhov/RxJavaTutorial
 * CoroutineExceptionHandler - https://kotlinlang.org/docs/exception-handling.html
 * Отличие пулов потоков в RxJava и Coroutines - https://medium.com/capital-one-tech/coroutines-and-rxjava-an-asynchronicity-comparison-part-6-threading-2aa5e9c52c94
 * launch vs async - https://stackoverflow.com/questions/46226518/what-is-the-difference-between-launch-join-and-async-await-in-kotlin-coroutines
+* Корутины под капотом - https://rohit.fyi/blog/kotlin-coroutines-under-the-hood-part-1/
 
 
 
@@ -298,6 +308,7 @@ https://medium.com/@veeresh.charantimath8/playing-with-android-task-affinity-and
 * How to add fragment to an activity? - Fragment Manager - https://developer.android.com/guide/fragments/fragmentmanager
 * getSupportFragmentManager() vs getChildFragmentManager() - https://stackoverflow.com/questions/14740445/what-is-difference-between-getsupportfragmentmanager-and-getchildfragmentmanag/14775322
 * How to create UI with BottomNavigationView where root fragments have child fragments and root fragments are not destroyed?
+* Подводные камни FragmentManager.commit() при повороте экрана - commit() нельзя вызывать после того, как сработал onSaveInstanceState(), и поэтому можно вызывать commitAllowingStateLoss(), но тогда есть вероятность, что фрагмент потеряется после поворота экрана - https://medium.com/inloopx/demystifying-androids-commitallowingstateloss-cb9011a544cc
 * FragmentManager commit, commitNow, commitAllowingStateLoss - в чем разница?
 
 https://developer.android.com/reference/android/app/FragmentTransaction#commit()
@@ -438,7 +449,7 @@ https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
 * Handler, Looper, Handler Thread - https://blog.mindorks.com/android-core-looper-handler-and-handlerthread-bd54d69fe91a
 * Как устроена MessageQueue?
 * Как будет работать MessageQueue, если вызывать Handler.postDelayed() - Очередь упорядочивается по времени - https://stackoverflow.com/questions/27240015/does-postdelayed-cause-the-message-to-jump-to-the-front-of-the-queue
-
+* Как с помощью Handler сделать таймер, срабатывающий точно каждую 1 секунду? - Есть метод Handler.postAtTime(), второй вариант - использовать Timer - https://stackoverflow.com/questions/23007641/correct-handler-postdelay-time
 
 
 ## Notifications
@@ -567,6 +578,10 @@ https://github.com/gpetuhov/AndroidInterview/blob/master/app/src/main/java/com/g
 OR
 
 * HackerRank (LeetCode)
+
+Примеры задач:
+* Собрать стек из двух очередей
+* Собрать очередь из двух стеков
 
 
 
