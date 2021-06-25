@@ -9,6 +9,8 @@ Basic plan and some typical questions and code samples for Android interview.
 * Is there anything you are particularly proud of?
 * How collaboration inside the team was organized? Who set tasks?
 
+
+
 ## OOP and SOLID
 * OOP: abstraction, encapsulation, inheritance, polymorphism
 * SOLID
@@ -16,15 +18,35 @@ Basic plan and some typical questions and code samples for Android interview.
 * What Design Patterns did you use in your projects?
 * Clean code
 
+
+
 ## Git
 * Gitflow
 * Git merge vs rebase
 
+
+
 ## Java
+* Для чего нужен Object? - Объявляет ряд базовых методов, в том числе для организации многопоточности, также нужен для того, чтобы garbage collector мог собрать объекты
+* Методы Object - https://www.geeksforgeeks.org/object-class-in-java/
+* Зачем нужны методы equals и hashcode
+* Если переопределил equals, то надо ли переопределять hashcode? - надо
+* Контракт между equals и hashcode - https://www.baeldung.com/java-equals-hashcode-contracts
+
+* Типы ссылок - Strong, Weak, Soft, Phantom
+
+* Асимптотическая сложность конкатенации строк - O(n^2) - https://overcoder.net/q/186163/%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C-%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0%D1%82%D0%B5%D0%BD%D0%B0%D1%86%D0%B8%D0%B8-%D1%81%D1%82%D1%80%D0%BE%D0%BA-%D0%B2-c-%D0%B8-java
+* StringBuilder - чем он лучше простой конкатенации строк - https://stackoverflow.com/questions/1532461/stringbuilder-vs-string-concatenation-in-tostring-in-java === https://www.baeldung.com/java-strings-concatenation
+
+
 
 
 
 ## Kotlin
+
+
+
+
 
 
 
@@ -34,7 +56,20 @@ Basic plan and some typical questions and code samples for Android interview.
 
 https://www.baeldung.com/java-executor-service-tutorial
 
-*
+* Race condition - точное определение
+* Deadlock - что это и как бороться?
+
+https://www.baeldung.com/java-deadlock-livelock
+
+https://www.baeldung.com/java-dining-philoshophers
+
+* Как использовать tryLock, чтобы избежать deadlock? - https://www.baeldung.com/java-deadlock-livelock
+
+* synchronized vs volatile
+
+https://www.baeldung.com/java-synchronized
+
+https://stackoverflow.com/questions/3519664/difference-between-volatile-and-synchronized-in-java
 
 
 
@@ -51,6 +86,8 @@ https://www.baeldung.com/java-executor-service-tutorial
 * Difference between Schedulers.io() and Schedulers.computation()
 * What is the purpose of buffer()?
 * Difference between throttleFirst() and debounce() (aka throttleWithTimeout())
+
+
 
 
 
@@ -81,12 +118,43 @@ https://www.baeldung.com/java-executor-service-tutorial
 * What is "finally" block used for in try-catch?
 * Kotlin default and named arguments
 
+
+
 ## Android
+### Low level details
+* JVM vs Dalvik vs ART
+
+https://habr.com/ru/post/513928/
+
+https://medium.com/programming-lite/android-core-jvm-dvm-art-jit-aot-855039a9a8fa
+
+* DEX format - https://stackoverflow.com/questions/36356330/difference-between-bytecode-in-class-file-and-that-of-dex-file
+
+* What is a compiler?
+
+https://habr.com/ru/company/mailru/blog/451894/
+
+https://habr.com/ru/post/99162/
+
+* Можно ли разрабатывать под Андроид на Python, Scala или других языках? - Можно, если есть возможность компиляции языка в Java байт-код
+
+https://tproger.ru/translations/python-development-on-android/
+
+https://habr.com/ru/post/327782/
+
+* Как R8 может исходный код напрямую преобразовать в DEX?
+
+* OOM Killer (Out of memory killer)
+
+
+
 ### Basics
 * Android components and what are they used for (Activity, Service, Content Provider, Broadcast Receiver)
 * Project structure of an Android application (modules, manifest, source, res, assets, Gradle scripts)
 * What is Context? Difference between Application Context and Activity Context.
 * What is AndroidManifest.xml?
+
+
 
 ### Activity
 * Single Activity vs Multiple Activity
@@ -124,6 +192,9 @@ https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-iv-4
 
 ### Intents
 * What is Intent used for? (to start activities, services and send broadcasts)
+* Как передать данные через интент? - Bundle
+* Что можно положить в Bundle? - Основные типы, Serializable, Parcelable
+* Ограничения на размер Bundle - 500 КБ (2 МБ по другим источникам) - https://stackoverflow.com/questions/8552514/is-there-any-limit-of-bundle-in-android
 * Difference between implicit and explicit intents.
 * How to open url in browser?
 
@@ -135,6 +206,8 @@ val intent = Intent(Intent.ACTION_VIEW, uri)
 * Pending intent
 * How to make an activity start on some intent from other apps? (Add intent filter in the manifest)
 * Can I access data in another application's content provider via intent? (No, use ContentResolver instead)
+
+
 
 ### Activity and Fragment
 * Why do we need to setContentView() in onCreate(), not in onStart()? (Because onCreate() is triggered only once)
@@ -149,11 +222,17 @@ val intent = Intent(Intent.ACTION_VIEW, uri)
 * How to pass data into Fragments? (Via arguments)
 * What can go wrong when calling activity.startActivityForResult() inside fragment? (The result will be delivered to onActivityResult() of the activity, not the fragment)
 
+
+
 ### Layouts
 * Difference between LinearLayout and ConstraintLayout
 
+
+
 ### Data persistence
 * Data persistence (shared preferences, db, file)
+
+
 
 ### Services
 * What is the purpose of Services?
@@ -161,13 +240,28 @@ val intent = Intent(Intent.ACTION_VIEW, uri)
 * Difference between Service and IntentService.
 * How to prevent a Service from being destroyed by Android? (Use startForeground() with notification)
 * When onStartCommand() gets triggered? (Every time when startService() is called, even if Service is already started)
+* Bound services
+
+
+### Views
+* View Lifecycle
+
+https://proandroiddev.com/the-life-cycle-of-a-view-in-android-6a2c4665b95e
+
+https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
+
+
 
 ### Multithreading in Android
 * Which operations are prohibited to run on the main thread?
 * What is the disadvantage of AsyncTask?
 * Handler, Looper, Handler Thread
 
+
+
 ### Testing
+
+
 
 ### Other
 * How to provide data to external apps? (ContentProviders)
@@ -180,13 +274,24 @@ val intent = Intent(Intent.ACTION_VIEW, uri)
 * What is a broadcast receiver?
 * RecyclerView: when onCreateViewHolder and onBindViewHolder are called?
 
+
+
 ## Gradle
 * What to do, if external dependency is not found? (Add appropriate repository into: allprojects { repositories {...} })
 * Difference between "implementation" and "compile" 
 * What is multidex?
 * How to build slightly different applications from one project? (Use flavors) 
 
+
+
 ## Network
+* HTTP methods - https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
+* HTTP vs WebSocket
+
+https://www.geeksforgeeks.org/what-is-web-socket-and-how-it-is-different-from-the-http/#:~:text=WebSocket%3A%20WebSocket%20is%20bidirectional%2C%20a,ws%3A%2F%2F%20or%20wss%3A%2F%2F.&text=When%20the%20connection%20is%20established,channel%20until%20it%20is%20terminated.
+
+https://stackoverflow.com/questions/14703627/websockets-protocol-vs-http
+
 * What is JSON?
 * How to set up a name of the serialized property different from the property name? (Use @SerializedName("name") annotation)
 * How to exclude a property from the serialization? (mark property as transient (keyword in Java or annotation in Kotlin))
@@ -195,11 +300,15 @@ val intent = Intent(Intent.ACTION_VIEW, uri)
 * How to append some parameter (for example "platform=android") to all network queries? (Use interceptors)
 * How to load images? (Use Glide, Picasso or Fresco)
 
+
+
 ## Room
 * What does @Entity annotation do?
 * What is @PrimaryKey?
 * How to select only different items from the db? (SELECT DISTINCT)
 * The app starts crashing after new entity has been added. What I forgot to do? (Update database version, add migration)
+
+
 
 ## Dagger
 * What is Dependency Injection?
@@ -215,9 +324,13 @@ val intent = Intent(Intent.ACTION_VIEW, uri)
 * MVVM
 * MVI
 
+
+
 ## Moxy
 * How to organize application? (View, Presenter)
 * Strategies
+
+
 
 ## Practice
 * Problems and improvements in the provided code samples:
@@ -230,6 +343,8 @@ https://github.com/gpetuhov/AndroidInterview/blob/master/app/src/main/java/com/g
 
 * How to implement a layout shown on the screenshot.
 
+
+
 ## Algorithms
 Algorithm coding task:
 * In text editor: https://code.yandex-team.ru/ or https://codeshare.io/
@@ -238,10 +353,14 @@ OR
 
 * HackerRank (LeetCode)
 
+
+
 ## Android coding task
 Task: download list of items from the server and display them on screen. How would you organize your code?
 
 Example of Clean Architecture in Android: https://github.com/gpetuhov/AndroidFundamentals2021/tree/master/01-CleanArchitecture
+
+
 
 ## Reference
 https://github.com/MindorksOpenSource/android-interview-questions
