@@ -16,6 +16,8 @@ Basic plan and some typical questions and code samples for Android interview.
 * SOLID
 * Design Patterns: creational, behavioral, structural
 * What Design Patterns did you use in your projects?
+* RecyclerView Adapter является ли реализацией паттерна Адаптер? - нет - https://stackoverflow.com/questions/41626980/are-android-adapters-an-example-of-adapter-design-pattern
+* Почему композиция лучше наследования? - https://stackoverflow.com/questions/49002/prefer-composition-over-inheritance
 * Clean code
 
 
@@ -81,6 +83,7 @@ https://stackoverflow.com/questions/25444226/difference-between-sparsearray-vs-a
 * Левоассоциативность (И, ИЛИ) - https://ru.wikipedia.org/wiki/%D0%9E%D1%87%D0%B5%D1%80%D1%91%D0%B4%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B9
 * Аннотации - что это? - https://www.baeldung.com/java-custom-annotation
 * RetentionPolicy в аннотациях - https://www.java2novice.com/java-annotations/retention-policy/#:~:text=Description%3A,point%20annotation%20should%20be%20discarded.&text=Annotation%20with%20retention%20policy%20RUNTIME,pass%20the%20retention%20policy%20type.
+* Модификаторы доступа в Java - public, protected, private, package private (когда нет никакого ключевого слова) - https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
 
 
 
@@ -120,11 +123,15 @@ https://www.baeldung.com/java-countdown-latch
 https://www.baeldung.com/java-cyclic-barrier
 
 * Object wait(), notify(), notifyAll()
+* Почему потоки создаются долго (что при этом происходит)? - https://stackoverflow.com/questions/5483047/why-is-creating-a-thread-said-to-be-expensive
+* Synchronized collections - https://www.baeldung.com/java-synchronized-collections
+* Concurrent collections (появились в Java 5) - https://www.developer.com/design/an-introduction-to-concurrent-collection-apis-in-java/
 
 
 
 ## Generics
 * Что такое Generics - https://habr.com/ru/company/sberbank/blog/416413/
+* С какой версии Java появились дженерики? - Java 5
 * Стирание типов - https://javarush.ru/groups/posts/2315-stiranie-tipov
 * PECS - https://stackoverflow.com/questions/2723397/what-is-pecs-producer-extends-consumer-super
 * Ковариантность (extends T), контрвариантность (super T), инвариантность (просто T)
@@ -148,6 +155,7 @@ https://www.baeldung.com/java-cyclic-barrier
 * Kotlin !! operator - какой кидает exception: Java или Kotlin? - KotlinNullPointerException
 * Что такое sealed classes?
 * enum vs sealed classes - enum не позволяет создавать отдельные экземпляры, в отличие от sealed классов - https://blog.kotlin-academy.com/enum-vs-sealed-class-which-one-to-choose-dc92ce7a4df5
+* Разница между == и === в Kotlin? - Первый сравнивает значение, второй ссылки (reference)
 
 
 
@@ -391,6 +399,8 @@ https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
 * Какие методы надо переопределить в кастомном вью?
 * View.invalidate() и requestLayout() - https://stackoverflow.com/questions/13856180/usage-of-forcelayout-requestlayout-and-invalidate
 * View.onMeasure() - что такое measureSpec, как вычисляется размер вью - https://stackoverflow.com/questions/14493732/what-are-widthmeasurespec-and-heightmeasurespec-in-android-custom-views === https://developer.android.com/reference/android/view/View.MeasureSpec
+* Какие требования предъявляются к методу onDraw()
+* Canvas.save() restore() -  https://stackoverflow.com/questions/29040064/save-canvas-then-restore-why-is-that
 * Touch Event - https://developer.android.com/training/gestures/viewgroup === https://www.vogella.com/tutorials/AndroidTouch/article.html
 * View Binding - https://developer.android.com/topic/libraries/view-binding
 * Data Binding (отличие от View Binding) - https://developer.android.com/topic/libraries/data-binding
