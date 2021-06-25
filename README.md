@@ -26,7 +26,7 @@ Latest update: 2021.06.25
 
 
 
-### Design Patterns
+## Design Patterns
 * Design Patterns: creational, behavioral, structural - https://habr.com/ru/post/210288/
 * Which Design Patterns did you use in your projects?
 * RecyclerView Adapter является ли реализацией паттерна Адаптер? - нет - https://stackoverflow.com/questions/41626980/are-android-adapters-an-example-of-adapter-design-pattern
