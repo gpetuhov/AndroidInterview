@@ -115,8 +115,11 @@ https://stackoverflow.com/questions/25444226/difference-between-sparsearray-vs-a
 * Как работает HashMap?
 * HashMap - защита от коллизий - Запись в LinkedList в случае коллизий
 * Можно ли в HashMap положить элемент с ключом null? - можно - https://stackoverflow.com/questions/25932730/hashmap-with-null-key-and-null-value#:~:text=HashMap%20puts%20null%20key%20in,linked%20list%20data%20structure%20internally.&text=In%20Entry%20class%20the%20K,value%20passed%20in%20put%20method.
+* Есть ли в HashMap LinkedList по ключу null - Нет, там только один элемент, так как у null не может быть equals
 * HashMap - что такое бакеты? - Это и есть те элементы, которые адресуются на основе хешкода (бакетами могут быть связанные списки или бинарные деревья) - https://www.baeldung.com/java-hashmap
 * Всегда ли в бакетах в HashMap используется LinkedList? - Нет. При большом количестве элементов в бакете LinkedList заменяется на binary tree. Тогда время поиска элемента становится O(logn) вместо O(n) Примечение: log по основанию 2
+* Как выбрать изначальный размер массива в HashMap
+* Почему изначальный размер массива в HashMap выбран 16
 * Левоассоциативность (И, ИЛИ) - https://ru.wikipedia.org/wiki/%D0%9E%D1%87%D0%B5%D1%80%D1%91%D0%B4%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B9
 * Аннотации - что это? - https://www.baeldung.com/java-custom-annotation
 * RetentionPolicy в аннотациях - https://www.java2novice.com/java-annotations/retention-policy/#:~:text=Description%3A,point%20annotation%20should%20be%20discarded.&text=Annotation%20with%20retention%20policy%20RUNTIME,pass%20the%20retention%20policy%20type.
@@ -209,6 +212,7 @@ https://www.baeldung.com/java-cyclic-barrier
 * infix functions - https://kotlinlang.org/docs/functions.html#infix-notation
 * Может ли infix функция содержать дефолтные параметры - нет
 * Как сделаны под капотом extension functions - это static методы - https://moshenskyi.medium.com/kotlin-under-the-hood-extension-functions-1d61fabdf631
+* Extension functions - существует мнение, что это антипаттерн, им легко злоупотреблять и тяжело тестировать
 * Data classes - https://kotlinlang.org/docs/data-classes.html#properties-declared-in-the-class-body
 * В data class можно override только equal без hashcode? - нет - https://petamind.com/why-do-we-need-to-override-equals-and-hashcode-methods-in-java-kotlin/
 * Можно ли наследоваться от data classes? - нет - https://discuss.kotlinlang.org/t/data-class-inheritance/4107
@@ -219,12 +223,19 @@ https://www.baeldung.com/java-cyclic-barrier
 * Kotlin !! operator - какой кидает exception: Java или Kotlin? - KotlinNullPointerException
 * Что такое sealed classes?
 * enum vs sealed classes - enum не позволяет создавать отдельные экземпляры, в отличие от sealed классов - https://blog.kotlin-academy.com/enum-vs-sealed-class-which-one-to-choose-dc92ce7a4df5
+* Есть ли аналоги data classes и sealed classes в Java? - Есть. В новой Java есть sealed classes и record classes (аналог data)
 * Разница между == и === в Kotlin? - Первый сравнивает значение, второй ссылки (reference)
 * Generics в Kotlin - что такое in, out? - https://kotlinlang.org/docs/generics.html#declaration-site-variance
 * Java stream, Kotlin sequence - в чем отличие от списка - Операции выполняются lazy, только когда результат уже нужен, и выполняются сразу все операции с каждым элементом без вычисления промежуточных коллекций - https://kotlinlang.org/docs/sequences.html
 * Подводный камень sequence - на каждый шаг создается лямбда, поэтому для малого количества элементов выгоднее использовать обычные коллекции - https://typealias.com/guides/when-to-use-sequences/
 * Kotlin SAM - https://kotlinlang.org/docs/fun-interfaces.html#sam-conversions
 * Есть ли в Kotlin checked exceptions, как в Java? - Нет. Аннотация @Throws нужна только если метод будет вызван из Java кода
+* Kotlin scope functions (let, run, apply, also, with) - https://kotlinlang.org/docs/scope-functions.html
+* Удалось ли в Kotlin уйти от null? - Нет, так как lateinit под капотом принимает изначальное значение null
+* Минусы null safety - В машинном коде на самом деле разбросаны проверки на null и вызов Kotlin NPE. Так было раньше. Начиная с 1.4 стало лучше после того, как стали кидать обычный Java NPE
+* Иерархия коллекций в Kotlin
+* Немутабельные и мутабельные коллекции в Kotlin и Java - в Kotlin под капотом немутабельной коллекции лежит мутабельная, поэтому list.toMutableList() += 5 сработает, а в Java - нет (см. Collection.unModifiableList())
+* Kotlin @Synchronized
 
 
 
@@ -538,6 +549,7 @@ https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
 * ViewModelFactory - https://developer.android.com/codelabs/kotlin-android-training-view-model#7
 * Какие встречаются проблемы в ViewModel? - LiveData сохраняет последнее событие и отправляет его заново после пересоздания активити (например, сообщение об ошибке будет отправлено заново)
 * LiveData value и postValue - в чем разница? - https://stackoverflow.com/questions/51299641/difference-of-setvalue-postvalue-in-mutablelivedata
+* Как трансформировать LiveData - https://proandroiddev.com/livedata-transformations-4f120ac046fc
 
 
 
@@ -663,6 +675,8 @@ https://stackoverflow.com/questions/14703627/websockets-protocol-vs-http
 https://startandroid.ru/ru/blog/473-mvp-na-primere-jekrana-s-pin-kodom.html 
 
 https://www.raywenderlich.com/7026-getting-started-with-mvp-model-view-presenter-on-android
+
+* UseCases лучше разбивать на отдельные функции (под каждую функцию свой UseCase)
 
 
 
