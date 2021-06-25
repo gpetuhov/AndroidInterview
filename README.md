@@ -301,13 +301,13 @@ https://github.com/gpetuhov/RxJavaTutorial
 
 
 ## Kotlin coroutines
+* RxJava vs Coroutines - https://stackoverflow.com/questions/42066066/how-kotlin-coroutines-are-better-than-rxkotlin
+* Отличие пулов потоков в RxJava и Coroutines - https://medium.com/capital-one-tech/coroutines-and-rxjava-an-asynchronicity-comparison-part-6-threading-2aa5e9c52c94
 * Coroutine Scope, Coroutine Context - https://elizarov.medium.com/coroutine-context-and-scope-c8b255d59055
 * CoroutineExceptionHandler - https://kotlinlang.org/docs/exception-handling.html
-* Отличие пулов потоков в RxJava и Coroutines - https://medium.com/capital-one-tech/coroutines-and-rxjava-an-asynchronicity-comparison-part-6-threading-2aa5e9c52c94
 * launch vs async - https://stackoverflow.com/questions/46226518/what-is-the-difference-between-launch-join-and-async-await-in-kotlin-coroutines
 * Корутины под капотом - https://rohit.fyi/blog/kotlin-coroutines-under-the-hood-part-1/
 * Нужна ли синхронизация при использовании корутин? - Нужна - https://kotlinlang.org/docs/shared-mutable-state-and-concurrency.html
-* RxJava vs Coroutines - https://stackoverflow.com/questions/42066066/how-kotlin-coroutines-are-better-than-rxkotlin
 
 
 
@@ -320,7 +320,6 @@ https://habr.com/ru/post/513928/
 https://medium.com/programming-lite/android-core-jvm-dvm-art-jit-aot-855039a9a8fa
 
 * DEX format - https://stackoverflow.com/questions/36356330/difference-between-bytecode-in-class-file-and-that-of-dex-file
-
 * What is a compiler?
 
 https://habr.com/ru/company/mailru/blog/451894/
@@ -334,7 +333,6 @@ https://tproger.ru/translations/python-development-on-android/
 https://habr.com/ru/post/327782/
 
 * Как R8 может исходный код напрямую преобразовать в DEX?
-
 * OOM Killer (Out of memory killer)
 
 
@@ -375,8 +373,10 @@ https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-iii-
 https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-iv-49946659b094
 
 * Для чего нужны onStart() и onResume() - Они нужны с точки зрения UI, Например, позволяют подписаться/отписаться на интенты. Если пользователь не смотрит на экран, то нет смысла ему что-то показывать. Например, в onPause и тем более onStop не имеет смысла проигрывать анимацию
+* Why do we need to setContentView() in onCreate(), not in onStart()? (Because onCreate() is triggered only once)
 * How to prevent activity from being destroyed on orientation change via manifest? - Use configChanges attribute - https://developer.android.com/guide/topics/manifest/activity-element#config
 * Activity.onDestroy() - гарантируется ли вызов? - нет - https://developer.android.com/reference/android/app/Activity.html#onDestroy%28%29
+* When only onDestroy is called for an activity without onPause() and onStop()? (If finish() is called in the onCreate method of an activity, the system will call onDestroy() method directly.)
 * Что такое Window?
 * Как получить Window - Activity.getWindow() - https://stackoverflow.com/questions/7378644/how-to-call-getwindow-outside-an-activity-in-android
 * Window DecorView - https://stackoverflow.com/questions/23276847/what-is-an-android-decorview
@@ -397,18 +397,21 @@ https://stackoverflow.com/questions/17872989/android-task-affinity-explanation
 
 https://medium.com/@veeresh.charantimath8/playing-with-android-task-affinity-and-launch-modes-5c36a0421e83
 
-* Как передать данные между активити? - через Bundle в Intent
+* What are the means of data transfer between activities? (Intents, Shared preferences, DB, file, Eventbus, Singleton class)
+* How to transfer a class between activities inside an Intent? (it must be Serializable or Parcelable)
 * Активити A вызвала активити B. Как из B вернуть результат в A - B.setResult(), A.onActivityResult()
 * Что происходит при повороте экрана? - активити пересоздается
 * При каких еще условиях активити пересоздается? - поворот экрана, смена языка, смена темы, активити уничтожена в бэкстеке, активити уничтожена вместе с приложением
-* Как сохранить данные при повороте экрана - onSaveInstanceState() -> onCreate(bundle)
+* How to save screen state on screen rotation (saveInstanceState, Presenter, ViewModel)?
+* How to save state of an EditText? (provide an id, but it uses Bundle under the hood)
 * Почему сохранение данных при повороте экрана в Bundle, а не в SharedPreferences? - Bundle хранится в памяти, поэтому быстрее === https://stackoverflow.com/questions/24822101/when-to-use-getsharedpreferences-vs-savedinstancestate
 
 
 
 ### Fragments
+* What is the purpose of Fragments? Limitations (2-3 fragments per activity)
 * Способы добавления фрагмента в активити - Вручную с помощью FragmentManager, прописать жестко фрагмент в макете (но под капотом все равное будет использован FragmentManager), Jetpack Navigation, Cicerone 
-* Fragment Manager - https://developer.android.com/guide/fragments/fragmentmanager
+* FragmentManager - https://developer.android.com/guide/fragments/fragmentmanager
 * getSupportFragmentManager() vs getChildFragmentManager() - https://stackoverflow.com/questions/14740445/what-is-difference-between-getsupportfragmentmanager-and-getchildfragmentmanag/14775322
 * How to create UI with BottomNavigationView where root fragments have child fragments and root fragments are not destroyed?
 * Подводные камни FragmentManager.commit() при повороте экрана - commit() нельзя вызывать после того, как сработал onSaveInstanceState(), и поэтому можно вызывать commitAllowingStateLoss(), но тогда есть вероятность, что фрагмент потеряется после поворота экрана - https://medium.com/inloopx/demystifying-androids-commitallowingstateloss-cb9011a544cc
@@ -424,13 +427,13 @@ https://medium.com/@bherbst/the-many-flavors-of-commit-186608a015b1
 * How to share data between fragments? - https://developer.android.com/guide/fragments/communicate
 * Fragment Result API - https://developer.android.com/guide/fragments/communicate#fragment-result
 * Shared ViewModel - https://blog.mindorks.com/shared-viewmodel-in-android-shared-between-fragments
-* Как передавать данные во фрагмент? - через аргументы
+* How to pass data into Fragments? (Via arguments)
 * Почему нельзя во фрагмент передавать параметры в конструкторе? - при пересоздании вызывается дефолтный конструктор без параметров - https://stackoverflow.com/questions/9245408/best-practice-for-instantiating-a-new-android-fragment
 * Fragment.onDestroy() вызывается ли при вызове FragmentManager.remove() или replace()
 * Зачем AlertDialog пихать в DialogFragment? - Чтобы диалогом управлял FragmentManger и восстанавливал при повороте экрана - https://developer.android.com/guide/fragments/dialogs
 * BottomSheetDialogFragment - https://medium.com/@kosta.palash/using-bottomsheetdialogfragment-with-material-design-guideline-f9814c39b9fc
 * Если фрагмент прописан в xml, то под капотом все равно будет использоваться FragmentManager
-
+* What can go wrong when calling activity.startActivityForResult() inside fragment? (The result will be delivered to onActivityResult() of the activity, not the fragment)
 
 
 
@@ -451,36 +454,8 @@ val intent = Intent(Intent.ACTION_VIEW, uri)
 
 * Pending intent
 * How to make an activity start on some intent from other apps? (Add intent filter in the manifest)
-* Can I access data in another application's content provider via intent? (No, use ContentResolver instead)
 * Механизм резолюшна интент-фильтра (последовательность действий, что с чем сравнивается) - https://www.androidcookbook.info/application-development/how-android-resolves-intent-filters.html
-
-
-
-### Activity and Fragment
-* Why do we need to setContentView() in onCreate(), not in onStart()? (Because onCreate() is triggered only once)
-* When only onDestroy is called for an activity without onPause() and onStop()? (If finish() is called in the onCreate method of an activity, the system will call onDestroy() method directly.)
-* How to save screen state on screen rotation (saveInstanceState, Moxy)? How to save state of an EditText? (provide an id)
-* What are the means of data transfer between activities? (Intents, Shared preferences, DB, file, Eventbus, Singleton class)
-* How to transfer a class between activities? (it must be Serializable)
-* Difference between Serializable and Parcelable
-* How to return a result from the activity?
-* Activity launch modes
-* What is the purpose of Fragments? Limitations (2-3 fragments per activity)
-* How to pass data into Fragments? (Via arguments)
-* What can go wrong when calling activity.startActivityForResult() inside fragment? (The result will be delivered to onActivityResult() of the activity, not the fragment)
-
-
-
-### Layouts
-* Difference between LinearLayout and ConstraintLayout
-* CoordinatorLayout
-* RelativeLayout vs ConstraintLayout - производительность ConstraintLayout лучше
-* ConstraintLayout Barriers and Guidelines - https://stackoverflow.com/questions/47114672/what-is-difference-between-barrier-and-guideline-in-constraint-layout
-
-
-
-### Data persistence
-* Какие есть способы сохранить данные - shared preferences, db, file
+* Can I access data in another application's content provider via intent? (No, use ContentResolver instead)
 
 
 
@@ -522,6 +497,25 @@ https://habr.com/ru/post/139432/
 
 
 
+### ViewModel
+* Google ViewModel - это вьюмодел в паттерне MVVM? - Нет, это просто способ пережить уничтожение активити. Чтобы ViewModel стала вьюмоделом из MVVM, надо подписать вью на вьюмодел (например, с помощью LiveData)
+* Что будет, если во ViewModel объявить конструктор с параметрами - будет RuntimeException при инициализации вьюмодела
+* Как этого избежать - сделать ViewModel Factory
+* ViewModelFactory - https://developer.android.com/codelabs/kotlin-android-training-view-model#7
+* Какие встречаются проблемы в ViewModel? - LiveData сохраняет последнее событие и отправляет его заново после пересоздания активити (например, сообщение об ошибке будет отправлено заново)
+* LiveData value и postValue - в чем разница? - https://stackoverflow.com/questions/51299641/difference-of-setvalue-postvalue-in-mutablelivedata
+* Как трансформировать LiveData - https://proandroiddev.com/livedata-transformations-4f120ac046fc
+
+
+
+### Layouts
+* Difference between LinearLayout and ConstraintLayout
+* CoordinatorLayout
+* RelativeLayout vs ConstraintLayout - производительность ConstraintLayout лучше
+* ConstraintLayout Barriers and Guidelines - https://stackoverflow.com/questions/47114672/what-is-difference-between-barrier-and-guideline-in-constraint-layout
+
+
+
 ### Views
 * View Lifecycle
 
@@ -543,17 +537,6 @@ https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
 
 
 
-### ViewModel
-* Google ViewModel - это вьюмодел в паттерне MVVM? - Нет, это просто способ пережить уничтожение активити. Чтобы ViewModel стала вьюмоделом из MVVM, надо подписать вью на вьюмодел (например, с помощью LiveData)
-* Что будет, если во ViewModel объявить конструктор с параметрами - будет RuntimeException при инициализации вьюмодела
-* Как этого избежать - сделать ViewModel Factory
-* ViewModelFactory - https://developer.android.com/codelabs/kotlin-android-training-view-model#7
-* Какие встречаются проблемы в ViewModel? - LiveData сохраняет последнее событие и отправляет его заново после пересоздания активити (например, сообщение об ошибке будет отправлено заново)
-* LiveData value и postValue - в чем разница? - https://stackoverflow.com/questions/51299641/difference-of-setvalue-postvalue-in-mutablelivedata
-* Как трансформировать LiveData - https://proandroiddev.com/livedata-transformations-4f120ac046fc
-
-
-
 ### Multithreading in Android
 * Which operations are prohibited to run on the main thread?
 * What is the disadvantage of AsyncTask?
@@ -566,8 +549,22 @@ https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
 
 
 
-## Notifications
+### Notifications
 * Actions in Notifications (for example reply) - https://developer.android.com/training/notify-user/build-notification
+
+
+### Data persistence
+* Какие есть способы сохранить данные - shared preferences, db, file
+
+
+### Room
+* Последовательность работы с Room: какие классы нужно создать и что в них нужно описать?
+* What does @Entity annotation do?
+* What is @PrimaryKey?
+* How to select only different items from the db? (SELECT DISTINCT)
+* The app starts crashing after new entity has been added. What I forgot to do? (Update database version, add migration)
+* Что такое индекс в SQL? - https://www.datacamp.com/community/tutorials/introduction-indexing-sql?utm_source=adwords_ppc&utm_campaignid=1455363063&utm_adgroupid=65083631748&utm_device=c&utm_keyword=&utm_matchtype=b&utm_network=g&utm_adpostion=&utm_creative=278443377095&utm_targetid=aud-392016246653:dsa-429603003980&utm_loc_interest_ms=&utm_loc_physical_ms=9047030&gclid=Cj0KCQjwlMaGBhD3ARIsAPvWd6jxN4Dh86nixmxgtpWlbxipHxNrFAwjlVBqy7m4DYtR94rB9_rQXjsaAv9dEALw_wcB
+
 
 
 ### Testing
@@ -640,13 +637,6 @@ https://stackoverflow.com/questions/14703627/websockets-protocol-vs-http
 
 
 
-## Room
-* Последовательность работы с Room: какие классы нужно создать и что в них нужно описать?
-* What does @Entity annotation do?
-* What is @PrimaryKey?
-* How to select only different items from the db? (SELECT DISTINCT)
-* The app starts crashing after new entity has been added. What I forgot to do? (Update database version, add migration)
-* Что такое индекс в SQL? - https://www.datacamp.com/community/tutorials/introduction-indexing-sql?utm_source=adwords_ppc&utm_campaignid=1455363063&utm_adgroupid=65083631748&utm_device=c&utm_keyword=&utm_matchtype=b&utm_network=g&utm_adpostion=&utm_creative=278443377095&utm_targetid=aud-392016246653:dsa-429603003980&utm_loc_interest_ms=&utm_loc_physical_ms=9047030&gclid=Cj0KCQjwlMaGBhD3ARIsAPvWd6jxN4Dh86nixmxgtpWlbxipHxNrFAwjlVBqy7m4DYtR94rB9_rQXjsaAv9dEALw_wcB
 
 
 
