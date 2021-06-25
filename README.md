@@ -36,15 +36,46 @@ Basic plan and some typical questions and code samples for Android interview.
 * Зачем нужны методы equals и hashcode
 * Если переопределил equals, то надо ли переопределять hashcode? - надо
 * Контракт между equals и hashcode - https://www.baeldung.com/java-equals-hashcode-contracts
+* Types of references in Java (Strong, Weak, Soft, Phantom)
 
-* Типы ссылок - Strong, Weak, Soft, Phantom
+https://www.geeksforgeeks.org/types-references-java/
+
+https://www.baeldung.com/java-weak-reference
+
+https://www.baeldung.com/java-phantom-reference
+
+https://www.baeldung.com/java-soft-references
+
+https://javarush.ru/quests/lectures/questcollections.level04.lecture03
+
+https://javarush.ru/quests/lectures/questcollections.level04.lecture05
+
+https://javarush.ru/groups/posts/2291-osobennosti-phantomreference
+
+https://stackoverflow.com/questions/299659/whats-the-difference-between-softreference-and-weakreference-in-java/299702#299702
 
 * Асимптотическая сложность конкатенации строк - O(n^2) - https://overcoder.net/q/186163/%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C-%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0%D1%82%D0%B5%D0%BD%D0%B0%D1%86%D0%B8%D0%B8-%D1%81%D1%82%D1%80%D0%BE%D0%BA-%D0%B2-c-%D0%B8-java
 * StringBuilder - чем он лучше простой конкатенации строк - https://stackoverflow.com/questions/1532461/stringbuilder-vs-string-concatenation-in-tostring-in-java === https://www.baeldung.com/java-strings-concatenation
 * Квалификатор final
 * Для чего полезна иммутабельность? - https://www.baeldung.com/java-immutable-object
 * Java Reflection
+* Отличие interface от abstract class - в интерфейсе все методы public, не может быть private
+* Дерево коллекций
 
+http://www.quizful.net/post/Java-Collections
+
+https://habr.com/ru/post/162017/
+
+* ArrayList vs LinkedList
+* ArrayList под капотом - это динамический массив с изначальным размером 10
+* SparseArray
+
+https://developer.android.com/reference/android/util/SparseArray
+
+https://stackoverflow.com/questions/25444226/difference-between-sparsearray-vs-arraylist#:~:text=2%20Answers&text=The%20purpose%20of%20a%20SparseArray,that%20will%20be%20quite%20wasteful.
+
+* Java Throwable Hierarchy (Errors and Exceptions) - https://airbrake.io/blog/java-exception-handling/the-java-exception-class-hierarchy
+* Можно ли в HashMap положить элемент с ключом null? - можно - https://stackoverflow.com/questions/25932730/hashmap-with-null-key-and-null-value#:~:text=HashMap%20puts%20null%20key%20in,linked%20list%20data%20structure%20internally.&text=In%20Entry%20class%20the%20K,value%20passed%20in%20put%20method.
 
 
 
@@ -72,20 +103,26 @@ https://stackoverflow.com/questions/3519664/difference-between-volatile-and-sync
 * Что такое атомарные операции? - https://ru.stackoverflow.com/questions/616278/%D0%90%D1%82%D0%BE%D0%BC%D0%B0%D1%80%D0%BD%D1%8B%D0%B5-%D0%B8-%D0%BD%D0%B5%D0%B0%D1%82%D0%BE%D0%BC%D0%B0%D1%80%D0%BD%D1%8B%D0%B5-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8-java
 
 * AtomicInteger
+* Что выдаст Future.get(), если Callable завершится аварийно - Будет ExecutionException
 
 
 
 ## Generics
 * Что такое Generics - https://habr.com/ru/company/sberbank/blog/416413/
 * Стирание типов - https://javarush.ru/groups/posts/2315-stiranie-tipov
+* PECS - https://stackoverflow.com/questions/2723397/what-is-pecs-producer-extends-consumer-super
 
 
 
 ## Kotlin
 * lateinit vs lazy
-* Kotlin delegates - как там реализована потокобезопасность?
-* Kotlin Nothing - https://gb.ru/posts/razbiraemsya-v-tipah-kotlin-unit-nothing-any-i-null
+* Delegates - как там реализована потокобезопасность?
+* Nothing - https://gb.ru/posts/razbiraemsya-v-tipah-kotlin-unit-nothing-any-i-null
 * inline
+* Как сделаны под капотом extension functions - https://moshenskyi.medium.com/kotlin-under-the-hood-extension-functions-1d61fabdf631
+* Data classes - https://kotlinlang.org/docs/data-classes.html#properties-declared-in-the-class-body
+* Можно ли наследоваться от data classes? - нет - https://discuss.kotlinlang.org/t/data-class-inheritance/4107
+* Какие могут быть проблемы из-за интероперабельности Kotlin и Java? - могут быть проблемы из-за null safety при вызове Java кода из Kotlin - https://kotlinlang.org/docs/null-safety.html#nullable-types-and-non-null-types
 
 
 
@@ -112,15 +149,15 @@ https://github.com/gpetuhov/RxJavaTutorial
 * Способы работы с backpressure - https://www.baeldung.com/rxjava-backpressure
 * Стратегии Flowable для работы с backpressure
 * Типы Observable - https://medium.com/mindorks/rxjava-types-of-observables-404d75605e35
-
-
+* Что будет если много раз выполнить оператор subscribeOn() в цепочке? - Только первый оператор даст желаемый эффект. Остальные же эффекта не дадут, кроме траты ресурсов
+* Что будет если много раз выполнить оператор observeOn() в цепочке? - Каждый observeOn() включает планировщик (поток), в котором будут выполняться все последующие операторы. Сложные потоки RxJava могут выиграть от нескольких операторов observeOn()
 
 
 
 ## Kotlin coroutines
 * Coroutine Scope, Coroutine Context - https://elizarov.medium.com/coroutine-context-and-scope-c8b255d59055
 * Coroutine Exception Handler
-
+* Отличие пулов потоков в RxJava и Coroutines - https://medium.com/capital-one-tech/coroutines-and-rxjava-an-asynchronicity-comparison-part-6-threading-2aa5e9c52c94
 
 
 
@@ -199,6 +236,7 @@ https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-iii-
 
 https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-iv-49946659b094
 
+* How to prevent activity from being destroyed on orientation change via manifest? - Use configChanges attribute - https://developer.android.com/guide/topics/manifest/activity-element#config
 
 
 
@@ -207,8 +245,17 @@ https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-iv-4
 * How to add fragment to an activity? - Fragment Manager - https://developer.android.com/guide/fragments/fragmentmanager
 * getSupportFragmentManager() vs getChildFragmentManager() - https://stackoverflow.com/questions/14740445/what-is-difference-between-getsupportfragmentmanager-and-getchildfragmentmanag/14775322
 * How to create UI with BottomNavigationView where root fragments have child fragments and root fragments are not destroyed?
-* Fragment Result API - https://developer.android.com/guide/fragments/communicate#fragment-result
+* FragmentManager commit, commitNow, commitAllowingStateLoss - в чем разница?
+
+https://developer.android.com/reference/android/app/FragmentTransaction#commit()
+
+https://stackoverflow.com/questions/38566628/how-is-the-new-fragmenttransaction-commitnow-working-internally
+
+https://medium.com/@bherbst/the-many-flavors-of-commit-186608a015b1
+
+* Есть ли у фрагмента метод onRestoreInstanceState - нет - https://stackoverflow.com/questions/5412746/android-fragment-onrestoreinstancestate
 * How to share data between fragments? - https://developer.android.com/guide/fragments/communicate
+* Fragment Result API - https://developer.android.com/guide/fragments/communicate#fragment-result
 * Shared ViewModel - https://blog.mindorks.com/shared-viewmodel-in-android-shared-between-fragments
 
 
@@ -253,11 +300,13 @@ val intent = Intent(Intent.ACTION_VIEW, uri)
 ### Layouts
 * Difference between LinearLayout and ConstraintLayout
 * CoordinatorLayout
+* RelativeLayout vs ConstraintLayout - производительность ConstraintLayout лучше
+* ConstraintLayout Barriers and Guidelines - https://stackoverflow.com/questions/47114672/what-is-difference-between-barrier-and-guideline-in-constraint-layout
 
 
 
 ### Data persistence
-* Data persistence (shared preferences, db, file)
+* Какие есть способы сохранить данные - shared preferences, db, file
 
 
 
@@ -267,7 +316,18 @@ val intent = Intent(Intent.ACTION_VIEW, uri)
 * Difference between Service and IntentService.
 * How to prevent a Service from being destroyed by Android? (Use startForeground() with notification)
 * When onStartCommand() gets triggered? (Every time when startService() is called, even if Service is already started)
+* Типы сервисов - background, foreground, bound
 * Bound services
+* Bound services lifecycle - https://developer.android.com/guide/components/bound-services
+* Started (unbound) Service lifecycle
+* Начиная с Андроид 8, какие сервисы можно запускать
+* Android 12 - что поменялось в плане startForegroundService?
+* Время, в течение которого надо успеть показать уведомление из foreground Service - 5 секунд - https://stackoverflow.com/questions/57272203/context-startforegroundservice-did-not-then-call-service-startforeground-s
+* Doze mode
+
+
+### Broadcast receivers
+* Sticky Broadcast
 
 
 ### Views
@@ -282,11 +342,21 @@ https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
 
 
 
+### ViewModel
+* Что будет, если во ViewModel объявить конструктор с параметрами - будет RuntimeException при инициализации вьюмодела
+* Как этого избежать - сделать ViewModel Factory
+
+
+
 ### Multithreading in Android
 * Which operations are prohibited to run on the main thread?
 * What is the disadvantage of AsyncTask?
 * Handler, Looper, Handler Thread - https://blog.mindorks.com/android-core-looper-handler-and-handlerthread-bd54d69fe91a
 
+
+
+## Notifications
+* Actions in Notifications (for example reply) - https://developer.android.com/training/notify-user/build-notification
 
 
 ### Testing
@@ -303,6 +373,8 @@ https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
 * Shared preferences persist after app has been uninstalled. How to prevent it? (Add android:allowBackup="false" in the application in the manifest)
 * What is a broadcast receiver?
 * RecyclerView: when onCreateViewHolder and onBindViewHolder are called?
+* Getting geolocation
+* Deep links
 
 
 
@@ -317,6 +389,7 @@ https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
 ## Network
 * HTTP methods - https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
 * HTTP vs WebSocket
+* Socket vs WebSocket - https://stackoverflow.com/questions/4973622/difference-between-socket-and-websocket
 
 https://www.geeksforgeeks.org/what-is-web-socket-and-how-it-is-different-from-the-http/#:~:text=WebSocket%3A%20WebSocket%20is%20bidirectional%2C%20a,ws%3A%2F%2F%20or%20wss%3A%2F%2F.&text=When%20the%20connection%20is%20established,channel%20until%20it%20is%20terminated.
 
@@ -331,10 +404,25 @@ https://stackoverflow.com/questions/14703627/websockets-protocol-vs-http
 * How to load images? (Use Glide, Picasso or Fresco)
 * GraphQL
 * Protobuf
+* Последовательность работы с Retrofit: какие классы нужно создать и что в них нужно описать?
+* Multipart передача данных
+
+
+
+## Permissions
+* Обычные и опасные разрешения
+* Последовательность запроса Permissions - https://developer.android.com/training/permissions/requesting
+
+
+
+## Animation
+* Виды анимации
+* Анимация с помощью ConstraintSet
 
 
 
 ## Room
+* Последовательность работы с Room: какие классы нужно создать и что в них нужно описать?
 * What does @Entity annotation do?
 * What is @PrimaryKey?
 * How to select only different items from the db? (SELECT DISTINCT)
@@ -344,6 +432,7 @@ https://stackoverflow.com/questions/14703627/websockets-protocol-vs-http
 
 ## Dagger
 * What is Dependency Injection?
+* Преимущества Dependency Inversion (Dagger) - зависимости предоставляются извне - легко менять составные части объектов, Dagger берет на себя генерацию графа зависимостей, упрощается тестирование - в тестах вместо реальных объектов можно подсовывать замоканные
 * What is the purpose of @Inject annotation?
 * Modules and Components
 * Is it possible not to use Modules and how?
