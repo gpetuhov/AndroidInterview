@@ -65,6 +65,7 @@ https://www.baeldung.com/java-finalize
 * Зачем нужны методы equals и hashcode
 * Если переопределил equals, то надо ли переопределять hashcode? - надо
 * Контракт между equals и hashcode - https://www.baeldung.com/java-equals-hashcode-contracts
+* Что может вернуть x.equals(null) - Если x == null, то NPE, иначе false
 * Types of references in Java (Strong, Weak, Soft, Phantom)
 
 https://www.geeksforgeeks.org/types-references-java/
@@ -113,6 +114,8 @@ https://stackoverflow.com/questions/25444226/difference-between-sparsearray-vs-a
 
 * Java Throwable Hierarchy (Errors and Exceptions) - https://airbrake.io/blog/java-exception-handling/the-java-exception-class-hierarchy
 * Как работает HashMap?
+* Что будет, если в Map положить два значения с одинаковым ключом? - Последнее значение перезапишет предыдущеe
+* Что такое коллизия?
 * HashMap - защита от коллизий - Запись в LinkedList в случае коллизий
 * Можно ли в HashMap положить элемент с ключом null? - можно - https://stackoverflow.com/questions/25932730/hashmap-with-null-key-and-null-value#:~:text=HashMap%20puts%20null%20key%20in,linked%20list%20data%20structure%20internally.&text=In%20Entry%20class%20the%20K,value%20passed%20in%20put%20method.
 * Есть ли в HashMap LinkedList по ключу null - Нет, там только один элемент, так как у null не может быть equals
@@ -131,6 +134,13 @@ https://stackoverflow.com/questions/25444226/difference-between-sparsearray-vs-a
 * Плюсы и минусы анонимных классов - https://www.techartifact.com/blogs/2009/08/anonymous-classes-in-java.html
 * Binary search - https://www.baeldung.com/java-binary-search
 * Какие свойства должны быть у коллекции для бинарного поиска
+* Различные способы реализации Singleton
+
+https://www.journaldev.com/1377/java-singleton-design-pattern-best-practices-examples
+ 
+https://habr.com/ru/post/129494/
+
+https://www.baeldung.com/java-singleton
 
 
 
@@ -661,6 +671,8 @@ https://stackoverflow.com/questions/14703627/websockets-protocol-vs-http
 * Dagger @Binds vs @Provides - https://stackoverflow.com/questions/52586940/what-is-the-use-case-for-binds-vs-provides-annotation-in-dagger2
 * Dagger @IntoSet - https://habr.com/ru/post/336414/
 * Dagger subcomponents vs component dependencies - https://stackoverflow.com/questions/29587130/dagger-2-subcomponents-vs-component-dependencies
+* Dagger Scopes
+* Управление жизненным циклом компонентов
 
 
 
