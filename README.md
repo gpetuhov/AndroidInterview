@@ -1,22 +1,63 @@
-# Android Interview Code Samples And Questions
+# Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
 ## Previous experience
+* Tell us about yourself and your previous experience.
 * What is the project you worked on your previous job?
 * What was your role in the project?
 * Which part of the project you worked on?
+* Is there anything you are particularly proud of?
+* How collaboration inside the team was organized? Who set tasks?
 
-## Common questions
-* OOP: incapsulation, inheritance, polymorphism
+## OOP and SOLID
+* OOP: abstraction, encapsulation, inheritance, polymorphism
 * SOLID
-* Design Patterns
-* Gitflow
+* Design Patterns: creational, behavioral, structural
+* What Design Patterns did you use in your projects?
+* Clean code
 
-## Clean architecture
-* MVC
-* MVP
-* MVI
-* MVVM
+## Git
+* Gitflow
+* Git merge vs rebase
+
+## Java
+
+
+
+## Kotlin
+
+
+
+## Multithreading
+* Which means of organizing multithreading do you know? (Java Thread, ExecutorService, Handler, AsyncTask, RxJava, Kotlin coroutines)
+* ExecutorService
+
+https://www.baeldung.com/java-executor-service-tutorial
+
+
+
+## RxJava
+* What design pattern does RxJava implement? (Observer Pattern)
+* Difference between cold and hot observables.
+* Single, Maybe, Completable
+* Difference between scan() and reduce()
+* Difference between merge() and concat()
+* Difference between zip() and combineLatest()
+* Difference between flatMap() and switchMap()
+* What is PublishSubject?
+* How to change threads? (subscribeOn, observeOn)
+* Difference between Schedulers.io() and Schedulers.computation()
+* What is the purpose of buffer()?
+* Difference between throttleFirst() and debounce() (aka throttleWithTimeout())
+
+
+
+
+## Kotlin coroutines
+
+
+
+
 
 ## Java, Kotlin
 * What is an interface?
@@ -39,7 +80,7 @@ Basic plan and some typical questions and code samples for Android interview.
 
 ## Android
 ### Base
-* Basic components (Activity, Service, Content Provider, Intent, Broadcast Receiver, Widget, Notification)
+* Android components (Activity, Service, Content Provider, Broadcast Receiver)
 * Project structure of an Android application (modules, manifests, source, res, assets, Gradle scripts)
 * What is Context? Difference between Application Context and Activity Context.
 * What is AndroidManifest.xml?
@@ -78,6 +119,11 @@ Basic plan and some typical questions and code samples for Android interview.
 * How to prevent a Service from being destroyed by Android? (Use startForeground() with notification)
 * When onStartCommand() gets triggered? (Every time when startService() is called, even if Service is already started)
 
+### Multithreading in Android
+* Which operations are prohibited to run on the main thread?
+* What is the disadvantage of AsyncTask?
+* Handler, Looper, Handler Thread
+
 ### Other
 * How to provide data to external apps? (ContentProviders)
 * Permissions since Android 6.
@@ -111,40 +157,35 @@ Basic plan and some typical questions and code samples for Android interview.
 * The app starts crashing after new entity has been added. What I forgot to do? (Update database version, add migration)
 
 ## Dagger
+* What is Dependency Injection?
 * What is the purpose of @Inject annotation?
 * Modules and Components
 * Is it possible not to use Modules and how?
 
-## Multithreading
-* Which operations are prohibited to run on the main thread?
-* Whin means of organizing multithreading do you know? (Java Thread, AsyncTask, Handler, RxJava, Job Manager, Kotlin coroutines)
-* What is the disadvantage of AsyncTask?
-* Handler, Looper, Handler Thread
-* Kotlin coroutines
 
-## RxJava
-* What design pattern does RxJava implement? (Observer Pattern)
-* Difference between cold and hot observables.
-* Single, Maybe, Completable
-* Difference between scan() and reduce()
-* Difference between merge() and concat()
-* Difference between zip() and combineLatest()
-* Difference between flatMap() and switchMap()
-* What is PublishSubject?
-* How to change threads? (subscribeOn, observeOn)
-* Difference between Schedulers.io() and Schedulers.computation()
-* What is the purpose of buffer()?
-* Difference between throttleFirst() and debounce() (aka throttleWithTimeout())
+
+## Clean architecture
+* What is Clean Architecture?
+* MVP
+* MVVM
+* MVI
 
 ## Moxy
 * How to organize application? (View, Presenter)
 * Strategies
 
-## Practical tasks
+## Practice
 * Problems and improvements in the provided code samples.
 * How to implement a layout shown on the screenshot.
-* Algorithm coding task
-* Android coding task
+
+## Algorithms
+Algorithm coding task:
+* In text editor: https://code.yandex-team.ru/ or https://codeshare.io/
+OR
+* HackerRank (LeetCode)
+
+## Android coding task
+*
 
 ## Reference
 https://github.com/MindorksOpenSource/android-interview-questions
