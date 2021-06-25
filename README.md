@@ -126,6 +126,8 @@ https://www.baeldung.com/java-executor-service-tutorial
 * What is the disadvantage of AsyncTask?
 * Handler, Looper, Handler Thread
 
+### Testing
+
 ### Other
 * How to provide data to external apps? (ContentProviders)
 * Permissions since Android 6.
@@ -177,7 +179,14 @@ https://www.baeldung.com/java-executor-service-tutorial
 * Strategies
 
 ## Practice
-* Problems and improvements in the provided code samples.
+* Problems and improvements in the provided code samples:
+
+https://github.com/gpetuhov/AndroidInterview/blob/master/app/src/main/java/com/gpetuhov/androidinterviewcodesamples/Utils.kt
+
+https://github.com/gpetuhov/AndroidInterview/blob/master/app/src/main/java/com/gpetuhov/androidinterviewcodesamples/Solid.kt
+
+https://github.com/gpetuhov/AndroidInterview/blob/master/app/src/main/java/com/gpetuhov/androidinterviewcodesamples/MainActivity.kt
+
 * How to implement a layout shown on the screenshot.
 
 ## Algorithms
@@ -189,7 +198,9 @@ OR
 * HackerRank (LeetCode)
 
 ## Android coding task
-*
+Task: download list of items from the server and display them on screen. How would you organize your code?
+
+Example of Clean Architecture in Android: https://github.com/gpetuhov/AndroidFundamentals2021/tree/master/01-CleanArchitecture
 
 ## Reference
 https://github.com/MindorksOpenSource/android-interview-questions
