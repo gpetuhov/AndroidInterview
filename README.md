@@ -123,6 +123,7 @@ https://stackoverflow.com/questions/3519664/difference-between-volatile-and-sync
 * Data classes - https://kotlinlang.org/docs/data-classes.html#properties-declared-in-the-class-body
 * Можно ли наследоваться от data classes? - нет - https://discuss.kotlinlang.org/t/data-class-inheritance/4107
 * Какие могут быть проблемы из-за интероперабельности Kotlin и Java? - могут быть проблемы из-за null safety при вызове Java кода из Kotlin - https://kotlinlang.org/docs/null-safety.html#nullable-types-and-non-null-types
+* Kotlin !! operator - какой кидает exception: Java или Kotlin? - KotlinNullPointerException
 
 
 
@@ -237,6 +238,10 @@ https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-iii-
 https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-iv-49946659b094
 
 * How to prevent activity from being destroyed on orientation change via manifest? - Use configChanges attribute - https://developer.android.com/guide/topics/manifest/activity-element#config
+* Activity.onDestroy() - гарантируется ли вызов? - нет - https://developer.android.com/reference/android/app/Activity.html#onDestroy%28%29
+* Что такое Window?
+* Как получить Window - Activity.getWindow() - https://stackoverflow.com/questions/7378644/how-to-call-getwindow-outside-an-activity-in-android
+* Window DecorView - https://stackoverflow.com/questions/23276847/what-is-an-android-decorview
 
 
 
@@ -257,7 +262,9 @@ https://medium.com/@bherbst/the-many-flavors-of-commit-186608a015b1
 * How to share data between fragments? - https://developer.android.com/guide/fragments/communicate
 * Fragment Result API - https://developer.android.com/guide/fragments/communicate#fragment-result
 * Shared ViewModel - https://blog.mindorks.com/shared-viewmodel-in-android-shared-between-fragments
-
+* Как передавать данные во фрагмент? - через аргументы
+* Почему нельзя во фрагмент передавать параметры в конструкторе? - при пересоздании вызывается дефолтный конструктор без параметров - https://stackoverflow.com/questions/9245408/best-practice-for-instantiating-a-new-android-fragment
+* Fragment.onDestroy() вызывается ли при вызове FragmentManager.remove() или replace()
 
 
 
@@ -279,6 +286,7 @@ val intent = Intent(Intent.ACTION_VIEW, uri)
 * Pending intent
 * How to make an activity start on some intent from other apps? (Add intent filter in the manifest)
 * Can I access data in another application's content provider via intent? (No, use ContentResolver instead)
+* Механизм резолюшна интент-фильтра (последовательность действий, что с чем сравнивается) - https://www.androidcookbook.info/application-development/how-android-resolves-intent-filters.html
 
 
 
@@ -324,6 +332,8 @@ val intent = Intent(Intent.ACTION_VIEW, uri)
 * Android 12 - что поменялось в плане startForegroundService?
 * Время, в течение которого надо успеть показать уведомление из foreground Service - 5 секунд - https://stackoverflow.com/questions/57272203/context-startforegroundservice-did-not-then-call-service-startforeground-s
 * Doze mode
+* Как стартовать сервис в бэкграунде, поможет ли вызов startService в бэкграунд потоке? - нет - https://stackoverflow.com/questions/18526131/how-to-run-service-not-on-main-thread
+
 
 
 ### Broadcast receivers
@@ -339,6 +349,9 @@ https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
 
 * Custom Views - https://developer.android.com/guide/topics/ui/custom-components
 * Какие методы надо переопределить в кастомном вью?
+* View.invalidate() и requestLayout() - https://stackoverflow.com/questions/13856180/usage-of-forcelayout-requestlayout-and-invalidate
+* View.onMeasure() - что такое measureSpec, как вычисляется размер вью - https://stackoverflow.com/questions/14493732/what-are-widthmeasurespec-and-heightmeasurespec-in-android-custom-views === https://developer.android.com/reference/android/view/View.MeasureSpec
+* Touch Event - https://developer.android.com/training/gestures/viewgroup === https://www.vogella.com/tutorials/AndroidTouch/article.html
 
 
 
@@ -352,6 +365,8 @@ https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
 * Which operations are prohibited to run on the main thread?
 * What is the disadvantage of AsyncTask?
 * Handler, Looper, Handler Thread - https://blog.mindorks.com/android-core-looper-handler-and-handlerthread-bd54d69fe91a
+* Как устроена MessageQueue?
+* Как будет работать MessageQueue, если вызывать Handler.postDelayed() - Очередь упорядочивается по времени - https://stackoverflow.com/questions/27240015/does-postdelayed-cause-the-message-to-jump-to-the-front-of-the-queue
 
 
 
@@ -375,6 +390,7 @@ https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
 * RecyclerView: when onCreateViewHolder and onBindViewHolder are called?
 * Getting geolocation
 * Deep links
+* raw vs assets - что где хранить, отличия? (в raw доступ через R.raw.id, в assets через asset manager) - https://stackoverflow.com/questions/5583608/difference-between-res-and-assets-directories
 
 
 
