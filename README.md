@@ -104,6 +104,8 @@ https://stackoverflow.com/questions/3519664/difference-between-volatile-and-sync
 
 * AtomicInteger
 * Что выдаст Future.get(), если Callable завершится аварийно - Будет ExecutionException
+* Java concurrent list - CopyOnWriteArrayList - https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html
+* Java ConcurrentHashMap - https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentHashMap.html
 
 
 
@@ -122,6 +124,7 @@ https://stackoverflow.com/questions/3519664/difference-between-volatile-and-sync
 * Как сделаны под капотом extension functions - https://moshenskyi.medium.com/kotlin-under-the-hood-extension-functions-1d61fabdf631
 * Data classes - https://kotlinlang.org/docs/data-classes.html#properties-declared-in-the-class-body
 * Можно ли наследоваться от data classes? - нет - https://discuss.kotlinlang.org/t/data-class-inheritance/4107
+* Как в Kotlin сделать, чтобы property не участвовал в вычислении hashCode в data class? - Прописать параметр в теле класса, а не в конструкторе - https://kotlinlang.org/docs/data-classes.html#properties-declared-in-the-class-body
 * Какие могут быть проблемы из-за интероперабельности Kotlin и Java? - могут быть проблемы из-за null safety при вызове Java кода из Kotlin - https://kotlinlang.org/docs/null-safety.html#nullable-types-and-non-null-types
 * Kotlin !! operator - какой кидает exception: Java или Kotlin? - KotlinNullPointerException
 
@@ -157,8 +160,9 @@ https://github.com/gpetuhov/RxJavaTutorial
 
 ## Kotlin coroutines
 * Coroutine Scope, Coroutine Context - https://elizarov.medium.com/coroutine-context-and-scope-c8b255d59055
-* Coroutine Exception Handler
+* CoroutineExceptionHandler - https://kotlinlang.org/docs/exception-handling.html
 * Отличие пулов потоков в RxJava и Coroutines - https://medium.com/capital-one-tech/coroutines-and-rxjava-an-asynchronicity-comparison-part-6-threading-2aa5e9c52c94
+* launch vs async - https://stackoverflow.com/questions/46226518/what-is-the-difference-between-launch-join-and-async-await-in-kotlin-coroutines
 
 
 
@@ -352,12 +356,17 @@ https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
 * View.invalidate() и requestLayout() - https://stackoverflow.com/questions/13856180/usage-of-forcelayout-requestlayout-and-invalidate
 * View.onMeasure() - что такое measureSpec, как вычисляется размер вью - https://stackoverflow.com/questions/14493732/what-are-widthmeasurespec-and-heightmeasurespec-in-android-custom-views === https://developer.android.com/reference/android/view/View.MeasureSpec
 * Touch Event - https://developer.android.com/training/gestures/viewgroup === https://www.vogella.com/tutorials/AndroidTouch/article.html
+* View Binding - https://developer.android.com/topic/libraries/view-binding
+* Data Binding (отличие от View Binding) - https://developer.android.com/topic/libraries/data-binding
+* Data Binding Adapters
 
 
 
 ### ViewModel
+* Google ViewModel - это вьюмодел в паттерне MVVM? - Нет, это просто способ пережить уничтожение активити. Чтобы ViewModel стала вьюмоделом из MVVM, надо подписать вью на вьюмодел (например, с помощью LiveData)
 * Что будет, если во ViewModel объявить конструктор с параметрами - будет RuntimeException при инициализации вьюмодела
 * Как этого избежать - сделать ViewModel Factory
+* Какие встречаются проблемы в ViewModel? - LiveData сохраняет последнее событие и отправляет его заново после пересоздания активити (например, сообщение об ошибке будет отправлено заново)
 
 
 
@@ -375,6 +384,9 @@ https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
 
 
 ### Testing
+* Когда вызываются @Before, @After
+* Когда вызывается @BeforeClass
+* Как в Espresso нажать на элемент списка
 
 
 
