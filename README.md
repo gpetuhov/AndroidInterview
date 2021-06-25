@@ -68,6 +68,7 @@ https://stackoverflow.com/questions/299659/whats-the-difference-between-softrefe
 
 * Асимптотическая сложность конкатенации строк - O(n^2) - https://overcoder.net/q/186163/%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C-%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0%D1%82%D0%B5%D0%BD%D0%B0%D1%86%D0%B8%D0%B8-%D1%81%D1%82%D1%80%D0%BE%D0%BA-%D0%B2-c-%D0%B8-java
 * StringBuilder - чем он лучше простой конкатенации строк - https://stackoverflow.com/questions/1532461/stringbuilder-vs-string-concatenation-in-tostring-in-java === https://www.baeldung.com/java-strings-concatenation
+* String pool - https://www.baeldung.com/java-string-pool
 * Квалификатор final
 * Для чего полезна иммутабельность? - https://www.baeldung.com/java-immutable-object
 * Java reflection - https://www.baeldung.com/java-reflection
@@ -87,6 +88,8 @@ https://developer.android.com/reference/android/util/SparseArray
 https://stackoverflow.com/questions/25444226/difference-between-sparsearray-vs-arraylist#:~:text=2%20Answers&text=The%20purpose%20of%20a%20SparseArray,that%20will%20be%20quite%20wasteful.
 
 * Java Throwable Hierarchy (Errors and Exceptions) - https://airbrake.io/blog/java-exception-handling/the-java-exception-class-hierarchy
+* Как работает HashMap?
+* HashMap - защита от коллизий - Запись в LinkedList в случае коллизий
 * Можно ли в HashMap положить элемент с ключом null? - можно - https://stackoverflow.com/questions/25932730/hashmap-with-null-key-and-null-value#:~:text=HashMap%20puts%20null%20key%20in,linked%20list%20data%20structure%20internally.&text=In%20Entry%20class%20the%20K,value%20passed%20in%20put%20method.
 * Левоассоциативность (И, ИЛИ) - https://ru.wikipedia.org/wiki/%D0%9E%D1%87%D0%B5%D1%80%D1%91%D0%B4%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B9
 * Аннотации - что это? - https://www.baeldung.com/java-custom-annotation
@@ -117,7 +120,11 @@ https://www.baeldung.com/java-synchronized
 https://stackoverflow.com/questions/3519664/difference-between-volatile-and-synchronized-in-java
 
 * Можно ли все переменные сделать volatile? - В зависимости от процессора volatile может дать увеличение времени из-за чтения не из кэша ядра, а из основной памяти - https://stackoverflow.com/questions/4633866/is-volatile-expensive
-* Что такое атомарные операции? - https://ru.stackoverflow.com/questions/616278/%D0%90%D1%82%D0%BE%D0%BC%D0%B0%D1%80%D0%BD%D1%8B%D0%B5-%D0%B8-%D0%BD%D0%B5%D0%B0%D1%82%D0%BE%D0%BC%D0%B0%D1%80%D0%BD%D1%8B%D0%B5-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8-java
+* Атомарные операции. CompareAndSet
+
+https://ru.stackoverflow.com/questions/616278/%D0%90%D1%82%D0%BE%D0%BC%D0%B0%D1%80%D0%BD%D1%8B%D0%B5-%D0%B8-%D0%BD%D0%B5%D0%B0%D1%82%D0%BE%D0%BC%D0%B0%D1%80%D0%BD%D1%8B%D0%B5-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8-java 
+
+https://www.baeldung.com/java-atomic-variables
 
 * AtomicInteger
 * Что выдаст Future.get(), если Callable завершится аварийно - Будет ExecutionException
@@ -144,6 +151,7 @@ https://www.baeldung.com/java-cyclic-barrier
 * Стирание типов - https://javarush.ru/groups/posts/2315-stiranie-tipov
 * PECS - https://stackoverflow.com/questions/2723397/what-is-pecs-producer-extends-consumer-super
 * Ковариантность (extends T), контрвариантность (super T), инвариантность (просто T)
+* Можно сделать так: instanceOf List<String> - нельзя из-за стирания типов
 
 
 
@@ -165,7 +173,10 @@ https://www.baeldung.com/java-cyclic-barrier
 * Что такое sealed classes?
 * enum vs sealed classes - enum не позволяет создавать отдельные экземпляры, в отличие от sealed классов - https://blog.kotlin-academy.com/enum-vs-sealed-class-which-one-to-choose-dc92ce7a4df5
 * Разница между == и === в Kotlin? - Первый сравнивает значение, второй ссылки (reference)
-* Generics в Kotlin - что такое in, out?
+* Generics в Kotlin - что такое in, out? - https://kotlinlang.org/docs/generics.html#declaration-site-variance
+* Java stream, Kotlin sequence - в чем отличие от списка - Операции выполняются lazy, только когда результат уже нужен, и выполняются сразу все операции с каждым элементом без вычисления промежуточных коллекций - https://kotlinlang.org/docs/sequences.html
+* Kotlin SAM - https://kotlinlang.org/docs/fun-interfaces.html#sam-conversions
+
 
 
 ## RxJava
@@ -256,10 +267,17 @@ https://habr.com/ru/post/327782/
 
 ### Basics
 * Android components and what are they used for (Activity, Service, Content Provider, Broadcast Receiver)
+* Почему Application не компонент? - Потому что это не точка входа в приложение
 * Project structure of an Android application (modules, manifest, source, res, assets, Gradle scripts)
 * What is AndroidManifest.xml?
 * Context - https://developer.android.com/reference/android/content/Context
-* Difference between Application Context and Activity Context.
+* Context types. Difference between Application Context and Activity Context
+
+https://stackoverflow.com/questions/4128589/difference-between-activity-context-and-application-context 
+
+https://medium.com/@banmarkovic/what-is-context-in-android-and-which-one-should-you-use-e1a8c6529652
+
+* Отображение AlertDialog из app context - https://nhancv.medium.com/android-show-dialog-without-activity-context-94661d48400f
 
 
 
@@ -270,6 +288,7 @@ https://stackoverflow.com/questions/44880822/multiple-activity-or-single-activit
 
 https://oozou.com/blog/reasons-to-use-android-single-activity-architecture-with-navigation-component-36
 
+* Можно ли сделать несколько MainActivity? - да, тогда на HomeScreen будет несколько иконок приложения. Пример - когда используешь библиотеку LeakCanary
 * Activity lifecycle
 
 https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-i-single-activities-e49fd3d202ab
@@ -305,7 +324,8 @@ https://medium.com/@veeresh.charantimath8/playing-with-android-task-affinity-and
 
 
 ### Fragments
-* How to add fragment to an activity? - Fragment Manager - https://developer.android.com/guide/fragments/fragmentmanager
+* Способы добавления фрагмента в активити - Вручную с помощью FragmentManager, прописать жестко фрагмент в макете (но под капотом все равное будет использован FragmentManager), Jetpack Navigation, Cicerone 
+* Fragment Manager - https://developer.android.com/guide/fragments/fragmentmanager
 * getSupportFragmentManager() vs getChildFragmentManager() - https://stackoverflow.com/questions/14740445/what-is-difference-between-getsupportfragmentmanager-and-getchildfragmentmanag/14775322
 * How to create UI with BottomNavigationView where root fragments have child fragments and root fragments are not destroyed?
 * Подводные камни FragmentManager.commit() при повороте экрана - commit() нельзя вызывать после того, как сработал onSaveInstanceState(), и поэтому можно вызывать commitAllowingStateLoss(), но тогда есть вероятность, что фрагмент потеряется после поворота экрана - https://medium.com/inloopx/demystifying-androids-commitallowingstateloss-cb9011a544cc
@@ -324,7 +344,9 @@ https://medium.com/@bherbst/the-many-flavors-of-commit-186608a015b1
 * Как передавать данные во фрагмент? - через аргументы
 * Почему нельзя во фрагмент передавать параметры в конструкторе? - при пересоздании вызывается дефолтный конструктор без параметров - https://stackoverflow.com/questions/9245408/best-practice-for-instantiating-a-new-android-fragment
 * Fragment.onDestroy() вызывается ли при вызове FragmentManager.remove() или replace()
-
+* Зачем AlertDialog пихать в DialogFragment? - Чтобы диалогом управлял FragmentManger и восстанавливал при повороте экрана - https://developer.android.com/guide/fragments/dialogs
+* BottomSheetDialogFragment - https://medium.com/@kosta.palash/using-bottomsheetdialogfragment-with-material-design-guideline-f9814c39b9fc
+* Если фрагмент прописан в xml, то под капотом все равно будет использоваться FragmentManager
 
 
 
@@ -439,7 +461,9 @@ https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
 * Google ViewModel - это вьюмодел в паттерне MVVM? - Нет, это просто способ пережить уничтожение активити. Чтобы ViewModel стала вьюмоделом из MVVM, надо подписать вью на вьюмодел (например, с помощью LiveData)
 * Что будет, если во ViewModel объявить конструктор с параметрами - будет RuntimeException при инициализации вьюмодела
 * Как этого избежать - сделать ViewModel Factory
+* ViewModelFactory - https://developer.android.com/codelabs/kotlin-android-training-view-model#7
 * Какие встречаются проблемы в ViewModel? - LiveData сохраняет последнее событие и отправляет его заново после пересоздания активити (например, сообщение об ошибке будет отправлено заново)
+* LiveData value и postValue - в чем разница? - https://stackoverflow.com/questions/51299641/difference-of-setvalue-postvalue-in-mutablelivedata
 
 
 
@@ -449,7 +473,9 @@ https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
 * Handler, Looper, Handler Thread - https://blog.mindorks.com/android-core-looper-handler-and-handlerthread-bd54d69fe91a
 * Как устроена MessageQueue?
 * Как будет работать MessageQueue, если вызывать Handler.postDelayed() - Очередь упорядочивается по времени - https://stackoverflow.com/questions/27240015/does-postdelayed-cause-the-message-to-jump-to-the-front-of-the-queue
+* Если в Handler передать Runnable, то где он будет храниться? - У Message есть поле callback типа Runnable, там и будет храниться (см исходники Handler и Message)
 * Как с помощью Handler сделать таймер, срабатывающий точно каждую 1 секунду? - Есть метод Handler.postAtTime(), второй вариант - использовать Timer - https://stackoverflow.com/questions/23007641/correct-handler-postdelay-time
+
 
 
 ## Notifications
