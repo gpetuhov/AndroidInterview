@@ -34,6 +34,8 @@ Basic plan and some typical questions and code samples for Android interview.
 
 https://www.baeldung.com/java-executor-service-tutorial
 
+*
+
 
 
 ## RxJava
@@ -181,7 +183,9 @@ https://www.baeldung.com/java-executor-service-tutorial
 ## Algorithms
 Algorithm coding task:
 * In text editor: https://code.yandex-team.ru/ or https://codeshare.io/
+
 OR
+
 * HackerRank (LeetCode)
 
 ## Android coding task
