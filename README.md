@@ -28,11 +28,13 @@ Basic plan and some typical questions and code samples for Android interview.
 
 ## Java
 * Classloader, getClass
+* Структура памяти в JVM - http://tutorials.jenkov.com/java-concurrency/java-memory-model.html
 * Garbage collection - https://www.geeksforgeeks.org/garbage-collection-java/
 * В какой момент Garbage Collector может собрать объект?
 * Что является root для Garbage Collection?
 * Для чего нужен Object? - Объявляет ряд базовых методов, в том числе для организации многопоточности, также нужен для того, чтобы garbage collector мог собрать объекты
 * Методы Object - https://www.geeksforgeeks.org/object-class-in-java/
+* Object.clone() можно ли вызвать? - Нет, если не имплеменить Cloneable интерфейс - https://en.wikipedia.org/wiki/Clone_(Java_method)
 * Зачем нужны методы equals и hashcode
 * Если переопределил equals, то надо ли переопределять hashcode? - надо
 * Контракт между equals и hashcode - https://www.baeldung.com/java-equals-hashcode-contracts
@@ -134,6 +136,7 @@ https://www.baeldung.com/java-cyclic-barrier
 * Delegates - как там реализована потокобезопасность?
 * Nothing - https://gb.ru/posts/razbiraemsya-v-tipah-kotlin-unit-nothing-any-i-null
 * inline functions
+* Можно ли узнать тип дженерика в inline функции? - только если сделать reified parameters - https://stackoverflow.com/questions/33146160/how-to-check-generic-type-in-kotlin
 * reified type parameters (речь только про функции, классы не могут иметь reified полей) - https://kotlinlang.org/docs/inline-functions.html#reified-type-parameters
 * infix functions - https://kotlinlang.org/docs/functions.html#infix-notation
 * Может ли infix функция содержать дефолтные параметры - нет
@@ -264,7 +267,22 @@ https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-iv-4
 * Что такое Window?
 * Как получить Window - Activity.getWindow() - https://stackoverflow.com/questions/7378644/how-to-call-getwindow-outside-an-activity-in-android
 * Window DecorView - https://stackoverflow.com/questions/23276847/what-is-an-android-decorview
+* Activity launch modes
+* Для чего запускать разные активити в разных тасках?
 
+https://developer.android.com/guide/components/activities/tasks-and-back-stack 
+
+https://medium.com/androiddevelopers/tasks-and-the-back-stack-dbb7c3b0f6d4 
+
+https://habr.com/ru/company/otus/blog/493802/ 
+
+https://iammert.medium.com/android-launchmode-visualized-8843fc833dbe
+
+* Task Affinity
+
+https://stackoverflow.com/questions/17872989/android-task-affinity-explanation 
+
+https://medium.com/@veeresh.charantimath8/playing-with-android-task-affinity-and-launch-modes-5c36a0421e83
 
 
 
@@ -428,7 +446,10 @@ https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
 * What to do, if external dependency is not found? (Add appropriate repository into: allprojects { repositories {...} })
 * Difference between "implementation" and "compile" 
 * What is multidex?
-* How to build slightly different applications from one project? (Use flavors) 
+* How to build slightly different applications from one project? (Use flavors)
+* Gradle implementation vs api? - При использовании api мы можем использовать внутренние зависимости библиотеки в нашем основном проекте - https://stackoverflow.com/questions/44413952/gradle-implementation-vs-api-configuration
+* Gradle build type vs flavor - https://wajahatkarim.com/2018/04/difference-between-build-type-flavour-and-build-variant-in-android/
+* Можем ли мы создать свой build type? - Можем - https://stackoverflow.com/questions/49286743/how-to-add-more-build-types-in-app-than-library/49288390
 
 
 
