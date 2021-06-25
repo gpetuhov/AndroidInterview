@@ -42,7 +42,16 @@ Basic plan and some typical questions and code samples for Android interview.
 * Структура памяти в JVM - http://tutorials.jenkov.com/java-concurrency/java-memory-model.html
 * Garbage collection - https://www.geeksforgeeks.org/garbage-collection-java/
 * В какой момент Garbage Collector может собрать объект?
+* Как GC поймет, что на объект никто не ссылается
+
+https://www.dynatrace.com/resources/ebooks/javabook/how-garbage-collection-works/ 
+
+https://stackoverflow.com/questions/27186799/what-are-gc-roots-for-classes 
+
+https://www.yourkit.com/docs/java/help/gc_roots.jsp
+
 * Что является root для Garbage Collection?
+* В памяти находятся два объекта и ссылаются друг на друга, больше на них никто не ссылается. Соберет ли их GC? - да
 * Для чего нужен Object? - Объявляет ряд базовых методов, в том числе для организации многопоточности, также нужен для того, чтобы garbage collector мог собрать объекты
 * Методы Object - https://www.geeksforgeeks.org/object-class-in-java/
 * Object.clone() можно ли вызвать? - Нет, если не имплеменить Cloneable интерфейс - https://en.wikipedia.org/wiki/Clone_(Java_method)
@@ -72,6 +81,12 @@ https://javarush.ru/quests/lectures/questcollections.level04.lecture05
 https://javarush.ru/groups/posts/2291-osobennosti-phantomreference
 
 https://stackoverflow.com/questions/299659/whats-the-difference-between-softreference-and-weakreference-in-java/299702#299702
+
+* Зачем нужна PhantomReference
+
+https://developer.android.com/reference/java/lang/ref/PhantomReference#:~:text=Phantom%20references%20are%20most%20often,with%20the%20Java%20finalization%20mechanism.&text=Unlike%20soft%20and%20weak%20references,collector%20as%20they%20are%20enqueued. 
+
+https://stackoverflow.com/questions/53822132/java-phantomreference-vs-finalize
 
 * Асимптотическая сложность конкатенации строк - O(n^2) - https://overcoder.net/q/186163/%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C-%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0%D1%82%D0%B5%D0%BD%D0%B0%D1%86%D0%B8%D0%B8-%D1%81%D1%82%D1%80%D0%BE%D0%BA-%D0%B2-c-%D0%B8-java
 * StringBuilder - чем он лучше простой конкатенации строк - https://stackoverflow.com/questions/1532461/stringbuilder-vs-string-concatenation-in-tostring-in-java === https://www.baeldung.com/java-strings-concatenation
@@ -104,8 +119,12 @@ https://stackoverflow.com/questions/25444226/difference-between-sparsearray-vs-a
 * Аннотации - что это? - https://www.baeldung.com/java-custom-annotation
 * RetentionPolicy в аннотациях - https://www.java2novice.com/java-annotations/retention-policy/#:~:text=Description%3A,point%20annotation%20should%20be%20discarded.&text=Annotation%20with%20retention%20policy%20RUNTIME,pass%20the%20retention%20policy%20type.
 * Модификаторы доступа в Java - public, protected, private, package private (когда нет никакого ключевого слова) - https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
+* Как можно менять модификаторы доступа в потомках? - Можно расширять, но нельзя сужать - https://docs.oracle.com/javase/tutorial/java/IandI/override.html
 * Java checked exceptions - Это когда в сигнатуре метода есть throws Exception и тогда компилятор при вызове данного метода попросит обернуть в try-catch - https://www.geeksforgeeks.org/checked-vs-unchecked-exceptions-in-java/#:~:text=In%20Java%2C%20there%20are%20two,the%20exception%20using%20throws%20keyword.
 * int i - это value или reference? - value
+* Static classes vs inner classes - https://stackoverflow.com/questions/70324/java-inner-class-and-static-nested-class
+* Плюсы и минусы анонимных классов - https://www.techartifact.com/blogs/2009/08/anonymous-classes-in-java.html
+* Какие свойства должны быть у коллекции для бинарного поиска
 
 
 
@@ -160,6 +179,7 @@ https://www.baeldung.com/java-cyclic-barrier
 * Почему потоки создаются долго (что при этом происходит)? - https://stackoverflow.com/questions/5483047/why-is-creating-a-thread-said-to-be-expensive
 * Synchronized collections - https://www.baeldung.com/java-synchronized-collections
 * Concurrent collections (появились в Java 5) - https://www.developer.com/design/an-introduction-to-concurrent-collection-apis-in-java/
+* Почему Thread.stop() deprecated - https://docs.oracle.com/javase/8/docs/technotes/guides/concurrency/threadPrimitiveDeprecation.html#:~:text=stop%20deprecated%3F,monitors%20that%20it%20has%20locked.&text=Unlike%20other%20unchecked%20exceptions%2C%20ThreadDeath,his%20program%20may%20be%20corrupted.
 * Как правильно остановить поток в Java, не вызывая метода Thread.stop(), так как он deprecated? - https://stackoverflow.com/questions/10961714/how-to-properly-stop-the-thread-in-java
 
 
@@ -611,7 +631,8 @@ https://stackoverflow.com/questions/14703627/websockets-protocol-vs-http
 
 
 ## Clean architecture
-* What is Clean Architecture?
+* Clean Architecture - https://habr.com/ru/company/mobileup/blog/335382/
+* Для чего нужна Clean Architecture? - Развязывание классов (отсутствие сильной связанности, возможность замены компонентов), тестопригодность, уменьшение порога входа в проект для новых разработчиков (все понимают, что на каждом слое находится)
 * MVP
 * MVVM
 * MVI
