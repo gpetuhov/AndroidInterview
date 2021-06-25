@@ -38,7 +38,8 @@ Basic plan and some typical questions and code samples for Android interview.
 
 
 ## Java
-* Classloader, getClass
+* ClassLoader, getClass - https://www.baeldung.com/java-classloaders
+* Когда ClassLoader грузит класс - при первом обращении к классу
 * Структура памяти в JVM - http://tutorials.jenkov.com/java-concurrency/java-memory-model.html
 * Garbage collection - https://www.geeksforgeeks.org/garbage-collection-java/
 * В какой момент Garbage Collector может собрать объект?
@@ -101,6 +102,7 @@ http://www.quizful.net/post/Java-Collections
 
 https://habr.com/ru/post/162017/
 
+* Почему Map не Collection - у Collection есть методы доступа по индексу, которые не нужны в Map
 * ArrayList vs LinkedList
 * ArrayList под капотом - это динамический массив с изначальным размером 10
 * SparseArray
@@ -124,6 +126,7 @@ https://stackoverflow.com/questions/25444226/difference-between-sparsearray-vs-a
 * int i - это value или reference? - value
 * Static classes vs inner classes - https://stackoverflow.com/questions/70324/java-inner-class-and-static-nested-class
 * Плюсы и минусы анонимных классов - https://www.techartifact.com/blogs/2009/08/anonymous-classes-in-java.html
+* Binary search - https://www.baeldung.com/java-binary-search
 * Какие свойства должны быть у коллекции для бинарного поиска
 
 
@@ -181,6 +184,7 @@ https://www.baeldung.com/java-cyclic-barrier
 * Concurrent collections (появились в Java 5) - https://www.developer.com/design/an-introduction-to-concurrent-collection-apis-in-java/
 * Почему Thread.stop() deprecated - https://docs.oracle.com/javase/8/docs/technotes/guides/concurrency/threadPrimitiveDeprecation.html#:~:text=stop%20deprecated%3F,monitors%20that%20it%20has%20locked.&text=Unlike%20other%20unchecked%20exceptions%2C%20ThreadDeath,his%20program%20may%20be%20corrupted.
 * Как правильно остановить поток в Java, не вызывая метода Thread.stop(), так как он deprecated? - https://stackoverflow.com/questions/10961714/how-to-properly-stop-the-thread-in-java
+* Есть ли у enum подводные камни в многопоточке? - нет - https://www.geeksforgeeks.org/advantages-and-disadvantages-of-using-enum-as-singleton-in-java/#:~:text=Creation%20of%20Enum%20instance%20is,some%20line%20of%20code%20enum.
 
 
 
@@ -201,12 +205,16 @@ https://www.baeldung.com/java-cyclic-barrier
 * inline functions
 * Можно ли узнать тип дженерика в inline функции? - только если сделать reified parameters - https://stackoverflow.com/questions/33146160/how-to-check-generic-type-in-kotlin
 * reified type parameters (речь только про функции, классы не могут иметь reified полей) - https://kotlinlang.org/docs/inline-functions.html#reified-type-parameters
+* noinline - https://kotlinlang.org/docs/inline-functions.html
 * infix functions - https://kotlinlang.org/docs/functions.html#infix-notation
 * Может ли infix функция содержать дефолтные параметры - нет
 * Как сделаны под капотом extension functions - это static методы - https://moshenskyi.medium.com/kotlin-under-the-hood-extension-functions-1d61fabdf631
 * Data classes - https://kotlinlang.org/docs/data-classes.html#properties-declared-in-the-class-body
+* В data class можно override только equal без hashcode? - нет - https://petamind.com/why-do-we-need-to-override-equals-and-hashcode-methods-in-java-kotlin/
 * Можно ли наследоваться от data classes? - нет - https://discuss.kotlinlang.org/t/data-class-inheritance/4107
 * Как в Kotlin сделать, чтобы property не участвовал в вычислении hashCode в data class? - Прописать параметр в теле класса, а не в конструкторе - https://kotlinlang.org/docs/data-classes.html#properties-declared-in-the-class-body
+* Есть ли equals и hashcode у лямбды в Kotlin? - да, так как это обычный класс - https://stackoverflow.com/questions/24095875/is-there-a-way-to-compare-lambdas
+* Можно ли передать лямбду в конструкторе data class? - можно - https://iamjonfry.com/posts/lambdas-in-data-classes/
 * Какие могут быть проблемы из-за интероперабельности Kotlin и Java? - могут быть проблемы из-за null safety при вызове Java кода из Kotlin - https://kotlinlang.org/docs/null-safety.html#nullable-types-and-non-null-types
 * Kotlin !! operator - какой кидает exception: Java или Kotlin? - KotlinNullPointerException
 * Что такое sealed classes?
@@ -214,6 +222,7 @@ https://www.baeldung.com/java-cyclic-barrier
 * Разница между == и === в Kotlin? - Первый сравнивает значение, второй ссылки (reference)
 * Generics в Kotlin - что такое in, out? - https://kotlinlang.org/docs/generics.html#declaration-site-variance
 * Java stream, Kotlin sequence - в чем отличие от списка - Операции выполняются lazy, только когда результат уже нужен, и выполняются сразу все операции с каждым элементом без вычисления промежуточных коллекций - https://kotlinlang.org/docs/sequences.html
+* Подводный камень sequence - на каждый шаг создается лямбда, поэтому для малого количества элементов выгоднее использовать обычные коллекции - https://typealias.com/guides/when-to-use-sequences/
 * Kotlin SAM - https://kotlinlang.org/docs/fun-interfaces.html#sam-conversions
 * Есть ли в Kotlin checked exceptions, как в Java? - Нет. Аннотация @Throws нужна только если метод будет вызван из Java кода
 
@@ -229,7 +238,8 @@ https://github.com/gpetuhov/RxJavaTutorial
 * Difference between scan() and reduce()
 * Difference between merge() and concat()
 * Difference between zip() and combineLatest()
-* Difference between flatMap() and switchMap()
+* Difference between flatMap(), concatMap() and switchMap() - https://medium.com/appunite-edu-collection/rxjava-flatmap-switchmap-and-concatmap-differences-examples-6d1f3ff88ee0
+* Пример использования switchMap - поисковая строка (каждый последующий символ отменяет предыдущий запрос в сеть)
 * What is PublishSubject?
 * How to change threads? (subscribeOn, observeOn)
 * Difference between Schedulers.io() and Schedulers.computation()
@@ -239,13 +249,20 @@ https://github.com/gpetuhov/RxJavaTutorial
 * Типы Subject и их отличие - https://medium.com/@nazarivanchuk/types-of-subjects-in-rxjava-96f3a0c068e4
 * Отличие Observable и Flowable
 * Что такое backpressure
-* Способы работы с backpressure - https://www.baeldung.com/rxjava-backpressure
+* Стратегии работы с backpressure - https://www.baeldung.com/rxjava-backpressure
+* Backpressure в RxJava 1 - https://eng.uber.com/rxjava-backpressure/
 * Стратегии Flowable для работы с backpressure
 * Типы Observable - https://medium.com/mindorks/rxjava-types-of-observables-404d75605e35
 * Что будет если много раз выполнить оператор subscribeOn() в цепочке? - Только первый оператор даст желаемый эффект. Остальные же эффекта не дадут, кроме траты ресурсов
 * Что будет если много раз выполнить оператор observeOn() в цепочке? - Каждый observeOn() включает планировщик (поток), в котором будут выполняться все последующие операторы. Сложные потоки RxJava могут выиграть от нескольких операторов observeOn()
 * Hot and cold observable
 * ConnectableObservable - это холодный observable, начинает эмитить только после вызова метода connect() - http://reactivex.io/RxJava/javadoc/rx/observables/ConnectableObservable.html
+* Какой метод вызвать для начала эмита у горячего Observable - метод ConnectableObservable.connect() - https://medium.com/tompee/rxjava-ninja-hot-and-cold-observables-19b30d6cc2fa
+* Как преобразовать холодный Observable в горячий - Вызвать publish() - https://medium.com/tompee/rxjava-ninja-hot-and-cold-observables-19b30d6cc2fa
+* Как преобразовать горячий Observable в холодный - Вызвать defer() - https://stackoverflow.com/questions/34030793/transform-a-hot-observable-to-a-cold-observable
+* Что такое RxJava defer - https://blog.mindorks.com/understanding-rxjava-defer-operator
+* Что такое RxJava share - https://medium.com/mindorks/how-to-use-rxjava-share-operator-26b08973771a
+* Что такое RxJava PublishProcessor - http://reactivex.io/RxJava/javadoc/io/reactivex/processors/PublishProcessor.html
 * Zip под капотом как работает
 
 
@@ -313,6 +330,7 @@ https://habr.com/ru/post/327782/
 ### Basics
 * Android components and what are they used for (Activity, Service, Content Provider, Broadcast Receiver)
 * Почему Application не компонент? - Потому что это не точка входа в приложение
+* Как Андроид компоненты влияют на приоритет процесса - https://medium.com/androiddevelopers/who-lives-and-who-dies-process-priorities-on-android-cb151f39044f
 * Project structure of an Android application (modules, manifest, source, res, assets, Gradle scripts)
 * What is AndroidManifest.xml?
 * Context - https://developer.android.com/reference/android/content/Context
@@ -410,6 +428,7 @@ https://medium.com/@bherbst/the-many-flavors-of-commit-186608a015b1
 * Что можно положить в Bundle? - Основные типы, Serializable, Parcelable
 * Ограничения на размер Bundle - 500 КБ (2 МБ по другим источникам) - https://stackoverflow.com/questions/8552514/is-there-any-limit-of-bundle-in-android
 * Serializable vs Parcelable - https://stackoverflow.com/questions/3323074/android-difference-between-parcelable-and-serializable
+* Проблемы Serializable - 1. Рефлексия, 2. Если поле в Serializable классе будет не Serializable, то при десериализации оно будет просто null (а в случае Parcelable компилятор сразу это подсвечивает)
 * Difference between implicit and explicit intents.
 * How to open url in browser?
 
@@ -627,6 +646,9 @@ https://stackoverflow.com/questions/14703627/websockets-protocol-vs-http
 * Modules and Components
 * Is it possible not to use Modules and how?
 * Dagger в мультипроцессном приложении - в каждом процессе свой экземпляр Application, свой Dagger со своими инстансами
+* Dagger @Binds vs @Provides - https://stackoverflow.com/questions/52586940/what-is-the-use-case-for-binds-vs-provides-annotation-in-dagger2
+* Dagger @IntoSet - https://habr.com/ru/post/336414/
+* Dagger subcomponents vs component dependencies - https://stackoverflow.com/questions/29587130/dagger-2-subcomponents-vs-component-dependencies
 
 
 
