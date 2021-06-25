@@ -81,11 +81,33 @@ https://www.baeldung.com/java-executor-service-tutorial
 * Kotlin default and named arguments
 
 ## Android
-### Base
-* Android components (Activity, Service, Content Provider, Broadcast Receiver)
-* Project structure of an Android application (modules, manifests, source, res, assets, Gradle scripts)
+### Basics
+* Android components and what are they used for (Activity, Service, Content Provider, Broadcast Receiver)
+* Project structure of an Android application (modules, manifest, source, res, assets, Gradle scripts)
 * What is Context? Difference between Application Context and Activity Context.
 * What is AndroidManifest.xml?
+
+### Activity
+* Activity lifecycle
+
+https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-i-single-activities-e49fd3d202ab
+
+https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-ii-multiple-activities-a411fd139f24
+
+https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-iii-fragments-afc87d4f37fd
+
+https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-iv-49946659b094
+
+
+
+
+
+### Fragments
+* How to add fragment to an activity? - Fragment Manager
+* getSupportFragmentManager() vs getChildFragmentManager() - https://stackoverflow.com/questions/14740445/what-is-difference-between-getsupportfragmentmanager-and-getchildfragmentmanag/14775322
+
+
+
 
 ### Intents
 * What is Intent used for? (to start activities, services and send broadcasts)
@@ -95,7 +117,6 @@ https://www.baeldung.com/java-executor-service-tutorial
 * Can I access data in another application's content provider via intent? (No, use ContentResolver instead)
 
 ### Activity and Fragment
-* Activity lifecycle
 * Why do we need to setContentView() in onCreate(), not in onStart()? (Because onCreate() is triggered only once)
 * When only onDestroy is called for an activity without onPause() and onStop()? (If finish() is called in the onCreate method of an activity, the system will call onDestroy() method directly.)
 * How to save screen state on screen rotation (saveInstanceState, Moxy)? How to save state of an EditText? (provide an id)
