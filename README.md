@@ -76,6 +76,9 @@ https://stackoverflow.com/questions/25444226/difference-between-sparsearray-vs-a
 
 * Java Throwable Hierarchy (Errors and Exceptions) - https://airbrake.io/blog/java-exception-handling/the-java-exception-class-hierarchy
 * Можно ли в HashMap положить элемент с ключом null? - можно - https://stackoverflow.com/questions/25932730/hashmap-with-null-key-and-null-value#:~:text=HashMap%20puts%20null%20key%20in,linked%20list%20data%20structure%20internally.&text=In%20Entry%20class%20the%20K,value%20passed%20in%20put%20method.
+* Левоассоциативность (И, ИЛИ) - https://ru.wikipedia.org/wiki/%D0%9E%D1%87%D0%B5%D1%80%D1%91%D0%B4%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B9
+* Аннотации - что это? - https://www.baeldung.com/java-custom-annotation
+* RetentionPolicy в аннотациях - https://www.java2novice.com/java-annotations/retention-policy/#:~:text=Description%3A,point%20annotation%20should%20be%20discarded.&text=Annotation%20with%20retention%20policy%20RUNTIME,pass%20the%20retention%20policy%20type.
 
 
 
@@ -106,6 +109,15 @@ https://stackoverflow.com/questions/3519664/difference-between-volatile-and-sync
 * Что выдаст Future.get(), если Callable завершится аварийно - Будет ExecutionException
 * Java concurrent list - CopyOnWriteArrayList - https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html
 * Java ConcurrentHashMap - https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentHashMap.html
+* ThreadLocal - https://www.baeldung.com/java-threadlocal
+* Семафоры, мониторы - https://www.baeldung.com/cs/monitor
+* CountDownLatch, Barrier
+
+https://www.baeldung.com/java-countdown-latch 
+
+https://www.baeldung.com/java-cyclic-barrier
+
+* Object wait(), notify(), notifyAll()
 
 
 
@@ -113,6 +125,7 @@ https://stackoverflow.com/questions/3519664/difference-between-volatile-and-sync
 * Что такое Generics - https://habr.com/ru/company/sberbank/blog/416413/
 * Стирание типов - https://javarush.ru/groups/posts/2315-stiranie-tipov
 * PECS - https://stackoverflow.com/questions/2723397/what-is-pecs-producer-extends-consumer-super
+* Ковариантность (extends T), контрвариантность (super T), инвариантность (просто T)
 
 
 
@@ -120,13 +133,18 @@ https://stackoverflow.com/questions/3519664/difference-between-volatile-and-sync
 * lateinit vs lazy
 * Delegates - как там реализована потокобезопасность?
 * Nothing - https://gb.ru/posts/razbiraemsya-v-tipah-kotlin-unit-nothing-any-i-null
-* inline
-* Как сделаны под капотом extension functions - https://moshenskyi.medium.com/kotlin-under-the-hood-extension-functions-1d61fabdf631
+* inline functions
+* reified type parameters (речь только про функции, классы не могут иметь reified полей) - https://kotlinlang.org/docs/inline-functions.html#reified-type-parameters
+* infix functions - https://kotlinlang.org/docs/functions.html#infix-notation
+* Может ли infix функция содержать дефолтные параметры - нет
+* Как сделаны под капотом extension functions - это static методы - https://moshenskyi.medium.com/kotlin-under-the-hood-extension-functions-1d61fabdf631
 * Data classes - https://kotlinlang.org/docs/data-classes.html#properties-declared-in-the-class-body
 * Можно ли наследоваться от data classes? - нет - https://discuss.kotlinlang.org/t/data-class-inheritance/4107
 * Как в Kotlin сделать, чтобы property не участвовал в вычислении hashCode в data class? - Прописать параметр в теле класса, а не в конструкторе - https://kotlinlang.org/docs/data-classes.html#properties-declared-in-the-class-body
 * Какие могут быть проблемы из-за интероперабельности Kotlin и Java? - могут быть проблемы из-за null safety при вызове Java кода из Kotlin - https://kotlinlang.org/docs/null-safety.html#nullable-types-and-non-null-types
 * Kotlin !! operator - какой кидает exception: Java или Kotlin? - KotlinNullPointerException
+* Что такое sealed classes?
+* enum vs sealed classes - enum не позволяет создавать отдельные экземпляры, в отличие от sealed классов - https://blog.kotlin-academy.com/enum-vs-sealed-class-which-one-to-choose-dc92ce7a4df5
 
 
 
