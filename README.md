@@ -91,6 +91,7 @@ https://stackoverflow.com/questions/25444226/difference-between-sparsearray-vs-a
 * Как работает HashMap?
 * HashMap - защита от коллизий - Запись в LinkedList в случае коллизий
 * Можно ли в HashMap положить элемент с ключом null? - можно - https://stackoverflow.com/questions/25932730/hashmap-with-null-key-and-null-value#:~:text=HashMap%20puts%20null%20key%20in,linked%20list%20data%20structure%20internally.&text=In%20Entry%20class%20the%20K,value%20passed%20in%20put%20method.
+* HashMap - что такое бакеты? - Это и есть те элементы, которые адресуются на основе хешкода (бакетами могут быть связанные списки или бинарные деревья) - https://www.baeldung.com/java-hashmap
 * Левоассоциативность (И, ИЛИ) - https://ru.wikipedia.org/wiki/%D0%9E%D1%87%D0%B5%D1%80%D1%91%D0%B4%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B9
 * Аннотации - что это? - https://www.baeldung.com/java-custom-annotation
 * RetentionPolicy в аннотациях - https://www.java2novice.com/java-annotations/retention-policy/#:~:text=Description%3A,point%20annotation%20should%20be%20discarded.&text=Annotation%20with%20retention%20policy%20RUNTIME,pass%20the%20retention%20policy%20type.
@@ -204,6 +205,9 @@ https://github.com/gpetuhov/RxJavaTutorial
 * Типы Observable - https://medium.com/mindorks/rxjava-types-of-observables-404d75605e35
 * Что будет если много раз выполнить оператор subscribeOn() в цепочке? - Только первый оператор даст желаемый эффект. Остальные же эффекта не дадут, кроме траты ресурсов
 * Что будет если много раз выполнить оператор observeOn() в цепочке? - Каждый observeOn() включает планировщик (поток), в котором будут выполняться все последующие операторы. Сложные потоки RxJava могут выиграть от нескольких операторов observeOn()
+* Hot and cold observable
+* ConnectableObservable - это холодный observable, начинает эмитить только после вызова метода connect() - http://reactivex.io/RxJava/javadoc/rx/observables/ConnectableObservable.html
+* Zip под капотом как работает
 
 
 
@@ -213,6 +217,7 @@ https://github.com/gpetuhov/RxJavaTutorial
 * Отличие пулов потоков в RxJava и Coroutines - https://medium.com/capital-one-tech/coroutines-and-rxjava-an-asynchronicity-comparison-part-6-threading-2aa5e9c52c94
 * launch vs async - https://stackoverflow.com/questions/46226518/what-is-the-difference-between-launch-join-and-async-await-in-kotlin-coroutines
 * Корутины под капотом - https://rohit.fyi/blog/kotlin-coroutines-under-the-hood-part-1/
+* Нужна ли синхронизация при использовании корутин? - Нужна - https://kotlinlang.org/docs/shared-mutable-state-and-concurrency.html
 
 
 
@@ -299,6 +304,7 @@ https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-iii-
 
 https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-iv-49946659b094
 
+* Для чего нужны onStart() и onResume() - Они нужны с точки зрения UI, Например, позволяют подписаться/отписаться на интенты. Если пользователь не смотрит на экран, то нет смысла ему что-то показывать. Например, в onPause и тем более onStop не имеет смысла проигрывать анимацию
 * How to prevent activity from being destroyed on orientation change via manifest? - Use configChanges attribute - https://developer.android.com/guide/topics/manifest/activity-element#config
 * Activity.onDestroy() - гарантируется ли вызов? - нет - https://developer.android.com/reference/android/app/Activity.html#onDestroy%28%29
 * Что такое Window?
@@ -320,6 +326,13 @@ https://iammert.medium.com/android-launchmode-visualized-8843fc833dbe
 https://stackoverflow.com/questions/17872989/android-task-affinity-explanation 
 
 https://medium.com/@veeresh.charantimath8/playing-with-android-task-affinity-and-launch-modes-5c36a0421e83
+
+* Как передать данные между активити? - через Bundle в Intent
+* Активити A вызвала активити B. Как из B вернуть результат в A - B.setResult(), A.onActivityResult()
+* Что происходит при повороте экрана? - активити пересоздается
+* При каких еще условиях активити пересоздается? - поворот экрана, смена языка, смена темы, активити уничтожена в бэкстеке, активити уничтожена вместе с приложением
+* Как сохранить данные при повороте экрана - onSaveInstanceState() -> onCreate(bundle)
+* Почему сохранение данных при повороте экрана в Bundle, а не в SharedPreferences? - Bundle хранится в памяти, поэтому быстрее === https://stackoverflow.com/questions/24822101/when-to-use-getsharedpreferences-vs-savedinstancestate
 
 
 
@@ -356,6 +369,7 @@ https://medium.com/@bherbst/the-many-flavors-of-commit-186608a015b1
 * Как передать данные через интент? - Bundle
 * Что можно положить в Bundle? - Основные типы, Serializable, Parcelable
 * Ограничения на размер Bundle - 500 КБ (2 МБ по другим источникам) - https://stackoverflow.com/questions/8552514/is-there-any-limit-of-bundle-in-android
+* Serializable vs Parcelable - https://stackoverflow.com/questions/3323074/android-difference-between-parcelable-and-serializable
 * Difference between implicit and explicit intents.
 * How to open url in browser?
 
@@ -449,6 +463,7 @@ https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
 * View.invalidate() и requestLayout() - https://stackoverflow.com/questions/13856180/usage-of-forcelayout-requestlayout-and-invalidate
 * View.onMeasure() - что такое measureSpec, как вычисляется размер вью - https://stackoverflow.com/questions/14493732/what-are-widthmeasurespec-and-heightmeasurespec-in-android-custom-views === https://developer.android.com/reference/android/view/View.MeasureSpec
 * Какие требования предъявляются к методу onDraw()
+* View.onDraw() может вызываться чаще, чем 16 мс, на новых устройствах (120 Гц). Вообще частота отрисовки берется из внешней переменной и зависит от устройства.
 * Canvas.save() restore() -  https://stackoverflow.com/questions/29040064/save-canvas-then-restore-why-is-that
 * Touch Event - https://developer.android.com/training/gestures/viewgroup === https://www.vogella.com/tutorials/AndroidTouch/article.html
 * View Binding - https://developer.android.com/topic/libraries/view-binding
@@ -471,10 +486,11 @@ https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
 * Which operations are prohibited to run on the main thread?
 * What is the disadvantage of AsyncTask?
 * Handler, Looper, Handler Thread - https://blog.mindorks.com/android-core-looper-handler-and-handlerthread-bd54d69fe91a
-* Как устроена MessageQueue?
+* Как устроена MessageQueue? - MessageQueue обеспечивает асинхронный механизм выполнения и позволяет запланировать выполнение операций вместо того, чтобы они терялись. Упорядочен по timestamp. Если вызываем Handler.postDelayed, то message записывается в очередь со значением currentTimeStamp + delay. Если в очереди остались только элементы, запланированные в будуем (у которых timestamp > currentTimeStamp), то лупер будет просто в цикле крутиться и не будет забирать элементы из очереди
 * Как будет работать MessageQueue, если вызывать Handler.postDelayed() - Очередь упорядочивается по времени - https://stackoverflow.com/questions/27240015/does-postdelayed-cause-the-message-to-jump-to-the-front-of-the-queue
 * Если в Handler передать Runnable, то где он будет храниться? - У Message есть поле callback типа Runnable, там и будет храниться (см исходники Handler и Message)
 * Как с помощью Handler сделать таймер, срабатывающий точно каждую 1 секунду? - Есть метод Handler.postAtTime(), второй вариант - использовать Timer - https://stackoverflow.com/questions/23007641/correct-handler-postdelay-time
+* Для чего нужен MainLooper? - На главном потоке абсолютно всё работает через MainLooper. Без него Java-приложение завершится сразу же после старта (после завершения метода main)
 
 
 
@@ -566,6 +582,7 @@ https://stackoverflow.com/questions/14703627/websockets-protocol-vs-http
 * What is the purpose of @Inject annotation?
 * Modules and Components
 * Is it possible not to use Modules and how?
+* Dagger в мультипроцессном приложении - в каждом процессе свой экземпляр Application, свой Dagger со своими инстансами
 
 
 
