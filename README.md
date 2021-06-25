@@ -14,14 +14,20 @@ Basic plan and some typical questions and code samples for Android interview.
 ## OOP and SOLID
 * OOP: abstraction, encapsulation, inheritance, polymorphism - https://tproger.ru/translations/oop-principles-cheatsheet/
 * Отличие переопределения и перегрузки методов (overload vs override)
+* Overload - статический полиморфизм, Override - динамический полиморфизм - https://javarush.ru/groups/posts/2025-polimorfizm-i-ego-druzjhja
 * Можно ли переопределить и перегрузить статические методы? - Перегрузить - да, переопределить - нет - https://stackoverflow.com/questions/2475259/can-i-override-and-overload-static-methods-in-java/5436790#:~:text=Static%20methods%20cannot%20be%20overridden,decides%20which%20method%20gets%20called.&text=Static%20methods%20can%20be%20overloaded%20(meaning%20that%20you%20can%20have,they%20have%20different%20parameter%20types).
 * SOLID
-* Design Patterns: creational, behavioral, structural - https://habr.com/ru/post/210288/
-* What Design Patterns did you use in your projects?
-* RecyclerView Adapter является ли реализацией паттерна Адаптер? - нет - https://stackoverflow.com/questions/41626980/are-android-adapters-an-example-of-adapter-design-pattern
 * Почему композиция лучше наследования? - https://stackoverflow.com/questions/49002/prefer-composition-over-inheritance
 * Clean code
 * Как в алгоритмах оценивают потребление памяти? - Тоже в терминах O() - https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/
+
+
+
+### Design Patterns
+* Design Patterns: creational, behavioral, structural - https://habr.com/ru/post/210288/
+* What Design Patterns did you use in your projects?
+* RecyclerView Adapter является ли реализацией паттерна Адаптер? - нет - https://stackoverflow.com/questions/41626980/are-android-adapters-an-example-of-adapter-design-pattern
+* Подводные камни singleton - https://stackoverflow.com/questions/137975/what-are-drawbacks-or-disadvantages-of-singleton-pattern
 
 
 
@@ -154,6 +160,7 @@ https://www.baeldung.com/java-cyclic-barrier
 * Почему потоки создаются долго (что при этом происходит)? - https://stackoverflow.com/questions/5483047/why-is-creating-a-thread-said-to-be-expensive
 * Synchronized collections - https://www.baeldung.com/java-synchronized-collections
 * Concurrent collections (появились в Java 5) - https://www.developer.com/design/an-introduction-to-concurrent-collection-apis-in-java/
+* Как правильно остановить поток в Java, не вызывая метода Thread.stop(), так как он deprecated? - https://stackoverflow.com/questions/10961714/how-to-properly-stop-the-thread-in-java
 
 
 
@@ -230,6 +237,7 @@ https://github.com/gpetuhov/RxJavaTutorial
 * launch vs async - https://stackoverflow.com/questions/46226518/what-is-the-difference-between-launch-join-and-async-await-in-kotlin-coroutines
 * Корутины под капотом - https://rohit.fyi/blog/kotlin-coroutines-under-the-hood-part-1/
 * Нужна ли синхронизация при использовании корутин? - Нужна - https://kotlinlang.org/docs/shared-mutable-state-and-concurrency.html
+* RxJava vs Coroutines - https://stackoverflow.com/questions/42066066/how-kotlin-coroutines-are-better-than-rxkotlin
 
 
 
@@ -594,6 +602,7 @@ https://stackoverflow.com/questions/14703627/websockets-protocol-vs-http
 * What is Dependency Injection?
 * Преимущества Dependency Inversion (Dagger) - зависимости предоставляются извне - легко менять составные части объектов, Dagger берет на себя генерацию графа зависимостей, упрощается тестирование - в тестах вместо реальных объектов можно подсовывать замоканные
 * Dependency Injection vs Service Locator - https://habr.com/ru/post/465395/
+* Плюсы-минусы Dagger - Dagger берет на себя генерацию графа зависимостей, но в больших проектах генерится много кода и увеличивается время сборки из-за кодогенерации
 * What is the purpose of @Inject annotation?
 * Modules and Components
 * Is it possible not to use Modules and how?
@@ -606,6 +615,11 @@ https://stackoverflow.com/questions/14703627/websockets-protocol-vs-http
 * MVP
 * MVVM
 * MVI
+* Как сделать презентер без Moxy?
+ 
+https://startandroid.ru/ru/blog/473-mvp-na-primere-jekrana-s-pin-kodom.html 
+
+https://www.raywenderlich.com/7026-getting-started-with-mvp-model-view-presenter-on-android
 
 
 
