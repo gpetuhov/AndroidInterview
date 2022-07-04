@@ -20,6 +20,7 @@ Latest update: 2021.06.25
 * Overload - статический полиморфизм, Override - динамический полиморфизм - https://javarush.ru/groups/posts/2025-polimorfizm-i-ego-druzjhja
 * Можно ли переопределить и перегрузить статические методы? - Перегрузить - да, переопределить - нет - https://stackoverflow.com/questions/2475259/can-i-override-and-overload-static-methods-in-java/5436790#:~:text=Static%20methods%20cannot%20be%20overridden,decides%20which%20method%20gets%20called.&text=Static%20methods%20can%20be%20overloaded%20(meaning%20that%20you%20can%20have,they%20have%20different%20parameter%20types).
 * SOLID
+* GRASP - https://bool.dev/blog/detail/grasp-printsipy
 * Почему композиция лучше наследования? - https://stackoverflow.com/questions/49002/prefer-composition-over-inheritance
 * Clean code
 * Как в алгоритмах оценивают потребление памяти? - Тоже в терминах O(), как и вычислительную сложность - https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/
@@ -43,7 +44,7 @@ Latest update: 2021.06.25
 ## Java
 * Модификаторы доступа в Java - public, protected, private, package private (когда нет никакого ключевого слова) - https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
 * Как можно менять модификаторы доступа в потомках? - Можно расширять, но нельзя сужать - https://docs.oracle.com/javase/tutorial/java/IandI/override.html
-* What is an interface?
+* What is an interface? - https://www.baeldung.com/java-interfaces
 * Допускается ли множественное наследование? - Наследование нет, но класс может реализовывать несколько интерфейсов
 * Отличие interface от abstract class - в интерфейсе все методы public, не может быть private
 * ClassLoader, getClass - https://www.baeldung.com/java-classloaders
