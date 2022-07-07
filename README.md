@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2021.06.25
+Latest update: 2022.07.07
 
 ## Previous experience
 * Tell us about yourself and your previous experience.
@@ -380,6 +380,11 @@ https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-iv-4
 * Activity.onDestroy() - гарантируется ли вызов? - нет - https://developer.android.com/reference/android/app/Activity.html#onDestroy%28%29
 * When only onDestroy is called for an activity without onPause() and onStop()? (If finish() is called in the onCreate method of an activity, the system will call onDestroy() method directly.)
 * Что такое Window?
+
+https://developer.android.com/reference/android/view/Window
+
+https://stackoverflow.com/questions/9451755/what-is-an-android-window
+
 * Как получить Window - Activity.getWindow() - https://stackoverflow.com/questions/7378644/how-to-call-getwindow-outside-an-activity-in-android
 * Window DecorView - https://stackoverflow.com/questions/23276847/what-is-an-android-decorview
 * Activity launch modes
