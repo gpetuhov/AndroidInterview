@@ -465,7 +465,7 @@ https://medium.com/@bherbst/the-many-flavors-of-commit-186608a015b1
 * Shared ViewModel - https://blog.mindorks.com/shared-viewmodel-in-android-shared-between-fragments
 * How to pass data into Fragments? (Via arguments)
 * Почему нельзя во фрагмент передавать параметры в конструкторе? - при пересоздании вызывается дефолтный конструктор без параметров - https://stackoverflow.com/questions/9245408/best-practice-for-instantiating-a-new-android-fragment
-* Fragment.onDestroy() вызывается ли при вызове FragmentManager.remove() или replace()
+* Fragment.onDestroy() вызывается ли при вызове FragmentManager.remove() или replace() - да - https://stackoverflow.com/questions/62498487/fragmenttransaction-add-fragment-after-replace-old-fragment-but-ondestroyview-ca
 * Зачем AlertDialog пихать в DialogFragment? - Чтобы диалогом управлял FragmentManger и восстанавливал при повороте экрана - https://developer.android.com/guide/fragments/dialogs
 * BottomSheetDialogFragment - https://medium.com/@kosta.palash/using-bottomsheetdialogfragment-with-material-design-guideline-f9814c39b9fc
 * Если фрагмент прописан в xml, то под капотом все равно будет использоваться FragmentManager
