@@ -502,7 +502,12 @@ https://habr.com/ru/post/139432/
 
 
 ### Broadcast receivers
-* Broadcast Receivers - http://developer.alexanderklimov.ru/android/broadcast.php
+* Broadcast Receivers
+ 
+https://developer.android.com/guide/components/broadcasts
+ 
+http://developer.alexanderklimov.ru/android/broadcast.php
+
 * Sticky Broadcast
 
 
