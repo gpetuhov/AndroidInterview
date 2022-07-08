@@ -165,6 +165,9 @@ https://www.baeldung.com/java-singleton
 
 
 ## Multithreading
+
+https://github.com/gpetuhov/MultithreadingTutorial
+
 * Which means of organizing multithreading do you know? (Java Thread, ExecutorService, Handler, AsyncTask, RxJava, Kotlin coroutines)
 * ExecutorService
 
