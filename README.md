@@ -477,7 +477,7 @@ https://medium.com/@bherbst/the-many-flavors-of-commit-186608a015b1
 
 
 ### Services
-* What is the purpose of Services?
+* What is the purpose of Services? - https://developer.android.com/guide/components/services
 * I am starting a network request from the Service. What problem can this cause? (Service runs on the main thread by default)
 * Как стартовать сервис в бэкграунде, поможет ли вызов startService в бэкграунд потоке? - нет - https://stackoverflow.com/questions/18526131/how-to-run-service-not-on-main-thread
 * Difference between Service and IntentService.
