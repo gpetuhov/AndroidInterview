@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2022.07.07
+Latest update: 2022.07.08
 
 ## Previous experience
 * Tell us about yourself and your previous experience.
@@ -387,7 +387,7 @@ https://stackoverflow.com/questions/9451755/what-is-an-android-window
 
 * Как получить Window - Activity.getWindow() - https://stackoverflow.com/questions/7378644/how-to-call-getwindow-outside-an-activity-in-android
 * Window DecorView - https://stackoverflow.com/questions/23276847/what-is-an-android-decorview
-* Activity launch modes
+* Activity launch modes - https://habr.com/ru/company/otus/blog/493802/
 * Для чего запускать разные активити в разных тасках?
 
 https://developer.android.com/guide/components/activities/tasks-and-back-stack 
