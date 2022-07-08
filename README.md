@@ -486,7 +486,7 @@ https://medium.com/@bherbst/the-many-flavors-of-commit-186608a015b1
 * Bound services lifecycle - https://developer.android.com/guide/components/bound-services
 * Started (unbound) Service lifecycle
 * Начиная с Андроид 8, какие сервисы можно запускать
-* Android 12 - что поменялось в плане startForegroundService?
+* Android 12 - что поменялось в плане startForegroundService? - You can't start foreground service, when the app is in background (ForegroundServiceStartNotAllowedException will be thrown)
 * Время, в течение которого надо успеть показать уведомление из foreground Service - 5 секунд - https://stackoverflow.com/questions/57272203/context-startforegroundservice-did-not-then-call-service-startforeground-s
 * Doze mode
 * Interprocess communication (IPC) - https://habr.com/ru/post/139432/
