@@ -606,7 +606,7 @@ https://stackoverflow.com/questions/14703627/websockets-protocol-vs-http
 * Retrofit - what to do, if an app needs to interact with 2 different hosts? (create 2 different retrofit objects)
 * How to append some parameter (for example "platform=android") to all network queries? (Use interceptors)
 * Multipart передача данных
-* Как в JSON передавать бинарные данные без использования Base64
+* Как в JSON передавать бинарные данные без использования Base64 - https://stackoverflow.com/questions/1443158/binary-data-in-json-string-something-better-than-base64
 * How to load images? (Use Glide, Picasso or Fresco)
 * GraphQL
 * Protobuf, для чего файл proto?
