@@ -530,8 +530,9 @@ http://developer.alexanderklimov.ru/android/broadcast.php
 
 ### Layouts
 * Difference between LinearLayout and ConstraintLayout
-* CoordinatorLayout
-* RelativeLayout vs ConstraintLayout - производительность ConstraintLayout лучше
+* CoordinatorLayout - https://developer.android.com/reference/androidx/coordinatorlayout/widget/CoordinatorLayout
+* Collapsing toolbar - https://medium.com/@ankitashettya/collapsing-toolbar-in-android-using-androidx-jetpack-d54678ac4cbc 
+* RelativeLayout vs ConstraintLayout - производительность ConstraintLayout лучше - https://stackoverflow.com/questions/37321448/differences-between-constraintlayout-and-relativelayout
 * ConstraintLayout Barriers and Guidelines - https://stackoverflow.com/questions/47114672/what-is-difference-between-barrier-and-guideline-in-constraint-layout
 
 
