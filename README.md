@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2022.07.08
+Latest update: 2022.07.09
 
 ## Previous experience
 * Tell us about yourself and your previous experience.
@@ -508,7 +508,7 @@ https://developer.android.com/guide/components/broadcasts
  
 http://developer.alexanderklimov.ru/android/broadcast.php
 
-* Sticky Broadcast
+* Sticky Broadcast - https://stackoverflow.com/questions/3490913/what-is-a-sticky-broadcast
 
 
 
