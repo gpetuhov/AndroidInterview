@@ -620,7 +620,7 @@ https://stackoverflow.com/questions/14703627/websockets-protocol-vs-http
 
 
 ### Room
-* Последовательность работы с Room: какие классы нужно создать и что в них нужно описать?
+* Последовательность работы с Room: какие классы нужно создать и что в них нужно описать? - https://developer.android.com/training/data-storage/room
 * What does @Entity annotation do?
 * What is @PrimaryKey?
 * Что такое индекс в SQL? - https://www.datacamp.com/community/tutorials/introduction-indexing-sql?utm_source=adwords_ppc&utm_campaignid=1455363063&utm_adgroupid=65083631748&utm_device=c&utm_keyword=&utm_matchtype=b&utm_network=g&utm_adpostion=&utm_creative=278443377095&utm_targetid=aud-392016246653:dsa-429603003980&utm_loc_interest_ms=&utm_loc_physical_ms=9047030&gclid=Cj0KCQjwlMaGBhD3ARIsAPvWd6jxN4Dh86nixmxgtpWlbxipHxNrFAwjlVBqy7m4DYtR94rB9_rQXjsaAv9dEALw_wcB
