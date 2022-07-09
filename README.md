@@ -560,7 +560,7 @@ https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
 * Touch Event - https://developer.android.com/training/gestures/viewgroup === https://www.vogella.com/tutorials/AndroidTouch/article.html
 * View Binding - https://developer.android.com/topic/libraries/view-binding
 * Data Binding (отличие от View Binding) - https://developer.android.com/topic/libraries/data-binding
-* Data Binding Adapters
+* Data Binding Adapters - https://developer.android.com/topic/libraries/data-binding/binding-adapters
 * RecyclerView: when onCreateViewHolder and onBindViewHolder are called?
 
 
