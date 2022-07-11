@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2022.07.09
+Latest update: 2022.07.11
 
 ## Previous experience
 * Tell us about yourself and your previous experience.
@@ -42,6 +42,7 @@ Latest update: 2022.07.09
 
 
 ## Java
+* Где используется ключевое слово final? - константы, классы, методы
 * Модификаторы доступа в Java - public, protected, private, package private (когда нет никакого ключевого слова) - https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
 * Как можно менять модификаторы доступа в потомках? - Можно расширять, но нельзя сужать - https://docs.oracle.com/javase/tutorial/java/IandI/override.html
 * What is an interface? - https://www.baeldung.com/java-interfaces
@@ -224,6 +225,10 @@ https://www.baeldung.com/java-cyclic-barrier
 
 ## Kotlin
 * What are the advantages of Kotlin?
+* Any, Unit, Nothing - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/
+* Класс Any - назначение, методы класса (equals, hashCode, toString) - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/
+* Класс Nothing - это null нет? - нет, Nothing - это наследник всех классов в Kotlin, он описывает функции, которые могут ничего не вернуть (если функция кидает исключение, то она возвращает Nothing). А Nothing? уже может быть null. - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-nothing.html
+* Класс Unit - это аналог void в Java - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/
 * Модификаторы доступа в Kotlin
 * Kotlin default and named arguments
 * How to create a singleton in Kotlin? - object
