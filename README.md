@@ -346,6 +346,7 @@ https://habr.com/ru/post/327782/
 
 * Как R8 может исходный код напрямую преобразовать в DEX?
 * OOM Killer (Out of memory killer)
+* Можно ли в Android запустить jar? - Android uses the Dalvik VM, whereas you need the Java VM to run a jar-file. So no, you can't run a jar-file on android - https://stackoverflow.com/questions/12905012/running-an-executable-jar-in-android - но при этом можно подключить к приложению jar-библиотеку - https://stackoverflow.com/questions/25660166/how-to-add-a-jar-in-external-libraries-in-android-studio 
 
 
 
@@ -568,6 +569,8 @@ https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
 * View.onMeasure() - что такое measureSpec, как вычисляется размер вью - https://stackoverflow.com/questions/14493732/what-are-widthmeasurespec-and-heightmeasurespec-in-android-custom-views === https://developer.android.com/reference/android/view/View.MeasureSpec
 * Какие требования предъявляются к методу onDraw() - https://developer.android.com/training/custom-views/custom-drawing
 * View.onDraw() может вызываться чаще, чем 16 мс, на новых устройствах (120 Гц). Вообще частота отрисовки берется из внешней переменной и зависит от устройства.
+* Методы onFinishInflate(), onSaveInstanceState(), onFocusChanged()
+* Какие методы надо вызывать, если у View поменялись цвет и размер? - Если поменялся только цвет, то invalidate(), если только размер - то requestLayout(). Так как вызов requestLayout() не гарантирует вызова onDraw(), то если поменялись цвет и размер, то надо вызвать оба метода: invalidate() и requestLayout()
 * Canvas.save() restore() -  https://stackoverflow.com/questions/29040064/save-canvas-then-restore-why-is-that
 * Touch Event - https://developer.android.com/training/gestures/viewgroup === https://www.vogella.com/tutorials/AndroidTouch/article.html
 * View Binding - https://developer.android.com/topic/libraries/view-binding
@@ -651,6 +654,7 @@ https://stackoverflow.com/questions/14703627/websockets-protocol-vs-http
 * Is it possible not to use Modules and how?
 * Dagger в мультипроцессном приложении - в каждом процессе свой экземпляр Application, свой Dagger со своими инстансами
 * Dagger @Binds vs @Provides - https://stackoverflow.com/questions/52586940/what-is-the-use-case-for-binds-vs-provides-annotation-in-dagger2
+* Недостатки @Provides - @Provides генерит больше кода, чем @Binds. Поэтому по возможности лучше использовать @Binds, а @Provides используется, когда по сути у объекта нет конструктора и нужно использовать билдер. 
 * Dagger @IntoSet - https://habr.com/ru/post/336414/
 * Dagger subcomponents vs component dependencies - https://stackoverflow.com/questions/29587130/dagger-2-subcomponents-vs-component-dependencies
 * Dagger Scopes
