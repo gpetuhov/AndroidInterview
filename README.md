@@ -238,7 +238,7 @@ https://www.baeldung.com/java-cyclic-barrier
 * Difference between val and const val?
 * Во что компилируется лямбда? - в анонимный внутренний класс Java
 * Can enums contain values? (Yes: enum class Action(val value: Int) { WALK(0), RUN(1), ... }
-* В чем преимущество sealed class перед enum 
+* В чем преимущество sealed class перед enum? - Sealed class позволяет создавать экземпляры классов, поэтому можно менять состояние объектов в рантайме. Enum не позволяет менять состояние.
 * lateinit vs lazy
 * Delegates - как там реализована потокобезопасность?
 * inline functions
@@ -542,6 +542,10 @@ http://developer.alexanderklimov.ru/android/broadcast.php
 * Collapsing toolbar - https://medium.com/@ankitashettya/collapsing-toolbar-in-android-using-androidx-jetpack-d54678ac4cbc 
 * RelativeLayout vs ConstraintLayout - производительность ConstraintLayout лучше - https://stackoverflow.com/questions/37321448/differences-between-constraintlayout-and-relativelayout
 * ConstraintLayout Barriers and Guidelines - https://stackoverflow.com/questions/47114672/what-is-difference-between-barrier-and-guideline-in-constraint-layout
+* Сколько проходов по детям с вызовом метода onMeasure() выполняется во FrameLayout? - Один, так как FrameLayout не говорит детям, как вставать друг относительно друга
+* Сколько проходов по детям с вызовом метода onMeasure() выполняется в LinearLayout? - Один, если нет weight. Два, если есть weight.
+* По скорости отрисовки лэйауты выстраиваются следующим образом (от самой быстрой к медленной):
+FrameLayout - LinearLayout - RelativeLayout - ConstraintLayout 
 
 
 
