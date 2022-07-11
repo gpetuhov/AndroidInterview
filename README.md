@@ -225,20 +225,22 @@ https://www.baeldung.com/java-cyclic-barrier
 
 ## Kotlin
 * What are the advantages of Kotlin?
-* Any, Unit, Nothing - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/
+* Any, Unit, Nothing - https://gb.ru/posts/razbiraemsya-v-tipah-kotlin-unit-nothing-any-i-null
 * Класс Any - назначение, методы класса (equals, hashCode, toString) - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/
 * Класс Nothing - это null нет? - нет, Nothing - это наследник всех классов в Kotlin, он описывает функции, которые могут ничего не вернуть (если функция кидает исключение, то она возвращает Nothing). А Nothing? уже может быть null. - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-nothing.html
 * Класс Unit - это аналог void в Java - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/
 * Модификаторы доступа в Kotlin
+* Как вычисляется hashCode по умолчанию?
+* Если не переопределить equals(), то как будут сравниваться объекты с помощью оператора сравнения == ? - Это зависит от JVM, но в большинстве JVM объекту при создании присваивается случайное число, и в данном случае сравнение будет происходить на основе этого числа. По умолчанию сравнение происходит не на основе ссылок, так как ссылки могут измениться. 
 * Kotlin default and named arguments
 * How to create a singleton in Kotlin? - object
 * Companion objects
 * Difference between val and const val?
 * Во что компилируется лямбда? - в анонимный внутренний класс Java
 * Can enums contain values? (Yes: enum class Action(val value: Int) { WALK(0), RUN(1), ... }
+* В чем преимущество sealed class перед enum 
 * lateinit vs lazy
 * Delegates - как там реализована потокобезопасность?
-* Nothing - https://gb.ru/posts/razbiraemsya-v-tipah-kotlin-unit-nothing-any-i-null
 * inline functions
 * Можно ли узнать тип дженерика в inline функции? - только если сделать reified parameters - https://stackoverflow.com/questions/33146160/how-to-check-generic-type-in-kotlin
 * reified type parameters (речь только про функции, классы не могут иметь reified полей) - https://kotlinlang.org/docs/inline-functions.html#reified-type-parameters
@@ -248,6 +250,7 @@ https://www.baeldung.com/java-cyclic-barrier
 * Как сделаны под капотом extension functions - это static методы - https://moshenskyi.medium.com/kotlin-under-the-hood-extension-functions-1d61fabdf631
 * Extension functions - существует мнение, что это антипаттерн, им легко злоупотреблять и тяжело тестировать
 * Data classes - https://kotlinlang.org/docs/data-classes.html#properties-declared-in-the-class-body
+* Методы data класса 
 * В data class можно override только equal без hashcode? - нет - https://petamind.com/why-do-we-need-to-override-equals-and-hashcode-methods-in-java-kotlin/
 * Можно ли наследоваться от data classes? - нет - https://discuss.kotlinlang.org/t/data-class-inheritance/4107
 * Как в Kotlin сделать, чтобы property не участвовал в вычислении hashCode в data class? - Прописать параметр в теле класса, а не в конструкторе - https://kotlinlang.org/docs/data-classes.html#properties-declared-in-the-class-body
