@@ -347,6 +347,7 @@ https://habr.com/ru/post/327782/
 * Как R8 может исходный код напрямую преобразовать в DEX?
 * OOM Killer (Out of memory killer)
 * Можно ли в Android запустить jar? - Android uses the Dalvik VM, whereas you need the Java VM to run a jar-file. So no, you can't run a jar-file on android - https://stackoverflow.com/questions/12905012/running-an-executable-jar-in-android - но при этом можно подключить к приложению jar-библиотеку - https://stackoverflow.com/questions/25660166/how-to-add-a-jar-in-external-libraries-in-android-studio 
+* Как перехватить все runtime исключения? - https://stackoverflow.com/questions/32229170/catch-all-possible-android-exception-globally-and-reload-application
 
 
 
