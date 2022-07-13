@@ -43,6 +43,7 @@ Latest update: 2022.07.11
 
 ## Java
 * Где используется ключевое слово final? - константы, классы, методы
+* Как запретить переопределение метода в потомках? - Пометить метод как final
 * Модификаторы доступа в Java - public, protected, private, package private (когда нет никакого ключевого слова) - https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
 * Как можно менять модификаторы доступа в потомках? - Можно расширять, но нельзя сужать - https://docs.oracle.com/javase/tutorial/java/IandI/override.html
 * What is an interface? - https://www.baeldung.com/java-interfaces
@@ -126,6 +127,7 @@ https://stackoverflow.com/questions/25444226/difference-between-sparsearray-vs-a
 
 * Binary search - https://www.baeldung.com/java-binary-search
 * Какие свойства должны быть у коллекции для бинарного поиска
+* Какая сложность поиска элемента в упорядоченном массиве? - Для этого применяем бинарный поиск. Его сложность - O(logn)
 * Как работает HashMap?
 * Что будет, если в Map положить два значения с одинаковым ключом? - Последнее значение перезапишет предыдущеe
 * Что такое коллизия?
@@ -152,6 +154,7 @@ https://www.journaldev.com/1377/java-singleton-design-pattern-best-practices-exa
 https://habr.com/ru/post/129494/
 
 https://www.baeldung.com/java-singleton
+* Виды сортировок - пузырьком O(n^2), слиянием O(nlogn), быстрая сортировка O(nlogn), сортировка подсчетом (применим только в некоторых случаях) O(n+k) где k - количество различных элементов
 
 
 
@@ -225,6 +228,7 @@ https://www.baeldung.com/java-cyclic-barrier
 
 ## Kotlin
 * What are the advantages of Kotlin?
+* Как разрешить переопределение метода в потомках? - Пометить метод как open
 * Any, Unit, Nothing - https://gb.ru/posts/razbiraemsya-v-tipah-kotlin-unit-nothing-any-i-null
 * Класс Any - назначение, методы класса (equals, hashCode, toString) - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/
 * Класс Nothing - это null нет? - нет, Nothing - это наследник всех классов в Kotlin, он описывает функции, которые могут ничего не вернуть (если функция кидает исключение, то она возвращает Nothing). А Nothing? уже может быть null. - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-nothing.html
