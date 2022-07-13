@@ -313,6 +313,7 @@ https://github.com/gpetuhov/RxJavaTutorial
 * Difference between flatMap(), concatMap() and switchMap() - https://medium.com/appunite-edu-collection/rxjava-flatmap-switchmap-and-concatmap-differences-examples-6d1f3ff88ee0
 * Пример использования switchMap - поисковая строка (каждый последующий символ отменяет предыдущий запрос в сеть)
 * Difference between throttleFirst() and debounce() (aka throttleWithTimeout())
+* Custom operator - https://www.baeldung.com/rxjava-custom-operators
 
 
 
