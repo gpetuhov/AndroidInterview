@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2022.07.11
+Latest update: 2022.07.13
 
 ## Previous experience
 * Tell us about yourself and your previous experience.
@@ -576,6 +576,7 @@ https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
 * View.onDraw() может вызываться чаще, чем 16 мс, на новых устройствах (120 Гц). Вообще частота отрисовки берется из внешней переменной и зависит от устройства.
 * Методы onFinishInflate(), onSaveInstanceState(), onFocusChanged()
 * Какие методы надо вызывать, если у View поменялись цвет и размер? - Если поменялся только цвет, то invalidate(), если только размер - то requestLayout(). Так как вызов requestLayout() не гарантирует вызова onDraw(), то если поменялись цвет и размер, то надо вызвать оба метода: invalidate() и requestLayout()
+* Какие мтоды надо переопределить во ViewGroup, чтобы вычислить размер и разместить потомков? - onMeasure() и onLayout() 
 * Canvas.save() restore() -  https://stackoverflow.com/questions/29040064/save-canvas-then-restore-why-is-that
 * Touch Event - https://developer.android.com/training/gestures/viewgroup === https://www.vogella.com/tutorials/AndroidTouch/article.html
 * View Binding - https://developer.android.com/topic/libraries/view-binding
