@@ -77,6 +77,7 @@ https://www.baeldung.com/java-finalize
 * Если переопределил equals, то надо ли переопределять hashcode? - надо
 * Контракт между equals и hashcode - https://www.baeldung.com/java-equals-hashcode-contracts
 * Что может вернуть x.equals(null) - Если x == null, то NPE, иначе false
+* Методы wait() (их несколько), notify(), notifyAll() - https://www.baeldung.com/java-wait-notify
 * Types of references in Java (Strong, Weak, Soft, Phantom)
 
 https://www.geeksforgeeks.org/types-references-java/
