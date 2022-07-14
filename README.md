@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2022.07.13
+Latest update: 2022.07.14
 
 ## Previous experience
 * Tell us about yourself and your previous experience.
@@ -28,7 +28,12 @@ Latest update: 2022.07.13
 
 
 ## Design Patterns
-* Design Patterns: creational, behavioral, structural - https://habr.com/ru/post/210288/
+* Design Patterns: creational, behavioral, structural
+
+https://habr.com/ru/company/vk/blog/325492/
+
+https://habr.com/ru/post/210288/
+
 * Which Design Patterns did you use in your projects?
 * RecyclerView Adapter является ли реализацией паттерна Адаптер? - нет - https://stackoverflow.com/questions/41626980/are-android-adapters-an-example-of-adapter-design-pattern
 * Подводные камни singleton - https://stackoverflow.com/questions/137975/what-are-drawbacks-or-disadvantages-of-singleton-pattern
