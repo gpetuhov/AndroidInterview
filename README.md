@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2022.07.14
+Latest update: 2022.07.15
 
 ## Previous experience
 * Tell us about yourself and your previous experience.
@@ -24,6 +24,7 @@ Latest update: 2022.07.14
 * Почему композиция лучше наследования? - https://stackoverflow.com/questions/49002/prefer-composition-over-inheritance
 * Clean code
 * Как в алгоритмах оценивают потребление памяти? - Тоже в терминах O(), как и вычислительную сложность - https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/
+* Проблемы множественного наследования - почему в Java от него отказались?
 
 
 
