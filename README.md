@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2022.07.15
+Latest update: 2022.07.18
 
 ## Previous experience
 * Tell us about yourself and your previous experience.
@@ -30,6 +30,13 @@ https://bool.dev/blog/detail/grasp-printsipy
 * Clean code
 * Как в алгоритмах оценивают потребление памяти? - Тоже в терминах O(), как и вычислительную сложность - https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/
 * Проблемы множественного наследования - почему в Java от него отказались?
+* Чем ООП отличается от других парадигм программирования?
+* Какие еще существуют парадигмы программирования, кроме ООП?
+* Агрегация и композиция, отличия
+
+https://habr.com/ru/post/354046/
+
+https://ru.stackoverflow.com/questions/596697/%D0%90%D0%B3%D1%80%D0%B5%D0%B3%D0%B0%D1%86%D0%B8%D1%8F-%D0%B8-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D1%8F
 
 
 
