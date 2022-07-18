@@ -26,6 +26,16 @@ https://medium.com/@ruberoid55/grasp-principles-lead-by-examples-for-android-dev
 
 https://bool.dev/blog/detail/grasp-printsipy
 
+https://habr.com/ru/company/otus/blog/491636/
+
+https://habr.com/ru/company/otus/blog/505618/
+
+https://habr.com/ru/company/otus/blog/505852/
+
+https://habr.com/ru/company/otus/blog/507600/
+
+https://habr.com/ru/company/otus/blog/521476/
+
 * Почему композиция лучше наследования? - https://stackoverflow.com/questions/49002/prefer-composition-over-inheritance
 * Clean code
 * Как в алгоритмах оценивают потребление памяти? - Тоже в терминах O(), как и вычислительную сложность - https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/
@@ -37,6 +47,14 @@ https://bool.dev/blog/detail/grasp-printsipy
 https://habr.com/ru/post/354046/
 
 https://ru.stackoverflow.com/questions/596697/%D0%90%D0%B3%D1%80%D0%B5%D0%B3%D0%B0%D1%86%D0%B8%D1%8F-%D0%B8-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D1%8F
+
+* Привести примеры инкапсуляции, наследования и полиморфизма
+* KISS, DRY, YAGNI
+* Преимущества и недостатки ООП
+
+https://tproger.ru/articles/pljusy-minusy-i-perspektivy-oop-v-sovremennoj-razrabotke/
+
+https://tproger.ru/translations/oop-the-trillion-dollar-disaster/?utm_referrer=recommendation-banner
 
 
 
