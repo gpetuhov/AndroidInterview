@@ -20,6 +20,8 @@ Latest update: 2022.07.18
 * Overload - статический полиморфизм, Override - динамический полиморфизм - https://javarush.ru/groups/posts/2025-polimorfizm-i-ego-druzjhja
 * Можно ли переопределить и перегрузить статические методы? - Перегрузить - да, переопределить - нет - https://stackoverflow.com/questions/2475259/can-i-override-and-overload-static-methods-in-java/5436790#:~:text=Static%20methods%20cannot%20be%20overridden,decides%20which%20method%20gets%20called.&text=Static%20methods%20can%20be%20overloaded%20(meaning%20that%20you%20can%20have,they%20have%20different%20parameter%20types).
 * SOLID
+* Плюсы и минусы SOLID
+* Примеры нарушения SOLID в Android SDK
 * GRASP
 
 https://medium.com/@ruberoid55/grasp-principles-lead-by-examples-for-android-development-part-1-ed9e087b5fe1
@@ -84,7 +86,7 @@ https://habr.com/ru/post/210288/
 * Как можно менять модификаторы доступа в потомках? - Можно расширять, но нельзя сужать - https://docs.oracle.com/javase/tutorial/java/IandI/override.html
 * What is an interface? - https://www.baeldung.com/java-interfaces
 * Допускается ли множественное наследование? - Наследование нет, но класс может реализовывать несколько интерфейсов
-* Отличие interface от abstract class - в интерфейсе все методы public, не может быть private
+* Отличие interface от abstract class - в интерфейсе все методы public, не может быть private, абстрактный класс может хранить состояние и может иметь конструктор
 * ClassLoader, getClass - https://www.baeldung.com/java-classloaders
 * Когда ClassLoader грузит класс - при первом обращении к классу
 * Структура памяти в JVM - http://tutorials.jenkov.com/java-concurrency/java-memory-model.html
