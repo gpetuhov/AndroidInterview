@@ -91,7 +91,16 @@ https://habr.com/ru/post/210288/
 * ClassLoader, getClass - https://www.baeldung.com/java-classloaders
 * Когда ClassLoader грузит класс - при первом обращении к классу
 * Структура памяти в JVM - http://tutorials.jenkov.com/java-concurrency/java-memory-model.html
-* Garbage collection - https://www.geeksforgeeks.org/garbage-collection-java/
+* Garbage collection
+
+https://habr.com/ru/post/269621/
+
+https://habr.com/ru/post/269707/
+
+https://habr.com/ru/post/269863/
+
+https://www.geeksforgeeks.org/garbage-collection-java/
+
 * В какой момент Garbage Collector может собрать объект?
 * Как GC поймет, что на объект никто не ссылается
 
@@ -102,6 +111,8 @@ https://stackoverflow.com/questions/27186799/what-are-gc-roots-for-classes
 https://www.yourkit.com/docs/java/help/gc_roots.jsp
 
 * Что является root для Garbage Collection?
+* Ссылочный граф
+* Стратегии очистки памяти g1, serial, parallel
 * В памяти находятся два объекта и ссылаются друг на друга, больше на них никто не ссылается. Соберет ли их GC? - да, это называется island of isolation
 * Для чего нужен Object? - Объявляет ряд базовых методов, в том числе для организации многопоточности, также нужен для того, чтобы garbage collector мог собрать объекты
 * Методы Object - https://www.geeksforgeeks.org/object-class-in-java/
