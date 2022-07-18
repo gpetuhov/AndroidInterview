@@ -70,6 +70,7 @@ https://habr.com/ru/post/210288/
 * Which Design Patterns did you use in your projects?
 * RecyclerView Adapter является ли реализацией паттерна Адаптер? - нет - https://stackoverflow.com/questions/41626980/are-android-adapters-an-example-of-adapter-design-pattern
 * Подводные камни singleton - https://stackoverflow.com/questions/137975/what-are-drawbacks-or-disadvantages-of-singleton-pattern
+* Примеры паттернов проектирования в Android SDK, Dagger, RxJava
 
 
 
@@ -269,9 +270,12 @@ https://www.baeldung.com/java-cyclic-barrier
 * What are the advantages of Kotlin?
 * Как разрешить переопределение метода в потомках? - Пометить метод как open
 * Any, Unit, Nothing - https://gb.ru/posts/razbiraemsya-v-tipah-kotlin-unit-nothing-any-i-null
-* Класс Any - назначение, методы класса (equals, hashCode, toString) - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/
+* Класс Any - назначение, методы класса (equals, hashCode, toString) - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/ 
+* Как связаны Kotlin Any и Java Object? - https://stackoverflow.com/questions/38761021/does-any-object
+* Как Any используется в nullability и multiplatform? 
 * Класс Nothing - это null нет? - нет, Nothing - это наследник всех классов в Kotlin, он описывает функции, которые могут ничего не вернуть (если функция кидает исключение, то она возвращает Nothing). А Nothing? уже может быть null. - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-nothing.html
 * Класс Unit - это аналог void в Java - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/
+* Как переопределить finalize? - https://kotlinlang.org/docs/java-interop.html#finalize 
 * Модификаторы доступа в Kotlin
 * Как вычисляется hashCode по умолчанию?
 * Если не переопределить equals(), то как будут сравниваться объекты с помощью оператора сравнения == ? - Это зависит от JVM, но в большинстве JVM объекту при создании присваивается случайное число, и в данном случае сравнение будет происходить на основе этого числа. По умолчанию сравнение происходит не на основе ссылок, так как ссылки могут измениться. 
