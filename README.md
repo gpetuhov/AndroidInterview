@@ -278,6 +278,7 @@ https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentHashMap
 
 * ThreadLocal - https://www.baeldung.com/java-threadlocal
 * Семафоры, мониторы - https://www.baeldung.com/cs/monitor
+* Средства синхронизации потоков (семафор, фазер) - https://habr.com/ru/post/277669/ 
 * CountDownLatch, Barrier
 
 https://www.baeldung.com/java-countdown-latch 
