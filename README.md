@@ -457,15 +457,15 @@ https://proandroiddev.com/android-internals-101-how-android-os-starts-you-applic
 * ActivityTaskManager 
 * Уровни архитектуры Android
 
-- Application - уровень приложений
+Application - уровень приложений
 
-- Application Framework - уровень фреймворков для работы приложений (так же называется каркас): View, ContentProviders, ResourceManager, ActivityManager и т.д.
+Application Framework - уровень фреймворков для работы приложений (так же называется каркас): View, ContentProviders, ResourceManager, ActivityManager и т.д.
 
-- Library - уровень с/с++ библиотек для работы разных компонентов ос, например System C Library (libc для linux), MediaLibraries, SurfaceManager, SQLite, SGL, SSL и т.д.
+Library - уровень с/с++ библиотек для работы разных компонентов ос, например System C Library (libc для linux), MediaLibraries, SurfaceManager, SQLite, SGL, SSL и т.д.
 
-- Android Runtime - среда выполнения, набор утилит для ядра и виртуальная машина (Dalvik, Art)
+Android Runtime - среда выполнения, набор утилит для ядра и виртуальная машина (Dalvik, Art)
 
-- Linux Kernel - уровень ядра Linux, основные службы по работе с железом находятся тут, например IPC Driver, Power Manager и другие
+Linux Kernel - уровень ядра Linux, основные службы по работе с железом находятся тут, например IPC Driver, Power Manager и другие
  
 https://data-flair.training/blogs/android-architecture/#:~:text=Now%2C%20we%20will%20start%20with,Android%20runtime%2C%20and%20System%20applications.
  
