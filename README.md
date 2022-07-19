@@ -573,7 +573,7 @@ https://medium.com/@veeresh.charantimath8/playing-with-android-task-affinity-and
 * What is Intent used for? (to start activities, services and send broadcasts)
 * Как передать данные через интент? - Bundle
 * Что можно положить в Bundle? - Основные типы, Serializable, Parcelable
-* Ограничения на размер Bundle - 500 КБ (2 МБ по другим источникам) - https://stackoverflow.com/questions/8552514/is-there-any-limit-of-bundle-in-android
+* Ограничения на размер Bundle - зависит от устройства, но самое распространенное значение 1 МБ - https://stackoverflow.com/questions/8552514/is-there-any-limit-of-bundle-in-android
 * Serializable vs Parcelable - https://stackoverflow.com/questions/3323074/android-difference-between-parcelable-and-serializable
 * Проблемы Serializable - 1. Рефлексия, 2. Если поле в Serializable классе будет не Serializable, то при десериализации оно будет просто null (а в случае Parcelable компилятор сразу это подсвечивает)
 * Difference between implicit and explicit intents.
