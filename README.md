@@ -769,6 +769,7 @@ https://stackoverflow.com/questions/14703627/websockets-protocol-vs-http
 ### Data persistence
 * Какие есть способы сохранить данные - shared preferences, db, file
 * Shared preferences persist after app has been uninstalled. How to prevent it? (Add android:allowBackup="false" in the application in the manifest)
+* Особенности и различия разных типов БД (sql, nosql, строковые, колоночные) 
 
 
 
