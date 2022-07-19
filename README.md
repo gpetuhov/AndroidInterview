@@ -260,6 +260,7 @@ https://www.baeldung.com/java-deadlock-livelock
 https://www.baeldung.com/java-dining-philoshophers
 
 * Как использовать tryLock, чтобы избежать deadlock? - https://www.baeldung.com/java-deadlock-livelock
+* Механизмы работы Atomic (CAS/FAA) - https://habr.com/ru/post/319036/
 * Атомарные операции. CompareAndSet
 
 https://ru.stackoverflow.com/questions/616278/%D0%90%D1%82%D0%BE%D0%BC%D0%B0%D1%80%D0%BD%D1%8B%D0%B5-%D0%B8-%D0%BD%D0%B5%D0%B0%D1%82%D0%BE%D0%BC%D0%B0%D1%80%D0%BD%D1%8B%D0%B5-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8-java 
