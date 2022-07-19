@@ -424,10 +424,10 @@ https://github.com/gpetuhov/RxJavaTutorial
 * JVM vs Dalvik vs ART
 
 https://habr.com/ru/post/513928/
-
+ 
 https://medium.com/programming-lite/android-core-jvm-dvm-art-jit-aot-855039a9a8fa
 
-* Разница между hotspot jvm, dalvik и art
+* Разница между hotspot jvm, dalvik и art - https://chowdera.com/2022/04/202204110617280331.html
 * DEX format - https://stackoverflow.com/questions/36356330/difference-between-bytecode-in-class-file-and-that-of-dex-file
 * What is a compiler?
 
@@ -472,6 +472,16 @@ https://data-flair.training/blogs/android-architecture/#:~:text=Now%2C%20we%20wi
 https://developer.android.com/guide/platform
  
 https://www.guru99.com/android-architecture.html 
+ 
+* Детали ОС Android:
+ 
+https://habr.com/ru/company/solarsecurity/blog/334796/
+ 
+https://habr.com/ru/company/solarsecurity/blog/338292/
+ 
+https://habr.com/ru/company/solarsecurity/blog/338494/
+ 
+https://habr.com/ru/company/solarsecurity/blog/427431/ 
 
  
 
