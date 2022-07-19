@@ -294,6 +294,11 @@ https://www.baeldung.com/java-cyclic-barrier
 * Как правильно остановить поток в Java, не вызывая метода Thread.stop(), так как он deprecated? - https://stackoverflow.com/questions/10961714/how-to-properly-stop-the-thread-in-java
 * Есть ли у enum подводные камни в многопоточке? - нет - https://www.geeksforgeeks.org/advantages-and-disadvantages-of-using-enum-as-singleton-in-java/#:~:text=Creation%20of%20Enum%20instance%20is,some%20line%20of%20code%20enum.
 * Что такое Happens Before? - https://www.geeksforgeeks.org/happens-before-relationship-in-java/#:~:text=Happens%2Dbefore%20is%20not%20any,code%20that%20produces%20incorrect%20output. 
+* Дефолтный приоритет нового потока в Java и его аналог Linux
+ 
+https://www.baeldung.com/java-thread-priority 
+ 
+https://medium.com/@vikas.singh_67409/deep-dive-into-thread-priority-in-java-be1a5da30a34
 
 
 
