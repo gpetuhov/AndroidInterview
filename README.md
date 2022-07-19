@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2022.07.18
+Latest update: 2022.07.19
 
 ## Previous experience
 * Tell us about yourself and your previous experience.
@@ -307,12 +307,17 @@ https://www.baeldung.com/java-cyclic-barrier
 * В чем преимущество sealed class перед enum? - Sealed class позволяет создавать экземпляры классов, поэтому можно менять состояние объектов в рантайме. Enum не позволяет менять состояние.
 * lateinit vs lazy
 * Delegates - как там реализована потокобезопасность?
-* inline functions
+* inline functions - https://medium.com/android-news/inline-noinline-crossinline-what-do-they-mean-b13f48e113c2
 * crossinline
 * Можно ли узнать тип дженерика в inline функции? - только если сделать reified parameters - https://stackoverflow.com/questions/33146160/how-to-check-generic-type-in-kotlin
 * reified type parameters (речь только про функции, классы не могут иметь reified полей) - https://kotlinlang.org/docs/inline-functions.html#reified-type-parameters
 * noinline - https://kotlinlang.org/docs/inline-functions.html
 * Байткод inline, crossinline, noinline
+
+https://www.baeldung.com/kotlin/inline-functions
+
+https://www.baeldung.com/kotlin/crossinline-vs-noinline
+
 * tailrec - https://kotlinlang.org/docs/functions.html#tail-recursive-functions
 * infix functions - https://kotlinlang.org/docs/functions.html#infix-notation
 * Может ли infix функция содержать дефолтные параметры - нет
