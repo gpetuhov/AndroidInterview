@@ -427,6 +427,7 @@ https://habr.com/ru/post/513928/
 
 https://medium.com/programming-lite/android-core-jvm-dvm-art-jit-aot-855039a9a8fa
 
+* Разница между hotspot jvm, dalvik и art
 * DEX format - https://stackoverflow.com/questions/36356330/difference-between-bytecode-in-class-file-and-that-of-dex-file
 * What is a compiler?
 
@@ -444,13 +445,18 @@ https://habr.com/ru/post/327782/
 * OOM Killer (Out of memory killer)
 * Можно ли в Android запустить jar? - Android uses the Dalvik VM, whereas you need the Java VM to run a jar-file. So no, you can't run a jar-file on android - https://stackoverflow.com/questions/12905012/running-an-executable-jar-in-android - но при этом можно подключить к приложению jar-библиотеку - https://stackoverflow.com/questions/25660166/how-to-add-a-jar-in-external-libraries-in-android-studio 
 * Как перехватить все runtime исключения? - https://stackoverflow.com/questions/32229170/catch-all-possible-android-exception-globally-and-reload-application === https://stackoverflow.com/questions/3171394/using-global-exception-handling-with-setuncaughtexceptionhandler-and-toast
-* Как выглядит cold путь запуска приложения, что такое Zygote
- 
-https://medium.com/android-news/android-application-launch-explained-from-zygote-to-your-activity-oncreate-8a8f036864b
+* Как выглядит cold путь запуска приложения
+
+https://habr.com/ru/post/521522/ 
+
+ https://medium.com/android-news/android-application-launch-explained-from-zygote-to-your-activity-oncreate-8a8f036864b
  
 https://proandroiddev.com/android-internals-101-how-android-os-starts-you-application-e1c98a014c05 
 
+* Zygote
+* ActivityTaskManager 
 
+ 
 
 ### Basics
 * Android components and what are they used for (Activity, Service, Content Provider, Broadcast Receiver)
