@@ -289,6 +289,7 @@ https://www.baeldung.com/java-cyclic-barrier
 * Synchronized collections - https://www.baeldung.com/java-synchronized-collections
 * Concurrent collections (появились в Java 5) - https://www.developer.com/design/an-introduction-to-concurrent-collection-apis-in-java/
 * Почему Thread.stop() deprecated - https://docs.oracle.com/javase/8/docs/technotes/guides/concurrency/threadPrimitiveDeprecation.html#:~:text=stop%20deprecated%3F,monitors%20that%20it%20has%20locked.&text=Unlike%20other%20unchecked%20exceptions%2C%20ThreadDeath,his%20program%20may%20be%20corrupted.
+* Способы остановки потока - https://www.baeldung.com/java-thread-stop
 * Как правильно остановить поток в Java, не вызывая метода Thread.stop(), так как он deprecated? - https://stackoverflow.com/questions/10961714/how-to-properly-stop-the-thread-in-java
 * Есть ли у enum подводные камни в многопоточке? - нет - https://www.geeksforgeeks.org/advantages-and-disadvantages-of-using-enum-as-singleton-in-java/#:~:text=Creation%20of%20Enum%20instance%20is,some%20line%20of%20code%20enum.
 * Что такое Happens Before? - https://www.geeksforgeeks.org/happens-before-relationship-in-java/#:~:text=Happens%2Dbefore%20is%20not%20any,code%20that%20produces%20incorrect%20output. 
