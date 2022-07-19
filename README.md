@@ -491,6 +491,7 @@ https://habr.com/ru/company/solarsecurity/blog/427431/
 * Как Андроид компоненты влияют на приоритет процесса - https://medium.com/androiddevelopers/who-lives-and-who-dies-process-priorities-on-android-cb151f39044f
 * Project structure of an Android application (modules, manifest, source, res, assets, Gradle scripts)
 * What is AndroidManifest.xml?
+* Состав манифеста: permissions, intent filters, features, meta 
 * Манифест многомодульного проекта, manifest merge - https://android-doc.github.io/tools/building/manifest-merge.html 
 * Context - https://developer.android.com/reference/android/content/Context
 * Context types. Difference between Application Context and Activity Context
