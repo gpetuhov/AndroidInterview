@@ -736,6 +736,8 @@ https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
 * RecyclerView: when onCreateViewHolder and onBindViewHolder are called?
 * Как сделать, чтобы в RecyclerView менялся только один TextView только в одном элементе? - использовать DiffUtils и payloads - https://www.valueof.io/blog/recyclerview-diffutil-change-payloads
 * Способы генерации id вьюхи - https://stackoverflow.com/questions/1714297/android-view-setidint-id-programmatically-how-to-avoid-id-conflicts 
+* Как создать custom attributes? - https://developer.android.com/training/custom-views/create-view
+* Зачем нужен оверрайд конструктора вьюхи? - https://stackoverflow.com/questions/9195713/do-i-need-all-three-constructors-for-an-android-custom-view 
 
 
 
