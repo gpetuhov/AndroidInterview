@@ -723,6 +723,7 @@ https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
 * Data Binding (отличие от View Binding) - https://developer.android.com/topic/libraries/data-binding
 * Data Binding Adapters - https://developer.android.com/topic/libraries/data-binding/binding-adapters
 * RecyclerView: when onCreateViewHolder and onBindViewHolder are called?
+* Как сделать, чтобы в RecyclerView менялся только один TextView только в одном элементе? - использовать DiffUtils и payloads - https://www.valueof.io/blog/recyclerview-diffutil-change-payloads
 
 
 
