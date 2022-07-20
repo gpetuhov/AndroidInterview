@@ -730,6 +730,7 @@ https://medium.com/@Zielony/guide-to-android-custom-views-attributes-ab28de3e54b
 
  * Какие методы надо переопределить в кастомном вью?
 * View.invalidate() и requestLayout() - https://stackoverflow.com/questions/13856180/usage-of-forcelayout-requestlayout-and-invalidate
+* Что такое forceLayout() и когда он нужен? - https://itsobes.ru/AndroidSobes/dlia-chego-nuzhen-metod-view-forcelayout/
 * View.onMeasure() - что такое measureSpec, как вычисляется размер вью - https://stackoverflow.com/questions/14493732/what-are-widthmeasurespec-and-heightmeasurespec-in-android-custom-views === https://developer.android.com/reference/android/view/View.MeasureSpec
 * Статические методы MeasureSpec - https://developer.android.com/reference/android/view/View.MeasureSpec 
 * Какие требования предъявляются к методу onDraw() - https://developer.android.com/training/custom-views/custom-drawing
@@ -747,6 +748,8 @@ https://medium.com/@Zielony/guide-to-android-custom-views-attributes-ab28de3e54b
 * Способы генерации id вьюхи - https://stackoverflow.com/questions/1714297/android-view-setidint-id-programmatically-how-to-avoid-id-conflicts 
 * Как создать custom attributes? - https://developer.android.com/training/custom-views/create-view
 * Зачем нужен оверрайд конструктора вьюхи? - https://stackoverflow.com/questions/9195713/do-i-need-all-three-constructors-for-an-android-custom-view 
+* Темы и стили - https://developer.android.com/guide/topics/ui/look-and-feel/themes
+* Что такое overdray и инструменты его обнаружения - https://medium.com/android-news/reduce-overdraw-from-your-android-application-6cf15f4aa85f 
 
 
 
