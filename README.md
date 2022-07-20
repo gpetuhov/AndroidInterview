@@ -750,6 +750,7 @@ https://medium.com/@Zielony/guide-to-android-custom-views-attributes-ab28de3e54b
 * Зачем нужен оверрайд конструктора вьюхи? - https://stackoverflow.com/questions/9195713/do-i-need-all-three-constructors-for-an-android-custom-view 
 * Темы и стили - https://developer.android.com/guide/topics/ui/look-and-feel/themes
 * Что такое overdray и инструменты его обнаружения - https://medium.com/android-news/reduce-overdraw-from-your-android-application-6cf15f4aa85f 
+* ImageView fit_center и center_inside - https://stackoverflow.com/questions/11353973/whats-the-difference-between-center-inside-and-fit-center-scale-types
 
 
 
