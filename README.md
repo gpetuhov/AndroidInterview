@@ -718,8 +718,17 @@ https://proandroiddev.com/the-life-cycle-of-a-view-in-android-6a2c4665b95e
 
 https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
 
-* Custom Views - https://developer.android.com/guide/topics/ui/custom-components
-* Какие методы надо переопределить в кастомном вью?
+* Custom Views
+ 
+https://developer.android.com/guide/topics/ui/custom-components
+ 
+https://medium.com/@Zielony/guide-to-android-custom-views-basics-7dfed4583841
+ 
+https://medium.com/@Zielony/guide-to-android-custom-views-constructors-df47476e334c
+ 
+https://medium.com/@Zielony/guide-to-android-custom-views-attributes-ab28de3e54b7 
+
+ * Какие методы надо переопределить в кастомном вью?
 * View.invalidate() и requestLayout() - https://stackoverflow.com/questions/13856180/usage-of-forcelayout-requestlayout-and-invalidate
 * View.onMeasure() - что такое measureSpec, как вычисляется размер вью - https://stackoverflow.com/questions/14493732/what-are-widthmeasurespec-and-heightmeasurespec-in-android-custom-views === https://developer.android.com/reference/android/view/View.MeasureSpec
 * Статические методы MeasureSpec - https://developer.android.com/reference/android/view/View.MeasureSpec 
