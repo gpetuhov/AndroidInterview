@@ -722,6 +722,7 @@ https://proandroiddev.com/android-custom-view-level-3-81e767c8cc75
 * Какие методы надо переопределить в кастомном вью?
 * View.invalidate() и requestLayout() - https://stackoverflow.com/questions/13856180/usage-of-forcelayout-requestlayout-and-invalidate
 * View.onMeasure() - что такое measureSpec, как вычисляется размер вью - https://stackoverflow.com/questions/14493732/what-are-widthmeasurespec-and-heightmeasurespec-in-android-custom-views === https://developer.android.com/reference/android/view/View.MeasureSpec
+* Статические методы MeasureSpec - https://developer.android.com/reference/android/view/View.MeasureSpec 
 * Какие требования предъявляются к методу onDraw() - https://developer.android.com/training/custom-views/custom-drawing
 * View.onDraw() может вызываться чаще, чем 16 мс, на новых устройствах (120 Гц). Вообще частота отрисовки берется из внешней переменной и зависит от устройства.
 * Методы onFinishInflate(), onSaveInstanceState(), onFocusChanged()
