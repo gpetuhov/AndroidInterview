@@ -552,6 +552,8 @@ https://habr.com/ru/company/otus/blog/493802/
  
 https://medium.com/mobile-app-development-publication/android-activity-launchmode-made-simple-df7f0ec5e037
 
+* Два способа как задать launch mode? - манифест и intent flags
+* Общая особенность singleTask и singleInstance - эти режимы очистят активити стоящие сверху заданной активити
 * Для чего запускать разные активити в разных тасках?
 
 https://developer.android.com/guide/components/activities/tasks-and-back-stack 
