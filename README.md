@@ -874,6 +874,9 @@ https://www.raywenderlich.com/7026-getting-started-with-mvp-model-view-presenter
 * Можем ли мы создать свой build type? - Можем - https://stackoverflow.com/questions/49286743/how-to-add-more-build-types-in-app-than-library/49288390
 * How to make some part of the code run only in debug? (if (BuildConfig.DEBUG) {...} else {...})
 * What is multidex?
+* Gradle parallel - https://docs.gradle.org/current/userguide/performance.html
+* Плюсы и минусы многомодульных проектов - https://stackoverflow.com/questions/41632599/dis-advantage-of-having-multiple-modules-in-an-android-studio-project
+* Сложности dependency injection в многомодульных проектах - https://developer.android.com/training/dependency-injection/dagger-multi-module
 
 
 
