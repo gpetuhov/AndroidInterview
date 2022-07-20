@@ -534,6 +534,7 @@ https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-iv-4
 * How to prevent activity from being destroyed on orientation change via manifest? - Use configChanges attribute - https://developer.android.com/guide/topics/manifest/activity-element#config
 * Activity.onDestroy() - гарантируется ли вызов? - нет - https://developer.android.com/reference/android/app/Activity.html#onDestroy%28%29
 * When only onDestroy is called for an activity without onPause() and onStop()? (If finish() is called in the onCreate method of an activity, the system will call onDestroy() method directly.)
+* Методы Activity onContentChanged, onPostCreate, onPostResume, onAttachedToWindow, onUserInteraction, onWindowFocusChanged, onDetachedFromWindow 
 * Что такое Window?
 
 https://developer.android.com/reference/android/view/Window
