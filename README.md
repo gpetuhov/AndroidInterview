@@ -706,7 +706,7 @@ FrameLayout - LinearLayout - RelativeLayout - ConstraintLayout
 
 
 ### Animation
-* Виды анимации
+* Виды анимации - https://www.geeksforgeeks.org/animation-in-android-with-example/
 * Анимация с помощью ConstraintSet
 
 
