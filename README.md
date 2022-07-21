@@ -379,6 +379,7 @@ https://www.baeldung.com/kotlin/crossinline-vs-noinline
 * Иерархия коллекций в Kotlin
 * Немутабельные и мутабельные коллекции в Kotlin и Java - в Kotlin под капотом немутабельной коллекции лежит мутабельная, поэтому list.toMutableList() += 5 сработает, а в Java - нет (см. Collection.unModifiableList())
 * Kotlin @Synchronized
+* typealias, что это, во что компилируется - https://www.baeldung.com/kotlin/type-aliases
 
 
 
