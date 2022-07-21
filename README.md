@@ -58,6 +58,8 @@ https://tproger.ru/articles/pljusy-minusy-i-perspektivy-oop-v-sovremennoj-razrab
 
 https://tproger.ru/translations/oop-the-trillion-dollar-disaster/?utm_referrer=recommendation-banner
 
+* Как между собой связаны Dependency Injection, Dependency Inversion, Inversion of Control? - https://medium.com/ssense-tech/dependency-injection-vs-dependency-inversion-vs-inversion-of-control-lets-set-the-record-straight-5dc818dc32d1
+
 
 
 ## Design Patterns
