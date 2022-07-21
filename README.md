@@ -322,6 +322,7 @@ https://medium.com/@vikas.singh_67409/deep-dive-into-thread-priority-in-java-be1
 * Как связаны Kotlin Any и Java Object? - https://stackoverflow.com/questions/38761021/does-any-object
 * Как Any используется в nullability и multiplatform? 
 * Класс Nothing - это null нет? - нет, Nothing - это наследник всех классов в Kotlin, он описывает функции, которые могут ничего не вернуть (если функция кидает исключение, то она возвращает Nothing). А Nothing? уже может быть null. - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-nothing.html
+* Как Nothing может являться сабклассом любого объекта? - https://the-cogitator.com/posts/blog/2018/06/29/the-nature-of-nothing-in-kotlin.html 
 * Класс Unit - это аналог void в Java - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/
 * Как переопределить finalize? - https://kotlinlang.org/docs/java-interop.html#finalize 
 * Модификаторы доступа в Kotlin
