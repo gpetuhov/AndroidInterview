@@ -780,6 +780,8 @@ https://medium.com/@Zielony/guide-to-android-custom-views-attributes-ab28de3e54b
 
 ### Network
 * HTTP methods - https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
+* Структура HTTP запроса (метод, хедер, тело)
+* Хедер - структура (key-value) и назначение 
 * HTTP vs WebSocket
 * Socket vs WebSocket - https://stackoverflow.com/questions/4973622/difference-between-socket-and-websocket
 
@@ -799,6 +801,12 @@ https://stackoverflow.com/questions/14703627/websockets-protocol-vs-http
 * How to load images? (Use Glide, Picasso or Fresco)
 * GraphQL
 * Protobuf, для чего файл proto?
+* Другие библиотеки для работы с сетью, кроме Retrofit - Volley, Fuel
+* Как установить соединение без использования библиотек? - HttpUrlConnection
+ 
+https://stackoverflow.com/questions/8654876/http-get-using-android-httpurlconnection
+ 
+https://developer.android.com/reference/java/net/HttpURLConnection
 
 
 
