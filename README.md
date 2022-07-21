@@ -794,7 +794,9 @@ https://stackoverflow.com/questions/14703627/websockets-protocol-vs-http
 https://ssaurel.medium.com/learn-to-use-websockets-on-android-with-okhttp-ba5f00aea988
  
 https://square.github.io/okhttp/4.x/okhttp/okhttp3/-web-socket/ 
- 
+
+* Scarlet - https://github.com/Tinder/Scarlet
+* SignalR 
 * What is JSON?
 * How to set up a name of the serialized property different from the property name? (Use @SerializedName("name") annotation)
 * How to exclude a property from the serialization? (mark property as transient (keyword in Java or annotation in Kotlin))
