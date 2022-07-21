@@ -388,6 +388,7 @@ https://github.com/gpetuhov/RxJavaTutorial
 * Какой метод вызвать для начала эмита у горячего Observable - метод ConnectableObservable.connect() - https://medium.com/tompee/rxjava-ninja-hot-and-cold-observables-19b30d6cc2fa
 * Как преобразовать холодный Observable в горячий - Вызвать publish() - https://medium.com/tompee/rxjava-ninja-hot-and-cold-observables-19b30d6cc2fa
 * Как преобразовать горячий Observable в холодный - Вызвать defer() - https://stackoverflow.com/questions/34030793/transform-a-hot-observable-to-a-cold-observable
+* Отличие just от from - from эмитит каждый элемент отдельно, а just один раз все сразу - https://stackoverflow.com/questions/30819349/rxjava-just-vs-from#:~:text=from%20works%20mostly%20with%20data,array%20item%20or%20integer%20item. 
 * Что такое RxJava defer - https://blog.mindorks.com/understanding-rxjava-defer-operator
 * Что такое RxJava share - https://medium.com/mindorks/how-to-use-rxjava-share-operator-26b08973771a
 * Что такое RxJava PublishProcessor - http://reactivex.io/RxJava/javadoc/io/reactivex/processors/PublishProcessor.html
