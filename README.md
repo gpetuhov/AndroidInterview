@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2022.07.20
+Latest update: 2022.07.21
 
 ## Previous experience
 * Tell us about yourself and your previous experience.
@@ -412,6 +412,13 @@ https://github.com/gpetuhov/RxJavaTutorial
 * Пример использования switchMap - поисковая строка (каждый последующий символ отменяет предыдущий запрос в сеть)
 * Difference between throttleFirst() and debounce() (aka throttleWithTimeout())
 * Custom operator - https://www.baeldung.com/rxjava-custom-operators
+* Тестирование rx цепочек, проблема одного потока, TestSubscriber, TestObserver
+ 
+https://www.baeldung.com/rxjava-testing
+ 
+https://medium.com/@vanniktech/testing-rxjava-code-made-easy-4cc32450fc9a
+ 
+* Переопределение шедулера с помощью RxJavaPlugins и введение абстракции над шедулерами - https://stackoverflow.com/questions/43285064/rxjava-2-overriding-io-scheduler-in-unit-test 
 
 
 
