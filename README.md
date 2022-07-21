@@ -882,6 +882,7 @@ https://www.bornfight.com/blog/mvp-vs-mvvm-choosing-the-right-android-architectu
 
 * MVVM
 * MVI
+* На каком слое располагаются MVP, MVVM, MVI? - Это способ организации презентационного слоя 
 * Как сделать презентер без Moxy?
  
 https://startandroid.ru/ru/blog/473-mvp-na-primere-jekrana-s-pin-kodom.html 
