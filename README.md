@@ -841,7 +841,12 @@ https://stackoverflow.com/questions/14703627/websockets-protocol-vs-http
 * Clean Architecture - https://habr.com/ru/company/mobileup/blog/335382/
 * UseCases лучше разбивать на отдельные функции (под каждую функцию свой UseCase)
 * Для чего нужна Clean Architecture? - Развязывание классов (отсутствие сильной связанности, возможность замены компонентов), тестопригодность, уменьшение порога входа в проект для новых разработчиков (все понимают, что на каждом слое находится)
-* MVP
+* MVP, достоинства и недостатки
+
+https://stackoverflow.com/questions/40766185/advantage-of-mvp-in-android
+
+https://www.bornfight.com/blog/mvp-vs-mvvm-choosing-the-right-android-architecture/
+
 * MVVM
 * MVI
 * Как сделать презентер без Moxy?
