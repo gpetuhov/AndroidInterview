@@ -807,6 +807,13 @@ https://stackoverflow.com/questions/14703627/websockets-protocol-vs-http
 https://stackoverflow.com/questions/8654876/http-get-using-android-httpurlconnection
  
 https://developer.android.com/reference/java/net/HttpURLConnection
+ 
+* Другие протоколы прикладного уровня OSI, кроме HTTP - SMTP, POP и др
+* Разница между REST и gRPC
+ 
+https://www.baeldung.com/rest-vs-grpc
+ 
+https://habr.com/ru/post/565020/ 
 
 
 
