@@ -353,6 +353,7 @@ https://www.baeldung.com/kotlin/crossinline-vs-noinline
 * Как сделаны под капотом extension functions - это static методы - https://moshenskyi.medium.com/kotlin-under-the-hood-extension-functions-1d61fabdf631
 * Extension functions - существует мнение, что это антипаттерн, им легко злоупотреблять и тяжело тестировать
 * Всегда ли extension functions статические?
+* Extension functions во что компилируются и как их использовать из Java - https://stackoverflow.com/questions/28294509/accessing-kotlin-extension-functions-from-java 
 * Литералы - https://kotlinlang.org/docs/basic-types.html#literal-constants 
 * Data classes - https://kotlinlang.org/docs/data-classes.html#properties-declared-in-the-class-body
 * Методы data класса 
