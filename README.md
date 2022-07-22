@@ -633,6 +633,7 @@ https://medium.com/@veeresh.charantimath8/playing-with-android-task-affinity-and
 * Serializable vs Parcelable - https://stackoverflow.com/questions/3323074/android-difference-between-parcelable-and-serializable
 * Проблемы Serializable - 1. Рефлексия, 2. Если поле в Serializable классе будет не Serializable, то при десериализации оно будет просто null (а в случае Parcelable компилятор сразу это подсвечивает)
 * Всегда ли оправдано применение Parcelable? - Только при большом количестве операций в единицу времени (1000 и больше) 
+* Как под капотом устроен Parcelable? 
 * Difference between implicit and explicit intents.
 * How to open url in browser?
 
