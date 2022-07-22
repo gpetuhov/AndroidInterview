@@ -524,6 +524,15 @@ https://medium.com/@banmarkovic/what-is-context-in-android-and-which-one-should-
 
 * Отображение AlertDialog из app context - https://nhancv.medium.com/android-show-dialog-without-activity-context-94661d48400f
 * raw vs assets - что где хранить, отличия? (в raw доступ через R.raw.id, в assets через asset manager) - https://stackoverflow.com/questions/5583608/difference-between-res-and-assets-directories
+* Что такое утечки памяти, как они возникают, как их диагностировать (профилировщик, Leak Canary)?
+ 
+https://www.raywenderlich.com/4690472-memory-leaks-in-android
+ 
+https://dropbox.tech/mobile/detecting-memory-leaks-in-android-applications
+ 
+https://proandroiddev.com/everything-you-need-to-know-about-memory-leaks-in-android-d7a59faaf46a 
+ 
+* В чем проблема утечки памяти в случае активити?
 
 
 
