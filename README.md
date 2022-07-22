@@ -266,7 +266,12 @@ https://www.baeldung.com/java-synchronized
 
 https://stackoverflow.com/questions/3519664/difference-between-volatile-and-synchronized-in-java
 
-* Поможет ли volatile от гонки? - нет - https://www.javatpoint.com/volatile-keyword-in-java
+* Поможет ли volatile от гонки? - нет - Почему не помогает?
+ 
+https://www.javatpoint.com/volatile-keyword-in-java
+ 
+https://www.baeldung.com/java-volatile-variables-thread-safety 
+
 * Можно ли все переменные сделать volatile? - В зависимости от процессора volatile может дать увеличение времени из-за чтения не из кэша ядра, а из основной памяти - https://stackoverflow.com/questions/4633866/is-volatile-expensive
 * Deadlock - что это и как бороться?
 
