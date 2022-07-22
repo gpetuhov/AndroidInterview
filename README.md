@@ -781,7 +781,14 @@ https://medium.com/@Zielony/guide-to-android-custom-views-attributes-ab28de3e54b
 * View.onDraw() может вызываться чаще, чем 16 мс, на новых устройствах (120 Гц). Вообще частота отрисовки берется из внешней переменной и зависит от устройства.
 * Методы onFinishInflate(), onSaveInstanceState(), onFocusChanged()
 * Какие методы надо вызывать, если у View поменялись цвет и размер? - Если поменялся только цвет, то invalidate(), если только размер - то requestLayout(). Так как вызов requestLayout() не гарантирует вызова onDraw(), то если поменялись цвет и размер, то надо вызвать оба метода: invalidate() и requestLayout()
-* Какие мтоды надо переопределить во ViewGroup, чтобы вычислить размер и разместить потомков? - onMeasure() и onLayout() 
+* Какие методы надо переопределить во ViewGroup, чтобы вычислить размер и разместить потомков? - onMeasure() и onLayout() 
+* Как сохранить состояние кастомной вьюхи?
+ 
+https://www.netguru.com/blog/how-to-correctly-save-the-state-of-a-custom-view-in-android
+ 
+https://stackoverflow.com/questions/3542333/how-to-prevent-custom-views-from-losing-state-across-screen-orientation-changes 
+
+* На каком треде выполняется сохранения/восстановление состояния в Bundle? - main thread - https://developer.android.com/topic/libraries/architecture/saving-states 
 * Canvas.save() restore() -  https://stackoverflow.com/questions/29040064/save-canvas-then-restore-why-is-that
 * Touch Event - https://developer.android.com/training/gestures/viewgroup === https://www.vogella.com/tutorials/AndroidTouch/article.html
 * View Binding - https://developer.android.com/topic/libraries/view-binding
