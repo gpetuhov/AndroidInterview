@@ -874,7 +874,16 @@ https://developer.android.com/reference/java/net/HttpURLConnection
  
 https://www.baeldung.com/rest-vs-grpc
  
-https://habr.com/ru/post/565020/ 
+https://habr.com/ru/post/565020/
+
+ 
+ 
+### WorkManager
+* Какие проблемы решает?
+* Гарантирует ли выполнение точно по времени?
+* Может ли система снять с выполнения задачи WorkManager?
+* В каком потоке выполняются задачи WorkManager?
+* Как из WorkManager показать прогресс в активити? 
 
 
 
