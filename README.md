@@ -915,10 +915,16 @@ https://habr.com/ru/post/565020/
 * What is the purpose of @Inject annotation?
 * Modules and Components
 * Is it possible not to use Modules and how?
+* Можно ли делать модуль в модуле? - да
+* Можно ли делать компонент в компоненте? 
+* Dagger в многомодульном приложении - https://developer.android.com/training/dependency-injection/dagger-multi-module
 * Dagger в мультипроцессном приложении - в каждом процессе свой экземпляр Application, свой Dagger со своими инстансами
 * Dagger @Binds vs @Provides - https://stackoverflow.com/questions/52586940/what-is-the-use-case-for-binds-vs-provides-annotation-in-dagger2
 * Недостатки @Provides - @Provides генерит больше кода, чем @Binds. Поэтому по возможности лучше использовать @Binds, а @Provides используется, когда по сути у объекта нет конструктора и нужно использовать билдер. 
+* Multibinding 
+* @IntoMap 
 * Dagger @IntoSet - https://habr.com/ru/post/336414/
+* @IntoMap, @IntoSet - для чего они нужны, практический пример 
 * Dagger subcomponents vs component dependencies - https://stackoverflow.com/questions/29587130/dagger-2-subcomponents-vs-component-dependencies
 * Dagger Scopes
 * Управление жизненным циклом компонентов
