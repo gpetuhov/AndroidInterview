@@ -630,6 +630,7 @@ https://medium.com/@veeresh.charantimath8/playing-with-android-task-affinity-and
 * Как передать данные через интент? - Bundle
 * Что можно положить в Bundle? - Основные типы, Serializable, Parcelable
 * Ограничения на размер Bundle - зависит от устройства, но самое распространенное значение 1 МБ - https://stackoverflow.com/questions/8552514/is-there-any-limit-of-bundle-in-android
+* С чем связано ограничение на размер Bundle? - https://stackoverflow.com/questions/8552514/is-there-any-limit-of-bundle-in-android#:~:text=It%20depends%20on%20the%20purpose,save%20the%20state%20of%20activities. 
 * Serializable vs Parcelable - https://stackoverflow.com/questions/3323074/android-difference-between-parcelable-and-serializable
 * Проблемы Serializable - 1. Рефлексия, 2. Если поле в Serializable классе будет не Serializable, то при десериализации оно будет просто null (а в случае Parcelable компилятор сразу это подсвечивает)
 * Всегда ли оправдано применение Parcelable? - Только при большом количестве операций в единицу времени (1000 и больше) 
