@@ -882,7 +882,7 @@ https://habr.com/ru/post/565020/
 * Какие проблемы решает? - https://developer.android.com/topic/libraries/architecture/workmanager
 * Гарантирует ли выполнение точно по времени? - нет - https://stackoverflow.com/questions/50299814/how-to-schedule-notifications-using-workmanager
 * Может ли система снять с выполнения задачи WorkManager?
-* В каком потоке выполняются задачи WorkManager?
+* В каком потоке выполняются задачи WorkManager? - background по умолчанию - https://developer.android.com/topic/libraries/architecture/workmanager/advanced/threading
 * Как из WorkManager показать прогресс в активити? 
 
 
