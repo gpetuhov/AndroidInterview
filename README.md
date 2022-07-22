@@ -131,7 +131,7 @@ https://www.baeldung.com/java-finalize
 
 * Зачем нужны методы equals и hashcode
 * Если переопределил equals, то надо ли переопределять hashcode? - надо
-* Контракт между equals и hashcode - https://www.baeldung.com/java-equals-hashcode-contracts
+* Контракт между equals и hashcode - если equals true, то хешкоды равны. Обратное может не выполняться - если хешкоды равны, то equals не обязательно true, так как для разных объектов существует вероятность получить одинаковый хешкод (коллизия) - https://www.baeldung.com/java-equals-hashcode-contracts
 * Как вычисляется hashcode в Dalvik (Android 4.4) - Адрес объекта >> 3 бита
 * Что может вернуть x.equals(null) - Если x == null, то NPE, иначе false
 * Методы wait() (их несколько), notify(), notifyAll() - https://www.baeldung.com/java-wait-notify
