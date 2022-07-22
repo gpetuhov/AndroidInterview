@@ -153,11 +153,15 @@ https://javarush.ru/groups/posts/2291-osobennosti-phantomreference
 
 https://stackoverflow.com/questions/299659/whats-the-difference-between-softreference-and-weakreference-in-java/299702#299702
 
-* Зачем нужна PhantomReference
+* Зачем нужна PhantomReference, привести практический пример использования
+
+https://javarush.ru/groups/posts/2291-osobennosti-phantomreference
 
 https://developer.android.com/reference/java/lang/ref/PhantomReference#:~:text=Phantom%20references%20are%20most%20often,with%20the%20Java%20finalization%20mechanism.&text=Unlike%20soft%20and%20weak%20references,collector%20as%20they%20are%20enqueued. 
 
 https://stackoverflow.com/questions/53822132/java-phantomreference-vs-finalize
+
+https://o7planning.org/13697/java-phantomreference
 
 * Практический пример использования PhantomReference в Android
 * Асимптотическая сложность конкатенации строк - O(n^2) - https://overcoder.net/q/186163/%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C-%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0%D1%82%D0%B5%D0%BD%D0%B0%D1%86%D0%B8%D0%B8-%D1%81%D1%82%D1%80%D0%BE%D0%BA-%D0%B2-c-%D0%B8-java
