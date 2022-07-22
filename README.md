@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2022.07.21
+Latest update: 2022.07.22
 
 ## Previous experience
 * Tell us about yourself and your previous experience.
@@ -533,6 +533,13 @@ https://dropbox.tech/mobile/detecting-memory-leaks-in-android-applications
 https://proandroiddev.com/everything-you-need-to-know-about-memory-leaks-in-android-d7a59faaf46a 
  
 * В чем проблема утечки памяти в случае активити?
+* На основе какого принципа основана Leac Canary?
+ 
+http://developer.alexanderklimov.ru/android/debug/leakcanary.php
+ 
+https://russianblogs.com/article/80601561279/
+ 
+https://developpaper.com/android-leakcanary-memory-leak-detection-principle/ 
 
 
 
