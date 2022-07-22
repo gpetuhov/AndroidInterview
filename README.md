@@ -933,6 +933,8 @@ https://www.raywenderlich.com/12275430-dagger-in-multi-module-clean-applications
 https://habr.com/ru/post/336414/
 
 https://dagger.dev/dev-guide/multibindings.html
+ 
+https://medium.com/mobile-app-development-publication/dagger-2-multibindings-reference-rewrite-70c23842b782 
 
  * @IntoMap 
 * Dagger @IntoSet - https://habr.com/ru/post/336414/
