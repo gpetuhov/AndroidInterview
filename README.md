@@ -782,6 +782,7 @@ https://medium.com/@Zielony/guide-to-android-custom-views-attributes-ab28de3e54b
 * Статические методы MeasureSpec - https://developer.android.com/reference/android/view/View.MeasureSpec 
 * Какие требования предъявляются к методу onDraw() - https://developer.android.com/training/custom-views/custom-drawing
 * View.onDraw() может вызываться чаще, чем 16 мс, на новых устройствах (120 Гц). Вообще частота отрисовки берется из внешней переменной и зависит от устройства.
+* В чем проблема выделения памяти в onDraw? - https://stackoverflow.com/questions/27717093/drawallocation-memory-allocations-within-drawing-code 
 * Методы onFinishInflate(), onSaveInstanceState(), onFocusChanged()
 * Какие методы надо вызывать, если у View поменялись цвет и размер? - Если поменялся только цвет, то invalidate(), если только размер - то requestLayout(). Так как вызов requestLayout() не гарантирует вызова onDraw(), то если поменялись цвет и размер, то надо вызвать оба метода: invalidate() и requestLayout()
 * Какие методы надо переопределить во ViewGroup, чтобы вычислить размер и разместить потомков? - onMeasure() и onLayout() 
