@@ -254,10 +254,24 @@ https://www.baeldung.com/java-singleton
 
 https://github.com/gpetuhov/MultithreadingTutorial
 
+* Чем отличается асинхронность, многопоточность и конкурентность?
+ 
+https://medium.com/swift-india/concurrency-parallelism-threads-processes-async-and-sync-related-39fd951bc61d
+ 
+https://www.baeldung.com/cs/async-vs-multi-threading
+ 
+https://codewala.net/2015/07/29/concurrency-vs-multi-threading-vs-asynchronous-programming-explained/ 
+
 * Which means of organizing multithreading do you know? (Java Thread, ExecutorService, Handler, AsyncTask, RxJava, Kotlin coroutines)
 * ExecutorService
 
 https://www.baeldung.com/java-executor-service-tutorial
+
+* Какие состояния может иметь поток и каков смысл каждого состояния Thread.getState()
+ 
+https://www.baeldung.com/java-thread-lifecycle
+ 
+https://www.geeksforgeeks.org/lifecycle-and-states-of-a-thread-in-java/ 
 
 * Race condition - точное определение
 * synchronized vs volatile
