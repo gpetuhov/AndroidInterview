@@ -262,6 +262,7 @@ https://www.baeldung.com/cs/async-vs-multi-threading
  
 https://codewala.net/2015/07/29/concurrency-vs-multi-threading-vs-asynchronous-programming-explained/ 
 
+* Thread vs Runnable - https://medium.com/@bharatkulratan/difference-between-runnable-and-thread-in-java-aacced9dca44
 * Which means of organizing multithreading do you know? (Java Thread, ExecutorService, Handler, AsyncTask, RxJava, Kotlin coroutines)
 * ExecutorService
 
