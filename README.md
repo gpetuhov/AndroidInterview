@@ -288,6 +288,7 @@ https://www.javatpoint.com/volatile-keyword-in-java
 https://www.baeldung.com/java-volatile-variables-thread-safety 
 
 * Можно ли все переменные сделать volatile? - В зависимости от процессора volatile может дать увеличение времени из-за чтения не из кэша ядра, а из основной памяти - https://stackoverflow.com/questions/4633866/is-volatile-expensive
+* synchronized vs static synchronized - https://stackoverflow.com/questions/6367885/difference-between-synchronizing-a-static-method-and-a-non-static-method
 * Deadlock - что это и как бороться?
 
 https://www.baeldung.com/java-deadlock-livelock
@@ -296,6 +297,7 @@ https://www.baeldung.com/java-dining-philoshophers
 
 * Механизмы неблокирующей многопоточности 
 * Как использовать tryLock, чтобы избежать deadlock? - https://www.baeldung.com/java-deadlock-livelock
+* Synchronized vs Lock - https://www.geeksforgeeks.org/lock-framework-vs-thread-synchronization-in-java/ 
 * Что такое атомарность? 
 * Почему инкремент не атомарный? - http://java.msk.ru/%D0%BD%D0%B5-%D0%B0%D1%82%D0%BE%D0%BC%D0%B0%D1%80%D0%BD%D0%BE%D1%81%D1%82%D1%8C-i-volatile-%D0%B8-synchronized/
 * Механизмы работы Atomic (CAS/FAA) - https://habr.com/ru/post/319036/
@@ -342,6 +344,7 @@ https://medium.com/@vikas.singh_67409/deep-dive-into-thread-priority-in-java-be1
 * sleep vs wait - https://www.geeksforgeeks.org/difference-between-wait-and-sleep-in-java/ 
 * Что произойдет, если в run() выбросить исключение? - https://aozturk.medium.com/how-to-handle-uncaught-exceptions-in-java-abf819347906
 * Как обрабатывать InterruptedException? - https://www.baeldung.com/java-interrupted-exception
+* Java Util Concurrent (JUC) - https://habr.com/ru/company/luxoft/blog/157273/ 
  
 
 
