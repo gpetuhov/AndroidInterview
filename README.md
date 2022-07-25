@@ -536,6 +536,9 @@ https://habr.com/ru/company/solarsecurity/blog/338494/
  
 https://habr.com/ru/company/solarsecurity/blog/427431/ 
 
+* Можно ли запустить компоненты разных приложений в одном процессе? - да, это дефолтное поведение (например в случае Intent.ACTION_VIEW), но можно вообще сделать разные приложения, работающие в одном процессе - https://stackoverflow.com/questions/17664090/can-multiple-android-applications-share-a-single-process-and-application-context
+* Можно ли запустить компоненты одного приложения в разных процессах? - да
+ 
  
 
 ### Basics
@@ -564,7 +567,7 @@ https://dropbox.tech/mobile/detecting-memory-leaks-in-android-applications
 https://proandroiddev.com/everything-you-need-to-know-about-memory-leaks-in-android-d7a59faaf46a 
  
 * В чем проблема утечки памяти в случае активити?
-* На основе какого принципа основана Leac Canary?
+* На основе какого принципа основана Leak Canary?
  
 http://developer.alexanderklimov.ru/android/debug/leakcanary.php
  
