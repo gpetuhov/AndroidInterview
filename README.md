@@ -445,6 +445,7 @@ https://github.com/gpetuhov/RxJavaTutorial
 * Difference between merge() and concat()
 * Difference between zip() and combineLatest()
 * Zip под капотом как работает
+* Что произойдет если при применении оператора zip упадет сначала один поток данныхх, а затем второй? - Произойдет exception, подписка onError не будет отработана второй раз
 * Difference between flatMap(), concatMap() and switchMap() - https://medium.com/appunite-edu-collection/rxjava-flatmap-switchmap-and-concatmap-differences-examples-6d1f3ff88ee0
 * Пример использования switchMap - поисковая строка (каждый последующий символ отменяет предыдущий запрос в сеть)
 * Difference between throttleFirst() and debounce() (aka throttleWithTimeout())
