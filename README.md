@@ -339,7 +339,9 @@ https://www.baeldung.com/java-thread-priority
 https://medium.com/@vikas.singh_67409/deep-dive-into-thread-priority-in-java-be1a5da30a34
 * Starvation и LiveLock - https://www.baeldung.com/cs/deadlock-livelock-starvation
 * sleep vs wait - https://www.geeksforgeeks.org/difference-between-wait-and-sleep-in-java/ 
-
+* Что произойдет, если в run() выбросить исключение? - https://aozturk.medium.com/how-to-handle-uncaught-exceptions-in-java-abf819347906
+* Как обрабатывать InterruptedException? - https://www.baeldung.com/java-interrupted-exception
+ 
 
 
 ## Kotlin
