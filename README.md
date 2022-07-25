@@ -327,6 +327,7 @@ https://www.baeldung.com/java-countdown-latch
 https://www.baeldung.com/java-cyclic-barrier
 
 * Object wait(), notify(), notifyAll() - https://howtodoinjava.com/java/multi-threading/wait-notify-and-notifyall-methods/
+* Какие два метода класса Object можно использовать для реализации простого сценария producer / consumer? - https://www.baeldung.com/java-producer-consumer-problem
 * Почему потоки создаются долго (что при этом происходит)? - https://stackoverflow.com/questions/5483047/why-is-creating-a-thread-said-to-be-expensive
 * Разница между synchronized и concurrent collections - https://javarevisited.blogspot.com/2016/05/what-is-difference-between-synchronized.html#axzz7ZSljBC9o 
 * Synchronized collections - https://www.baeldung.com/java-synchronized-collections
