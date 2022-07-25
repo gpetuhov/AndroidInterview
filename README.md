@@ -375,7 +375,7 @@ https://www.baeldung.com/kotlin/inline-functions
 
 https://www.baeldung.com/kotlin/crossinline-vs-noinline
 
-* tailrec - https://kotlinlang.org/docs/functions.html#tail-recursive-functions
+* tailrec - преобразует tail recursion метод в метод с циклом - https://kotlinlang.org/docs/functions.html#tail-recursive-functions
 * infix functions - https://kotlinlang.org/docs/functions.html#infix-notation
 * Может ли infix функция содержать дефолтные параметры - нет
 * Как сделаны под капотом extension functions - это static методы - https://moshenskyi.medium.com/kotlin-under-the-hood-extension-functions-1d61fabdf631
