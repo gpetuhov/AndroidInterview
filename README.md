@@ -298,6 +298,7 @@ https://www.baeldung.com/java-dining-philoshophers
 * Механизмы неблокирующей многопоточности 
 * Как использовать tryLock, чтобы избежать deadlock? - https://www.baeldung.com/java-deadlock-livelock
 * Synchronized vs Lock - https://www.geeksforgeeks.org/lock-framework-vs-thread-synchronization-in-java/ 
+* Является ли synchronized честной блокировкой? - нет - https://senior.ua/articles/mnogopotochnost-v-java-lekciya-3-blokirovki-i-klassy-sinhronizacii-potokov 
 * Что такое атомарность? 
 * Почему инкремент не атомарный? - http://java.msk.ru/%D0%BD%D0%B5-%D0%B0%D1%82%D0%BE%D0%BC%D0%B0%D1%80%D0%BD%D0%BE%D1%81%D1%82%D1%8C-i-volatile-%D0%B8-synchronized/
 * Механизмы работы Atomic (CAS/FAA) - https://habr.com/ru/post/319036/
