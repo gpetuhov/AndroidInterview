@@ -322,7 +322,7 @@ https://www.baeldung.com/java-countdown-latch
 
 https://www.baeldung.com/java-cyclic-barrier
 
-* Object wait(), notify(), notifyAll()
+* Object wait(), notify(), notifyAll() - https://howtodoinjava.com/java/multi-threading/wait-notify-and-notifyall-methods/
 * Почему потоки создаются долго (что при этом происходит)? - https://stackoverflow.com/questions/5483047/why-is-creating-a-thread-said-to-be-expensive
 * Разница между synchronized и concurrent collections - https://javarevisited.blogspot.com/2016/05/what-is-difference-between-synchronized.html#axzz7ZSljBC9o 
 * Synchronized collections - https://www.baeldung.com/java-synchronized-collections
@@ -337,6 +337,8 @@ https://www.baeldung.com/java-cyclic-barrier
 https://www.baeldung.com/java-thread-priority 
  
 https://medium.com/@vikas.singh_67409/deep-dive-into-thread-priority-in-java-be1a5da30a34
+* Starvation и LiveLock - https://www.baeldung.com/cs/deadlock-livelock-starvation
+* sleep vs wait - https://www.geeksforgeeks.org/difference-between-wait-and-sleep-in-java/ 
 
 
 
