@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2022.07.22
+Latest update: 2022.07.25
 
 ## Previous experience
 * Tell us about yourself and your previous experience.
@@ -348,7 +348,20 @@ https://medium.com/@vikas.singh_67409/deep-dive-into-thread-priority-in-java-be1
 * Can enums contain values? (Yes: enum class Action(val value: Int) { WALK(0), RUN(1), ... }
 * В чем преимущество sealed class перед enum? - Sealed class позволяет создавать экземпляры классов, поэтому можно менять состояние объектов в рантайме. Enum не позволяет менять состояние.
 * lateinit vs lazy
+* Делегаты
+ 
+https://medium.com/nuances-of-programming/%D0%B4%D0%B5%D0%BB%D0%B5%D0%B3%D0%B0%D1%82%D1%8B-%D0%B2-kotlin-%D0%B4%D0%BB%D1%8Fandroid-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B9%D1%82%D0%B5-%D1%81%D0%B8%D0%BB%D1%83-%D0%B4%D0%B5%D0%BB%D0%B5%D0%B3%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D1%81%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2-%D0%B2-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5-%D0%BF%D0%BE%D0%B4-android-ca4d88d42800
+ 
+https://kotlinlang.org/docs/delegation.html#overriding-a-member-of-an-interface-implemented-by-delegation
+
+https://kotlinlang.org/docs/delegated-properties.html#property-delegate-requirements
+ 
 * Delegates - как там реализована потокобезопасность?
+ 
+https://www.codementor.io/@packt/delegated-properties-in-kotlin-kqda9rze4
+ 
+https://medium.com/androiddevelopers/built-in-delegates-4811947e781f
+
 * inline functions - https://medium.com/android-news/inline-noinline-crossinline-what-do-they-mean-b13f48e113c2
 * crossinline
 * Можно ли узнать тип дженерика в inline функции? - только если сделать reified parameters - https://stackoverflow.com/questions/33146160/how-to-check-generic-type-in-kotlin
