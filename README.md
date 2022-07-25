@@ -479,6 +479,8 @@ https://medium.com/@vanniktech/testing-rxjava-code-made-easy-4cc32450fc9a
 https://habr.com/ru/post/513928/
  
 https://medium.com/programming-lite/android-core-jvm-dvm-art-jit-aot-855039a9a8fa
+ 
+https://russianblogs.com/article/1180831184/ 
 
 * Разница между hotspot jvm, dalvik и art - https://chowdera.com/2022/04/202204110617280331.html
 * DEX format - https://stackoverflow.com/questions/36356330/difference-between-bytecode-in-class-file-and-that-of-dex-file
@@ -488,6 +490,20 @@ https://habr.com/ru/company/mailru/blog/451894/
 
 https://habr.com/ru/post/99162/
 
+* JIT, AOT
+ 
+https://source.android.com/devices/tech/dalvik/jit-compiler
+ 
+https://stackoverflow.com/questions/40336455/difference-between-aot-and-jit-compiler-in-the-art
+ 
+https://itsobes.ru/JavaSobes/v-chyom-raznica-mezhdu-interpretatorom-aot-i-jit-kompilyatorom/ 
+
+* Из какого кода в какой компилируется JIT и AOT компиляторами? - из java bytecode в машинный 
+ 
+https://habr.com/ru/company/skillbox/blog/441798/
+ 
+https://ru.stackoverflow.com/questions/1033427/%D0%9A%D0%B0%D0%BA-%D0%BF%D1%80%D0%BE%D0%B8%D1%81%D1%85%D0%BE%D0%B4%D0%B8%D1%82-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B8%D0%BB%D1%8F%D1%86%D0%B8%D1%8F-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9-%D0%BD%D0%B0-android
+  
 * Можно ли разрабатывать под Андроид на Python, Scala или других языках? - Можно, если есть возможность компиляции языка в Java байт-код
 
 https://tproger.ru/translations/python-development-on-android/
