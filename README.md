@@ -463,8 +463,10 @@ https://medium.com/@vanniktech/testing-rxjava-code-made-easy-4cc32450fc9a
 * RxJava vs Coroutines - https://stackoverflow.com/questions/42066066/how-kotlin-coroutines-are-better-than-rxkotlin
 * Отличие пулов потоков в RxJava и Coroutines - https://medium.com/capital-one-tech/coroutines-and-rxjava-an-asynchronicity-comparison-part-6-threading-2aa5e9c52c94
 * Coroutine Scope, Coroutine Context - https://elizarov.medium.com/coroutine-context-and-scope-c8b255d59055
+* Обработка исключений в корутинах 
 * CoroutineExceptionHandler - https://kotlinlang.org/docs/exception-handling.html
 * launch vs async - https://stackoverflow.com/questions/46226518/what-is-the-difference-between-launch-join-and-async-await-in-kotlin-coroutines
+* runBlocking - https://habr.com/ru/company/dododev/blog/541650/ 
 * Корутины под капотом - https://rohit.fyi/blog/kotlin-coroutines-under-the-hood-part-1/
 * Нужна ли синхронизация при использовании корутин? - Нужна - https://kotlinlang.org/docs/shared-mutable-state-and-concurrency.html
 
