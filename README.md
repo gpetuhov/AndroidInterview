@@ -701,6 +701,13 @@ https://medium.com/@bherbst/the-many-flavors-of-commit-186608a015b1
 * BottomSheetDialogFragment - https://medium.com/@kosta.palash/using-bottomsheetdialogfragment-with-material-design-guideline-f9814c39b9fc
 * Если фрагмент прописан в xml, то под капотом все равно будет использоваться FragmentManager
 * What can go wrong when calling activity.startActivityForResult() inside fragment? (The result will be delivered to onActivityResult() of the activity, not the fragment)
+* Headless fragments
+ 
+https://luboganev.dev/blog/headless-fragments/
+ 
+https://stackoverflow.com/questions/22799759/what-is-the-difference-between-a-headless-fragment-and-a-service-in-android
+ 
+https://medium.com/@ali.muzaffar/use-headless-fragment-for-android-m-run-time-permissions-and-to-check-network-connectivity-b48615f6272d 
 
 
 
