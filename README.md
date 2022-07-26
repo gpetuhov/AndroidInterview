@@ -503,6 +503,7 @@ https://medium.com/@vanniktech/testing-rxjava-code-made-easy-4cc32450fc9a
 * runBlocking - https://habr.com/ru/company/dododev/blog/541650/ 
 * Корутины под капотом - https://rohit.fyi/blog/kotlin-coroutines-under-the-hood-part-1/
 * Нужна ли синхронизация при использовании корутин? - Нужна - https://kotlinlang.org/docs/shared-mutable-state-and-concurrency.html
+* Во что компилируется suspend функция? - https://medium.com/androiddevelopers/the-suspend-modifier-under-the-hood-b7ce46af624f
 
 
 
