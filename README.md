@@ -916,6 +916,11 @@ https://stackoverflow.com/questions/3542333/how-to-prevent-custom-views-from-los
 * Если в Handler передать Runnable, то где он будет храниться? - У Message есть поле callback типа Runnable, там и будет храниться (см исходники Handler и Message)
 * Как с помощью Handler сделать таймер, срабатывающий точно каждую 1 секунду? - Есть метод Handler.postAtTime(), второй вариант - использовать Timer - https://stackoverflow.com/questions/23007641/correct-handler-postdelay-time
 * Для чего нужен MainLooper? - На главном потоке абсолютно всё работает через MainLooper. Без него Java-приложение завершится сразу же после старта (после завершения метода main)
+* Почему Looper.loop() не вызывает ANR (всегда ли там гоняется вечный цикл)?
+ 
+https://blog.karatos.in/a?ID=01000-2fa77d6e-e7da-4365-b7c6-7ddddc6fd826
+ 
+https://blog.krybot.com/a?ID=00400-4706c861-f02b-4e61-aee5-6b07b1eeb5dc 
 
 
 
