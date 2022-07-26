@@ -339,6 +339,12 @@ https://www.baeldung.com/java-cyclic-barrier
 https://www.baeldung.com/java-phaser 
 
 * Семафоры, мониторы - https://www.baeldung.com/cs/monitor
+* Mutex
+ 
+https://javarush.ru/groups/posts/2174-v-chem-raznica-mezhdu-mjhjuteksom-monitorom-i-semaforom
+ 
+https://www.baeldung.com/java-mutex 
+
 * Object wait(), notify(), notifyAll() - https://howtodoinjava.com/java/multi-threading/wait-notify-and-notifyall-methods/
 * notify vs notifyAll
  
@@ -366,6 +372,7 @@ https://medium.com/@vikas.singh_67409/deep-dive-into-thread-priority-in-java-be1
 * Что произойдет, если в run() выбросить исключение? - https://aozturk.medium.com/how-to-handle-uncaught-exceptions-in-java-abf819347906
 * Как обрабатывать InterruptedException? - https://www.baeldung.com/java-interrupted-exception
 * Java Util Concurrent (JUC) - https://habr.com/ru/company/luxoft/blog/157273/ 
+* Свойства ordering, visibility, atomicity, happens-before, mutual exclusion на примере volatile - http://www.duct-tape-architect.ru/?p=294#14__ordering_visibility_atomicity_happens-before_mutual_exclusion___volatile_AtomicInteger_synchronize
  
 
 
