@@ -83,6 +83,9 @@ https://habr.com/ru/post/210288/
 
 
 ## Java
+
+https://github.com/enhorse/java-interview
+
 * Где используется ключевое слово final? - константы, классы, методы
 * Как запретить переопределение метода в потомках? - Пометить метод как final
 * Модификаторы доступа в Java - public, protected, private, package private (когда нет никакого ключевого слова) - https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
