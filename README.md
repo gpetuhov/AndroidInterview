@@ -102,6 +102,8 @@ https://github.com/enhorse/java-interview
 * Где будет храниться объект созданный внутри какого-нибудь метода? - Сам объект в куче, но ссылка на него - в стеке
 * Garbage collection
 
+https://java-online.ru/garbage-collection.xhtml
+
 https://habr.com/ru/post/269621/
 
 https://habr.com/ru/post/269707/
