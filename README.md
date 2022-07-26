@@ -341,6 +341,8 @@ https://www.baeldung.com/java-cyclic-barrier
  
 https://www.baeldung.com/java-phaser 
 
+* CountDownLatch vs CyclicBarrier - https://www.baeldung.com/java-cyclicbarrier-countdownlatch
+* Для чего появился Phaser? - https://habr.com/ru/post/117185/ 
 * Семафоры, мониторы - https://www.baeldung.com/cs/monitor
 * Mutex
  
@@ -376,6 +378,7 @@ https://medium.com/@vikas.singh_67409/deep-dive-into-thread-priority-in-java-be1
 * Как обрабатывать InterruptedException? - https://www.baeldung.com/java-interrupted-exception
 * Java Util Concurrent (JUC) - https://habr.com/ru/company/luxoft/blog/157273/ 
 * Свойства ordering, visibility, atomicity, happens-before, mutual exclusion на примере volatile - http://www.duct-tape-architect.ru/?p=294#14__ordering_visibility_atomicity_happens-before_mutual_exclusion___volatile_AtomicInteger_synchronize
+* BlockingQueue - https://www.baeldung.com/java-blocking-queue
  
 
 
