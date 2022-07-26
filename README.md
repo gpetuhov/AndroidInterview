@@ -1051,6 +1051,11 @@ https://www.raywenderlich.com/7026-getting-started-with-mvp-model-view-presenter
 * Когда вызывается @BeforeClass
 * Как выполнить юнит-тестирование класса, если он зависит от класса, обращающегося к сети? - Использовать Mockito для создания класса-заглушки
 * Как в Espresso нажать на элемент списка
+* Интеграционные тесты
+
+https://proandroiddev.com/writing-integration-tests-in-android-b0436978ed7b
+
+https://habr.com/ru/company/rambler_and_co/blog/279799/
 
 
 
