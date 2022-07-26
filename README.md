@@ -1025,6 +1025,13 @@ https://medium.com/mobile-app-development-publication/dagger-2-multibindings-ref
 * Dagger subcomponents vs component dependencies - https://stackoverflow.com/questions/29587130/dagger-2-subcomponents-vs-component-dependencies
 * Dagger Scopes
 * Управление жизненным циклом компонентов
+* Как обойти циклические зависимости (cyclic dependency aka circular dependency) в многомодульном проекте (например, модуль чата вызывает модуль профиля, а модуль профиля опять вызывает модуль чата)?
+
+https://proandroiddev.com/greatest-android-modularization-mistake-and-how-to-undo-it-50eda336a595
+ 
+https://medium.com/@mydogtom/modularization-part-2-dagger-structure-5c2daf5e849c
+
+https://itnext.io/multi-module-navigation-in-android-63cb9924ffbd
 
 
 
