@@ -327,14 +327,18 @@ https://www.baeldung.com/java-concurrent-map
 https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentHashMap.html
 
 * ThreadLocal - https://www.baeldung.com/java-threadlocal
-* Семафоры, мониторы - https://www.baeldung.com/cs/monitor
 * Средства синхронизации потоков (семафор, фазер) - https://habr.com/ru/post/277669/ 
-* CountDownLatch, Barrier
-
-https://www.baeldung.com/java-countdown-latch 
-
+* Семафоры - CountDownLatch, CyclicBarrier, Phaser
+ 
+https://www.baeldung.com/java-semaphore
+ 
+https://www.baeldung.com/java-countdown-latch
+ 
 https://www.baeldung.com/java-cyclic-barrier
+ 
+https://www.baeldung.com/java-phaser 
 
+* Семафоры, мониторы - https://www.baeldung.com/cs/monitor
 * Object wait(), notify(), notifyAll() - https://howtodoinjava.com/java/multi-threading/wait-notify-and-notifyall-methods/
 * notify vs notifyAll
  
