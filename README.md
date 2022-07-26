@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2022.07.25
+Latest update: 2022.07.26
 
 ## Previous experience
 * Tell us about yourself and your previous experience.
@@ -805,6 +805,9 @@ http://developer.alexanderklimov.ru/android/broadcast.php
 * Какие встречаются проблемы в ViewModel? - LiveData сохраняет последнее событие и отправляет его заново после пересоздания активити (например, сообщение об ошибке будет отправлено заново)
 * LiveData value и postValue - в чем разница? - https://stackoverflow.com/questions/51299641/difference-of-setvalue-postvalue-in-mutablelivedata
 * Как трансформировать LiveData - https://proandroiddev.com/livedata-transformations-4f120ac046fc
+* Жизненный цикл ViewModel - https://developer.android.com/topic/libraries/architecture/viewmodel
+* Жизненный цикл LiveData
+* Как новая активити после пересоздания узнает о том, какую вьюмодель использовать? - https://proandroiddev.com/viewmodel-magic-revealed-330476b5ab27
 
 
 
