@@ -504,6 +504,17 @@ https://medium.com/@vanniktech/testing-rxjava-code-made-easy-4cc32450fc9a
 * Корутины под капотом - https://rohit.fyi/blog/kotlin-coroutines-under-the-hood-part-1/
 * Нужна ли синхронизация при использовании корутин? - Нужна - https://kotlinlang.org/docs/shared-mutable-state-and-concurrency.html
 * Во что компилируется suspend функция? - https://medium.com/androiddevelopers/the-suspend-modifier-under-the-hood-b7ce46af624f
+* Синхронизация в корутинах
+ 
+https://kotlinlang.org/docs/shared-mutable-state-and-concurrency.html
+ 
+https://kt.academy/article/cc-state
+ 
+* Что будет, если использовать synchronized в корутинах?
+ 
+https://blog.danlew.net/2020/01/28/coroutines-and-java-synchronization-dont-mix/
+ 
+https://jacquessmuts.github.io/post/coroutine_sync_mutex/ 
 
 
 
