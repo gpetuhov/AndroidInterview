@@ -858,8 +858,9 @@ https://medium.com/@Zielony/guide-to-android-custom-views-constructors-df47476e3
  
 https://medium.com/@Zielony/guide-to-android-custom-views-attributes-ab28de3e54b7 
 
- * Какие методы надо переопределить в кастомном вью?
+* Какие методы надо переопределить в кастомном вью?
 * View.invalidate() и requestLayout() - https://stackoverflow.com/questions/13856180/usage-of-forcelayout-requestlayout-and-invalidate
+* Всегда ли вызывается onLayout? - У ViewGroup новое измерение дочерних view не гарантируется. Вместо этого используются закэшированные значения. Поэтому используют метод forceLayout()
 * Что такое forceLayout() и когда он нужен? - https://itsobes.ru/AndroidSobes/dlia-chego-nuzhen-metod-view-forcelayout/
 * View.onMeasure() - что такое measureSpec, как вычисляется размер вью - https://stackoverflow.com/questions/14493732/what-are-widthmeasurespec-and-heightmeasurespec-in-android-custom-views === https://developer.android.com/reference/android/view/View.MeasureSpec
 * Статические методы MeasureSpec - https://developer.android.com/reference/android/view/View.MeasureSpec 
