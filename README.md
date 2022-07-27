@@ -960,6 +960,12 @@ https://stackoverflow.com/questions/3542333/how-to-prevent-custom-views-from-los
 * Data Binding Adapters - https://developer.android.com/topic/libraries/data-binding/binding-adapters
 * RecyclerView: when onCreateViewHolder and onBindViewHolder are called?
 * Как сделать, чтобы в RecyclerView менялся только один TextView только в одном элементе? - использовать DiffUtils и payloads - https://www.valueof.io/blog/recyclerview-diffutil-change-payloads
+* Какие могут быть причины, если RecyclerView тормозит? На что обратить внимание в первую очередь? Как можно улучшить?
+ 
+https://medium.com/rosberryapps/how-to-cook-the-60-fps-recyclerview-3e7f3885a55
+ 
+https://www.geeksforgeeks.org/how-to-improve-recyclerview-scrolling-performance-in-android/ 
+
 * Способы генерации id вьюхи - https://stackoverflow.com/questions/1714297/android-view-setidint-id-programmatically-how-to-avoid-id-conflicts 
 * Как создать custom attributes? - https://developer.android.com/training/custom-views/create-view
 * Зачем нужен оверрайд конструктора вьюхи? - https://stackoverflow.com/questions/9195713/do-i-need-all-three-constructors-for-an-android-custom-view 
