@@ -763,6 +763,7 @@ val intent = Intent(Intent.ACTION_VIEW, uri)
 * Pending intent
 * How to make an activity start on some intent from other apps? (Add intent filter in the manifest)
 * Механизм резолюшна интент-фильтра (последовательность действий, что с чем сравнивается) - https://www.androidcookbook.info/application-development/how-android-resolves-intent-filters.html
+* Как в интент-фильтре реагировать только на определенные интенты? - Action, category, data (scheme, mimetype) - https://developer.android.com/guide/components/intents-filters 
 * Can I access data in another application's content provider via intent? (No, use ContentResolver instead)
 
 
