@@ -267,6 +267,12 @@ https://www.baeldung.com/java-singleton
 
 https://github.com/gpetuhov/MultithreadingTutorial
 
+* Процессы и потоки
+ 
+https://developer.android.com/guide/components/processes-and-threads
+ 
+https://techdifferences.com/difference-between-process-and-thread-in-java.html 
+
 * Чем отличается асинхронность, многопоточность и конкурентность?
  
 https://medium.com/swift-india/concurrency-parallelism-threads-processes-async-and-sync-related-39fd951bc61d
