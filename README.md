@@ -849,6 +849,7 @@ https://developer.android.com/guide/components/broadcasts
 http://developer.alexanderklimov.ru/android/broadcast.php
 
 * Sticky Broadcast - https://stackoverflow.com/questions/3490913/what-is-a-sticky-broadcast
+* Ограничения на BroadcastReceiver, начиная с Android 8 - https://itsobes.ru/AndroidSobes/kakie-ogranicheniia-na-broadcastreceiver-byli-vvedeny-v-android-8-0/ 
 
 
 
