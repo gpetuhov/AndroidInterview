@@ -662,6 +662,8 @@ http://developer.alexanderklimov.ru/android/debug/leakcanary.php
 https://russianblogs.com/article/80601561279/
  
 https://developpaper.com/android-leakcanary-memory-leak-detection-principle/ 
+ 
+* Способы отрисовать интерфейс. Можно ли отобразить вью без активити/фрагмента? - да, с помощью WindowManager - https://levelup.gitconnected.com/add-view-outside-activity-through-windowmanager-1a70590bad40 
 
 
 
