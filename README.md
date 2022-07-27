@@ -653,6 +653,8 @@ https://habr.com/ru/company/edison/blog/271811/
  
 https://russianblogs.com/article/58471210856/ 
  
+* Как реализована изоляция процессов друг от друга (application sandbox) - https://source.android.com/security/app-sandbox?hl=en 
+ 
  
 
 ### Basics
