@@ -802,6 +802,8 @@ https://luboganev.dev/blog/headless-fragments/
 https://stackoverflow.com/questions/22799759/what-is-the-difference-between-a-headless-fragment-and-a-service-in-android
  
 https://medium.com/@ali.muzaffar/use-headless-fragment-for-android-m-run-time-permissions-and-to-check-network-connectivity-b48615f6272d 
+ 
+* Можно ли заинжектить что-то в конструктор фрагмента? - да, с помощью FragmentFactory - https://medium.com/@diousk507/using-fragmentfactory-with-dagger-2-c3ec136c860d
 
 
 
