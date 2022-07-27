@@ -997,6 +997,14 @@ https://blog.krybot.com/a?ID=00400-4706c861-f02b-4e61-aee5-6b07b1eeb5dc
 * Как поселить лупер в своем треде? - https://stackoverflow.com/questions/4838207/how-to-create-a-looper-thread-then-send-it-a-message-immediately
 * Как понять, что находишься в главном потоке? - Looper.myLooper() == Looper.getMainLooper() - https://stackoverflow.com/questions/11411022/how-to-check-if-current-thread-is-not-main-thread
 * Как под капотом сделано, что статический метод Looper.myLooper() возвращает текущий лупер? - там используется ThreadLocal для хранения лупера
+* Можно ли разрешить обращение к сети на главном потоке? - https://stackoverflow.com/questions/6343166/how-can-i-fix-android-os-networkonmainthreadexception
+ 
+```
+StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+StrictMode.setThreadPolicy(policy);
+``` 
+ 
+* Что такое StrictMode - https://developer.android.com/reference/android/os/StrictMode 
 
 
 
