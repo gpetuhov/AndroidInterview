@@ -626,6 +626,11 @@ https://habr.com/ru/company/solarsecurity/blog/427431/
 
 * Можно ли запустить компоненты разных приложений в одном процессе? - да, это дефолтное поведение (например в случае Intent.ACTION_VIEW), но можно вообще сделать разные приложения, работающие в одном процессе - https://stackoverflow.com/questions/17664090/can-multiple-android-applications-share-a-single-process-and-application-context
 * Можно ли запустить компоненты одного приложения в разных процессах? - да
+* AIDL
+ 
+https://habr.com/ru/post/537660/
+ 
+https://developer.android.com/guide/components/aidl 
  
  
 
