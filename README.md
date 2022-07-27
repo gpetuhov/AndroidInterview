@@ -337,7 +337,14 @@ https://www.baeldung.com/java-concurrent-map
 
 https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentHashMap.html
 
-* ThreadLocal - https://www.baeldung.com/java-threadlocal
+* ThreadLocal
+ 
+https://www.baeldung.com/java-threadlocal
+ 
+https://habr.com/ru/post/108016/
+ 
+https://javarush.ru/quests/lectures/jru.module2.lecture26 
+
 * Средства синхронизации потоков (семафор, фазер) - https://habr.com/ru/post/277669/ 
 * Семафоры - CountDownLatch, CyclicBarrier, Phaser
  
