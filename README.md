@@ -967,6 +967,8 @@ https://stackoverflow.com/questions/3542333/how-to-prevent-custom-views-from-los
 * Что такое overdray и инструменты его обнаружения - https://medium.com/android-news/reduce-overdraw-from-your-android-application-6cf15f4aa85f 
 * ImageView fit_center и center_inside - https://stackoverflow.com/questions/11353973/whats-the-difference-between-center-inside-and-fit-center-scale-types
 * Как у ImageView сделать соотношение сторон 3:4 - https://betterprogramming.pub/aspect-ratio-with-constraint-layout-with-constraintdimensionratio-d55828ec4aae 
+* Как понять, что приложение тормозит? - В logcat будут сообщения про skipped frames
+* Причины пропуска кадров - https://developer.android.com/topic/performance/vitals/render 
 
 
 
