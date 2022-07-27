@@ -986,6 +986,10 @@ https://stackoverflow.com/questions/3542333/how-to-prevent-custom-views-from-los
 https://blog.karatos.in/a?ID=01000-2fa77d6e-e7da-4365-b7c6-7ddddc6fd826
  
 https://blog.krybot.com/a?ID=00400-4706c861-f02b-4e61-aee5-6b07b1eeb5dc 
+ 
+* Как поселить лупер в своем треде? - https://stackoverflow.com/questions/4838207/how-to-create-a-looper-thread-then-send-it-a-message-immediately
+* Как понять, что находишься в главном потоке? - Looper.myLooper() == Looper.getMainLooper() - https://stackoverflow.com/questions/11411022/how-to-check-if-current-thread-is-not-main-thread
+* Как под капотом сделано, что статический 
 
 
 
