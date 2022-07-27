@@ -859,6 +859,7 @@ https://stackoverflow.com/questions/48765700/what-is-the-advantage-of-running-a-
 https://habr.com/ru/post/139432/
 
 * Можно ли запускать активити из сервисов? - Начиная с Андроид 10 - только при определенных условиях - https://developer.android.com/guide/components/activities/background-starts
+* Как безопасно остановить поток в сервисе? - сделать это в onDestroy() 
 
 
 
