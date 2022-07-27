@@ -750,8 +750,11 @@ https://medium.com/@veeresh.charantimath8/playing-with-android-task-affinity-and
 * С чем связано ограничение на размер Bundle? - https://stackoverflow.com/questions/8552514/is-there-any-limit-of-bundle-in-android#:~:text=It%20depends%20on%20the%20purpose,save%20the%20state%20of%20activities. 
 * Serializable vs Parcelable - https://stackoverflow.com/questions/3323074/android-difference-between-parcelable-and-serializable
 * Проблемы Serializable - 1. Рефлексия, 2. Если поле в Serializable классе будет не Serializable, то при десериализации оно будет просто null (а в случае Parcelable компилятор сразу это подсвечивает)
-* Всегда ли оправдано применение Parcelable? - Только при большом количестве операций в единицу времени (1000 и больше) 
-* Как под капотом устроен Parcelable? 
+* Как под капотом устроен Serializable? - https://www.infoworld.com/article/2072752/the-java-serialization-algorithm-revealed.html 
+* Когда использовать Serializable? - https://proandroiddev.com/serializable-or-parcelable-why-and-which-one-17b274f3d3bb
+* Всегда ли оправдано применение Parcelable? - Только при большом количестве операций в единицу времени (1000 и больше), а также в IPC (Binder, AIDL)
+* Можно ли использовать Parcelable для записи на диск? - нет - https://guides.codepath.com/android/using-parcelable
+* Как под капотом устроен Parcelable?  
 * Difference between implicit and explicit intents.
 * How to open url in browser?
 
