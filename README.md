@@ -638,6 +638,14 @@ https://habr.com/ru/post/537660/
  
 https://developer.android.com/guide/components/aidl 
  
+* RenderThread
+ 
+https://medium.com/@workingkills/understanding-the-renderthread-4dc17bcaf979 
+ 
+https://habr.com/ru/company/edison/blog/271811/
+ 
+https://russianblogs.com/article/58471210856/ 
+ 
  
 
 ### Basics
