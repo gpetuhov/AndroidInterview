@@ -883,6 +883,7 @@ https://habr.com/ru/post/139432/
 
 * Можно ли запускать активити из сервисов? - Начиная с Андроид 10 - только при определенных условиях - https://developer.android.com/guide/components/activities/background-starts
 * Как безопасно остановить поток в сервисе? - сделать это в onDestroy() 
+* Зачем вообще нужен сервис, если есть Thread? - https://stackoverflow.com/questions/22933762/service-vs-thread-in-android 
 
 
 
