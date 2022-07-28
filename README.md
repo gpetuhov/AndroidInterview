@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2022.07.26
+Latest update: 2022.07.28
 
 ## Previous experience
 * Tell us about yourself and your previous experience.
@@ -164,6 +164,8 @@ https://javarush.ru/groups/posts/2291-osobennosti-phantomreference
 
 https://stackoverflow.com/questions/299659/whats-the-difference-between-softreference-and-weakreference-in-java/299702#299702
 
+https://medium.com/google-developer-experts/finally-understanding-how-references-work-in-android-and-java-26a0d9c92f83
+
 * Практический пример использования SoftReference
 
 https://javarush.ru/groups/posts/1267-otlichija-mezhdu-slabihmi-mjagkimi-fantomnihmi-i-obihchnihmi-ssihlkami-v-java
@@ -171,6 +173,7 @@ https://javarush.ru/groups/posts/1267-otlichija-mezhdu-slabihmi-mjagkimi-fantomn
 https://habr.com/ru/post/169883/
 
 * Зачем использовать WeakReference, если есть SoftReference? - https://www.logicbig.com/tutorials/core-java-tutorial/gc/soft-vs-weak-ref.html 
+* Особенность использования SoftReference в Android - Начиная с Android 2.3, GC выполняется более агрессивно, поэтому SoftReference в Андроиде не подходят для создания кэша. Для создания кэша следует использовать LruCache - https://stackoverflow.com/questions/5757969/softreference-gets-garbage-collected-too-early
 * Зачем нужна PhantomReference, привести практический пример использования
 
 https://javarush.ru/groups/posts/2291-osobennosti-phantomreference
