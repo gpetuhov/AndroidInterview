@@ -385,8 +385,11 @@ https://www.geeksforgeeks.org/difference-between-notify-and-notifyall-in-java/
 * Synchronized collections - https://www.baeldung.com/java-synchronized-collections
 * Concurrent collections (появились в Java 5) - https://www.developer.com/design/an-introduction-to-concurrent-collection-apis-in-java/
 * Почему Thread.stop() deprecated - https://docs.oracle.com/javase/8/docs/technotes/guides/concurrency/threadPrimitiveDeprecation.html#:~:text=stop%20deprecated%3F,monitors%20that%20it%20has%20locked.&text=Unlike%20other%20unchecked%20exceptions%2C%20ThreadDeath,his%20program%20may%20be%20corrupted.
+* Выполнится ли блок finally (в try-catch-finally) внутри потока, если вызвать Thread.stop()? - нет, поэтому Thread.stop() deprecated 
 * Способы остановки потока - https://www.baeldung.com/java-thread-stop
 * Как правильно остановить поток в Java, не вызывая метода Thread.stop(), так как он deprecated? - https://stackoverflow.com/questions/10961714/how-to-properly-stop-the-thread-in-java
+* Как обрабатывать InterruptedException? - https://www.baeldung.com/java-interrupted-exception
+* Как с помощью Thread.interrupt() остановить выполняющийся поток который НЕ находится в состоянии sleep или wait? - с помощью проверки флага Thread.interrupted() - https://www.tutorialspoint.com/how-to-interrupt-a-running-thread-in-java
 * Есть ли у enum подводные камни в многопоточке? - нет - https://www.geeksforgeeks.org/advantages-and-disadvantages-of-using-enum-as-singleton-in-java/#:~:text=Creation%20of%20Enum%20instance%20is,some%20line%20of%20code%20enum.
 * Что такое Happens Before? - https://www.geeksforgeeks.org/happens-before-relationship-in-java/#:~:text=Happens%2Dbefore%20is%20not%20any,code%20that%20produces%20incorrect%20output. 
 * Дефолтный приоритет нового потока в Java и его аналог Linux
@@ -397,8 +400,6 @@ https://medium.com/@vikas.singh_67409/deep-dive-into-thread-priority-in-java-be1
 * Starvation и LiveLock - https://www.baeldung.com/cs/deadlock-livelock-starvation
 * sleep vs wait - https://www.geeksforgeeks.org/difference-between-wait-and-sleep-in-java/ 
 * Что произойдет, если в run() выбросить исключение? - https://aozturk.medium.com/how-to-handle-uncaught-exceptions-in-java-abf819347906
-* Как обрабатывать InterruptedException? - https://www.baeldung.com/java-interrupted-exception
-* Как с помощью Thread.interrupt() остановить выполняющийся поток который НЕ находится в состоянии sleep или wait? - с помощью проверки флага Thread.interrupted() - https://www.tutorialspoint.com/how-to-interrupt-a-running-thread-in-java
 * Java Util Concurrent (JUC) - https://habr.com/ru/company/luxoft/blog/157273/ 
 * Свойства ordering, visibility, atomicity, happens-before, mutual exclusion на примере volatile - http://www.duct-tape-architect.ru/?p=294#14__ordering_visibility_atomicity_happens-before_mutual_exclusion___volatile_AtomicInteger_synchronize
 * BlockingQueue - https://www.baeldung.com/java-blocking-queue
