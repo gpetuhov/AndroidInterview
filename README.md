@@ -713,6 +713,7 @@ https://russianblogs.com/article/80601561279/
 https://developpaper.com/android-leakcanary-memory-leak-detection-principle/ 
  
 * Способы отрисовать интерфейс. Можно ли отобразить вью без активити/фрагмента? - да, с помощью WindowManager - https://levelup.gitconnected.com/add-view-outside-activity-through-windowmanager-1a70590bad40 
+* Какой callback использовать, чтобы понять, что приложению не хватает памяти? - Application.onLowMemory() - https://stackoverflow.com/questions/18119929/callback-from-framework-for-out-of-memory-in-android
 
 
 
@@ -783,6 +784,7 @@ https://medium.com/@veeresh.charantimath8/playing-with-android-task-affinity-and
 * How to save screen state on screen rotation (saveInstanceState, Presenter, ViewModel)?
 * How to save state of an EditText? (provide an id, but it uses Bundle under the hood)
 * Почему сохранение данных при повороте экрана в Bundle, а не в SharedPreferences? - Bundle хранится в памяти, поэтому быстрее === https://stackoverflow.com/questions/24822101/when-to-use-getsharedpreferences-vs-savedinstancestate
+* ActivityLifecycleCallbacks - https://habr.com/ru/company/yoomoney/blog/482476/ 
 
 
 
