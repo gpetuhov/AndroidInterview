@@ -966,6 +966,7 @@ https://medium.com/@Zielony/guide-to-android-custom-views-attributes-ab28de3e54b
 * В чем проблема выделения памяти в onDraw? - https://stackoverflow.com/questions/27717093/drawallocation-memory-allocations-within-drawing-code 
 * Методы onFinishInflate(), onSaveInstanceState(), onFocusChanged()
 * Какие методы надо вызывать, если у View поменялись цвет и размер? - Если поменялся только цвет, то invalidate(), если только размер - то requestLayout(). Так как вызов requestLayout() не гарантирует вызова onDraw(), то если поменялись цвет и размер, то надо вызвать оба метода: invalidate() и requestLayout()
+* Сколько раз вызовется onDraw, если три раза вызвать invalidate? - отрисовка не будет выполняться повторно, если уже запланирована предыдущая отрисовка - https://stackoverflow.com/questions/7868005/does-calling-requestlayout-or-invalidate-multiple-times-hurt-performance
 * Какие методы надо переопределить во ViewGroup, чтобы вычислить размер и разместить потомков? - onMeasure() и onLayout() 
 * Как сохранить состояние кастомной вьюхи?
  
