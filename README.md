@@ -398,6 +398,7 @@ https://medium.com/@vikas.singh_67409/deep-dive-into-thread-priority-in-java-be1
 * sleep vs wait - https://www.geeksforgeeks.org/difference-between-wait-and-sleep-in-java/ 
 * Что произойдет, если в run() выбросить исключение? - https://aozturk.medium.com/how-to-handle-uncaught-exceptions-in-java-abf819347906
 * Как обрабатывать InterruptedException? - https://www.baeldung.com/java-interrupted-exception
+* Как с помощью Thread.interrupt() остановить выполняющийся поток который НЕ находится в состоянии sleep или wait? - с помощью проверки флага Thread.interrupted() - https://www.tutorialspoint.com/how-to-interrupt-a-running-thread-in-java
 * Java Util Concurrent (JUC) - https://habr.com/ru/company/luxoft/blog/157273/ 
 * Свойства ordering, visibility, atomicity, happens-before, mutual exclusion на примере volatile - http://www.duct-tape-architect.ru/?p=294#14__ordering_visibility_atomicity_happens-before_mutual_exclusion___volatile_AtomicInteger_synchronize
 * BlockingQueue - https://www.baeldung.com/java-blocking-queue
