@@ -260,6 +260,7 @@ https://www.baeldung.com/java-singleton
 * PECS - https://stackoverflow.com/questions/2723397/what-is-pecs-producer-extends-consumer-super
 * Ковариантность (extends T), контрвариантность (super T), инвариантность (просто T)
 * Можно сделать так: instanceOf List<String> - нельзя из-за стирания типов
+* Почему дженерики компилируются в Object? - для обратной совместимости с предыдущими версиями Java 
 
 
 
