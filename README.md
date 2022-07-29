@@ -133,6 +133,8 @@ https://www.yourkit.com/docs/java/help/gc_roots.jsp
 * Стратегии очистки памяти g1, serial, parallel
 * В памяти находятся два объекта и ссылаются друг на друга, больше на них никто не ссылается. Соберет ли их GC? - да, это называется island of isolation
 * Для чего нужен Object? - Объявляет ряд базовых методов, в том числе для организации многопоточности, также нужен для того, чтобы garbage collector мог собрать объекты
+* Что произойдет, если после очистки памяти памяти все равно будет недостаточно? - OutOfMemory Exception
+* Что произойдет, если память закончится в резульате рекурсивных вызовов функции? - StackOverflow
 * Методы Object - https://www.geeksforgeeks.org/object-class-in-java/
 * Object.clone() можно ли вызвать? - Нет, если не имплеменить Cloneable интерфейс - https://en.wikipedia.org/wiki/Clone_(Java_method)
 * Object.finalize()
