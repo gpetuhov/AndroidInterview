@@ -1215,6 +1215,7 @@ https://habr.com/ru/company/rambler_and_co/blog/279799/
 * Gradle parallel - https://docs.gradle.org/current/userguide/performance.html
 * Плюсы и минусы многомодульных проектов - https://stackoverflow.com/questions/41632599/dis-advantage-of-having-multiple-modules-in-an-android-studio-project
 * Сложности dependency injection в многомодульных проектах - https://developer.android.com/training/dependency-injection/dagger-multi-module
+* Как ускорить время сборки - https://habr.com/ru/company/yandex/blog/678786/
 
 
 
