@@ -95,7 +95,14 @@ https://github.com/enhorse/java-interview
 * Отличие interface от abstract class - в интерфейсе все методы public, не может быть private, абстрактный класс может хранить состояние и может иметь конструктор
 * ClassLoader, getClass - https://www.baeldung.com/java-classloaders
 * Когда ClassLoader грузит класс - при первом обращении к классу
-* Структура памяти в JVM - http://tutorials.jenkov.com/java-concurrency/java-memory-model.html
+* Java Memory Model - Структура памяти в JVM
+ 
+http://tutorials.jenkov.com/java-concurrency/java-memory-model.html
+
+https://habr.com/ru/post/510454/
+
+https://habr.com/ru/post/510618/
+
 * Краткая история изменений Java Memory Model в Android - https://proandroiddev.com/collecting-the-garbage-a-brief-history-of-gc-over-android-versions-f7f5583e433c
 * Где хранятся значения примитивных типов, а где объекты? - Примитивы и ссылки на объекты в стеке, а сами объекты в куче - https://ru.stackoverflow.com/questions/980439/%D0%92-%D0%BA%D0%B0%D0%BA%D0%BE%D0%B9-%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8-%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%B8-%D1%85%D1%80%D0%B0%D0%BD%D1%8F%D1%82%D1%81%D1%8F-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B2-java#:~:text=%D0%92%20Java%20%D0%BF%D1%80%D0%B8%D0%BC%D0%B8%D1%82%D0%B8%D0%B2%D1%8B%20%D0%B8%20%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8,%D1%81%D1%82%D1%8D%D0%BA%D0%B5%2C%20%D0%B0%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B%20%D0%B2%20%D0%BA%D1%83%D1%87%D0%B5.
 * Где будет размещено поле класса примитивного типа? - В куче
