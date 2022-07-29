@@ -410,8 +410,13 @@ https://www.geeksforgeeks.org/difference-between-notify-and-notifyall-in-java/
 * Как обрабатывать InterruptedException? - https://www.baeldung.com/java-interrupted-exception
 * Как с помощью Thread.interrupt() остановить выполняющийся поток который НЕ находится в состоянии sleep или wait? - с помощью проверки флага Thread.interrupted() - https://www.tutorialspoint.com/how-to-interrupt-a-running-thread-in-java
 * Есть ли у enum подводные камни в многопоточке? - нет - https://www.geeksforgeeks.org/advantages-and-disadvantages-of-using-enum-as-singleton-in-java/#:~:text=Creation%20of%20Enum%20instance%20is,some%20line%20of%20code%20enum.
-* Что такое Happens Before? - https://www.geeksforgeeks.org/happens-before-relationship-in-java/#:~:text=Happens%2Dbefore%20is%20not%20any,code%20that%20produces%20incorrect%20output. 
-* Дефолтный приоритет нового потока в Java и его аналог Linux
+* Что такое Happens Before?
+ 
+ https://jenkov.com/tutorials/java-concurrency/java-happens-before-guarantee.html
+ 
+ https://www.geeksforgeeks.org/happens-before-relationship-in-java/#:~:text=Happens%2Dbefore%20is%20not%20any,code%20that%20produces%20incorrect%20output. 
+
+ * Дефолтный приоритет нового потока в Java и его аналог Linux
  
 https://www.baeldung.com/java-thread-priority 
  
