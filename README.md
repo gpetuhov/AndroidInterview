@@ -434,6 +434,7 @@ https://medium.com/@vikas.singh_67409/deep-dive-into-thread-priority-in-java-be1
 
 ## Kotlin
 * What are the advantages of Kotlin?
+* Есть ли примитивы в Котлине? - нет, но при компиляции в jvm код производится замена на примитивы везде, где это возможно - https://stackoverflow.com/questions/57408327/does-kotlin-have-primitive-types 
 * Как разрешить переопределение метода в потомках? - Пометить метод как open
 * Any, Unit, Nothing - https://gb.ru/posts/razbiraemsya-v-tipah-kotlin-unit-nothing-any-i-null
 * Класс Any - назначение, методы класса (equals, hashCode, toString) - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/ 
