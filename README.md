@@ -1252,6 +1252,8 @@ https://github.com/gpetuhov/AndroidInterview/blob/master/app/src/main/java/com/g
 https://github.com/gpetuhov/AndroidInterview/blob/master/app/src/main/java/com/gpetuhov/androidinterviewcodesamples/MainActivity.kt
 
 * How to implement a layout shown on the screenshot.
+ 
+* Пример по многопоточности - https://youtu.be/M5Jl643cP34?t=1456 
 
 
 
