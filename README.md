@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2022.08.02
+Latest update: 2022.08.03
 
 ## Previous experience
 * Tell us about yourself and your previous experience.
@@ -93,7 +93,12 @@ https://github.com/enhorse/java-interview
 * What is an interface? - https://www.baeldung.com/java-interfaces
 * Существует ли множественное наследование (extends) в Java? Если да, то к чему оно применимо? - Множественное наследование не поддерживается в классах, но оно поддерживается в интерфейсах (интерфейс может экстендить несколько интерфейсов, класс может имплементить несколько интерфейсов) - https://javarush.ru/groups/posts/731-mnozhestvennoe-nasledovanie-v-java-kompozicija-v-sravnenii-s-nasledovaniem
 * Отличие interface от abstract class - в интерфейсе все методы public, не может быть private, абстрактный класс может хранить состояние и может иметь конструктор
-* ClassLoader, getClass - https://www.baeldung.com/java-classloaders
+* ClassLoader, getClass
+
+https://javarush.ru/groups/posts/646-kak-proiskhodit-zagruzka-klassov-v-jvm
+
+https://www.baeldung.com/java-classloaders
+
 * Когда ClassLoader грузит класс - при первом обращении к классу
 * Java Memory Model - Структура памяти в JVM
  
