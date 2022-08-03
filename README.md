@@ -645,8 +645,10 @@ https://habr.com/ru/post/327782/
 * Как выглядит cold путь запуска приложения
 
 https://habr.com/ru/post/521522/ 
+ 
+https://habr.com/ru/post/522670/ 
 
- https://medium.com/android-news/android-application-launch-explained-from-zygote-to-your-activity-oncreate-8a8f036864b
+https://medium.com/android-news/android-application-launch-explained-from-zygote-to-your-activity-oncreate-8a8f036864b
  
 https://proandroiddev.com/android-internals-101-how-android-os-starts-you-application-e1c98a014c05 
 
