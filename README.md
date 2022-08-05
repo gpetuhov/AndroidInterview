@@ -592,11 +592,13 @@ https://kotlinlang.org/docs/shared-mutable-state-and-concurrency.html
  
 https://kt.academy/article/cc-state
  
-* Что будет, если использовать synchronized в корутинах?
+* Что будет, если использовать synchronized в корутинах? - ошибка компиляции
  
 https://blog.danlew.net/2020/01/28/coroutines-and-java-synchronization-dont-mix/
  
 https://jacquessmuts.github.io/post/coroutine_sync_mutex/ 
+ 
+* Что использовать вместо synchronized в корутинах? - Mutex - https://medium.com/mobile-app-development-publication/mutex-for-coroutines-5f4a4ca60763 
 
 
 
