@@ -483,6 +483,7 @@ https://medium.com/androiddevelopers/built-in-delegates-4811947e781f
 * crossinline
 * Можно ли узнать тип дженерика в inline функции? - только если сделать reified parameters - https://stackoverflow.com/questions/33146160/how-to-check-generic-type-in-kotlin
 * reified type parameters (речь только про функции, классы не могут иметь reified полей) - https://kotlinlang.org/docs/inline-functions.html#reified-type-parameters
+* Когда не рекомендуется использовать inline? - Когда лямбда большая (тогда кода сгенерится много) 
 * noinline - https://kotlinlang.org/docs/inline-functions.html
 * Байткод inline, crossinline, noinline
 
