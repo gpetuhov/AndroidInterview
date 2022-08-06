@@ -1034,6 +1034,7 @@ https://www.geeksforgeeks.org/how-to-improve-recyclerview-scrolling-performance-
 * Как у ImageView сделать соотношение сторон 3:4 - https://betterprogramming.pub/aspect-ratio-with-constraint-layout-with-constraintdimensionratio-d55828ec4aae 
 * Как понять, что приложение тормозит? - В logcat будут сообщения про skipped frames
 * Причины пропуска кадров - https://developer.android.com/topic/performance/vitals/render 
+* Как сделать, чтобы цвет кнопки зависел от состояния? - В xml с помощью selector - https://stackoverflow.com/questions/3738886/android-button-with-different-background-colors
 
 
 
