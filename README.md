@@ -204,6 +204,7 @@ https://o7planning.org/13697/java-phantomreference
 * Асимптотическая сложность конкатенации строк - O(n^2) - https://overcoder.net/q/186163/%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C-%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0%D1%82%D0%B5%D0%BD%D0%B0%D1%86%D0%B8%D0%B8-%D1%81%D1%82%D1%80%D0%BE%D0%BA-%D0%B2-c-%D0%B8-java
 * StringBuilder - чем он лучше простой конкатенации строк - https://stackoverflow.com/questions/1532461/stringbuilder-vs-string-concatenation-in-tostring-in-java === https://www.baeldung.com/java-strings-concatenation
 * String pool - https://www.baeldung.com/java-string-pool
+* Почему пароль лучше хранить в массиве, чем в строке? - потому что строка хранится в StringPool, и там ее легче прочитать
 * Квалификатор final
 * Для чего полезна иммутабельность? - https://www.baeldung.com/java-immutable-object
 * Java reflection - https://www.baeldung.com/java-reflection
@@ -294,6 +295,7 @@ https://www.baeldung.com/java-singleton
 * Ковариантность (extends T), контрвариантность (super T), инвариантность (просто T)
 * Можно сделать так: instanceOf List<String> - нельзя из-за стирания типов
 * Почему дженерики компилируются в Object? - для обратной совместимости с предыдущими версиями Java 
+* Wildcards
 
 
 
