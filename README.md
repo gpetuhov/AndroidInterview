@@ -73,6 +73,7 @@ https://habr.com/ru/post/210288/
 * RecyclerView Adapter является ли реализацией паттерна Адаптер? - нет - https://stackoverflow.com/questions/41626980/are-android-adapters-an-example-of-adapter-design-pattern
 * Подводные камни singleton - https://stackoverflow.com/questions/137975/what-are-drawbacks-or-disadvantages-of-singleton-pattern
 * Примеры паттернов проектирования в Android SDK, Dagger, RxJava
+* Почему паттерны Декоратор и Фасад называют противоположными? - Фасад упрощает интерфейс сложной системы, Декоратор усложняет простой объект.
 
 
 
