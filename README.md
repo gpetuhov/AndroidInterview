@@ -870,6 +870,7 @@ https://stackoverflow.com/questions/38566628/how-is-the-new-fragmenttransaction-
 
 https://medium.com/@bherbst/the-many-flavors-of-commit-186608a015b1
  
+* Гарантируется ли добавление фрагмента в back stack при вызове commitNow? - нет - https://stackoverflow.com/questions/38566628/how-is-the-new-fragmenttransaction-commitnow-working-internally
 * FragmentLifecycleCallbacks - https://habr.com/ru/company/yoomoney/blog/492272/
 * Есть ли у фрагмента метод onRestoreInstanceState - нет - https://stackoverflow.com/questions/5412746/android-fragment-onrestoreinstancestate
 * How to share data between fragments? - https://developer.android.com/guide/fragments/communicate
