@@ -734,11 +734,20 @@ https://russianblogs.com/article/58471210856/
 * Context - https://developer.android.com/reference/android/content/Context
 * Context types. Difference between Application Context and Activity Context
 
+https://stackoverflow.com/questions/10641144/difference-between-getcontext-getapplicationcontext-getbasecontext-and
+
+https://stackoverflow.com/questions/1026973/whats-the-difference-between-the-various-methods-to-get-an-android-context
+
 https://stackoverflow.com/questions/4128589/difference-between-activity-context-and-application-context 
+
+https://medium.com/@ali.muzaffar/which-context-should-i-use-in-android-e3133d00772c
 
 https://medium.com/@banmarkovic/what-is-context-in-android-and-which-one-should-you-use-e1a8c6529652
 
 * Отображение AlertDialog из app context - https://nhancv.medium.com/android-show-dialog-without-activity-context-94661d48400f
+* Сменится ли тема у диалога, отображенного из app context, если пользователь поменяет тему на темную? - нет, так как при смене темы пересоздается только активити, но не всё приложение
+* BaseContext
+* ContextThemeWrapper - https://ataulm.com/2019/11/20/using-context-theme-wrapper.html
 * raw vs assets - что где хранить, отличия? (в raw доступ через R.raw.id, в assets через asset manager) - https://stackoverflow.com/questions/5583608/difference-between-res-and-assets-directories
 * Что такое утечки памяти, как они возникают, как их диагностировать (профилировщик, Leak Canary)?
  
