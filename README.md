@@ -331,6 +331,10 @@ https://www.geeksforgeeks.org/lifecycle-and-states-of-a-thread-in-java/
 
 * Race condition - точное определение
 * synchronized vs volatile
+ 
+https://jenkov.com/tutorials/java-concurrency/synchronized.html
+ 
+https://jenkov.com/tutorials/java-concurrency/volatile.html 
 
 https://www.baeldung.com/java-synchronized
 
