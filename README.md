@@ -603,6 +603,15 @@ https://blog.danlew.net/2020/01/28/coroutines-and-java-synchronization-dont-mix/
 https://jacquessmuts.github.io/post/coroutine_sync_mutex/ 
  
 * Что использовать вместо synchronized в корутинах? - Mutex - https://medium.com/mobile-app-development-publication/mutex-for-coroutines-5f4a4ca60763 
+* Flow - основные операторы, организация кода, переключение потоков
+
+https://proandroiddev.com/from-rxjava-2-to-kotlin-flow-threading-8618867e1955 
+ 
+https://developer.android.com/kotlin/flow
+
+https://developer.android.com/codelabs/advanced-kotlin-coroutines?hl=en#0
+ 
+* flowOn - https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/flow-on.html
 
 
 
