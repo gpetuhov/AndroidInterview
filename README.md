@@ -607,6 +607,8 @@ https://jacquessmuts.github.io/post/coroutine_sync_mutex/
 
 https://proandroiddev.com/from-rxjava-2-to-kotlin-flow-threading-8618867e1955 
  
+https://habr.com/ru/company/simbirsoft/blog/534706/ 
+ 
 https://developer.android.com/kotlin/flow
 
 https://developer.android.com/codelabs/advanced-kotlin-coroutines?hl=en#0
