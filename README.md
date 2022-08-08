@@ -1049,6 +1049,7 @@ https://www.geeksforgeeks.org/how-to-improve-recyclerview-scrolling-performance-
 * Как понять, что приложение тормозит? - В logcat будут сообщения про skipped frames
 * Причины пропуска кадров - https://developer.android.com/topic/performance/vitals/render 
 * Как сделать, чтобы цвет кнопки зависел от состояния? - В xml с помощью selector - https://stackoverflow.com/questions/3738886/android-button-with-different-background-colors
+* Как сделать кастомную вью для отображения поворачивающейся стрелки компаса?
 
 
 
