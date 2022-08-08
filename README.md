@@ -828,6 +828,7 @@ https://medium.com/@veeresh.charantimath8/playing-with-android-task-affinity-and
 * How to save state of an EditText? (provide an id, but it uses Bundle under the hood)
 * Почему сохранение данных при повороте экрана в Bundle, а не в SharedPreferences? - Bundle хранится в памяти, поэтому быстрее === https://stackoverflow.com/questions/24822101/when-to-use-getsharedpreferences-vs-savedinstancestate
 * ActivityLifecycleCallbacks - https://habr.com/ru/company/yoomoney/blog/482476/ 
+* Открыты экраны ABCD. Как закрыть экраны C и D, если это активити и если это фрагменты? 
 
 
 
