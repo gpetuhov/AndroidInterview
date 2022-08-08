@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2022.08.06
+Latest update: 2022.08.08
 
 ## Previous experience
 * Tell us about yourself and your previous experience.
@@ -1269,8 +1269,8 @@ https://github.com/gpetuhov/AndroidInterview/blob/master/app/src/main/java/com/g
 https://github.com/gpetuhov/AndroidInterview/blob/master/app/src/main/java/com/gpetuhov/androidinterviewcodesamples/MainActivity.kt
 
 * How to implement a layout shown on the screenshot.
- 
 * Пример по многопоточности - https://youtu.be/M5Jl643cP34?t=1456 
+* Выполнить рефакторинг кода с RxJava/Flow
 
 
 
@@ -1281,18 +1281,22 @@ https://github.com/gpetuhov/AndroidInterview/blob/master/app/src/main/java/com/g
 
 OR
 
-* HackerRank (LeetCode)
+* HackerRank
+* LeetCode
 
 Примеры задач:
 * Собрать стек из двух очередей
 * Собрать очередь из двух стеков
+* Найти максимальную глубину дерева 
 
 
 
 ## Android coding task
-Task: download list of items from the server and display them on screen. How would you organize your code?
+* Task: download list of items from the server and display them on screen. How would you organize your code?
 
 Example of Clean Architecture in Android: https://github.com/gpetuhov/AndroidFundamentals2021/tree/master/01-CleanArchitecture
+ 
+* Требуется сделать экран списка чатов. Как организовать архитектуру - нарисовать схему верхнего уровня.
 
 
 
