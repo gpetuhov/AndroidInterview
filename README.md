@@ -384,7 +384,9 @@ https://www.baeldung.com/java-concurrent-map
 https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentHashMap.html
 
 * ThreadLocal
- 
+
+https://jenkov.com/tutorials/java-concurrency/threadlocal.html 
+
 https://www.baeldung.com/java-threadlocal
  
 https://habr.com/ru/post/108016/
