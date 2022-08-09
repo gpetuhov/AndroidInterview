@@ -160,6 +160,7 @@ https://dzone.com/articles/java-hashing
 
 https://jqno.nl/equalsverifier/errormessages/mutability-equals-depends-on-mutable-field/
 
+* Каким свойствам должен отвечать хешкод? - Скорость, разброс, иммутабельность (иммутабельность полей, на основе которых вычисляется хешкод)
 * Как вычисляется hashcode в Dalvik (Android 4.4) - Адрес объекта >> 3 бита
 * Что может вернуть x.equals(null) - Если x == null, то NPE, иначе false
 * Методы wait() (их несколько), notify(), notifyAll() - https://www.baeldung.com/java-wait-notify
@@ -248,9 +249,11 @@ https://stackoverflow.com/questions/25444226/difference-between-sparsearray-vs-a
 * Можно ли в HashMap положить элемент с ключом null? - можно - https://stackoverflow.com/questions/25932730/hashmap-with-null-key-and-null-value#:~:text=HashMap%20puts%20null%20key%20in,linked%20list%20data%20structure%20internally.&text=In%20Entry%20class%20the%20K,value%20passed%20in%20put%20method.
 * Есть ли в HashMap LinkedList по ключу null - Нет, там только один элемент, так как у null не может быть equals
 * HashMap - что такое бакеты? - Это и есть те элементы, которые адресуются на основе хешкода (бакетами могут быть связанные списки или бинарные деревья) - https://www.baeldung.com/java-hashmap
+* Изменения в HashMap, начиная с Java 8 - При превышении порогового значения количества элементов вместо LinkedList используется дерево (см. следующий вопрос) - https://habr.com/ru/post/421179/
 * Всегда ли в бакетах в HashMap используется LinkedList? - Нет. При большом количестве элементов в бакете LinkedList заменяется на binary tree. Тогда время поиска элемента становится O(logn) вместо O(n) Примечение: log по основанию 2
 * Как выбрать изначальный размер массива в HashMap
 * Почему изначальный размер массива в HashMap выбран 16
+* Можно ли коллекцию использовать в качестве ключа? - Да, можно, но важно при этом правильно вычислять хешкод на основе иммутабельных данных
 * Как устроен HashSet под капотом? - это HashMap, у которой ключом является элемент множества, а значением константа
 
 https://javarush.ru/groups/posts/2147-hashset-v-java
