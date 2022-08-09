@@ -862,7 +862,7 @@ https://medium.com/@veeresh.charantimath8/playing-with-android-task-affinity-and
 * Проблемы Serializable - 1. Рефлексия, 2. Если поле в Serializable классе будет не Serializable, то при десериализации оно будет просто null (а в случае Parcelable компилятор сразу это подсвечивает)
 * Как под капотом устроен Serializable? - https://www.infoworld.com/article/2072752/the-java-serialization-algorithm-revealed.html 
 * Когда использовать Serializable? - https://proandroiddev.com/serializable-or-parcelable-why-and-which-one-17b274f3d3bb
-* Всегда ли оправдано применение Parcelable? - Только при большом количестве операций в единицу времени (1000 и больше), а также в IPC (Binder, AIDL)
+* Всегда ли оправдано применение Parcelable? - Только при большом количестве операций в единицу времени (1000 и больше), а также в IPC (Binder, AIDL), и когда большие объекты
 * Можно ли использовать Parcelable для записи на диск? - нет - https://guides.codepath.com/android/using-parcelable
 * Как под капотом устроен Parcelable?  
 * Difference between implicit and explicit intents.
@@ -933,6 +933,12 @@ https://medium.com/@ali.muzaffar/use-headless-fragment-for-android-m-run-time-pe
 * I am starting a network request from the Service. What problem can this cause? (Service runs on the main thread by default)
 * Как стартовать сервис в бэкграунде, поможет ли вызов startService в бэкграунд потоке? - нет - https://stackoverflow.com/questions/18526131/how-to-run-service-not-on-main-thread
 * Difference between Service and IntentService.
+* Как вернуть результат из IntentService? - С помощью ResultReceiver
+
+https://stackoverflow.com/questions/10334901/how-to-get-results-from-an-intentservice-back-into-an-activity 
+
+https://proandroiddev.com/intentservice-and-resultreceiver-70de71e5e40a
+ 
 * When onStartCommand() gets triggered? (Every time when startService() is called, even if Service is already started)
 * Типы сервисов - background, foreground, bound
 * Bound services lifecycle - https://developer.android.com/guide/components/bound-services
