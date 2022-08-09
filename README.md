@@ -221,6 +221,8 @@ https://habr.com/ru/post/162017/
 * Можно ли примитивы класть в коллекции (int, double, ...) - нет
 * ArrayList vs LinkedList. Which one takes less time to add an item in the middle? Which one takes less time to get n-th element?
 * ArrayList под капотом - это динамический массив с изначальным размером 10
+* List vs Set - https://www.geeksforgeeks.org/difference-between-list-and-set-in-java/
+* ArrayList vs Vector - https://www.geeksforgeeks.org/vector-vs-arraylist-java/
 * SparseArray
 
 https://developer.android.com/reference/android/util/SparseArray
