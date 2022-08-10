@@ -461,11 +461,13 @@ https://medium.com/@vikas.singh_67409/deep-dive-into-thread-priority-in-java-be1
 * Any, Unit, Nothing - https://gb.ru/posts/razbiraemsya-v-tipah-kotlin-unit-nothing-any-i-null
 * Класс Any - назначение, методы класса (equals, hashCode, toString) - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/ 
 * Как связаны Kotlin Any и Java Object? - https://stackoverflow.com/questions/38761021/does-any-object
+* Как вызвать у Any методы класса Object (wait, notify)? - Путем преобразования типа (myAny as Object).wait() 
 * Как Any используется в nullability и multiplatform? 
 * Класс Nothing - это null нет? - нет, Nothing - это наследник всех классов в Kotlin, он описывает функции, которые могут ничего не вернуть (если функция кидает исключение, то она возвращает Nothing). А Nothing? уже может быть null. - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-nothing.html
 * Как Nothing может являться сабклассом любого объекта? - https://the-cogitator.com/posts/blog/2018/06/29/the-nature-of-nothing-in-kotlin.html 
 * Класс Unit - это аналог void в Java - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/
 * Unit vs Nothing - https://stackoverflow.com/questions/55953052/kotlin-void-vs-unit-vs-nothing 
+* Какой тип будет при вызове Java из Kotlin - nullable или нет? Как при этом учитываются аннотации Nullable, NonNull? - https://kotlinlang.org/docs/java-interop.html 
 * Как переопределить finalize? - https://kotlinlang.org/docs/java-interop.html#finalize 
 * Модификаторы доступа в Kotlin
 * Как вычисляется hashCode по умолчанию?
