@@ -276,6 +276,7 @@ https://www.baeldung.com/java-treemap
 * Как происходит кодогенерация?
 * Java Throwable Hierarchy (Errors and Exceptions) - https://rollbar.com/blog/java-exceptions-hierarchy-explained/
 * Java checked and unchecked exceptions - Это когда в сигнатуре метода есть throws Exception и тогда компилятор при вызове данного метода попросит обернуть в try-catch - https://www.geeksforgeeks.org/checked-vs-unchecked-exceptions-in-java/#:~:text=In%20Java%2C%20there%20are%20two,the%20exception%20using%20throws%20keyword.
+* Можно ли поймать OutOfMemoryException в try-catch блок? - Да, но в этом нет смысла
 * What is "finally" block used for in try-catch? Какие обычно операции выполняются в finally блоке?
 * Зачем закрывать OutputStream? - https://www.geeksforgeeks.org/correct-ways-to-close-inputstream-and-outputstream-in-java-with-examples/ - https://ru.stackoverflow.com/questions/605255/%D0%9D%D1%83%D0%B6%D0%BD%D0%BE-%D0%BB%D0%B8-%D0%B7%D0%B0%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D1%82%D1%8C-%D0%BF%D0%BE%D1%82%D0%BE%D0%BA%D0%B8-%D0%B2%D0%B2%D0%BE%D0%B4%D0%B0-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4%D0%B0-%D0%B2-%D0%BA%D0%BE%D0%BD%D1%86%D0%B5-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B
 * Static classes vs inner classes - https://stackoverflow.com/questions/70324/java-inner-class-and-static-nested-class
