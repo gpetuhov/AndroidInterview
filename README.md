@@ -796,6 +796,7 @@ https://stackoverflow.com/questions/44880822/multiple-activity-or-single-activit
 
 https://oozou.com/blog/reasons-to-use-android-single-activity-architecture-with-navigation-component-36
 
+* Когда обязательно надо использовать активити, а не фрагменты? - Когда нам надо сделать несколько точек входа в приложение (например, открывать разные экраны нашего приложения в ответ на разные неявные интенты) 
 * Можно ли сделать несколько MainActivity? - да, тогда на HomeScreen будет несколько иконок приложения. Пример - когда используешь библиотеку LeakCanary
 * Activity lifecycle
 
