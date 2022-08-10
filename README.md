@@ -479,6 +479,7 @@ https://medium.com/@vikas.singh_67409/deep-dive-into-thread-priority-in-java-be1
 * Во что компилируется лямбда? - в анонимный внутренний класс Java
 * Can enums contain values? (Yes: enum class Action(val value: Int) { WALK(0), RUN(1), ... }
 * В чем преимущество sealed class перед enum? - Sealed class позволяет создавать экземпляры классов, поэтому можно менять состояние объектов в рантайме. Enum не позволяет менять состояние.
+* Изменения в sealed classes в Kotlin 1.7 - when должен содержать все варианты sealed класса (exhaustive when) - https://kotlinlang.org/docs/compatibility-guide-17.html#make-when-statements-with-enum-sealed-and-boolean-subjects-exhaustive-by-default 
 * lateinit vs lazy
 * Типы делегатов - property, interface 
 * Property delegates
@@ -500,6 +501,7 @@ https://medium.com/androiddevelopers/built-in-delegates-4811947e781f
 * crossinline
 * Можно ли узнать тип дженерика в inline функции? - только если сделать reified parameters - https://stackoverflow.com/questions/33146160/how-to-check-generic-type-in-kotlin
 * reified type parameters (речь только про функции, классы не могут иметь reified полей) - https://kotlinlang.org/docs/inline-functions.html#reified-type-parameters
+* Можно ли вызвать метод с reified в Java? - нет - https://stackoverflow.com/questions/42741780/how-can-i-call-kotlin-methods-with-reified-generics-from-java
 * Когда не рекомендуется использовать inline? - Когда лямбда большая (тогда кода сгенерится много) 
 * noinline - https://kotlinlang.org/docs/inline-functions.html
 * Байткод inline, crossinline, noinline
@@ -512,6 +514,7 @@ https://www.baeldung.com/kotlin/crossinline-vs-noinline
 * infix functions - https://kotlinlang.org/docs/functions.html#infix-notation
 * Может ли infix функция содержать дефолтные параметры - нет
 * Как сделаны под капотом extension functions - это static методы - https://moshenskyi.medium.com/kotlin-under-the-hood-extension-functions-1d61fabdf631
+* Можно ли вызвать приватный метод в extension function? - нет, так как под капотом это статический метод, где с экземпляром класса мы работаем извне
 * Extension functions - существует мнение, что это антипаттерн, им легко злоупотреблять и тяжело тестировать
 * Всегда ли extension functions статические?
 * Extension functions во что компилируются и как их использовать из Java - https://stackoverflow.com/questions/28294509/accessing-kotlin-extension-functions-from-java 
@@ -629,6 +632,7 @@ https://developer.android.com/kotlin/flow
 
 https://developer.android.com/codelabs/advanced-kotlin-coroutines?hl=en#0
  
+* Виды Flow - https://kotlinlang.org/docs/flow.html
 * flowOn - https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/flow-on.html
 
 
