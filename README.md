@@ -993,6 +993,14 @@ http://developer.alexanderklimov.ru/android/broadcast.php
 ### Content Providers
 * Content Providers - https://developer.android.com/guide/topics/providers/content-provider-basics?hl=ru
 * Когда вызывается onCreate()? - Перед вызовом onCreate() у Application 
+* Что будет, если прописать authority, какой уже есть в системе? - Приложение не будет установлено
+* На каком потоке исполняется? - Если обращение идет из своего же приложения, то на главном потоке. Если из другого приложения, то ContentProvider выполняется на BinderThread, а взаимодействие с ним идет с помощью IPC
+ 
+https://stackoverflow.com/questions/3491747/which-thread-runs-contentprovider
+ 
+https://stackoverflow.com/questions/15222041/android-what-is-binder-thread
+ 
+https://medium.com/swlh/binder-threading-model-79077b7c892c
 
 
 
