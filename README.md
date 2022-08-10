@@ -927,6 +927,8 @@ https://medium.com/@bherbst/the-many-flavors-of-commit-186608a015b1
 * BottomSheetDialogFragment - https://medium.com/@kosta.palash/using-bottomsheetdialogfragment-with-material-design-guideline-f9814c39b9fc
 * Если фрагмент прописан в xml, то под капотом все равно будет использоваться FragmentManager
 * What can go wrong when calling activity.startActivityForResult() inside fragment? (The result will be delivered to onActivityResult() of the activity, not the fragment)
+* Можно ли в onCreateView вернуть null? - Да, тогда фрагмент не будет иметь UI
+* Зачем в onCreateView возвращать null? - Можно предотвратить пересоздание фрагмента без интерфейса с помощью setRetainInstance(true) и тогда такой фрагмент можно использовать как сущность, которая живет дольше, чем активити (например, для хранения каких-то данных)
 * Headless fragments
  
 https://luboganev.dev/blog/headless-fragments/
