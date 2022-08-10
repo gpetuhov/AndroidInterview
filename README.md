@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2022.08.09
+Latest update: 2022.08.10
 
 ## Previous experience
 * Tell us about yourself and your previous experience.
@@ -850,7 +850,9 @@ https://medium.com/@veeresh.charantimath8/playing-with-android-task-affinity-and
 * How to save state of an EditText? (provide an id, but it uses Bundle under the hood)
 * Почему сохранение данных при повороте экрана в Bundle, а не в SharedPreferences? - Bundle хранится в памяти, поэтому быстрее === https://stackoverflow.com/questions/24822101/when-to-use-getsharedpreferences-vs-savedinstancestate
 * ActivityLifecycleCallbacks - https://habr.com/ru/company/yoomoney/blog/482476/ 
-* Открыты экраны ABCD. Как закрыть экраны C и D, если это активити и если это фрагменты? 
+* Открыты экраны ABCD. Как закрыть экраны C и D, если это активити и если это фрагменты?
+* Есть Activity и в ней внутренний класс. В чем может быть проблема и как это исправить? - Внутренний класс (inner class) хранит ссылку на внешний класс, поэтому если хранить где-то экземпляр этого внутреннего класса, то может произойти утечка памяти (GC не сможет собрать активити). Чтобы это исправить, надо сделать внутренний класс статическим классом или вообще вынести его из активити.
+* Как в ситуации из предыдущего примера сделать так, чтобы методы класса работали с активити и не было утечки памяти? - Надо передавать активити в методы через WeakReference 
 
 
 
