@@ -985,6 +985,8 @@ http://developer.alexanderklimov.ru/android/broadcast.php
 
 * Sticky Broadcast - https://stackoverflow.com/questions/3490913/what-is-a-sticky-broadcast
 * Ограничения на BroadcastReceiver, начиная с Android 8 - https://itsobes.ru/AndroidSobes/kakie-ogranicheniia-na-broadcastreceiver-byli-vvedeny-v-android-8-0/ 
+* На каком потоке исполняется? - Main thread
+* Как поменять поток? - Использовать Handler при регистрации ресивера - https://stackoverflow.com/questions/28186923/running-broadcast-receiver-on-a-separate-thread
 
 
 
