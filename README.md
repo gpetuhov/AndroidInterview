@@ -1147,6 +1147,7 @@ StrictMode.setThreadPolicy(policy);
 ### Network
 * HTTP methods - https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
 * Структура HTTP запроса (метод, хедер, тело)
+* TCP Socket
 * Хедер - структура (key-value) и назначение 
 * HTTP vs WebSocket
 * Socket vs WebSocket - https://stackoverflow.com/questions/4973622/difference-between-socket-and-websocket
@@ -1160,7 +1161,7 @@ https://stackoverflow.com/questions/14703627/websockets-protocol-vs-http
 https://ssaurel.medium.com/learn-to-use-websockets-on-android-with-okhttp-ba5f00aea988
  
 https://square.github.io/okhttp/4.x/okhttp/okhttp3/-web-socket/ 
-
+ 
 * Scarlet - https://github.com/Tinder/Scarlet
 * SignalR 
 * What is JSON?
