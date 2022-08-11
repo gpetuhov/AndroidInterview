@@ -450,6 +450,7 @@ https://medium.com/@vikas.singh_67409/deep-dive-into-thread-priority-in-java-be1
 * Java Util Concurrent (JUC) - https://habr.com/ru/company/luxoft/blog/157273/ 
 * Свойства ordering, visibility, atomicity, happens-before, mutual exclusion на примере volatile - http://www.duct-tape-architect.ru/?p=294#14__ordering_visibility_atomicity_happens-before_mutual_exclusion___volatile_AtomicInteger_synchronize
 * BlockingQueue - https://www.baeldung.com/java-blocking-queue
+* Нужно параллельно отправить 3 сетевых запроса, дождаться их ответа и продолжить дальнейшие действия только собрав все 3 результата (аналог RxJava zip). Как это сделать без использования RxJava и корутин? (Подсказка: использовать семафоры)
  
 
 
