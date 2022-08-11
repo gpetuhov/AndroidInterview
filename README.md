@@ -354,6 +354,7 @@ https://www.baeldung.com/java-volatile-variables-thread-safety
 
 * Можно ли все переменные сделать volatile? - В зависимости от процессора volatile может дать увеличение времени из-за чтения не из кэша ядра, а из основной памяти - https://stackoverflow.com/questions/4633866/is-volatile-expensive
 * Можно ли статические переменные делать volatile? - да 
+* Volatile - практический пример использования 
 * synchronized vs static synchronized - https://stackoverflow.com/questions/6367885/difference-between-synchronizing-a-static-method-and-a-non-static-method
 * Deadlock - что это и как бороться?
 
