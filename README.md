@@ -290,6 +290,13 @@ https://habr.com/ru/post/129494/
 https://www.baeldung.com/java-singleton
 * Виды сортировок - пузырьком O(n^2), слиянием O(nlogn), быстрая сортировка O(nlogn), сортировка подсчетом (применим только в некоторых случаях) O(n+k) где k - количество различных элементов
 * IntegerCache - https://www.geeksforgeeks.org/java-integer-cache/
+* Чтение из файла
+* Битовые операции, побитовые сдвиги
+* Big endian, little endian
+
+https://www.geeksforgeeks.org/little-and-big-endian-mystery/
+
+https://howtodoinjava.com/java/basics/little-endian-big-endian/
 
 
 
