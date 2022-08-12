@@ -1267,6 +1267,7 @@ https://medium.com/mobile-app-development-publication/dagger-2-multibindings-ref
 * Dagger subcomponents vs component dependencies - https://stackoverflow.com/questions/29587130/dagger-2-subcomponents-vs-component-dependencies
 * Dagger Scopes
 * Управление жизненным циклом компонентов
+* Dagger vs Toothpick vs Koin vs Kodein 
 
 
 
@@ -1298,7 +1299,6 @@ https://www.raywenderlich.com/7026-getting-started-with-mvp-model-view-presenter
  
  
 ### Modularization (multi-module projects)
- 
 * Для чего используют многомодульность? 
 
 https://proandroiddev.com/the-abc-of-modularization-for-android-in-2021-e7b3fbe29fca
