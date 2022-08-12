@@ -1371,11 +1371,11 @@ https://habr.com/ru/company/rambler_and_co/blog/279799/
 
 
 ### Other
-* Getting geolocation
-* Deep links
-* Bluetooth
-* NFC
-* ExoPlayer
+* Getting geolocation - https://developer.android.com/training/location
+* Deep links - https://developer.android.com/training/app-links/deep-linking
+* Bluetooth - https://developer.android.com/guide/topics/connectivity/bluetooth
+* NFC - https://developer.android.com/guide/topics/connectivity/nfc
+* ExoPlayer - https://exoplayer.dev/hello-world.html - https://developer.android.com/guide/topics/media/exoplayer
 * Аудиофокус - https://developer.android.com/guide/topics/media-apps/audio-focus 
 
 
