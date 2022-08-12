@@ -1267,13 +1267,6 @@ https://medium.com/mobile-app-development-publication/dagger-2-multibindings-ref
 * Dagger subcomponents vs component dependencies - https://stackoverflow.com/questions/29587130/dagger-2-subcomponents-vs-component-dependencies
 * Dagger Scopes
 * Управление жизненным циклом компонентов
-* Как обойти циклические зависимости (cyclic dependency aka circular dependency) в многомодульном проекте (например, модуль чата вызывает модуль профиля, а модуль профиля опять вызывает модуль чата)?
-
-https://proandroiddev.com/greatest-android-modularization-mistake-and-how-to-undo-it-50eda336a595
- 
-https://medium.com/@mydogtom/modularization-part-2-dagger-structure-5c2daf5e849c
-
-https://itnext.io/multi-module-navigation-in-android-63cb9924ffbd
 
 
 
@@ -1302,6 +1295,36 @@ https://startandroid.ru/ru/blog/473-mvp-na-primere-jekrana-s-pin-kodom.html
 
 https://www.raywenderlich.com/7026-getting-started-with-mvp-model-view-presenter-on-android
 
+ 
+ 
+### Modularization (multi-module projects)
+ 
+* Для чего используют многомодульность? 
+
+https://proandroiddev.com/the-abc-of-modularization-for-android-in-2021-e7b3fbe29fca
+
+https://www.techyourchance.com/modularization-android/
+ 
+https://proandroiddev.com/modularization-in-android-architecture-point-of-view-from-a-to-z-part-i-7a86e6e03799
+
+https://proandroiddev.com/modularization-in-android-architecture-point-of-view-from-a-to-z-part-ii-8baea5b2e4fd
+ 
+https://proandroiddev.com/modularization-of-android-applications-in-2021-a79a590d5e5b
+
+https://proandroiddev.com/modularization-of-android-applications-with-explicit-initialization-90efdb79db4a
+ 
+https://proandroiddev.com/modularization-of-android-applications-with-lazy-initialization-a091eaaa284a 
+
+* Плюсы и минусы многомодульных проектов - https://stackoverflow.com/questions/41632599/dis-advantage-of-having-multiple-modules-in-an-android-studio-project
+* Сложности dependency injection в многомодульных проектах - https://developer.android.com/training/dependency-injection/dagger-multi-module 
+* Как обойти циклические зависимости (cyclic dependency aka circular dependency) в многомодульном проекте (например, модуль чата вызывает модуль профиля, а модуль профиля опять вызывает модуль чата)?
+
+https://proandroiddev.com/greatest-android-modularization-mistake-and-how-to-undo-it-50eda336a595
+ 
+https://medium.com/@mydogtom/modularization-part-2-dagger-structure-5c2daf5e849c
+
+https://itnext.io/multi-module-navigation-in-android-63cb9924ffbd
+ 
 
 
 ### Moxy
@@ -1333,20 +1356,6 @@ https://habr.com/ru/company/rambler_and_co/blog/279799/
 * How to make some part of the code run only in debug? (if (BuildConfig.DEBUG) {...} else {...})
 * What is multidex?
 * Gradle parallel - https://docs.gradle.org/current/userguide/performance.html
-* Для чего используют многомодульность? 
- 
-https://proandroiddev.com/modularization-of-android-applications-in-2021-a79a590d5e5b
-
-https://proandroiddev.com/modularization-of-android-applications-with-explicit-initialization-90efdb79db4a
- 
-https://proandroiddev.com/modularization-of-android-applications-with-lazy-initialization-a091eaaa284a 
-
-https://proandroiddev.com/the-abc-of-modularization-for-android-in-2021-e7b3fbe29fca
-
-https://www.techyourchance.com/modularization-android/
-
-* Плюсы и минусы многомодульных проектов - https://stackoverflow.com/questions/41632599/dis-advantage-of-having-multiple-modules-in-an-android-studio-project
-* Сложности dependency injection в многомодульных проектах - https://developer.android.com/training/dependency-injection/dagger-multi-module
 * Как ускорить время сборки - https://habr.com/ru/company/yandex/blog/678786/
 
 
