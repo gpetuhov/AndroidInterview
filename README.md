@@ -1202,6 +1202,10 @@ https://developer.android.com/reference/java/net/HttpURLConnection
 https://www.baeldung.com/rest-vs-grpc
  
 https://habr.com/ru/post/565020/
+* Протоколы передачи аудио-видео - https://www.cdnetworks.com/media-delivery-blog/video-streaming-protocols/
+* HLS
+* WebRTC
+* Протоколы, которые поддерживает ExoPlayer - https://exoplayer.dev/supported-formats.html 
 
  
  
@@ -1363,6 +1367,10 @@ https://habr.com/ru/company/rambler_and_co/blog/279799/
 ### Other
 * Getting geolocation
 * Deep links
+* Bluetooth
+* NFC
+* ExoPlayer
+* Аудиофокус - https://developer.android.com/guide/topics/media-apps/audio-focus 
 
 
 
