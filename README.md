@@ -1333,11 +1333,15 @@ https://habr.com/ru/company/rambler_and_co/blog/279799/
 * How to make some part of the code run only in debug? (if (BuildConfig.DEBUG) {...} else {...})
 * What is multidex?
 * Gradle parallel - https://docs.gradle.org/current/userguide/performance.html
-* Для чего используют многомодульность?
- 
-https://proandroiddev.com/the-abc-of-modularization-for-android-in-2021-e7b3fbe29fca
+* Для чего используют многомодульность? 
  
 https://proandroiddev.com/modularization-of-android-applications-in-2021-a79a590d5e5b
+
+https://proandroiddev.com/modularization-of-android-applications-with-explicit-initialization-90efdb79db4a
+ 
+https://proandroiddev.com/modularization-of-android-applications-with-lazy-initialization-a091eaaa284a 
+
+https://proandroiddev.com/the-abc-of-modularization-for-android-in-2021-e7b3fbe29fca
 
 https://www.techyourchance.com/modularization-android/
 
