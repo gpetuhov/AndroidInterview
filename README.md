@@ -1154,6 +1154,10 @@ StrictMode.setThreadPolicy(policy);
 
 
 ### Network
+* ISO/OSI - https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D1%82%D0%B5%D0%B2%D0%B0%D1%8F_%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C_OSI
+* Перечислить различные протоколы, назвать назначение, особенности и отличия 
+* REST - https://blog.skillfactory.ru/glossary/rest-api/
+* REST vs Protobuf vs GraphQL плюсы и минусы 
 * HTTP methods - https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
 * Структура HTTP запроса (метод, хедер, тело)
 * TCP Socket
