@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2022.08.11
+Latest update: 2022.08.12
 
 ## Previous experience
 * Tell us about yourself and your previous experience.
@@ -1280,7 +1280,13 @@ https://itnext.io/multi-module-navigation-in-android-63cb9924ffbd
 ### Clean architecture
 * Clean Architecture - https://habr.com/ru/company/mobileup/blog/335382/
 * UseCases лучше разбивать на отдельные функции (под каждую функцию свой UseCase)
-* Для чего нужна Clean Architecture? - Развязывание классов (отсутствие сильной связанности, возможность замены компонентов), тестопригодность, уменьшение порога входа в проект для новых разработчиков (все понимают, что на каждом слое находится)
+* Для чего нужна Clean Architecture? - Переиспользование бизнес-логики в разных проектах, развязывание классов (отсутствие сильной связанности, возможность замены компонентов), тестопригодность, уменьшение порога входа в проект для новых разработчиков (все понимают, что на каждом слое находится), единообразие модулей в многомодульном проекте
+* Почему разделили именно на слои data, presentation, domain, а не на другие?
+ 
+https://proandroiddev.com/clean-architecture-data-flow-dependency-rule-615ffdd79e29
+ 
+https://markonovakovic.medium.com/clean-architecture-is-not-domain-data-presentation-e368d7ff8579 
+
 * MVP, достоинства и недостатки
 
 https://stackoverflow.com/questions/40766185/advantage-of-mvp-in-android
