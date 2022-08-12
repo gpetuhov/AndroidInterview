@@ -385,6 +385,7 @@ https://www.baeldung.com/java-atomic-variables
 
 * AtomicInteger
 * Что выдаст Future.get(), если Callable завершится аварийно - Будет ExecutionException
+* CompletableFuture 
 * Java concurrent list - CopyOnWriteArrayList - https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html
 * Java ConcurrentHashMap 
  
