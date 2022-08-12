@@ -753,7 +753,12 @@ https://russianblogs.com/article/58471210856/
 ### Basics
 * Android components and what are they used for (Activity, Service, Content Provider, Broadcast Receiver)
 * Почему Application не компонент? - Потому что это не точка входа в приложение
-* Как Андроид компоненты влияют на приоритет процесса - https://medium.com/androiddevelopers/who-lives-and-who-dies-process-priorities-on-android-cb151f39044f
+* Как Андроид компоненты влияют на приоритет процесса
+
+https://developer.android.com/guide/components/activities/process-lifecycle 
+ 
+https://medium.com/androiddevelopers/who-lives-and-who-dies-process-priorities-on-android-cb151f39044f
+
 * Project structure of an Android application (modules, manifest, source, res, assets, Gradle scripts)
 * What is AndroidManifest.xml?
 * Состав манифеста: permissions, intent filters, features, meta 
