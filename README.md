@@ -1222,7 +1222,13 @@ https://habr.com/ru/post/565020/
 ### Data persistence
 * Какие есть способы сохранить данные - shared preferences, db, file
 * Shared preferences persist after app has been uninstalled. How to prevent it? (Add android:allowBackup="false" in the application in the manifest)
-* Особенности и различия разных типов БД (sql, nosql, строковые, колоночные) 
+* Особенности и различия разных типов БД (sql, nosql, строковые, колоночные)
+* Где хранить защищенные данные? - EnryptedSharedPreferences, EncryptedFile
+ 
+https://developer.android.com/topic/security/data
+ 
+https://proandroiddev.com/encrypted-preferences-in-android-af57a89af7c8
+* Как сделать пагинацию на бэкенде средствами SQL? - Использовать Offset и Fetch - https://levelup.gitconnected.com/how-to-create-a-server-side-data-pagination-function-in-sql-server-d5e7876aff28 
 
 
 
