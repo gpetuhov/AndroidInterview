@@ -970,6 +970,11 @@ https://medium.com/@ali.muzaffar/use-headless-fragment-for-android-m-run-time-pe
  
 * Можно ли заинжектить что-то в конструктор фрагмента? - да, с помощью FragmentFactory - https://medium.com/@diousk507/using-fragmentfactory-with-dagger-2-c3ec136c860d
 * Что будет, если сделать приватный конструктор у фрагмента? - Будет исключение при попытке пересоздания фрагмента после уничтожения 
+* Когда вызывается onDestroyView?
+ 
+https://developer.android.com/guide/fragments/lifecycle
+ 
+https://medium.com/androiddevelopers/fragments-rebuilding-the-internals-61913f8bf48e 
 
 
 
