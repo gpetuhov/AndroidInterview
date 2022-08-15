@@ -163,6 +163,7 @@ https://jqno.nl/equalsverifier/errormessages/mutability-equals-depends-on-mutabl
 * Каким свойствам должен отвечать хешкод? - Скорость, разброс, иммутабельность (иммутабельность полей, на основе которых вычисляется хешкод)
 * Как вычисляется hashcode в Dalvik (Android 4.4) - Адрес объекта >> 3 бита
 * Что может вернуть x.equals(null) - Если x == null, то NPE, иначе false
+* Есть класс A с полями x, y и методом equals. От него наследуется класс B с полем z и класс C с полем m. Надо ли в B и C переопределять equals? - Надо - http://www.angelikalanger.com/Articles/JavaSolutions/SecretsOfEquals/Equals-2.html
 * Методы wait() (их несколько), notify(), notifyAll() - https://www.baeldung.com/java-wait-notify
 * Types of references in Java (Strong, Weak, Soft, Phantom)
 
