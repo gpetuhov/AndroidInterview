@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2022.08.12
+Latest update: 2022.08.15
 
 ## Previous experience
 * Tell us about yourself and your previous experience.
@@ -388,7 +388,9 @@ https://ru.stackoverflow.com/questions/616278/%D0%90%D1%82%D0%BE%D0%BC%D0%B0%D1%
 
 https://www.baeldung.com/java-atomic-variables
 
-* AtomicInteger
+* CompareAndSwap - https://jenkov.com/tutorials/java-concurrency/compare-and-swap.html 
+* AtomicInteger - https://jenkov.com/tutorials/java-util-concurrent/atomicinteger.html
+* AtimicReference - https://jenkov.com/tutorials/java-util-concurrent/atomicreference.html
 * Что выдаст Future.get(), если Callable завершится аварийно - Будет ExecutionException
 * CompletableFuture 
 * Java concurrent list - CopyOnWriteArrayList - https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html
