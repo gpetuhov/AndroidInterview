@@ -1256,6 +1256,7 @@ https://habr.com/ru/post/565020/
 https://developer.android.com/topic/security/data
  
 https://proandroiddev.com/encrypted-preferences-in-android-af57a89af7c8
+* Проблемы SharedPreferences - XML, при любых изменениях перезапись файла, плохая реализация (вероятность записи в файл на главном потоке) - https://proandroiddev.com/is-jetpack-datastore-a-replacement-for-sharedpreferences-efe92d02fcb3 
 * Как сделать пагинацию на бэкенде средствами SQL? - Использовать Offset и Fetch - https://levelup.gitconnected.com/how-to-create-a-server-side-data-pagination-function-in-sql-server-d5e7876aff28 
 
 
