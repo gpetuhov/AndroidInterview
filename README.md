@@ -1258,6 +1258,8 @@ https://developer.android.com/topic/security/data
 https://proandroiddev.com/encrypted-preferences-in-android-af57a89af7c8
 * Проблемы SharedPreferences - XML, при любых изменениях перезапись файла, плохая реализация (вероятность записи в файл на главном потоке) - https://proandroiddev.com/is-jetpack-datastore-a-replacement-for-sharedpreferences-efe92d02fcb3 
 * Как сделать пагинацию на бэкенде средствами SQL? - Использовать Offset и Fetch - https://levelup.gitconnected.com/how-to-create-a-server-side-data-pagination-function-in-sql-server-d5e7876aff28 
+* Можно ли записать сразу в середину файла? - Можно (если поверх старых данных)
+* Как создать новый файл? Откуда взять путь к новому файлу? - getApplicationInfo().dataDir - https://stackoverflow.com/questions/7011991/android-creating-file-using-createnewfile-method - https://stackoverflow.com/questions/5527764/get-application-directory 
 
 
 
