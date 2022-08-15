@@ -836,7 +836,7 @@ https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-iv-4
 * Для чего нужны onStart() и onResume() - Они нужны с точки зрения UI, Например, позволяют подписаться/отписаться на интенты. Если пользователь не смотрит на экран, то нет смысла ему что-то показывать. Например, в onPause и тем более onStop не имеет смысла проигрывать анимацию
 * Why do we need to setContentView() in onCreate(), not in onStart()? (Because onCreate() is triggered only once)
 * How to prevent activity from being destroyed on orientation change via manifest? - Use configChanges attribute - https://developer.android.com/guide/topics/manifest/activity-element#config
-* Activity.onDestroy() - гарантируется ли вызов? - нет - https://developer.android.com/reference/android/app/Activity.html#onDestroy%28%29
+* Activity.onDestroy() - гарантируется ли вызов? - Нет. Если ОС убивает процесс, то onDestroy у активити не будет вызван - https://developer.android.com/reference/android/app/Activity.html#onDestroy%28%29
 * When only onDestroy is called for an activity without onPause() and onStop()? (If finish() is called in the onCreate method of an activity, the system will call onDestroy() method directly.)
 * Методы Activity onContentChanged, onPostCreate, onPostResume, onAttachedToWindow, onUserInteraction, onWindowFocusChanged, onDetachedFromWindow 
 * Жизненный цикл Activity с retain фрагментом - https://habr.com/ru/post/280586/ 
