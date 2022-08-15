@@ -959,7 +959,7 @@ https://medium.com/@bherbst/the-many-flavors-of-commit-186608a015b1
 * Если фрагмент прописан в xml, то под капотом все равно будет использоваться FragmentManager
 * What can go wrong when calling activity.startActivityForResult() inside fragment? (The result will be delivered to onActivityResult() of the activity, not the fragment)
 * Можно ли в onCreateView вернуть null? - Да, тогда фрагмент не будет иметь UI
-* Зачем в onCreateView возвращать null? - Можно предотвратить пересоздание фрагмента без интерфейса с помощью setRetainInstance(true) и тогда такой фрагмент можно использовать как сущность, которая живет дольше, чем активити (например, для хранения каких-то данных). Именно на этом основан ViewModelStore, который предоставляет вьюмодели - https://medium.com/android-news/dive-deep-into-androids-viewmodel-android-architecture-components-e0a7ded26f70
+* Зачем в onCreateView возвращать null? - Можно предотвратить пересоздание фрагмента без интерфейса с помощью setRetainInstance(true) и тогда такой фрагмент можно использовать как сущность, которая живет дольше, чем активити (например, для хранения каких-то данных). Именно на этом раньше был основан ViewModelStore, который предоставляет вьюмодели - https://medium.com/android-news/dive-deep-into-androids-viewmodel-android-architecture-components-e0a7ded26f70
 * Headless fragments
  
 https://luboganev.dev/blog/headless-fragments/
@@ -1050,6 +1050,7 @@ https://medium.com/swlh/binder-threading-model-79077b7c892c
 * Жизненный цикл ViewModel - https://developer.android.com/topic/libraries/architecture/viewmodel
 * Жизненный цикл LiveData
 * Как новая активити после пересоздания узнает о том, какую вьюмодель использовать? - https://proandroiddev.com/viewmodel-magic-revealed-330476b5ab27
+* Раньше механизм вьюмоделей использовал headless fragment, чтобы пережить пересоздание активити, но больше не использует. Как сейчас реализован механизм вьюмоделей? - https://proandroiddev.com/viewmodel-magic-revealed-330476b5ab27 
 
 
 
