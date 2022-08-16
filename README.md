@@ -509,6 +509,12 @@ https://medium.com/@vikas.singh_67409/deep-dive-into-thread-priority-in-java-be1
 * Can enums contain values? (Yes: enum class Action(val value: Int) { WALK(0), RUN(1), ... }
 * В чем преимущество sealed class перед enum? - Sealed class позволяет создавать экземпляры классов, поэтому можно менять состояние объектов в рантайме. Enum не позволяет менять состояние.
 * Изменения в sealed classes в Kotlin 1.7 - when должен содержать все варианты sealed класса (exhaustive when) - https://kotlinlang.org/docs/compatibility-guide-17.html#make-when-statements-with-enum-sealed-and-boolean-subjects-exhaustive-by-default 
+* Sealed interface
+ 
+https://kotlinlang.org/docs/sealed-classes.html
+ 
+https://jorgecastillo.dev/sealed-interfaces-kotlin
+
 * lateinit vs lazy
 * Типы делегатов - property, interface 
 * Property delegates
