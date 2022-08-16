@@ -853,6 +853,7 @@ https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-iv-4
 * Why do we need to setContentView() in onCreate(), not in onStart()? (Because onCreate() is triggered only once)
 * How to prevent activity from being destroyed on orientation change via manifest? - Use configChanges attribute - https://developer.android.com/guide/topics/manifest/activity-element#config
 * Activity.onDestroy() - гарантируется ли вызов? - Нет. Если ОС убивает процесс, то onDestroy у активити не будет вызван - https://developer.android.com/reference/android/app/Activity.html#onDestroy%28%29
+* Вызовется ли onPause() при уничтожении процесса? - Это тоже не гарантируется, но вероятность того, что процесс будет уничтожен, когда его активити в состоянии Resumed мала (означает критическую нехватку памяти на устройстве)
 * When only onDestroy is called for an activity without onPause() and onStop()? (If finish() is called in the onCreate method of an activity, the system will call onDestroy() method directly.)
 * Методы Activity onContentChanged, onPostCreate, onPostResume, onAttachedToWindow, onUserInteraction, onWindowFocusChanged, onDetachedFromWindow 
 * Жизненный цикл Activity с retain фрагментом - https://habr.com/ru/post/280586/ 
