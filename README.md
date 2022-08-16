@@ -211,6 +211,8 @@ https://o7planning.org/13697/java-phantomreference
 * Практический пример использования PhantomReference в Android? - Leak Canary
 * Асимптотическая сложность конкатенации строк - O(n^2) - https://overcoder.net/q/186163/%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C-%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0%D1%82%D0%B5%D0%BD%D0%B0%D1%86%D0%B8%D0%B8-%D1%81%D1%82%D1%80%D0%BE%D0%BA-%D0%B2-c-%D0%B8-java
 * StringBuilder - чем он лучше простой конкатенации строк - https://stackoverflow.com/questions/1532461/stringbuilder-vs-string-concatenation-in-tostring-in-java === https://www.baeldung.com/java-strings-concatenation
+* Под капотом у конкатенации строк сейчас используется StringBuilder - https://www.baeldung.com/java-strings-concatenation
+* Иммутабельность строк - https://www.baeldung.com/java-string-immutable
 * StringPool - https://www.baeldung.com/java-string-pool
 * Почему пароль лучше хранить в массиве, чем в строке? - потому что строка хранится в StringPool, и там ее легче прочитать
 * Квалификатор final
