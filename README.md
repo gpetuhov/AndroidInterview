@@ -1095,6 +1095,7 @@ https://medium.com/swlh/binder-threading-model-79077b7c892c
 * Сколько проходов по детям с вызовом метода onMeasure() выполняется в LinearLayout? - Один, если нет weight. Два, если есть weight.
 * По скорости отрисовки лэйауты выстраиваются следующим образом (от самой быстрой к медленной):
 FrameLayout - LinearLayout - RelativeLayout - ConstraintLayout 
+* CoordinatorLayout
 
 
 
