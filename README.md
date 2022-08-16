@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2022.08.15
+Latest update: 2022.08.16
 
 ## Previous experience
 * Tell us about yourself and your previous experience.
@@ -1135,7 +1135,12 @@ https://www.geeksforgeeks.org/how-to-improve-recyclerview-scrolling-performance-
 * Как понять, что приложение тормозит? - В logcat будут сообщения про skipped frames
 * Причины пропуска кадров - https://developer.android.com/topic/performance/vitals/render 
 * Как сделать, чтобы цвет кнопки зависел от состояния? - В xml с помощью selector - https://stackoverflow.com/questions/3738886/android-button-with-different-background-colors
-* Как сделать кастомную вью для отображения поворачивающейся стрелки компаса?
+* Как сделать кастомную вью для отображения поворачивающейся стрелки компаса? Как добавить туда анимацию?
+* View rendering, view frame buffer
+ 
+https://pavan-careers5208.medium.com/understand-how-view-renders-in-android-763f0adfb95c
+ 
+https://betterprogramming.pub/android-internals-for-rendering-a-view-430cd394e225 
 
 
 
