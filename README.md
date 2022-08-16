@@ -285,7 +285,7 @@ https://www.baeldung.com/java-treemap
 * Можно ли поймать OutOfMemoryException в try-catch блок? - Да, но в этом нет смысла
 * What is "finally" block used for in try-catch? Какие обычно операции выполняются в finally блоке?
 * Зачем закрывать OutputStream? - https://www.geeksforgeeks.org/correct-ways-to-close-inputstream-and-outputstream-in-java-with-examples/ - https://ru.stackoverflow.com/questions/605255/%D0%9D%D1%83%D0%B6%D0%BD%D0%BE-%D0%BB%D0%B8-%D0%B7%D0%B0%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D1%82%D1%8C-%D0%BF%D0%BE%D1%82%D0%BE%D0%BA%D0%B8-%D0%B2%D0%B2%D0%BE%D0%B4%D0%B0-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4%D0%B0-%D0%B2-%D0%BA%D0%BE%D0%BD%D1%86%D0%B5-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B
-* Static classes vs inner classes - https://stackoverflow.com/questions/70324/java-inner-class-and-static-nested-class
+* Static classes vs inner (nested) classes - https://stackoverflow.com/questions/70324/java-inner-class-and-static-nested-class
 * Плюсы и минусы анонимных классов - https://www.techartifact.com/blogs/2009/08/anonymous-classes-in-java.html
 * Различные способы реализации Singleton
 
@@ -572,6 +572,7 @@ https://www.baeldung.com/kotlin/crossinline-vs-noinline
 * Kotlin @Synchronized
 * typealias, что это, во что компилируется - https://www.baeldung.com/kotlin/type-aliases
 * @JvmStatic - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-static/ 
+* Kotlin nested class vs Java nested class - The nested class in Kotlin is similar to static nested class in Java. In Java, when you declare a class inside another class, it becomes an inner class by default. However in Kotlin, you need to use inner modifier to create an inner class which we will discuss next. - https://www.programiz.com/kotlin-programming/inner-nested-class - https://kotlinlang.org/docs/nested-classes.html
 
 
 
