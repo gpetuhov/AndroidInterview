@@ -1282,7 +1282,7 @@ https://habr.com/ru/post/565020/
 
 
 ### Data persistence
-* Какие есть способы сохранить данные - shared preferences, db, file
+* Какие есть способы сохранить данные - shared preferences, db, file, Realm, AccountManager, другие внешние приложения с помощью ContentResolver+ContentProvider
 * Shared preferences persist after app has been uninstalled. How to prevent it? (Add android:allowBackup="false" in the application in the manifest)
 * Особенности и различия разных типов БД (sql, nosql, строковые, колоночные)
 * Где хранить защищенные данные? - EnryptedSharedPreferences, EncryptedFile
