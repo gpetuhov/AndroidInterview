@@ -893,7 +893,14 @@ https://medium.com/@veeresh.charantimath8/playing-with-android-task-affinity-and
 
 * What are the means of data transfer between activities? (Intents, Shared preferences, DB, file, Eventbus, Singleton class)
 * How to transfer a class between activities inside an Intent? (it must be Serializable or Parcelable)
-* Активити A вызвала активити B. Как из B вернуть результат в A - B.setResult(), A.onActivityResult()
+* Активити A вызвала активити B. Как из B вернуть результат в A - B.setResult(), A.onActivityResult() 
+* Кто вызывает onActivityResult? - ActivityManager 
+* Activity Result API
+ 
+https://developer.android.com/training/basics/intents/result 
+ 
+https://habr.com/ru/company/e-legion/blog/545934/ 
+
 * Что происходит при повороте экрана? - активити пересоздается
 * При каких еще условиях активити пересоздается? - поворот экрана, смена языка, смена темы, активити уничтожена в бэкстеке, активити уничтожена вместе с приложением
 * How to save screen state on screen rotation (saveInstanceState, Presenter, ViewModel)?
@@ -996,6 +1003,8 @@ https://medium.com/@ali.muzaffar/use-headless-fragment-for-android-m-run-time-pe
 https://developer.android.com/guide/fragments/lifecycle
  
 https://medium.com/androiddevelopers/fragments-rebuilding-the-internals-61913f8bf48e 
+ 
+* Fragment Result API - https://developer.android.com/guide/fragments/communicate#fragment-result 
 
 
 
