@@ -499,6 +499,8 @@ https://medium.com/@vikas.singh_67409/deep-dive-into-thread-priority-in-java-be1
 * Какой тип будет при вызове Java из Kotlin - nullable или нет? Как при этом учитываются аннотации Nullable, NonNull? - https://kotlinlang.org/docs/java-interop.html 
 * Как переопределить finalize? - https://kotlinlang.org/docs/java-interop.html#finalize 
 * Модификаторы доступа в Kotlin
+* Во что компилируется internal? - в public - https://4comprehension.com/kotlins-internal-visibility-modifier-and-java-interoperability/
+* Companion object, конструктор, private property, init - в какой последовательности будут инициализироваться? - Companion object -> property initializer -> init -> constructor - https://medium.com/keepsafe-engineering/an-in-depth-look-at-kotlins-initializers-a0420fcbf546 
 * Как вычисляется hashCode по умолчанию?
 * Если не переопределить equals(), то как будут сравниваться объекты с помощью оператора сравнения == ? - Это зависит от JVM, но в большинстве JVM объекту при создании присваивается случайное число, и в данном случае сравнение будет происходить на основе этого числа. По умолчанию сравнение происходит не на основе ссылок, так как ссылки могут измениться. 
 * Kotlin default and named arguments
