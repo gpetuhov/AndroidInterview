@@ -307,6 +307,7 @@ https://www.geeksforgeeks.org/little-and-big-endian-mystery/
 
 https://howtodoinjava.com/java/basics/little-endian-big-endian/
 * Как сравнить объекты? - https://www.baeldung.com/java-comparing-objects
+* Где хранятся статические поля/классы? - В куче
 
 
 
