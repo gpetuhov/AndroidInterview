@@ -505,7 +505,9 @@ https://medium.com/@vikas.singh_67409/deep-dive-into-thread-priority-in-java-be1
 * Если не переопределить equals(), то как будут сравниваться объекты с помощью оператора сравнения == ? - Это зависит от JVM, но в большинстве JVM объекту при создании присваивается случайное число, и в данном случае сравнение будет происходить на основе этого числа. По умолчанию сравнение происходит не на основе ссылок, так как ссылки могут измениться. 
 * Kotlin default and named arguments
 * How to create a singleton in Kotlin? - object
-* Companion objects
+* Во что компилируется object? - В сингтон - final class with static instance initialization - https://stackoverflow.com/questions/30179793/are-kotlins-singletons-thread-safe
+* Является ли object потокобезопасным? - да
+* Companion objects - https://www.baeldung.com/kotlin/companion-object
 * Difference between val and const val?
 * Во что компилируется лямбда? - в анонимный внутренний класс Java
 * Can enums contain values? (Yes: enum class Action(val value: Int) { WALK(0), RUN(1), ... }
