@@ -897,6 +897,7 @@ https://stackoverflow.com/questions/17872989/android-task-affinity-explanation
 
 https://medium.com/@veeresh.charantimath8/playing-with-android-task-affinity-and-launch-modes-5c36a0421e83
 
+* Можно ли запустить активити из контекста приложения? - Можно, но обязательно надо указать task, иначе будет исключение 
 * What are the means of data transfer between activities? (Intents, Shared preferences, DB, file, Eventbus, Singleton class)
 * How to transfer a class between activities inside an Intent? (it must be Serializable or Parcelable)
 * Активити A вызвала активити B. Как из B вернуть результат в A - B.setResult(), A.onActivityResult() 
