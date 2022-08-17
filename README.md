@@ -995,6 +995,7 @@ https://medium.com/@bherbst/the-many-flavors-of-commit-186608a015b1
 * Можно ли в onCreateView вернуть null? - Да, тогда фрагмент не будет иметь UI
 * Зачем в onCreateView возвращать null? - Можно предотвратить пересоздание фрагмента без интерфейса с помощью setRetainInstance(true) и тогда такой фрагмент можно использовать как сущность, которая живет дольше, чем активити (например, для хранения каких-то данных). Именно на этом раньше был основан ViewModelStore, который предоставляет вьюмодели - https://medium.com/android-news/dive-deep-into-androids-viewmodel-android-architecture-components-e0a7ded26f70 - https://habr.com/ru/post/439926/
 * Как реализован setRetainInstance(true)?
+* Жизненный цикл retained фрагмента - https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-iii-fragments-afc87d4f37fd 
 * Headless fragments
  
 https://luboganev.dev/blog/headless-fragments/
