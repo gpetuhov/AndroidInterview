@@ -1104,6 +1104,7 @@ https://medium.com/swlh/binder-threading-model-79077b7c892c
 * По скорости отрисовки лэйауты выстраиваются следующим образом (от самой быстрой к медленной):
 FrameLayout - LinearLayout - RelativeLayout - ConstraintLayout 
 * CoordinatorLayout
+* XML inflation (LayoutInflater) - https://bignerdranch.com/blog/understanding-androids-layoutinflater-inflate/
 
 
 
