@@ -1442,6 +1442,7 @@ https://habr.com/ru/company/rambler_and_co/blog/279799/
 * What is multidex?
 * Gradle parallel - https://docs.gradle.org/current/userguide/performance.html
 * Как ускорить время сборки - https://habr.com/ru/company/yandex/blog/678786/
+* Как происходит сборка проекта? - https://medium.com/androiddevnotes/the-internals-of-android-apk-build-process-article-5b68c385fb20 
 
 
 
