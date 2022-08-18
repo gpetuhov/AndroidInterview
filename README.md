@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2022.08.17
+Latest update: 2022.08.18
 
 ## Previous experience
 * Tell us about yourself and your previous experience.
@@ -375,6 +375,10 @@ https://www.baeldung.com/java-volatile-variables-thread-safety
 * Volatile - практический пример использования 
 * synchronized vs static synchronized - https://stackoverflow.com/questions/6367885/difference-between-synchronizing-a-static-method-and-a-non-static-method
 * Deadlock - что это и как бороться?
+
+https://jenkov.com/tutorials/java-concurrency/deadlock.html 
+ 
+https://jenkov.com/tutorials/java-concurrency/deadlock-prevention.html 
 
 https://www.baeldung.com/java-deadlock-livelock
 
