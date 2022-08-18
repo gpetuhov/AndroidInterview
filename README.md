@@ -430,7 +430,12 @@ https://habr.com/ru/post/108016/
  
 https://javarush.ru/quests/lectures/jru.module2.lecture26 
 
-* Средства синхронизации потоков (семафор, фазер) - https://habr.com/ru/post/277669/ 
+* Средства синхронизации потоков (семафор, фазер)
+ 
+https://jenkov.com/tutorials/java-concurrency/semaphores.html
+
+ https://habr.com/ru/post/277669/ 
+
 * ReentrantLock
 * ReadWriteLock 
 * Семафоры - CountDownLatch, CyclicBarrier, Phaser
