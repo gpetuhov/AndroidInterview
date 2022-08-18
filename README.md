@@ -169,7 +169,12 @@ http://www.angelikalanger.com/Articles/JavaSolutions/SecretsOfEquals/Equals.html
 
 http://www.angelikalanger.com/Articles/JavaSolutions/SecretsOfEquals/Equals-2.html
 
-* Методы wait() (их несколько), notify(), notifyAll() - https://www.baeldung.com/java-wait-notify
+* Методы wait() (их несколько), notify(), notifyAll()
+
+https://jenkov.com/tutorials/java-concurrency/thread-signaling.html
+
+https://www.baeldung.com/java-wait-notify
+
 * Types of references in Java (Strong, Weak, Soft, Phantom)
 
 https://www.geeksforgeeks.org/types-references-java/
