@@ -718,6 +718,8 @@ https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.co
 * CoroutineContext - содержит 4 эдлемента: название, Job, Dispatcher, Exception handler - https://kotlinlang.org/docs/coroutine-context-and-dispatchers.html
 * CoroutineContext vs CoroutineScope - скоуп состоит из контекста и логики корутин - https://elizarov.medium.com/coroutine-context-and-scope-c8b255d59055
 * Виды Jobs
+
+https://kt.academy/article/cc-job 
  
 https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-job/
  
@@ -741,7 +743,13 @@ https://medium.com/@sampsonjoliver/promises-in-android-and-java-d6b1c418ea6c
  
 https://medium.com/@sampsonjoliver/lazy-evaluated-coroutines-in-kotlin-bf5be004233 
  
-* Можно ли launch обернуть в try-catch? 
+* Как работать с исключениями в корутинах? Можно ли launch обернуть в try-catch?
+
+https://kt.academy/article/cc-exception-handling 
+
+https://kotlinlang.org/docs/exception-handling.html 
+ 
+https://medium.com/androiddevelopers/exceptions-in-coroutines-ce8da1ec060c 
 
 
 
