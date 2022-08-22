@@ -961,6 +961,7 @@ https://medium.com/android-news/parcelable-vs-serializable-6a2556d51538
 * Можно ли использовать Parcelable для записи на диск? - нет - https://guides.codepath.com/android/using-parcelable
 * Как под капотом устроен Parcelable?
 * Быстрее Serializable или Parcelable? - Если в Serializable реализовать сериализацию вручную вместо использования рефлексии, то быстрее будет Serializable 
+* На диске в файле лежит предыдущая версия класса в сериализованном виде. Мы добавили новое поле в класс и пытаемся десериализовать его из файла с предыдущей версией. Что будет? - Будет исключение. Это можно обойти с помощью serialVersionUID - https://www.baeldung.com/java-serial-version-uid
 * Difference between implicit and explicit intents.
 * How to open url in browser?
 
