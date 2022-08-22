@@ -710,6 +710,7 @@ https://developer.android.com/codelabs/advanced-kotlin-coroutines?hl=en#0
 * Виды Flow - https://kotlinlang.org/docs/flow.html
 * flowOn - https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/flow-on.html
 * SubscribeOn (Rx) vs flowOn (Flow) - оба оператора работают upstream, но subscribeOn в цепочке отрабатывает только первый, а flowOn может выполниться несколько раз в цепочке
+* Есть ли аналог observeOn во Flow? - нет 
 * Аналог ThreadLocal для корутин
  
 https://stackoverflow.com/questions/46227462/how-to-use-code-that-relies-on-threadlocal-with-kotlin-coroutines
