@@ -756,6 +756,11 @@ https://medium.com/androiddevelopers/exceptions-in-coroutines-ce8da1ec060c
 * Отработает ли Exception Handler у дочерних корутин? - нет, только у корневой корутины - https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-coroutine-exception-handler/ 
 * Как обрабатываются ошибки во Flow? - там есть оператор catch (он игнорирует CancellationException - не срабатывает на него), но можно использовать также try-catch - https://elizarov.medium.com/exceptions-in-kotlin-flows-b59643c940fb 
 * Можно ли игнорировать (поймать с помощью catch и никак не обработать) CancellationException? - нет, иначе корутина не отменится - https://kotlinlang.org/docs/cancellation-and-timeouts.html
+* SuspendCancellableCoroutine
+ 
+https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/suspend-cancellable-coroutine.html
+ 
+https://medium.com/swlh/kotlin-coroutines-in-android-suspending-functions-8a2f980811f8 
 
 
 
