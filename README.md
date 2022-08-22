@@ -173,6 +173,15 @@ http://www.angelikalanger.com/Articles/JavaSolutions/SecretsOfEquals/Equals.html
 
 http://www.angelikalanger.com/Articles/JavaSolutions/SecretsOfEquals/Equals-2.html
 
+* Почему в equals вместо instanceOf делают getClass? - чтобы сравнение с потомками не вернуло true
+* Как сделать equals для двух массивов? - Arrays.deepEquals()
+
+https://www.baeldung.com/java-arrays-deepequals
+
+https://www.geeksforgeeks.org/equals-and-deepequals-method-to-compare-two-arrays-in-java/
+
+https://www.geeksforgeeks.org/java-util-arrays-deepequals-java/
+
 * Методы wait() (их несколько), notify(), notifyAll()
 
 https://jenkov.com/tutorials/java-concurrency/thread-signaling.html
