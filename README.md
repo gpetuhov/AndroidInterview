@@ -715,6 +715,23 @@ https://kotlinlang.org/docs/coroutine-context-and-dispatchers.html#thread-local-
 https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-thread-context-element/ 
 
 * Какой скоуп во вьюмодели (как устроен viewModelScope)? - https://medium.com/androiddevelopers/easy-coroutines-in-android-viewmodelscope-25bffb605471 
+* CoroutineContext - содержит 4 эдлемента: название, Job, Dispatcher, Exception handler - https://kotlinlang.org/docs/coroutine-context-and-dispatchers.html
+* CoroutineContext vs CoroutineScope - скоуп состоит из контекста и логики корутин - https://elizarov.medium.com/coroutine-context-and-scope-c8b255d59055
+* Виды Jobs
+ 
+https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-job/
+ 
+https://proandroiddev.com/kotlin-coroutine-job-hierarchy-finish-cancel-and-fail-2d3d42a768a9
+ 
+* Supervisor Job 
+
+https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-supervisor-job.html 
+
+https://victorbrandalise.com/coroutines-part-ii-job-supervisorjob-launch-and-async/ 
+
+https://codingwithmohit.com/coroutines/coroutines-job-structure/
+ 
+https://habr.com/ru/post/432942/ 
 
 
 
