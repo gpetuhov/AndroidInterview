@@ -714,6 +714,8 @@ https://kotlinlang.org/docs/coroutine-context-and-dispatchers.html#thread-local-
  
 https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-thread-context-element/ 
 
+* Какой скоуп во вьюмодели (как устроен viewModelScope)? - https://medium.com/androiddevelopers/easy-coroutines-in-android-viewmodelscope-25bffb605471 
+
 
 
 ## Android
