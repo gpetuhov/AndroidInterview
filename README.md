@@ -1394,6 +1394,7 @@ https://habr.com/ru/post/565020/
 * В каком потоке выполняются задачи WorkManager? - background по умолчанию - https://developer.android.com/topic/libraries/architecture/workmanager/advanced/threading
 * Как из WorkManager показать прогресс в активити? 
 * Настройки WorkManager 
+* Ограничение на периодичность - интервал между событиями не может быть меньше 15 минут (начальный интервал может)
 
 
 
