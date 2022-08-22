@@ -706,6 +706,13 @@ https://developer.android.com/codelabs/advanced-kotlin-coroutines?hl=en#0
  
 * Виды Flow - https://kotlinlang.org/docs/flow.html
 * flowOn - https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/flow-on.html
+* Аналог ThreadLocal для корутин
+ 
+https://stackoverflow.com/questions/46227462/how-to-use-code-that-relies-on-threadlocal-with-kotlin-coroutines
+ 
+https://kotlinlang.org/docs/coroutine-context-and-dispatchers.html#thread-local-data 
+ 
+https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-thread-context-element/ 
 
 
 
