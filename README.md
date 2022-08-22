@@ -1162,7 +1162,7 @@ http://developer.alexanderklimov.ru/android/broadcast.php
 
 ### Content Providers
 * Content Providers - https://developer.android.com/guide/topics/providers/content-provider-basics?hl=ru
-* Когда вызывается onCreate()? - Перед вызовом onCreate() у Application 
+* Когда вызывается onCreate()? - Перед вызовом onCreate() у Application. Поэтому контент провайдеры иногда используют библиотеки для своей инициализации еще до вызова Application.onCreate()
 * Что будет, если прописать authority, какой уже есть в системе? - Приложение не будет установлено
 * На каком потоке исполняется? - Если обращение идет из своего же приложения, то на главном потоке. Если из другого приложения, то ContentProvider выполняется на BinderThread, а взаимодействие с ним идет с помощью IPC
  
