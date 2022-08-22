@@ -740,6 +740,8 @@ https://medium.com/@sampsonjoliver/achieving-async-await-in-the-android-wastelan
 https://medium.com/@sampsonjoliver/promises-in-android-and-java-d6b1c418ea6c
  
 https://medium.com/@sampsonjoliver/lazy-evaluated-coroutines-in-kotlin-bf5be004233 
+ 
+* Можно ли launch обернуть в try-catch? 
 
 
 
