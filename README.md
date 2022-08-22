@@ -706,6 +706,7 @@ https://developer.android.com/codelabs/advanced-kotlin-coroutines?hl=en#0
  
 * Виды Flow - https://kotlinlang.org/docs/flow.html
 * flowOn - https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/flow-on.html
+* SubscribeOn (Rx) vs flowOn (Flow) - оба оператора работают upstream, но subscribeOn в цепочке отрабатывает только первый, а flowOn может выполниться несколько раз в цепочке
 * Аналог ThreadLocal для корутин
  
 https://stackoverflow.com/questions/46227462/how-to-use-code-that-relies-on-threadlocal-with-kotlin-coroutines
@@ -750,6 +751,10 @@ https://kt.academy/article/cc-exception-handling
 https://kotlinlang.org/docs/exception-handling.html 
  
 https://medium.com/androiddevelopers/exceptions-in-coroutines-ce8da1ec060c 
+ 
+* Отработает ли Exception Handler у дочерних корутин? - нет, только у корневой корутины - https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-coroutine-exception-handler/ 
+* Как обрабатываются ошибки во Flow? - там есть оператор catch (он игнорирует CancellationException - не срабатывает на него), но можно использовать также try-catch - https://elizarov.medium.com/exceptions-in-kotlin-flows-b59643c940fb 
+* Можно ли игнорировать (поймать с помощью catch и никак не обработать) CancellationException? - нет, иначе корутина не отменится - https://kotlinlang.org/docs/cancellation-and-timeouts.html
 
 
 
