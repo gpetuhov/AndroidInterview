@@ -620,6 +620,8 @@ https://www.baeldung.com/kotlin/crossinline-vs-noinline
 * @JvmStatic - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-static/ 
 * Kotlin nested class vs Java nested class - The nested class in Kotlin is similar to static nested class in Java. In Java, when you declare a class inside another class, it becomes an inner class by default. However in Kotlin, you need to use inner modifier to create an inner class which we will discuss next. - https://www.programiz.com/kotlin-programming/inner-nested-class - https://kotlinlang.org/docs/nested-classes.html
 * Kotlin serialization - https://kotlinlang.org/docs/serialization.html 
+* Lambda с ресивером - https://www.baeldung.com/kotlin/lambda-receiver
+* @DslMarker - https://medium.com/kotlin-and-kotlin-for-android/kotlin-dsl-coding-a-dsl-6-ee355be81106 
 
 
 
