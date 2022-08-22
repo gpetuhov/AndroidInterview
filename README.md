@@ -1157,12 +1157,13 @@ http://developer.alexanderklimov.ru/android/broadcast.php
 * Ограничения на BroadcastReceiver, начиная с Android 8 - https://itsobes.ru/AndroidSobes/kakie-ogranicheniia-na-broadcastreceiver-byli-vvedeny-v-android-8-0/ 
 * На каком потоке исполняется? - Main thread
 * Как поменять поток? - Использовать Handler при регистрации ресивера - https://stackoverflow.com/questions/28186923/running-broadcast-receiver-on-a-separate-thread
+* Можно ли получить текущее состояние батареи с помощью ресивера? - Да, использовать sticky intent (в этом случае вернется последнее значение) 
 
 
 
 ### Content Providers
 * Content Providers - https://developer.android.com/guide/topics/providers/content-provider-basics?hl=ru
-* Когда вызывается onCreate()? - Перед вызовом onCreate() у Application. Поэтому контент провайдеры иногда используют библиотеки для своей инициализации еще до вызова Application.onCreate()
+* Когда вызывается onCreate()? - Перед вызовом onCreate() у Application. Поэтому библиотеки иногда используют контент провайдеры для своей инициализации еще до вызова Application.onCreate(). Это может увеличить время запуска приложения. Для решения проблемы можно удалить эти провайдеры из смерженного манифеста и добавлять провайдеры динамически по мере необходимости.
 * Что будет, если прописать authority, какой уже есть в системе? - Приложение не будет установлено
 * На каком потоке исполняется? - Если обращение идет из своего же приложения, то на главном потоке. Если из другого приложения, то ContentProvider выполняется на BinderThread, а взаимодействие с ним идет с помощью IPC
  
