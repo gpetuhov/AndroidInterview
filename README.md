@@ -929,6 +929,13 @@ https://developpaper.com/android-leakcanary-memory-leak-detection-principle/
  
 * Способы отрисовать интерфейс. Можно ли отобразить вью без активити/фрагмента? - да, с помощью WindowManager - https://levelup.gitconnected.com/add-view-outside-activity-through-windowmanager-1a70590bad40 
 * Какой callback использовать, чтобы понять, что приложению не хватает памяти? - Application.onLowMemory() - https://stackoverflow.com/questions/18119929/callback-from-framework-for-out-of-memory-in-android
+* Нововведения в Android 13
+ 
+польователь может закрыть foreground service одной кнопкой
+ 
+требуются разрешения на показ уведомлений
+ 
+приложение не может запустить foreground service из фона 
 
 
 
