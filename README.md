@@ -542,7 +542,7 @@ https://medium.com/@vikas.singh_67409/deep-dive-into-thread-priority-in-java-be1
 * Во что компилируется лямбда? - в анонимный внутренний класс Java
 * Can enums contain values? (Yes: enum class Action(val value: Int) { WALK(0), RUN(1), ... }
 * В чем преимущество sealed class перед enum? - Sealed class позволяет создавать экземпляры классов, поэтому можно менять состояние объектов в рантайме. Enum не позволяет менять состояние.
-* Изменения в sealed classes в Kotlin 1.7 - when должен содержать все варианты sealed класса (exhaustive when) - https://kotlinlang.org/docs/compatibility-guide-17.html#make-when-statements-with-enum-sealed-and-boolean-subjects-exhaustive-by-default 
+* Изменения в sealed classes в Kotlin 1.7 - when (когда используется в виде выражения, возвращающего результат) должен содержать все варианты sealed класса (exhaustive when) - https://kotlinlang.org/docs/compatibility-guide-17.html#make-when-statements-with-enum-sealed-and-boolean-subjects-exhaustive-by-default 
 * Sealed interface
  
 https://kotlinlang.org/docs/sealed-classes.html
@@ -1256,6 +1256,7 @@ https://www.geeksforgeeks.org/how-to-improve-recyclerview-scrolling-performance-
 * Способы генерации id вьюхи - https://stackoverflow.com/questions/1714297/android-view-setidint-id-programmatically-how-to-avoid-id-conflicts 
 * Как создать custom attributes? - https://developer.android.com/training/custom-views/create-view
 * Зачем нужен оверрайд конструктора вьюхи? - https://stackoverflow.com/questions/9195713/do-i-need-all-three-constructors-for-an-android-custom-view 
+* Как сгенерировать несколько конструкторов средствами Котлина? - Использовать аннотацию @JvmOverloads - https://proandroiddev.com/misconception-about-kotlin-jvmoverloads-for-android-view-creation-cb88f432e1fe 
 * Темы и стили - https://developer.android.com/guide/topics/ui/look-and-feel/themes
 * Что такое overdray и инструменты его обнаружения - https://medium.com/android-news/reduce-overdraw-from-your-android-application-6cf15f4aa85f 
 * ImageView fit_center и center_inside - https://stackoverflow.com/questions/11353973/whats-the-difference-between-center-inside-and-fit-center-scale-types
