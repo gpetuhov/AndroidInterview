@@ -732,6 +732,14 @@ https://victorbrandalise.com/coroutines-part-ii-job-supervisorjob-launch-and-asy
 https://codingwithmohit.com/coroutines/coroutines-job-structure/
  
 https://habr.com/ru/post/432942/ 
+ 
+* async начинает ли сразу выполняться? - Да. Если надо ленивый запуск, то async(start = CoroutineStart.LAZY)
+ 
+https://medium.com/@sampsonjoliver/achieving-async-await-in-the-android-wasteland-a6fe30dbaaa1
+ 
+https://medium.com/@sampsonjoliver/promises-in-android-and-java-d6b1c418ea6c
+ 
+https://medium.com/@sampsonjoliver/lazy-evaluated-coroutines-in-kotlin-bf5be004233 
 
 
 
