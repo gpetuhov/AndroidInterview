@@ -886,6 +886,12 @@ https://medium.com/androiddevelopers/who-lives-and-who-dies-process-priorities-o
 * What is AndroidManifest.xml?
 * Состав манифеста: permissions, intent filters, features, meta 
 * Манифест многомодульного проекта, manifest merge - https://android-doc.github.io/tools/building/manifest-merge.html 
+* Как с помощью flavors убрать из смерженного манифеста некоторые теги (например, определенные permissions) только в одном флейворе 
+
+https://developer.android.com/studio/build/manage-manifests 
+
+https://stackoverflow.com/questions/66382274/removing-permissions-from-manifest-depending-on-build-flavor 
+ 
 * Context - https://developer.android.com/reference/android/content/Context
 * Context types. Difference between Application Context and Activity Context
 
