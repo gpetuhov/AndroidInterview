@@ -1522,6 +1522,9 @@ https://proandroiddev.com/writing-integration-tests-in-android-b0436978ed7b
 
 https://habr.com/ru/company/rambler_and_co/blog/279799/
 
+* Nested tests d JUnit 5 - https://www.petrikainulainen.net/programming/testing/junit-5-tutorial-writing-nested-tests/
+* Mockk releaxed true что делает? - тогда методы возвращают дефолтные значения - https://notwoods.github.io/mockk-guidebook/docs/mocking/relax/
+
 
 
 ### Gradle
