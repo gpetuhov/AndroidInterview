@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2022.08.18
+Latest update: 2022.08.22
 
 ## Previous experience
 * Tell us about yourself and your previous experience.
@@ -557,9 +557,10 @@ https://medium.com/androiddevelopers/built-in-delegates-4811947e781f
 
 * Interface delegates - https://medium.com/@Joseph82/interface-delegation-in-kotlin-1404dfcd9167 
 * inline functions - https://medium.com/android-news/inline-noinline-crossinline-what-do-they-mean-b13f48e113c2
+* Можно ли вызвать inline функцию из Java? - без reified можно, с reified нельзя 
 * crossinline
 * Можно ли узнать тип дженерика в inline функции? - только если сделать reified parameters - https://stackoverflow.com/questions/33146160/how-to-check-generic-type-in-kotlin
-* reified type parameters (речь только про функции, классы не могут иметь reified полей) - https://kotlinlang.org/docs/inline-functions.html#reified-type-parameters
+* reified type parameters (речь только про функции, классы не могут иметь reified полей) - https://kotlinlang.org/docs/inline-functions.html#reified-type-parameters 
 * Можно ли вызвать метод с reified в Java? - нет - https://stackoverflow.com/questions/42741780/how-can-i-call-kotlin-methods-with-reified-generics-from-java
 * Когда не рекомендуется использовать inline? - Когда лямбда большая (тогда кода сгенерится много) 
 * noinline - https://kotlinlang.org/docs/inline-functions.html
@@ -607,6 +608,7 @@ https://www.baeldung.com/kotlin/crossinline-vs-noinline
 * typealias, что это, во что компилируется - https://www.baeldung.com/kotlin/type-aliases
 * @JvmStatic - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-static/ 
 * Kotlin nested class vs Java nested class - The nested class in Kotlin is similar to static nested class in Java. In Java, when you declare a class inside another class, it becomes an inner class by default. However in Kotlin, you need to use inner modifier to create an inner class which we will discuss next. - https://www.programiz.com/kotlin-programming/inner-nested-class - https://kotlinlang.org/docs/nested-classes.html
+* Kotlin serialization - https://kotlinlang.org/docs/serialization.html 
 
 
 
