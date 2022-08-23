@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2022.08.22
+Latest update: 2022.08.23
 
 ## Previous experience
 * Tell us about yourself and your previous experience.
@@ -766,6 +766,8 @@ https://medium.com/androiddevelopers/exceptions-in-coroutines-ce8da1ec060c
 https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/suspend-cancellable-coroutine.html
  
 https://medium.com/swlh/kotlin-coroutines-in-android-suspending-functions-8a2f980811f8 
+ 
+* MainScope vs CoroutineScope - https://medium.com/@pramahalqavi/several-types-of-kotlin-coroutine-scope-difference-coroutinescope-globalscope-etc-9f086cd40173 
 
 
 
