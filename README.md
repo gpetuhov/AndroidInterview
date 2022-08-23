@@ -767,7 +767,7 @@ https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.co
  
 https://medium.com/swlh/kotlin-coroutines-in-android-suspending-functions-8a2f980811f8 
  
-* MainScope vs CoroutineScope - https://medium.com/@pramahalqavi/several-types-of-kotlin-coroutine-scope-difference-coroutinescope-globalscope-etc-9f086cd40173 
+* MainScope vs CoroutineScope - https://medium.com/@pramahalqavi/several-types-of-kotlin-coroutine-scope-difference-coroutinescope-globalscope-etc-9f086cd40173 === https://stackoverflow.com/questions/70208380/mainscope-vs-globalscope
 
 
 
