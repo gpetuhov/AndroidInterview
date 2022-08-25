@@ -670,6 +670,7 @@ https://medium.com/@vanniktech/testing-rxjava-code-made-easy-4cc32450fc9a
 * Переопределение шедулера с помощью RxJavaPlugins и введение абстракции над шедулерами - https://stackoverflow.com/questions/43285064/rxjava-2-overriding-io-scheduler-in-unit-test 
 * Как сделать повторную отправку запроса через случайный интервал времени в случае ошибки? - Использовать retryWhen - https://habr.com/ru/post/326890/ 
 * Создание observable с помощью Observable.create(). Emitter.setCancellable, emitter.tryOnError, emitter.onError 
+* Что произойдет, если не предусмотреть backpressure? - https://www.baeldung.com/rxjava-backpressure 
 
 
 
