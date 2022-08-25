@@ -1247,6 +1247,7 @@ https://medium.com/@Zielony/guide-to-android-custom-views-attributes-ab28de3e54b
 * View.onMeasure() - что такое measureSpec, как вычисляется размер вью - https://stackoverflow.com/questions/14493732/what-are-widthmeasurespec-and-heightmeasurespec-in-android-custom-views === https://developer.android.com/reference/android/view/View.MeasureSpec
 * Статические методы MeasureSpec - https://developer.android.com/reference/android/view/View.MeasureSpec 
 * Какие требования предъявляются к методу onDraw() - https://developer.android.com/training/custom-views/custom-drawing
+* В какой момент вызывается onDraw() - при изначальной отрисовке вью и при вызове invalidate() (то есть вьюха не перерисовывается каждые 16 мс) 
 * View.onDraw() может вызываться чаще, чем 16 мс, на новых устройствах (120 Гц). Вообще частота отрисовки берется из внешней переменной и зависит от устройства.
 * В чем проблема выделения памяти в onDraw? - https://stackoverflow.com/questions/27717093/drawallocation-memory-allocations-within-drawing-code 
 * Методы onFinishInflate(), onSaveInstanceState(), onFocusChanged()
