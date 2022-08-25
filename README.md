@@ -1460,9 +1460,14 @@ https://medium.com/mobile-app-development-publication/dagger-2-multibindings-ref
 * Dagger @IntoSet - https://habr.com/ru/post/336414/
 * @IntoMap, @IntoSet - для чего они нужны, практический пример 
 * Dagger subcomponents vs component dependencies - https://stackoverflow.com/questions/29587130/dagger-2-subcomponents-vs-component-dependencies
+* Почему component dependencies лучше в многомодульном проекте? 
 * Dagger Scopes
 * Управление жизненным циклом компонентов
 * Dagger vs Toothpick vs Koin vs Kodein 
+* Как можно проверять DI не на стадии компиляции (например, если используешь Toothpick)? - С помощью интеграционных тестов
+* Почему Dagger Scope не используют везде? - там под капотом синглтон с двойной проверкой, поэтому это может замедлить выполнение приложения. Чтобы отключить двойную проверку, используют аннотацию @Reusable
+* @Reusable vs @Singleton - https://stackoverflow.com/questions/39136042/dagger-reusable-scope-vs-singleton 
+* @Qualifier - https://medium.com/mindorks/qualifiers-in-dagger-android-development-c0574cca87a2 
 
 
 
