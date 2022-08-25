@@ -1290,7 +1290,13 @@ https://www.geeksforgeeks.org/how-to-improve-recyclerview-scrolling-performance-
  
 https://pavan-careers5208.medium.com/understand-how-view-renders-in-android-763f0adfb95c
  
-https://betterprogramming.pub/android-internals-for-rendering-a-view-430cd394e225 
+https://betterprogramming.pub/android-internals-for-rendering-a-view-430cd394e225
+ 
+* ViewStub
+
+http://developer.alexanderklimov.ru/android/views/viewstub.php 
+
+https://developer.android.com/reference/android/view/ViewStub 
 
 
 
