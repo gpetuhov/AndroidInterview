@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2022.08.25
+Latest update: 2022.08.26
 
 ## Previous experience
 * Tell us about yourself and your previous experience.
@@ -1395,6 +1395,13 @@ https://habr.com/ru/post/565020/
 * HLS
 * WebRTC
 * Протоколы, которые поддерживает ExoPlayer - https://exoplayer.dev/supported-formats.html 
+* Что происходит, когда вводишь запрос в поисковую строку
+ 
+https://vc.ru/selectel/76371-chto-proishodit-kogda-polzovatel-nabiraet-v-brauzere-adres-sayta
+ 
+https://habr.com/ru/company/karuna/blog/568702/
+ 
+https://habr.com/ru/company/htmlacademy/blog/254825/ 
 
  
  
