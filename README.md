@@ -1538,7 +1538,9 @@ https://www.raywenderlich.com/7026-getting-started-with-mvp-model-view-presenter
 https://proandroiddev.com/the-abc-of-modularization-for-android-in-2021-e7b3fbe29fca
 
 https://www.techyourchance.com/modularization-android/
- 
+
+https://habr.com/ru/company/kaspersky/blog/422555/ 
+
 https://proandroiddev.com/modularization-in-android-architecture-point-of-view-from-a-to-z-part-i-7a86e6e03799
 
 https://proandroiddev.com/modularization-in-android-architecture-point-of-view-from-a-to-z-part-ii-8baea5b2e4fd
