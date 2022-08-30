@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2022.08.26
+Latest update: 2022.08.30
 
 ## Previous experience
 * Tell us about yourself and your previous experience.
@@ -1366,6 +1366,7 @@ https://square.github.io/okhttp/4.x/okhttp/okhttp3/-web-socket/
  
 * Scarlet - https://github.com/Tinder/Scarlet
 * SignalR 
+* Альтернатива сокетам 
 * What is JSON?
 * How to set up a name of the serialized property different from the property name? (Use @SerializedName("name") annotation)
 * How to exclude a property from the serialization? (mark property as transient (keyword in Java or annotation in Kotlin))
@@ -1403,6 +1404,19 @@ https://habr.com/ru/company/karuna/blog/568702/
  
 https://habr.com/ru/company/htmlacademy/blog/254825/ 
 
+* Как работает автоматическая настройка сети (RARP, DHCP) - http://heap.altlinux.org/modules/corpnet.kirill.next/index.html 
+* Как работает DNS, на базе какого протокола, какие его функции, что такое записи Triple A?
+* TTL - что это и как работает?
+* TCP - как работает?
+* Что такое окно подтверждения? 
+* HTTP vs HTTPS
+* Сертификаты - как работают, как проверяется подлинность сертификата?
+* HTTP 1.1, 2.0, квик - отличия
+* HTTP pipelining
+* Connection keep alive
+* Как понять, что сообщение закончилось (content length, chunk encoding)
+* Что делаем Nginx при получении HTTP запроса, как сервер общается с Nginx?
+ 
  
  
 ### WorkManager
