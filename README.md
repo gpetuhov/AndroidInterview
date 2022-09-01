@@ -592,6 +592,7 @@ https://www.baeldung.com/kotlin/crossinline-vs-noinline
 * Литералы - https://kotlinlang.org/docs/basic-types.html#literal-constants 
 * Data classes - https://kotlinlang.org/docs/data-classes.html#properties-declared-in-the-class-body
 * Методы data класса 
+* Метод copy() - там глубокое копирование или нет? - Нет, это shallow copy - https://stackoverflow.com/questions/47359496/kotlin-data-class-copy-method-not-deep-copying-all-members 
 * В data class можно override только equal без hashcode? - нет - https://petamind.com/why-do-we-need-to-override-equals-and-hashcode-methods-in-java-kotlin/
 * Можно ли наследоваться от data classes? - нет - https://discuss.kotlinlang.org/t/data-class-inheritance/4107
 * Может ли сам data class наследоваться от другого класса - да (например, от seales класса) 
