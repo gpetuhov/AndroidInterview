@@ -3,7 +3,7 @@ Basic plan and some typical questions and code samples for Android interview.
 
 Latest update: 2022.09.01
 
-## Previous experience
+## Previous experience / Soft skills
 * Tell us about yourself and your previous experience.
 * What was the project you worked on your previous job?
 * What was your role in the project?
@@ -15,6 +15,9 @@ Latest update: 2022.09.01
 * Вы получили замечания на код-ревью, с которыми не согласны. Ваши действия?
 * Приведите пример конфликтной ситуации и ваших действий в ней
 * Какая самая сложная задача, которую вы решали за последний спринт?
+* Приведите пример цели, которую вы себе ставили
+* Give an example of the situation, when you disagreed with the management
+* Tell us about an example, when you and your colleague have completely different styles of work
 
 
 
