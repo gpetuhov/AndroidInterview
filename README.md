@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2022.09.01
+Latest update: 2023.02.11
 
 ## Previous experience / Soft skills
 * Tell us about yourself and your previous experience.
@@ -18,6 +18,8 @@ Latest update: 2022.09.01
 * Приведите пример цели, которую вы себе ставили
 * Give an example of the situation, when you disagreed with the management
 * Tell us about an example, when you and your colleague have completely different styles of work
+* Какая ваша самая большая ошибка
+* Приведите пример, когда вы были не согласны с менеджером
 
 
 
