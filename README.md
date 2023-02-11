@@ -18,9 +18,11 @@ Latest update: 2023.02.11
 * Приведите пример цели, которую вы себе ставили
 * Give an example of the situation, when you disagreed with the management
 * Tell us about an example, when you and your colleague have completely different styles of work
-* Какая ваша самая большая ошибка
+* Какая ваша самая большая ошибка/неудача?
+* Приведите пример вашего решения, которое хотелось бы изменить. Что бы вы сейчас сделали иначе?
 * Приведите пример, когда вы были не согласны с менеджером
 
+(Use STAR framework)
 
 
 ## OOP and SOLID
