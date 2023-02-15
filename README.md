@@ -492,7 +492,12 @@ https://stackoverflow.com/questions/37026/java-notify-vs-notifyall-all-over-agai
  
 https://www.geeksforgeeks.org/difference-between-notify-and-notifyall-in-java/
 
-* Какие два метода класса Object можно использовать для реализации простого сценария producer / consumer? - https://www.baeldung.com/java-producer-consumer-problem
+* Какие два метода класса Object можно использовать для реализации простого сценария producer / consumer?
+ 
+https://www.baeldung.com/java-producer-consumer-problem
+ 
+https://www.geeksforgeeks.org/inter-thread-communication-java/
+
 * Почему потоки создаются долго (что при этом происходит)? - https://stackoverflow.com/questions/5483047/why-is-creating-a-thread-said-to-be-expensive
 * Разница между synchronized и concurrent collections - https://javarevisited.blogspot.com/2016/05/what-is-difference-between-synchronized.html#axzz7ZSljBC9o 
 * Synchronized collections - https://www.baeldung.com/java-synchronized-collections
