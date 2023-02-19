@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2023.02.15
+Latest update: 2023.02.19
 
 ## Previous experience / Soft skills
 * Tell us about yourself and your previous experience.
@@ -1527,6 +1527,8 @@ https://medium.com/mobile-app-development-publication/dagger-2-multibindings-ref
 
 ### Clean architecture
 * Clean Architecture - https://habr.com/ru/company/mobileup/blog/335382/
+* Android Guide to App Architecture - https://developer.android.com/topic/architecture
+* Modern Android App Architecture Pathway - https://developer.android.com/courses/pathways/android-architecture
 * UseCases лучше разбивать на отдельные функции (под каждую функцию свой UseCase)
 * Для чего нужна Clean Architecture? - Переиспользование бизнес-логики в разных проектах, развязывание классов (отсутствие сильной связанности, возможность замены компонентов), возможность подменять реализацию слоя независимо от других, тестопригодность, уменьшение порога входа в проект для новых разработчиков (все понимают, что на каждом слое находится), единообразие модулей в многомодульном проекте
 * Почему разделили именно на слои data, presentation, domain, а не на другие?
