@@ -536,6 +536,7 @@ https://medium.com/@vikas.singh_67409/deep-dive-into-thread-priority-in-java-be1
 * Можно ли сделать так, чтобы val property возвращал разные значения? - Можно вот так val isWorthReading get() = this.rating > 5 - https://www.baeldung.com/kotlin/getters-setters 
 * Как разрешить переопределение метода в потомках? - Пометить метод как open
 * Any, Unit, Nothing - https://gb.ru/posts/razbiraemsya-v-tipah-kotlin-unit-nothing-any-i-null
+* Сколько инстансов Any, Nothing, Unit можно создать? - Any - много, Nothing - ни одного, Unit - один 
 * Класс Any - назначение, методы класса (equals, hashCode, toString) - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/ 
 * Как связаны Kotlin Any и Java Object? - https://stackoverflow.com/questions/38761021/does-any-object
 * Как вызвать у Any методы класса Object (wait, notify)? - Путем преобразования типа (myAny as Object).wait() 
@@ -1458,6 +1459,8 @@ https://habr.com/ru/company/htmlacademy/blog/254825/
 ### Data persistence
 * Какие есть способы сохранить данные - shared preferences, db, file, Realm, AccountManager, другие внешние приложения с помощью ContentResolver+ContentProvider
 * Shared preferences persist after app has been uninstalled. How to prevent it? (Add android:allowBackup="false" in the application in the manifest)
+* Shared preferences apply vs commit - https://stackoverflow.com/questions/5960678/whats-the-difference-between-commit-and-apply-in-sharedpreferences
+* Shared preferences потокобезопасность - https://stackoverflow.com/questions/4693387/sharedpreferences-and-thread-safety
 * Особенности и различия разных типов БД (sql, nosql, строковые, колоночные)
 * Где хранить защищенные данные? - EnryptedSharedPreferences, EncryptedFile
  
