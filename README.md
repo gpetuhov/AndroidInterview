@@ -732,6 +732,7 @@ https://developer.android.com/kotlin/flow
 https://developer.android.com/codelabs/advanced-kotlin-coroutines?hl=en#0
  
 * Виды Flow - https://kotlinlang.org/docs/flow.html
+* Горячий и холодный поток - https://stackoverflow.com/questions/69297362/what-is-the-hot-flow-and-cold-flow-in-coroutines-and-the-difference-between-them 
 * flowOn - https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/flow-on.html
 * SubscribeOn (Rx) vs flowOn (Flow) - оба оператора работают upstream, но subscribeOn в цепочке отрабатывает только первый, а flowOn может выполниться несколько раз в цепочке
 * Есть ли аналог observeOn во Flow? - нет 
@@ -1442,6 +1443,7 @@ https://habr.com/ru/company/htmlacademy/blog/254825/
 * Connection keep alive
 * Как понять, что сообщение закончилось (content length, chunk encoding)
 * Что делаем Nginx при получении HTTP запроса, как сервер общается с Nginx?
+* Timestamp-based syncing - https://stackoverflow.com/questions/4186542/what-are-common-pitfalls-of-timestamp-based-syncing 
  
  
  
