@@ -22,6 +22,9 @@ Latest update: 2023.02.19
 * Приведите пример вашего решения, которое хотелось бы изменить. Что бы вы сейчас сделали иначе?
 * Приведите пример, когда вы были не согласны с менеджером
 * Назовите ваши сильные и слабые стороны
+* What’s the most challenging project you’ve worked on? What technical challenges did you face? How did you overcome them?
+* Tell me about a time when something went wrong in your project. What did you do?
+* What’s the most interesting project you’ve worked on? What tools did you use?
 
 Use STAR framework
 
