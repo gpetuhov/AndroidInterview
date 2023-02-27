@@ -702,6 +702,8 @@ https://medium.com/@vanniktech/testing-rxjava-code-made-easy-4cc32450fc9a
  
 https://github.com/Kotlin/kotlinx.coroutines/blob/master/docs/topics/coroutines-guide.md
  
+https://developer.android.com/courses/pathways/android-coroutines 
+ 
 * RxJava vs Coroutines - https://stackoverflow.com/questions/42066066/how-kotlin-coroutines-are-better-than-rxkotlin
 * Отличие пулов потоков в RxJava и Coroutines - https://medium.com/capital-one-tech/coroutines-and-rxjava-an-asynchronicity-comparison-part-6-threading-2aa5e9c52c94
 * Coroutine Scope, Coroutine Context - https://elizarov.medium.com/coroutine-context-and-scope-c8b255d59055
@@ -1640,6 +1642,12 @@ https://habr.com/ru/company/rambler_and_co/blog/279799/
 ### Jetpack Compose
  
 https://developer.android.com/courses/jetpack-compose/course
+
+ 
+ 
+### Kotlin Multiplatform Mobile
+ 
+https://kotlinlang.org/docs/multiplatform-mobile-getting-started.html
 
 
 
