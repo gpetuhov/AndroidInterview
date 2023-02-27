@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2023.02.25
+Latest update: 2023.02.27
 
 ## Previous experience / Soft skills
 * Tell us about yourself and your previous experience.
@@ -1493,6 +1493,9 @@ https://proandroiddev.com/encrypted-preferences-in-android-af57a89af7c8
 
 
 ### Dagger
+ 
+https://developer.android.com/training/dependency-injection
+ 
 * What is Dependency Injection?
 * Преимущества Dependency Inversion (Dagger) - зависимости предоставляются извне - легко менять составные части объектов, Dagger берет на себя генерацию графа зависимостей, упрощается тестирование - в тестах вместо реальных объектов можно подсовывать замоканные
 * Dependency Injection vs Service Locator - https://habr.com/ru/post/465395/
@@ -1631,6 +1634,12 @@ https://habr.com/ru/company/rambler_and_co/blog/279799/
 * Как ускорить время сборки - https://habr.com/ru/company/yandex/blog/678786/
 * Как происходит сборка проекта? - https://medium.com/androiddevnotes/the-internals-of-android-apk-build-process-article-5b68c385fb20 
 * includedBuild - https://docs.gradle.org/current/userguide/composite_builds.html 
+
+ 
+ 
+### Jetpack Compose
+ 
+https://developer.android.com/courses/jetpack-compose/course
 
 
 
