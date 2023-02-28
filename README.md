@@ -720,10 +720,12 @@ https://developer.android.com/courses/pathways/android-coroutines
 * Обработка исключений в корутинах 
 * CoroutineExceptionHandler - https://kotlinlang.org/docs/exception-handling.html
 * launch vs async - https://stackoverflow.com/questions/46226518/what-is-the-difference-between-launch-join-and-async-await-in-kotlin-coroutines
+* Отличие обработки исключений в launch и async
 * runBlocking - https://habr.com/ru/company/dododev/blog/541650/ 
 * Корутины под капотом - https://rohit.fyi/blog/kotlin-coroutines-under-the-hood-part-1/
 * Нужна ли синхронизация при использовании корутин? - Нужна - https://kotlinlang.org/docs/shared-mutable-state-and-concurrency.html
 * Во что компилируется suspend функция? - https://medium.com/androiddevelopers/the-suspend-modifier-under-the-hood-b7ce46af624f
+* Вызов suspend функции из Java - напрямую нельзя, но можно обернуть, например, в RxJava
 * Синхронизация в корутинах
  
 https://kotlinlang.org/docs/shared-mutable-state-and-concurrency.html
