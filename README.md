@@ -1348,6 +1348,9 @@ https://developer.android.com/reference/android/view/ViewStub
 
 
 ### Multithreading in Android
+ 
+https://developer.android.com/guide/background
+ 
 * Which operations are prohibited to run on the main thread?
 * What is the disadvantage of AsyncTask? - 1. Пересоздается при пересоздании активити, 2. Держит ссылку на активити, что влечет за собой memory leaks 
 * Handler, Looper, HandlerThread - https://blog.mindorks.com/android-core-looper-handler-and-handlerthread-bd54d69fe91a
