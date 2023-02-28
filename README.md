@@ -630,6 +630,7 @@ https://www.baeldung.com/kotlin/crossinline-vs-noinline
 * enum vs sealed classes - enum не позволяет создавать отдельные экземпляры, в отличие от sealed классов - https://blog.kotlin-academy.com/enum-vs-sealed-class-which-one-to-choose-dc92ce7a4df5
 * Есть ли аналоги data classes и sealed classes в Java? - Есть. В новой Java есть sealed classes и record classes (аналог data)
 * Разница между == и === в Kotlin? - Первый сравнивает значение, второй ссылки (reference)
+* Generics Codelab - https://developer.android.com/codelabs/basic-android-kotlin-compose-generics?hl=en#0 
 * Generics в Kotlin - что такое in, out? - https://kotlinlang.org/docs/generics.html#declaration-site-variance
 * Java stream, Kotlin sequence - в чем отличие от списка - Операции выполняются lazy, только когда результат уже нужен, и выполняются сразу все операции с каждым элементом без вычисления промежуточных коллекций - https://kotlinlang.org/docs/sequences.html
 * Разница между Java stream и Kotlin sequence 
