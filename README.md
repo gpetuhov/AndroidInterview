@@ -1469,6 +1469,11 @@ https://habr.com/ru/company/htmlacademy/blog/254825/
  
  
 ### WorkManager
+ 
+https://developer.android.com/codelabs/android-workmanager?hl=en#0
+
+https://developer.android.com/codelabs/android-adv-workmanager?hl=en#0
+ 
 * Какие проблемы решает? - https://developer.android.com/topic/libraries/architecture/workmanager
 * Гарантирует ли выполнение точно по времени? - нет - https://stackoverflow.com/questions/50299814/how-to-schedule-notifications-using-workmanager
 * Может ли система снять с выполнения задачи WorkManager?
@@ -1630,6 +1635,13 @@ https://itnext.io/multi-module-navigation-in-android-63cb9924ffbd
 
 
 ### Testing
+ 
+https://developer.android.com/codelabs/advanced-android-kotlin-training-testing-basics?index=..%2F..index#0
+
+https://developer.android.com/codelabs/advanced-android-kotlin-training-testing-test-doubles#0
+
+https://developer.android.com/codelabs/advanced-android-kotlin-training-testing-survey#0
+ 
 * Когда вызываются @Before, @After
 * Когда вызывается @BeforeClass
 * Как выполнить юнит-тестирование класса, если он зависит от класса, обращающегося к сети? - Использовать Mockito для создания класса-заглушки
