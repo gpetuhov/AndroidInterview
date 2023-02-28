@@ -1534,6 +1534,11 @@ https://proandroiddev.com/encrypted-preferences-in-android-af57a89af7c8
 
 
 ### Room
+ 
+https://developer.android.com/codelabs/basic-android-kotlin-training-persisting-data-room?hl=en#0
+
+https://developer.android.com/codelabs/basic-android-kotlin-training-intro-room-flow?hl=en#0
+ 
 * Последовательность работы с Room: какие классы нужно создать и что в них нужно описать? - https://developer.android.com/training/data-storage/room
 * What does @Entity annotation do?
 * What is @PrimaryKey?
@@ -1720,7 +1725,14 @@ https://kotlinlang.org/docs/multiplatform-mobile-getting-started.html
 * Deep links - https://developer.android.com/training/app-links/deep-linking
 * Bluetooth - https://developer.android.com/guide/topics/connectivity/bluetooth
 * NFC - https://developer.android.com/guide/topics/connectivity/nfc
-* ExoPlayer - https://exoplayer.dev/hello-world.html - https://developer.android.com/guide/topics/media/exoplayer
+* ExoPlayer
+
+https://developer.android.com/codelabs/exoplayer-intro?hl=en#0 
+
+https://exoplayer.dev/hello-world.html
+ 
+https://developer.android.com/guide/topics/media/exoplayer
+
 * Аудиофокус - https://developer.android.com/guide/topics/media-apps/audio-focus 
 
 
