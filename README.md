@@ -1269,6 +1269,23 @@ FrameLayout - LinearLayout - RelativeLayout - ConstraintLayout
 
 
 ### Views
+ 
+https://developer.android.com/guide/topics/ui/custom-components
+
+https://developer.android.com/guide/topics/ui/accessibility/custom-views
+
+https://developer.android.com/codelabs/advanced-android-kotlin-training-custom-views?hl=en#0
+
+https://developer.android.com/codelabs/advanced-android-kotlin-training-canvas#0
+
+https://developer.android.com/codelabs/advanced-android-kotlin-training-clipping-canvas-objects#0
+
+https://developer.android.com/codelabs/advanced-android-kotlin-training-shaders#0
+
+https://bit.ly/3nQ1QnJ
+
+https://www.youtube.com/watch?v=BfMjZTw0iT4&t=13s
+ 
 * View Lifecycle
 
 https://proandroiddev.com/the-life-cycle-of-a-view-in-android-6a2c4665b95e
