@@ -683,6 +683,7 @@ https://github.com/gpetuhov/RxJavaTutorial
 * Отличие Observable и Flowable
 * Стратегии Flowable для работы с backpressure
 * How to change threads? (subscribeOn, observeOn) - subscribeOn works upstream, observeOn works downstream - https://proandroiddev.com/rx-java-subscribeon-and-observeon-a7d95041ce96
+* Если в цепочке вызовов сначала будет observeOn, потом несколько операторов, потом subscribeOn, то на каком потоке будут исполняться операторы, расположенные между observeOn и subscribeOn? 
 * Difference between Schedulers.io() and Schedulers.computation()
 * Что будет если много раз выполнить оператор subscribeOn() в цепочке? - Только первый оператор даст желаемый эффект. Остальные же эффекта не дадут, кроме траты ресурсов
 * Что будет если много раз выполнить оператор observeOn() в цепочке? - Каждый observeOn() включает планировщик (поток), в котором будут выполняться все последующие операторы. Сложные потоки RxJava могут выиграть от нескольких операторов observeOn()
