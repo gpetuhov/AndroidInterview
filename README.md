@@ -647,6 +647,15 @@ https://www.baeldung.com/kotlin/crossinline-vs-noinline
 * Kotlin serialization - https://kotlinlang.org/docs/serialization.html 
 * Lambda с ресивером - https://www.baeldung.com/kotlin/lambda-receiver
 * @DslMarker - https://medium.com/kotlin-and-kotlin-for-android/kotlin-dsl-coding-a-dsl-6-ee355be81106 
+* Collections Codelabs
+ 
+https://developer.android.com/codelabs/basic-android-kotlin-training-collections?hl=en#0
+
+https://developer.android.com/codelabs/basic-android-kotlin-collections?hl=en#0
+
+https://developer.android.com/codelabs/basic-android-kotlin-compose-collections?hl=en#0
+
+https://developer.android.com/codelabs/basic-android-kotlin-compose-higher-order-functions?hl=en#0
 
 
 
@@ -1501,6 +1510,14 @@ https://proandroiddev.com/encrypted-preferences-in-android-af57a89af7c8
 ### Dagger
  
 https://developer.android.com/training/dependency-injection
+ 
+https://developer.android.com/training/dependency-injection/manual
+
+https://developer.android.com/training/dependency-injection/dagger-basics
+
+https://developer.android.com/codelabs/android-dagger?hl=en#0
+
+https://developer.android.com/codelabs/android-dagger-to-hilt?hl=en#0
  
 * What is Dependency Injection?
 * Преимущества Dependency Inversion (Dagger) - зависимости предоставляются извне - легко менять составные части объектов, Dagger берет на себя генерацию графа зависимостей, упрощается тестирование - в тестах вместо реальных объектов можно подсовывать замоканные
