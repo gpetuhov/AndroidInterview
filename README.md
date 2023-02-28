@@ -1845,3 +1845,9 @@ Example of Clean Architecture in Android: https://github.com/gpetuhov/AndroidFun
 
 ## Reference
 https://github.com/MindorksOpenSource/android-interview-questions
+ 
+https://yandex.ru/jobs/pages/mobdev-interview
+
+https://www.tinkoff.ru/career/it/interview/mobile/
+
+https://habr.com/ru/company/tinkoff/blog/648825/
