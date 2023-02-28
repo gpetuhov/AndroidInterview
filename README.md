@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2023.02.27
+Latest update: 2023.02.28
 
 ## Previous experience / Soft skills
 * Tell us about yourself and your previous experience.
@@ -1677,6 +1677,11 @@ https://github.com/gpetuhov/AndroidInterview/blob/master/app/src/main/java/com/g
 
 
 ## Algorithm coding task
+
+https://www.youtube.com/watch?v=0yxjWwoZtLw
+
+https://www.youtube.com/watch?v=zU-LndSG5RE
+
 Требуется умение писать код на бумаге с первого раз без переписываний, дебажить в голове, проверять краевые условия, оценивать вычислительную сложность и потребление памяти в терминах O()
 
 * In text editor: https://code.yandex-team.ru/ or https://codeshare.io/ or https://codeinterview.io/
@@ -1689,7 +1694,34 @@ OR
 Примеры задач:
 * Собрать стек из двух очередей
 * Собрать очередь из двух стеков
-* Найти максимальную глубину дерева 
+* Найти максимальную глубину дерева
+* Leetcode — задачи с уровня easy и medium с тегами Array, String, Tree, Binary Search, Hash table, Depth-first Search, Breadth first Search, Two Pointers, Stack, Backtracking; задачи с разным уровнем acceptance
+
+* More examples:
+
+https://leetcode.com/problems/valid-palindrome
+
+https://leetcode.com/problems/reverse-linked-list
+
+https://leetcode.com/problems/string-compression
+
+https://leetcode.com/problems/longest-substring-without-repeating-characters
+
+https://leetcode.com/problems/valid-mountain-array/
+
+https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+
+https://leetcode.com/problems/plus-one/
+
+https://leetcode.com/problems/find-the-distance-value-between-two-arrays/
+
+https://leetcode.com/problems/validate-ip-address/
+
+https://leetcode.com/problems/valid-anagram
+
+https://leetcode.com/problems/word-pattern/
+
+https://leetcode.com/problems/merge-intervals/
 
 
 
