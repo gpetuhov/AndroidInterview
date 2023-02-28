@@ -544,6 +544,7 @@ https://medium.com/@vikas.singh_67409/deep-dive-into-thread-priority-in-java-be1
 * Как связаны Kotlin Any и Java Object? - https://stackoverflow.com/questions/38761021/does-any-object
 * Как вызвать у Any методы класса Object (wait, notify)? - Путем преобразования типа (myAny as Object).wait() 
 * Как Any используется в nullability и multiplatform? 
+* Как nullability в Kotlin компилируется в Java? - https://kotlinlang.org/docs/java-to-kotlin-nullability-guide.html - https://kotlinlang.org/docs/java-to-kotlin-interop.html#null-safety - https://kotlinlang.org/docs/java-interop.html#null-safety-and-platform-types 
 * Класс Nothing - это null нет? - нет, Nothing - это наследник всех классов в Kotlin, он описывает функции, которые могут ничего не вернуть (если функция кидает исключение, то она возвращает Nothing). А Nothing? уже может быть null. - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-nothing.html
 * Как Nothing может являться сабклассом любого объекта? - https://the-cogitator.com/posts/blog/2018/06/29/the-nature-of-nothing-in-kotlin.html 
 * Класс Unit - это аналог void в Java - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/
@@ -620,6 +621,7 @@ https://www.baeldung.com/kotlin/crossinline-vs-noinline
 * Можно ли наследоваться от data classes? - нет - https://discuss.kotlinlang.org/t/data-class-inheritance/4107
 * Может ли сам data class наследоваться от другого класса - да (например, от seales класса) 
 * Как в Kotlin сделать, чтобы property не участвовал в вычислении hashCode в data class? - Прописать параметр в теле класса, а не в конструкторе - https://kotlinlang.org/docs/data-classes.html#properties-declared-in-the-class-body
+* Что будет, если у data класса сделать несколько конструкторов? - методы будут генерироваться только на основе primary конструктора 
 * Есть ли equals и hashcode у лямбды в Kotlin? - да, так как это обычный класс - https://stackoverflow.com/questions/24095875/is-there-a-way-to-compare-lambdas
 * Можно ли передать лямбду в конструкторе data class? - можно - https://iamjonfry.com/posts/lambdas-in-data-classes/
 * Удалось ли в Kotlin уйти от null? - Нет, так как lateinit под капотом принимает изначальное значение null
