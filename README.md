@@ -1232,6 +1232,15 @@ https://medium.com/swlh/binder-threading-model-79077b7c892c
 
 
 ### ViewModel
+ 
+https://developer.android.com/codelabs/basic-android-kotlin-training-viewmodel?hl=en#0
+
+https://developer.android.com/codelabs/basic-android-kotlin-training-livedata?hl=en#0
+
+https://developer.android.com/codelabs/android-lifecycles?hl=en#0
+
+https://developer.android.com/codelabs/basic-android-kotlin-training-shared-viewmodel?hl=en#0
+ 
 * Google ViewModel - это вьюмодел в паттерне MVVM? - Нет, это просто способ пережить уничтожение активити. Чтобы ViewModel стала вьюмоделом из MVVM, надо подписать вью на вьюмодел (например, с помощью LiveData)
 * Что будет, если во ViewModel объявить конструктор с параметрами - будет RuntimeException при инициализации вьюмодела
 * Как этого избежать - сделать ViewModel Factory
@@ -1263,6 +1272,11 @@ FrameLayout - LinearLayout - RelativeLayout - ConstraintLayout
 
 
 ### Animation
+ 
+https://developer.android.com/codelabs/advanced-android-kotlin-training-property-animation?hl=en#0
+
+https://codelabs.developers.google.com/codelabs/motion-layout#0
+ 
 * Виды анимации - https://www.geeksforgeeks.org/animation-in-android-with-example/
 * Анимация с помощью ConstraintSet
 
