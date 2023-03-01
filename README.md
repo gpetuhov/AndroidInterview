@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2023.02.28
+Latest update: 2023.03.01
 
 ## Previous experience / Soft skills
 * Tell us about yourself and your previous experience.
@@ -723,7 +723,7 @@ https://developer.android.com/courses/pathways/android-coroutines
 * Обработка исключений в корутинах 
 * CoroutineExceptionHandler - https://kotlinlang.org/docs/exception-handling.html
 * launch vs async - https://stackoverflow.com/questions/46226518/what-is-the-difference-between-launch-join-and-async-await-in-kotlin-coroutines
-* Отличие обработки исключений в launch и async
+* Отличие обработки исключений в launch и async - When creating a coroutine from a non-coroutine, start with launch. That way, if they throw an uncaught exception it'll automatically be propagated to uncaught exception handlers (which by default crash the app). A coroutine started with async won't throw an exception to its caller until you call await. However, you can only call await from inside a coroutine, since it is a suspend function. Once inside a coroutine, you can use launch or async to start child coroutines. Use launch for when you don't have a result to return, and async when you do. - https://developer.android.com/codelabs/kotlin-coroutines?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-coroutines%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fkotlin-coroutines#6
 * runBlocking - https://habr.com/ru/company/dododev/blog/541650/ 
 * Корутины под капотом - https://rohit.fyi/blog/kotlin-coroutines-under-the-hood-part-1/
 * Нужна ли синхронизация при использовании корутин? - Нужна - https://kotlinlang.org/docs/shared-mutable-state-and-concurrency.html
