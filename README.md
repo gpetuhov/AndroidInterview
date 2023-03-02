@@ -25,6 +25,11 @@ Latest update: 2023.03.01
 * What’s the most challenging project you’ve worked on? What technical challenges did you face? How did you overcome them?
 * Tell me about a time when something went wrong in your project. What did you do?
 * What’s the most interesting project you’ve worked on? What tools did you use?
+* Why did you choose this technology or programming language for the project?
+* What user problem did you solve?
+* How did this choice affect the business?
+* What other technologies could help you solve this problem?
+* Would you like to take any on-the-job courses?
 
 Use STAR framework
 
