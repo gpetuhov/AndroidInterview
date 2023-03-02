@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2023.03.01
+Latest update: 2023.03.02
 
 ## Previous experience / Soft skills
 * Tell us about yourself and your previous experience.
@@ -30,6 +30,10 @@ Latest update: 2023.03.01
 * How did this choice affect the business?
 * What other technologies could help you solve this problem?
 * Would you like to take any on-the-job courses?
+* So you mentioned that you have a lot of experience building applications. What is one piece of advice you would give to a junior developer in this respect?
+* Most software engineers work for a few years before taking on this role. How did you manage to do that in a year?
+* Could you give me an example of technology that inspires you?
+* What’s your favorite part about bringing a new product to the market?
 
 Use STAR framework
 
