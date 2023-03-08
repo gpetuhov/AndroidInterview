@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2023.03.02
+Latest update: 2023.03.08
 
 ## Previous experience / Soft skills
 * Tell us about yourself and your previous experience.
@@ -34,6 +34,7 @@ Latest update: 2023.03.02
 * Most software engineers work for a few years before taking on this role. How did you manage to do that in a year?
 * Could you give me an example of technology that inspires you?
 * What’s your favorite part about bringing a new product to the market?
+* Tell me about the project you’re proud of
 
 Use STAR framework
 
@@ -104,6 +105,9 @@ https://habr.com/ru/post/210288/
 
 
 ## Git
+
+https://learngitbranching.js.org/
+
 * Gitflow
 * Git merge vs rebase
 
