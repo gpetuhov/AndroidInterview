@@ -1274,6 +1274,8 @@ https://developer.android.com/codelabs/basic-android-kotlin-training-shared-view
 * Как трансформировать LiveData - https://proandroiddev.com/livedata-transformations-4f120ac046fc
 * Жизненный цикл ViewModel - https://developer.android.com/topic/libraries/architecture/viewmodel
 * Жизненный цикл LiveData
+* LiveData vs Flow - https://medium.com/android-dev-hacks/exploring-livedata-and-kotlin-flow-7c8d8e706324
+* Flow with lifecycle - https://medium.com/androiddevelopers/a-safer-way-to-collect-flows-from-android-uis-23080b1f8bda 
 * Как новая активити после пересоздания узнает о том, какую вьюмодель использовать? - https://proandroiddev.com/viewmodel-magic-revealed-330476b5ab27
 * Раньше механизм вьюмоделей использовал headless fragment, чтобы пережить пересоздание активити, но больше не использует. Как сейчас реализован механизм вьюмоделей? - https://proandroiddev.com/viewmodel-magic-revealed-330476b5ab27 
 
