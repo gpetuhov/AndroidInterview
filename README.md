@@ -51,6 +51,7 @@ Use STAR framework
 * SOLID
 * Плюсы и минусы SOLID
 * Примеры нарушения SOLID в Android SDK - https://www.youtube.com/watch?v=1Mx-Sw4z9MY 
+* Пример нарушения SOLID в Kotlin - MutableList
 * GRASP
 
 https://medium.com/@ruberoid55/grasp-principles-lead-by-examples-for-android-development-part-1-ed9e087b5fe1
@@ -1725,7 +1726,9 @@ https://habr.com/ru/company/rambler_and_co/blog/279799/
 * Gradle parallel - https://docs.gradle.org/current/userguide/performance.html
 * Как ускорить время сборки - https://habr.com/ru/company/yandex/blog/678786/
 * Как происходит сборка проекта? - https://medium.com/androiddevnotes/the-internals-of-android-apk-build-process-article-5b68c385fb20 
-* includedBuild - https://docs.gradle.org/current/userguide/composite_builds.html 
+* includedBuild - https://docs.gradle.org/current/userguide/composite_builds.html
+* Gradle Parallel
+* Build scan (--scan)
 
  
  
@@ -1829,6 +1832,7 @@ Example of Clean Architecture in Android: https://github.com/gpetuhov/AndroidFun
  
 * Требуется сделать экран списка чатов. Как организовать архитектуру - нарисовать схему верхнего уровня (слои data, presentation, domain и основные сущности на этих слоях)
 * Требуется сделать музыкальное приложение типа Яндекс Музыки. Какие экраны и фичи должны быть у такого приложения? Как реализовать UI, загрузку данных, проигрывание музыки, поиск, пагинацию, кеширование, защиту от копирования, взаимодействие с другими музыкальными приложениями? Какие использовать протоколы для загрузки данных? Какие библиотеки использовать в проекте?
+* Спроектировать API библиотеки загрузки изображений 
 
 
  
