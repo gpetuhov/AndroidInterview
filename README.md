@@ -1750,6 +1750,11 @@ https://developer.android.com/courses/jetpack-compose/course
 ### Kotlin Multiplatform Mobile
  
 https://kotlinlang.org/docs/multiplatform-mobile-getting-started.html
+ 
+* Multithreading in KMM - https://medium.com/mobile-at-octopus-energy/the-weird-and-wonderful-world-of-threading-in-kotlin-native-3c98c1290318
+* Frozen object
+* Ktor
+* SQLDelight 
 
 
 
