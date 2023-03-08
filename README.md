@@ -35,6 +35,7 @@ Latest update: 2023.03.08
 * Could you give me an example of technology that inspires you?
 * What’s your favorite part about bringing a new product to the market?
 * Tell me about the project you’re proud of
+* Tell me about the time when you had to deal with an unexpected issue
 
 Use STAR framework
 
