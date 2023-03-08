@@ -36,6 +36,7 @@ Latest update: 2023.03.08
 * What’s your favorite part about bringing a new product to the market?
 * Tell me about the project you’re proud of
 * Tell me about the time when you had to deal with an unexpected issue
+* Why did you choose this technology or programming language for the project?
 
 Use STAR framework
 
