@@ -1056,6 +1056,7 @@ https://medium.com/mobile-app-development-publication/android-activity-launchmod
 
 * Два способа как задать launch mode? - манифест и intent flags
 * Общая особенность singleTask и singleInstance - эти режимы очистят активити стоящие сверху заданной активити
+* Запущены последовательно 4 активити ABCD. Как сделать так, чтобы остались активити AB - использовать launch mode или прописать логику с возвратом результата из активити (startActivityForResult)
 * Для чего запускать разные активити в разных тасках?
 
 https://developer.android.com/guide/components/activities/tasks-and-back-stack 
