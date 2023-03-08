@@ -977,6 +977,8 @@ https://medium.com/@banmarkovic/what-is-context-in-android-and-which-one-should-
 
 * Отображение AlertDialog из app context - https://nhancv.medium.com/android-show-dialog-without-activity-context-94661d48400f
 * Сменится ли тема у диалога, отображенного из app context, если пользователь поменяет тему на темную? - нет, так как при смене темы пересоздается только активити, но не всё приложение
+* Сменится ли язык при смене языка в системе, если строки получали с помощью app context? - нет, так как приложение не пересоздается при смене языка
+* Старт активити из контекста сервиса - нельзя, начиная с Android 10 - https://stackoverflow.com/questions/3606596/start-activity-from-service-in-android === https://developer.android.com/guide/components/activities/background-starts 
 * BaseContext
 * ContextThemeWrapper - https://ataulm.com/2019/11/20/using-context-theme-wrapper.html
 * raw vs assets - что где хранить, отличия? (в raw доступ через R.raw.id, в assets через asset manager) - https://stackoverflow.com/questions/5583608/difference-between-res-and-assets-directories
