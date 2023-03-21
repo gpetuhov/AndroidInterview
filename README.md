@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2023.03.16
+Latest update: 2023.03.21
 
 ## Previous experience / Soft skills
 * Tell us about yourself and your previous experience.
@@ -798,7 +798,7 @@ https://proandroiddev.com/kotlin-coroutine-job-hierarchy-finish-cancel-and-fail-
 
 https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-supervisor-job.html 
 
-https://victorbrandalise.com/coroutines-part-ii-job-supervisorjob-launch-and-async/ 
+https://victorbrandalise.com/coroutines-part-ii-job-supervisorjob-launch-and-async/
 
 https://codingwithmohit.com/coroutines/coroutines-job-structure/
  
