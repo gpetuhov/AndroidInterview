@@ -729,9 +729,13 @@ https://medium.com/@vanniktech/testing-rxjava-code-made-easy-4cc32450fc9a
 
 ## Kotlin coroutines
  
-https://github.com/Kotlin/kotlinx.coroutines/blob/master/docs/topics/coroutines-guide.md
+https://developer.android.com/kotlin/coroutines
  
-https://developer.android.com/courses/pathways/android-coroutines 
+https://developer.android.com/kotlin/flow
+
+https://developer.android.com/courses/pathways/android-coroutines
+ 
+https://github.com/Kotlin/kotlinx.coroutines/blob/master/docs/topics/coroutines-guide.md
  
 * RxJava vs Coroutines - https://stackoverflow.com/questions/42066066/how-kotlin-coroutines-are-better-than-rxkotlin
 * Отличие пулов потоков в RxJava и Coroutines - https://medium.com/capital-one-tech/coroutines-and-rxjava-an-asynchronicity-comparison-part-6-threading-2aa5e9c52c94
