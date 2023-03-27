@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2023.03.21
+Latest update: 2023.03.27
 
 ## Previous experience / Soft skills
 * Tell us about yourself and your previous experience.
@@ -1754,6 +1754,8 @@ https://habr.com/ru/company/rambler_and_co/blog/279799/
 ### Jetpack Compose
  
 https://developer.android.com/courses/jetpack-compose/course
+
+* Chaining animations - https://betterprogramming.pub/chaining-animations-with-jetpack-compose-b4ff6e2e047d
 
  
  
