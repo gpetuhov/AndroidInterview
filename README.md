@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2023.03.27
+Latest update: 2023.05.05
 
 ## Previous experience / Soft skills
 * Tell us about yourself and your previous experience.
@@ -1891,6 +1891,8 @@ Example of Clean Architecture in Android: https://github.com/gpetuhov/AndroidFun
 «Learning Concurrency in Kotlin» — Miguel Angel Castiblanco Torres
  
 «Эффективное использование потоков в операционной системе Android» — Андрес Ёранссон
+
+«Джедайские техники» — Максим Дорофеев
 
 
 
