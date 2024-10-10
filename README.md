@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2023.05.05
+Latest update: 2024.10.10
 
 ## Previous experience / Soft skills
 * Tell us about yourself and your previous experience.
@@ -377,6 +377,8 @@ https://howtodoinjava.com/java/basics/little-endian-big-endian/
 ## Multithreading
 
 https://github.com/gpetuhov/MultithreadingTutorial
+
+https://habr.com/ru/companies/otus/articles/353414/
 
 * Процессы и потоки
  
