@@ -427,7 +427,7 @@ https://www.baeldung.com/java-volatile-variables-thread-safety
 * Можно ли статические переменные делать volatile? - да 
 * Volatile - практический пример использования 
 * synchronized vs static synchronized - https://stackoverflow.com/questions/6367885/difference-between-synchronizing-a-static-method-and-a-non-static-method
-* Deadlock - что это и как бороться?
+* Deadlock - что это и как бороться? Что такое Livelock?
 
 https://jenkov.com/tutorials/java-concurrency/deadlock.html 
  
