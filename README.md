@@ -1394,6 +1394,8 @@ https://hannesdorfmann.com/android/adapter-delegates/
 
 https://habr.com/ru/post/341738/
 
+https://habr.com/ru/companies/tbank/articles/665930/
+
 * Способы генерации id вьюхи - https://stackoverflow.com/questions/1714297/android-view-setidint-id-programmatically-how-to-avoid-id-conflicts 
 * Как создать custom attributes? - https://developer.android.com/training/custom-views/create-view
 * Зачем нужен оверрайд конструктора вьюхи? - https://stackoverflow.com/questions/9195713/do-i-need-all-three-constructors-for-an-android-custom-view 
