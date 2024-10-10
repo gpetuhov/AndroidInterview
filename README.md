@@ -1388,7 +1388,12 @@ https://medium.com/rosberryapps/how-to-cook-the-60-fps-recyclerview-3e7f3885a55
 https://www.geeksforgeeks.org/how-to-improve-recyclerview-scrolling-performance-in-android/ 
 
 * RecyclerView пул вьюхолдеров - что это и пример использования (например, когда есть вертикальный список из горизонтальных списков - у горизонтальных списков можно переиспользовать вьюхолдеры с помощью пула)
-* RecyclerView Delegate Adapter - https://habr.com/ru/post/341738/
+* RecyclerView Delegate Adapter
+
+https://hannesdorfmann.com/android/adapter-delegates/
+
+https://habr.com/ru/post/341738/
+
 * Способы генерации id вьюхи - https://stackoverflow.com/questions/1714297/android-view-setidint-id-programmatically-how-to-avoid-id-conflicts 
 * Как создать custom attributes? - https://developer.android.com/training/custom-views/create-view
 * Зачем нужен оверрайд конструктора вьюхи? - https://stackoverflow.com/questions/9195713/do-i-need-all-three-constructors-for-an-android-custom-view 
