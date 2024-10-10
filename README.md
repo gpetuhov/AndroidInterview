@@ -1104,7 +1104,12 @@ https://habr.com/ru/company/e-legion/blog/545934/
 * Открыты экраны ABCD. Как закрыть экраны C и D, если это активити и если это фрагменты?
 * Есть Activity и в ней внутренний класс. В чем может быть проблема и как это исправить? - Внутренний класс (inner class) хранит ссылку на внешний класс, поэтому если хранить где-то экземпляр этого внутреннего класса, то может произойти утечка памяти (GC не сможет собрать активити). Чтобы это исправить, надо сделать внутренний класс статическим классом или вообще вынести его из активити.
 * Как в ситуации из предыдущего примера сделать так, чтобы методы класса работали с активити и не было утечки памяти? - Надо передавать активити в методы через WeakReference
-* onRetainNonConfigurationInstance - https://developer.android.com/reference/android/app/Activity#onRetainNonConfigurationInstance() 
+* onRetainNonConfigurationInstance - https://developer.android.com/reference/android/app/Activity#onRetainNonConfigurationInstance()
+* Window insets
+
+https://developer.android.com/develop/ui/views/layout/insets
+
+https://habr.com/ru/companies/oleg-bunin/articles/488196/
 
 
 
