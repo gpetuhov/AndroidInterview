@@ -730,7 +730,9 @@ https://medium.com/@vanniktech/testing-rxjava-code-made-easy-4cc32450fc9a
 
 
 ## Kotlin coroutines
- 
+
+Marcin Moskala - Kotlin Coroutines: Deep Dive
+
 https://developer.android.com/kotlin/coroutines
  
 https://developer.android.com/kotlin/flow
