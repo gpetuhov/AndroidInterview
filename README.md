@@ -1654,7 +1654,8 @@ https://medium.com/mobile-app-development-publication/dagger-2-multibindings-ref
 * Как можно проверять DI не на стадии компиляции (например, если используешь Toothpick)? - С помощью интеграционных тестов
 * Почему Dagger Scope не используют везде? - там под капотом синглтон с двойной проверкой, поэтому это может замедлить выполнение приложения. Чтобы отключить двойную проверку, используют аннотацию @Reusable
 * @Reusable vs @Singleton - https://stackoverflow.com/questions/39136042/dagger-reusable-scope-vs-singleton 
-* @Qualifier - https://medium.com/mindorks/qualifiers-in-dagger-android-development-c0574cca87a2 
+* @Qualifier - https://medium.com/mindorks/qualifiers-in-dagger-android-development-c0574cca87a2
+* Component Factory - https://developer.android.com/training/dependency-injection/dagger-multi-module?hl=ru
 
 
 
