@@ -1645,7 +1645,7 @@ https://dagger.dev/dev-guide/multibindings.html
  
 https://medium.com/mobile-app-development-publication/dagger-2-multibindings-reference-rewrite-70c23842b782 
 
- * @IntoMap 
+* @IntoMap 
 * Dagger @IntoSet - https://habr.com/ru/post/336414/
 * @IntoMap, @IntoSet - для чего они нужны, практический пример 
 * Dagger subcomponents vs component dependencies - https://stackoverflow.com/questions/29587130/dagger-2-subcomponents-vs-component-dependencies
@@ -1658,6 +1658,8 @@ https://medium.com/mobile-app-development-publication/dagger-2-multibindings-ref
 * @Reusable vs @Singleton - https://stackoverflow.com/questions/39136042/dagger-reusable-scope-vs-singleton 
 * @Qualifier - https://medium.com/mindorks/qualifiers-in-dagger-android-development-c0574cca87a2
 * Component Factory - https://developer.android.com/training/dependency-injection/dagger-multi-module?hl=ru
+* Assisted DI
+* @AssistedInject, @AssistedFactory
 
 
 
