@@ -1660,6 +1660,7 @@ https://medium.com/mobile-app-development-publication/dagger-2-multibindings-ref
 * Component Factory - https://developer.android.com/training/dependency-injection/dagger-multi-module?hl=ru
 * Assisted DI
 * @AssistedInject, @AssistedFactory
+* Hilt
 
 
 
