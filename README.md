@@ -52,6 +52,7 @@ Use STAR framework
 * Плюсы и минусы SOLID
 * Примеры нарушения SOLID в Android SDK - https://www.youtube.com/watch?v=1Mx-Sw4z9MY 
 * Пример нарушения SOLID в Kotlin - MutableList
+* Рассказать про класс Context в рамках SOLID. - https://medium.com/android-news/single-responsibility-principle-and-context-60e39a28e5bd
 * GRASP
 
 https://medium.com/@ruberoid55/grasp-principles-lead-by-examples-for-android-development-part-1-ed9e087b5fe1
