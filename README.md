@@ -70,6 +70,8 @@ https://habr.com/ru/company/otus/blog/507600/
 https://habr.com/ru/company/otus/blog/521476/
 
 * Почему композиция лучше наследования? - https://stackoverflow.com/questions/49002/prefer-composition-over-inheritance
+* Какие минусы у наследования?
+* Чем композиция отличается от наследования? - При наследовании мы меняем функционал класса, а при композции можем расширить функционал класса, не изменяя сам класс.
 * Clean code
 * Как в алгоритмах оценивают потребление памяти? - Тоже в терминах O(), как и вычислительную сложность - https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/
 * Проблемы множественного наследования - почему в Java от него отказались?
