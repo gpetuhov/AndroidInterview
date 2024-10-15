@@ -1919,6 +1919,12 @@ Example of Clean Architecture in Android: https://github.com/gpetuhov/AndroidFun
 
 
 
+## Архитектурная секция
+
+https://www.youtube.com/watch?v=p7QIEzIFzdQ
+
+
+
 ## Открытые собеседования
 
 https://youtu.be/KH0vLN1siI8?si=ca9GSY84dR-JlbaM
