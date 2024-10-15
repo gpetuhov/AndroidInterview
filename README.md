@@ -575,7 +575,10 @@ https://medium.com/@vikas.singh_67409/deep-dive-into-thread-priority-in-java-be1
 * Как переопределить finalize? - https://kotlinlang.org/docs/java-interop.html#finalize 
 * Модификаторы доступа в Kotlin
 * Во что компилируется internal? - в public - https://4comprehension.com/kotlins-internal-visibility-modifier-and-java-interoperability/
-* Companion object, конструктор, private property, init - в какой последовательности будут инициализироваться? - Companion object -> property initializer -> init -> constructor - https://medium.com/keepsafe-engineering/an-in-depth-look-at-kotlins-initializers-a0420fcbf546 
+* Companion object, конструктор, private property, init - в какой последовательности будут инициализироваться? - Companion object -> property initializer -> init -> constructor - https://medium.com/keepsafe-engineering/an-in-depth-look-at-kotlins-initializers-a0420fcbf546
+* В какой момент создается object в Kotlin?
+* Что такое companion object?
+* Что будет, если в классе объявить object и companion object? - При компиляции в Java разницы не будет
 * Как вычисляется hashCode по умолчанию?
 * Если не переопределить equals(), то как будут сравниваться объекты с помощью оператора сравнения == ? - Это зависит от JVM, но в большинстве JVM объекту при создании присваивается случайное число, и в данном случае сравнение будет происходить на основе этого числа. По умолчанию сравнение происходит не на основе ссылок, так как ссылки могут измениться. 
 * Kotlin default and named arguments
@@ -596,6 +599,7 @@ https://kotlinlang.org/docs/sealed-classes.html
 https://jorgecastillo.dev/sealed-interfaces-kotlin
 
 * lateinit vs lazy
+* Lazy потокобезопасный? - По умолчанию, да
 * Типы делегатов - property, interface 
 * Property delegates
  
