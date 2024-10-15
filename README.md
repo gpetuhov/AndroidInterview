@@ -1119,6 +1119,8 @@ https://developer.android.com/develop/ui/views/layout/insets
 
 https://habr.com/ru/companies/oleg-bunin/articles/488196/
 
+* В стеке 4 активити A, B, C, D. Как перейти из D в A, очистив при этом стек?
+
 
 
 ### Intents
@@ -1213,7 +1215,8 @@ https://developer.android.com/guide/fragments/lifecycle
  
 https://medium.com/androiddevelopers/fragments-rebuilding-the-internals-61913f8bf48e 
  
-* Fragment Result API - https://developer.android.com/guide/fragments/communicate#fragment-result 
+* Fragment Result API - https://developer.android.com/guide/fragments/communicate#fragment-result
+* В стеке 4 фрагмента A, B, C, D. Как перейти из D в A, очистив при этом стек?
 
 
 
