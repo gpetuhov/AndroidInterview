@@ -1433,6 +1433,26 @@ https://developer.android.com/reference/android/view/ViewStub
 
 
 
+### Compose
+
+Jorge Castillo - Jetpack Compose internals
+
+https://www.youtube.com/watch?v=_hI2vwei9Rg
+
+https://www.youtube.com/watch?v=MtEW9O-Qrr4
+
+* Как Compose понимает, что поменялись данные и надо перерисовать лейаут?
+* Куда remember сохраняет состояние?
+* Как remember понимает, что нужно удалить состояние при выходе с экрана, чтобы не было утечки памяти?
+* Эффекты LaunchedEffect, DisposableEffect, SideEffect
+* Чем отличается LaunchedEffect и rememberCoroutineScope?
+* Зачем нужен SideEffect?
+* Можем ли мы в рантайме понять программным образом, что произошла рекомпозиция?
+* Как внутри компоуз функции получить контекст? - LocalContext.current
+* Почему LocalContext.current можно вызывать только внутри компоуз-функции? Как LocalContext.current устроен под капотом?
+
+
+
 ### Notifications
 * Notifications since Android 8 (Notification channel required)
 * Actions in Notifications (for example reply) - https://developer.android.com/training/notify-user/build-notification
