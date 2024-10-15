@@ -1447,13 +1447,15 @@ https://medium.com/appnroll-publication/what-is-new-in-android-p-precomputedtext
 
 
 
-### Compose
+### Jetpack Compose
 
 Jorge Castillo - Jetpack Compose internals
 
 https://www.youtube.com/watch?v=_hI2vwei9Rg
 
 https://www.youtube.com/watch?v=MtEW9O-Qrr4
+
+https://developer.android.com/courses/jetpack-compose/course
 
 * Как Compose понимает, что поменялись данные и надо перерисовать лейаут?
 * Куда remember сохраняет состояние?
@@ -1471,6 +1473,7 @@ SideEffect - используется для выполнения побочны
 * Можем ли мы в рантайме понять программным образом, что произошла рекомпозиция?
 * Как внутри компоуз функции получить контекст? - LocalContext.current
 * Почему LocalContext.current можно вызывать только внутри компоуз-функции? Как LocalContext.current устроен под капотом?
+* Chaining animations - https://betterprogramming.pub/chaining-animations-with-jetpack-compose-b4ff6e2e047d
 
 
 
@@ -1813,14 +1816,6 @@ https://habr.com/ru/company/rambler_and_co/blog/279799/
 
  
  
-### Jetpack Compose
- 
-https://developer.android.com/courses/jetpack-compose/course
-
-* Chaining animations - https://betterprogramming.pub/chaining-animations-with-jetpack-compose-b4ff6e2e047d
-
- 
- 
 ### Kotlin Multiplatform Mobile
  
 https://kotlinlang.org/docs/multiplatform-mobile-getting-started.html
@@ -1921,6 +1916,16 @@ Example of Clean Architecture in Android: https://github.com/gpetuhov/AndroidFun
 * Требуется сделать экран списка чатов. Как организовать архитектуру - нарисовать схему верхнего уровня (слои data, presentation, domain и основные сущности на этих слоях)
 * Требуется сделать музыкальное приложение типа Яндекс Музыки. Какие экраны и фичи должны быть у такого приложения? Как реализовать UI, загрузку данных, проигрывание музыки, поиск, пагинацию, кеширование, защиту от копирования, взаимодействие с другими музыкальными приложениями? Какие использовать протоколы для загрузки данных? Какие библиотеки использовать в проекте?
 * Спроектировать API библиотеки загрузки изображений 
+
+
+
+## Открытые собеседования
+
+https://youtu.be/KH0vLN1siI8?si=ca9GSY84dR-JlbaM
+
+https://www.youtube.com/live/c8Sdcw6AlCk?si=GHgMWp5Q-NPf9Vu6
+
+https://www.youtube.com/live/kKcwi0w5c8A?si=-Bi3V_SZRShTlvPY
 
 
  
