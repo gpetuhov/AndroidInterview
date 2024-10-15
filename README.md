@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2024.10.11
+Latest update: 2024.10.15
 
 ## Previous experience / Soft skills
 * Tell us about yourself and your previous experience.
@@ -1661,6 +1661,7 @@ https://medium.com/mobile-app-development-publication/dagger-2-multibindings-ref
 * Assisted DI
 * @AssistedInject, @AssistedFactory
 * Hilt
+* Неизменяемые и изменяемые переменные
 
 
 
