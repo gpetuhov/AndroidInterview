@@ -1436,6 +1436,11 @@ https://developer.android.com/reference/android/view/ViewStub
 * Можно ли сделать отрисовку вьюхи на фоновом потоке? - кроме UI thread есть еще RenderThread - https://stackoverflow.com/questions/48618444/renderthread-vs-ui-thread === https://medium.com/@workingkills/understanding-the-renderthread-4dc17bcaf979
 * Как отрисоывается диалог с запросом permissions? - с помощью window из текущей активити, поэтому состояние жизненного цикла активити при этом не меняется
 * Как считывается макет XML - https://bignerdranch.com/blog/understanding-androids-layoutinflater-inflate/
+* Как отрисовать большой текст? - PrecomputedText
+
+https://developer.android.com/reference/android/text/PrecomputedText
+
+https://medium.com/appnroll-publication/what-is-new-in-android-p-precomputedtext-2a62ec9e8613
 
 
 
