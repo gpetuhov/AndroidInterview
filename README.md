@@ -1716,6 +1716,7 @@ https://www.raywenderlich.com/12275430-dagger-in-multi-module-clean-applications
 
 * Dagger в мультипроцессном приложении - в каждом процессе свой экземпляр Application, свой Dagger со своими инстансами
 * Dagger @Binds vs @Provides - https://stackoverflow.com/questions/52586940/what-is-the-use-case-for-binds-vs-provides-annotation-in-dagger2
+* Можно ли использовать Binds и Provides в одном класс? - Да, но так делать не рекомендуется по соображениям код стайла, так как легко можно запутаться
 * Недостатки @Provides - @Provides генерит больше кода, чем @Binds. Поэтому по возможности лучше использовать @Binds, а @Provides используется, когда по сути у объекта нет конструктора и нужно использовать билдер. 
 * Multibindings
 
