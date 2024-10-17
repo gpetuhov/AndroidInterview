@@ -1160,6 +1160,7 @@ https://stackoverflow.com/questions/3323074/android-difference-between-parcelabl
 https://medium.com/android-news/parcelable-vs-serializable-6a2556d51538 
 
 * Проблемы Serializable - 1. Рефлексия, 2. Если поле в Serializable классе будет не Serializable, то при десериализации оно будет просто null (а в случае Parcelable компилятор сразу это подсвечивает)
+* Почему Parcelable быстрее, чем Serializable? - Serializable основан на рефлексии
 * Как под капотом устроен Serializable? - https://www.infoworld.com/article/2072752/the-java-serialization-algorithm-revealed.html 
 * Когда использовать Serializable? - https://proandroiddev.com/serializable-or-parcelable-why-and-which-one-17b274f3d3bb
 * Всегда ли оправдано применение Parcelable? - Только при большом количестве операций в единицу времени (1000 и больше), а также в IPC (Binder, AIDL), и когда большие объекты
