@@ -1470,6 +1470,8 @@ https://developer.android.com/reference/android/text/PrecomputedText
 
 https://medium.com/appnroll-publication/what-is-new-in-android-p-precomputedtext-2a62ec9e8613
 
+* Можем ли View обновить не из UI потока? - Нет - С чем это связано?
+
 
 
 ### Jetpack Compose
