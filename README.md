@@ -1038,6 +1038,13 @@ https://developpaper.com/android-leakcanary-memory-leak-detection-principle/
  
 приложение не может запустить foreground service из фона 
 
+* Где залогировать место старта приложения? - ContentProvider создается раньше класса приложения
+* Почему в Application есть метод onCreate, но нет onDestroy?
+* Если бы мы писали приложение Будильник, то с какими проблемами бы столкнулись?
+* Какой из компонентов можно не указывать в манифесте? - BroadcastReceiver
+* Как иконка приложения попадает на рабочий стол устройства? - В манифесте у нужной активити надо прописать intent filter с категорией launcher
+* Что будет, если launcher укажем у нескольких активити? - Тогда будет несколько иконок на рабочем столе - по каждой будет запускаться соответствующая активити
+
 
 
 ### Activity
@@ -1130,6 +1137,7 @@ https://developer.android.com/develop/ui/views/layout/insets
 https://habr.com/ru/companies/oleg-bunin/articles/488196/
 
 * В стеке 4 активити A, B, C, D. Как перейти из D в A, очистив при этом стек?
+* Что мы не можем сделать в Activity.onCreate() ?
 
 
 
