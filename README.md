@@ -1188,6 +1188,7 @@ val intent = Intent(Intent.ACTION_VIEW, uri)
 * What is the purpose of Fragments? Limitations (2-3 fragments per activity)
 * Способы добавления фрагмента в активити - Вручную с помощью FragmentManager, прописать жестко фрагмент в макете (но под капотом все равное будет использован FragmentManager), Jetpack Navigation, Cicerone 
 * FragmentManager - https://developer.android.com/guide/fragments/fragmentmanager
+* Что такое транзакция применительно к фрагментам? Что вообще такое транзакция?
 * Как FragmentManager управляет жизненным циклом фрагмента? - https://developer.android.com/guide/fragments/lifecycle 
 * FragmentTransaction разница методов add() и replace()
  
