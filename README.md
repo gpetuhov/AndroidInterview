@@ -861,6 +861,8 @@ https://medium.com/swlh/kotlin-coroutines-in-android-suspending-functions-8a2f98
 * Lifecycle aware coroutine scope - LifecycleCoroutineScope - https://developer.android.com/topic/libraries/architecture/coroutines
 * Чем StateFlow лучше, чем LiveData?
 * Операторы Flow: flatMapConcat, flatMapMerge, flatMapLatest
+* StateFlow vs SharedFlow
+* StateFlow hot or cold?
 
 
 
