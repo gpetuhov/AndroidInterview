@@ -618,7 +618,7 @@ https://www.codementor.io/@packt/delegated-properties-in-kotlin-kqda9rze4
 https://medium.com/androiddevelopers/built-in-delegates-4811947e781f
 
 * Interface delegates - https://medium.com/@Joseph82/interface-delegation-in-kotlin-1404dfcd9167 
-* inline functions - https://medium.com/android-news/inline-noinline-crossinline-what-do-they-mean-b13f48e113c2
+* inline functions - https://habr.com/ru/articles/775120/
 * Inline функция с лямбдой и без лямбды
 * Можно ли вызвать inline функцию из Java? - без reified можно, с reified нельзя 
 * crossinline
