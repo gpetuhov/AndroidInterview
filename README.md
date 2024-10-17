@@ -1648,6 +1648,7 @@ https://developer.android.com/codelabs/android-adv-workmanager?hl=en#0
 * Shared preferences persist after app has been uninstalled. How to prevent it? (Add android:allowBackup="false" in the application in the manifest)
 * Shared preferences apply vs commit - https://stackoverflow.com/questions/5960678/whats-the-difference-between-commit-and-apply-in-sharedpreferences
 * Shared preferences потокобезопасность - https://stackoverflow.com/questions/4693387/sharedpreferences-and-thread-safety
+* Как работает SharedPreferences под капотом? - Это XML файл, в котором хранятся ключ-значение. Это не защищенные данные.
 * Особенности и различия разных типов БД (sql, nosql, строковые, колоночные)
 * Где хранить защищенные данные? - EnryptedSharedPreferences, EncryptedFile
  
