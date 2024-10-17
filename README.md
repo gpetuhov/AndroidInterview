@@ -1242,7 +1242,7 @@ https://developer.android.com/guide/fragments/lifecycle
 https://medium.com/androiddevelopers/fragments-rebuilding-the-internals-61913f8bf48e 
  
 * Fragment Result API - https://developer.android.com/guide/fragments/communicate#fragment-result
-* В стеке 4 фрагмента A, B, C, D. Как перейти из D в A, очистив при этом стек?
+* В стеке 4 фрагмента A, B, C, D. Как перейти из D в A, очистив при этом стек? - https://ru.stackoverflow.com/questions/475859/android-стек-фрагментов
 
 
 
