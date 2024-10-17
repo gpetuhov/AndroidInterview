@@ -1497,6 +1497,8 @@ LaunchedEffect - предназначен для выполнения асинх
 SideEffect - используется для выполнения побочных эффектов внутри Composable, которые не зависят от жц composable
 вызывается всегда, когда происходит рекомпозиция
 
+https://stackoverflow.com/questions/76760860/what-is-disposableeffect-and-under-the-hood-in-jetpack-compose
+
 * Чем отличается LaunchedEffect и rememberCoroutineScope?
 * Зачем нужен SideEffect?
 * Можем ли мы в рантайме понять программным образом, что произошла рекомпозиция?
