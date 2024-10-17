@@ -1505,6 +1505,7 @@ https://stackoverflow.com/questions/76760860/what-is-disposableeffect-and-under-
 * Как внутри компоуз функции получить контекст? - LocalContext.current
 * Почему LocalContext.current можно вызывать только внутри компоуз-функции? Как LocalContext.current устроен под капотом?
 * Chaining animations - https://betterprogramming.pub/chaining-animations-with-jetpack-compose-b4ff6e2e047d
+* @Stable vs @Immutable
 
 
 
