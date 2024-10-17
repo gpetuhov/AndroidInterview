@@ -1484,6 +1484,8 @@ https://www.youtube.com/watch?v=_hI2vwei9Rg
 
 https://www.youtube.com/watch?v=MtEW9O-Qrr4
 
+https://www.youtube.com/watch?v=OPwJnx5p1tc
+
 https://developer.android.com/courses/jetpack-compose/course
 
 * Как Compose понимает, что поменялись данные и надо перерисовать лейаут?
