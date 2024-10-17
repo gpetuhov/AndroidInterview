@@ -324,6 +324,7 @@ https://javarush.ru/groups/posts/2147-hashset-v-java
 
 https://habr.com/ru/company/otus/blog/495032/
 
+* Что за константа используется в HashSet? - "PRESENT" - https://www.geeksforgeeks.org/internal-working-of-sethashset-in-java/
 * TreeMap under the hood
 
 https://javarush.ru/groups/posts/2584-osobennosti-treemap
