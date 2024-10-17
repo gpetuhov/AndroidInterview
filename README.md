@@ -562,6 +562,7 @@ https://medium.com/@vikas.singh_67409/deep-dive-into-thread-priority-in-java-be1
 * Как разрешить переопределение метода в потомках? - Пометить метод как open
 * Any, Unit, Nothing - https://gb.ru/posts/razbiraemsya-v-tipah-kotlin-unit-nothing-any-i-null
 * Сколько инстансов Any, Nothing, Unit можно создать? - Any - много, Nothing - ни одного, Unit - один 
+* Сколько инстансов Unit и Nothing можно создать? - Unit - один, а у Nothing - приватный конструктор
 * Класс Any - назначение, методы класса (equals, hashCode, toString) - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/ 
 * Как связаны Kotlin Any и Java Object? - https://stackoverflow.com/questions/38761021/does-any-object
 * Как вызвать у Any методы класса Object (wait, notify)? - Путем преобразования типа (myAny as Object).wait() 
@@ -570,7 +571,7 @@ https://medium.com/@vikas.singh_67409/deep-dive-into-thread-priority-in-java-be1
 * Класс Nothing - это null нет? - нет, Nothing - это наследник всех классов в Kotlin, он описывает функции, которые могут ничего не вернуть (если функция кидает исключение, то она возвращает Nothing). А Nothing? уже может быть null. - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-nothing.html
 * Как Nothing может являться сабклассом любого объекта? - https://the-cogitator.com/posts/blog/2018/06/29/the-nature-of-nothing-in-kotlin.html 
 * Класс Unit - это аналог void в Java - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/
-* Unit vs Nothing - https://stackoverflow.com/questions/55953052/kotlin-void-vs-unit-vs-nothing 
+* Unit vs Nothing - https://stackoverflow.com/questions/55953052/kotlin-void-vs-unit-vs-nothing
 * Какой тип будет при вызове Java из Kotlin - nullable или нет? Как при этом учитываются аннотации Nullable, NonNull? - https://kotlinlang.org/docs/java-interop.html 
 * Как переопределить finalize? - https://kotlinlang.org/docs/java-interop.html#finalize 
 * Модификаторы доступа в Kotlin
@@ -617,6 +618,7 @@ https://medium.com/androiddevelopers/built-in-delegates-4811947e781f
 
 * Interface delegates - https://medium.com/@Joseph82/interface-delegation-in-kotlin-1404dfcd9167 
 * inline functions - https://medium.com/android-news/inline-noinline-crossinline-what-do-they-mean-b13f48e113c2
+* Inline функция с лямбдой и без лямбды
 * Можно ли вызвать inline функцию из Java? - без reified можно, с reified нельзя 
 * crossinline
 * Можно ли узнать тип дженерика в inline функции? - только если сделать reified parameters - https://stackoverflow.com/questions/33146160/how-to-check-generic-type-in-kotlin
@@ -684,6 +686,9 @@ https://developer.android.com/codelabs/basic-android-kotlin-collections?hl=en#0
 https://developer.android.com/codelabs/basic-android-kotlin-compose-collections?hl=en#0
 
 https://developer.android.com/codelabs/basic-android-kotlin-compose-higher-order-functions?hl=en#0
+
+* Разница между == в Java и Kotlin? - В Java - это сравнение ссылок, в Kotlin - equals. Чтобы в Kotlin сравнить ссылки, надо ===
+* Разница исключений в Java и Kotlin? - В Java есть проверяемые исключения, на которые будет ругаться компилятор. В Kotlin такого нет, то есть проверка исключений будет только в рантайме.
 
 
 
