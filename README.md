@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2024.10.18
+Latest update: 2024.10.19
 
 ## Previous experience / Soft skills
 * Tell us about yourself and your previous experience.
@@ -1245,7 +1245,7 @@ https://developer.android.com/guide/fragments/lifecycle
 https://medium.com/androiddevelopers/fragments-rebuilding-the-internals-61913f8bf48e 
  
 * Fragment Result API - https://developer.android.com/guide/fragments/communicate#fragment-result
-* В стеке 4 фрагмента A, B, C, D. Как перейти из D в A, очистив при этом стек? - https://ru.stackoverflow.com/questions/475859/android-стек-фрагментов
+* В стеке 4 фрагмента A, B, C, D. Как перейти из D в A, очистив при этом стек? - popBackStack() - https://ru.stackoverflow.com/questions/475859/android-стек-фрагментов === https://stackoverflow.com/questions/73269652/how-can-i-skip-fragments-when-going-d-to-a-on-backpressed
 
 
 
