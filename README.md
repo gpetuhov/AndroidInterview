@@ -664,7 +664,7 @@ https://www.baeldung.com/kotlin/crossinline-vs-noinline
 * Есть ли аналоги data classes и sealed classes в Java? - Есть. В новой Java есть sealed classes и record classes (аналог data)
 * Разница между == и === в Kotlin? - Первый сравнивает значение, второй ссылки (reference)
 * Generics Codelab - https://developer.android.com/codelabs/basic-android-kotlin-compose-generics?hl=en#0 
-* Generics в Kotlin - что такое in, out? - https://kotlinlang.org/docs/generics.html#declaration-site-variance
+* Generics в Kotlin - что такое in, out? - https://kotlinlang.org/docs/generics.html#declaration-site-variance === https://betulnecanli.medium.com/kotlin-generics-in-out-where-terms-with-examples-445dc0bb45d6 === https://thegraduateguy.medium.com/kotlin-in-and-out-b76f0be30dca
 * Java stream, Kotlin sequence - в чем отличие от списка - Операции выполняются lazy, только когда результат уже нужен, и выполняются сразу все операции с каждым элементом без вычисления промежуточных коллекций - https://kotlinlang.org/docs/sequences.html
 * Разница между Java stream и Kotlin sequence 
 * Подводный камень sequence - на каждый шаг создается лямбда, поэтому для малого количества элементов выгоднее использовать обычные коллекции - https://typealias.com/guides/when-to-use-sequences/
