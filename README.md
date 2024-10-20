@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2024.10.19
+Latest update: 2024.10.20
 
 ## Previous experience / Soft skills
 * Tell us about yourself and your previous experience.
@@ -863,6 +863,7 @@ https://medium.com/swlh/kotlin-coroutines-in-android-suspending-functions-8a2f98
 * Операторы Flow: flatMapConcat, flatMapMerge, flatMapLatest - https://kt.academy/article/cc-flatmap
 * StateFlow vs SharedFlow
 * StateFlow hot or cold?
+* Backpressure in Flow - https://medium.com/google-developer-experts/backpressure-in-your-kotlin-flows-3eec980869c7
 
 
 
