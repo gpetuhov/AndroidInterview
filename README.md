@@ -1050,7 +1050,7 @@ https://developpaper.com/android-leakcanary-memory-leak-detection-principle/
 приложение не может запустить foreground service из фона 
 
 * Где залогировать место старта приложения? - ContentProvider создается раньше класса приложения
-* Почему в Application есть метод onCreate, но нет onDestroy?
+* Почему в Application есть метод onCreate, но нет onDestroy? - в Андроиде нет такого понятия, как "закрыть" приложение, пользователь просто уходит - https://stackoverflow.com/questions/17278201/android-ondestroy-or-similar-method-in-application-class
 * Если бы мы писали приложение Будильник, то с какими проблемами бы столкнулись?
 * Какой из компонентов можно не указывать в манифесте? - BroadcastReceiver
 * Как иконка приложения попадает на рабочий стол устройства? - В манифесте у нужной активити надо прописать intent filter с категорией launcher
