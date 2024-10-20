@@ -129,6 +129,7 @@ https://github.com/enhorse/java-interview
 * Как можно менять модификаторы доступа в потомках? - Можно расширять, но нельзя сужать - https://docs.oracle.com/javase/tutorial/java/IandI/override.html
 * What is an interface? - https://www.baeldung.com/java-interfaces
 * Существует ли множественное наследование (extends) в Java? Если да, то к чему оно применимо? - Множественное наследование не поддерживается в классах, но оно поддерживается в интерфейсах (интерфейс может экстендить несколько интерфейсов, класс может имплементить несколько интерфейсов) - https://javarush.ru/groups/posts/731-mnozhestvennoe-nasledovanie-v-java-kompozicija-v-sravnenii-s-nasledovaniem
+* Множественное наследование интерфейсов с дефолтными методами - https://panditaarchit98.medium.com/multiple-inheritance-conflict-resolution-rules-java-8-82fb9fec0270
 * Отличие interface от abstract class - в интерфейсе все методы public, не может быть private, абстрактный класс может хранить состояние и может иметь конструктор
 * ClassLoader, getClass
 
