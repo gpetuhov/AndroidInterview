@@ -666,7 +666,7 @@ https://www.baeldung.com/kotlin/crossinline-vs-noinline
 * Generics Codelab - https://developer.android.com/codelabs/basic-android-kotlin-compose-generics?hl=en#0 
 * Generics в Kotlin - что такое in, out? - https://kotlinlang.org/docs/generics.html#declaration-site-variance === https://betulnecanli.medium.com/kotlin-generics-in-out-where-terms-with-examples-445dc0bb45d6 === https://thegraduateguy.medium.com/kotlin-in-and-out-b76f0be30dca
 * Java stream, Kotlin sequence - в чем отличие от списка - Операции выполняются lazy, только когда результат уже нужен, и выполняются сразу все операции с каждым элементом без вычисления промежуточных коллекций - https://kotlinlang.org/docs/sequences.html
-* Разница между Java stream и Kotlin sequence 
+* Разница между Java stream и Kotlin sequence - https://stackoverflow.com/questions/71222815/kotlin-stream-vs-sequence-why-multiple-ways-to-do-the-same-thing
 * Подводный камень sequence - на каждый шаг создается лямбда, поэтому для малого количества элементов выгоднее использовать обычные коллекции - https://typealias.com/guides/when-to-use-sequences/
 * Kotlin SAM - https://kotlinlang.org/docs/fun-interfaces.html#sam-conversions
 * Есть ли в Kotlin checked exceptions, как в Java? - Нет. Аннотация @Throws нужна только если метод будет вызван из Java кода
