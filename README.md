@@ -1449,7 +1449,7 @@ https://habr.com/ru/companies/tbank/articles/665930/
 * Зачем нужен оверрайд конструктора вьюхи? - https://stackoverflow.com/questions/9195713/do-i-need-all-three-constructors-for-an-android-custom-view 
 * Как сгенерировать несколько конструкторов средствами Котлина? - Использовать аннотацию @JvmOverloads - https://proandroiddev.com/misconception-about-kotlin-jvmoverloads-for-android-view-creation-cb88f432e1fe 
 * Темы и стили - https://developer.android.com/guide/topics/ui/look-and-feel/themes
-* Что такое overdray и инструменты его обнаружения - https://medium.com/android-news/reduce-overdraw-from-your-android-application-6cf15f4aa85f 
+* Что такое overdraw и инструменты его обнаружения - https://medium.com/android-news/reduce-overdraw-from-your-android-application-6cf15f4aa85f 
 * ImageView fit_center и center_inside - https://stackoverflow.com/questions/11353973/whats-the-difference-between-center-inside-and-fit-center-scale-types
 * Как у ImageView сделать соотношение сторон 3:4 - https://betterprogramming.pub/aspect-ratio-with-constraint-layout-with-constraintdimensionratio-d55828ec4aae 
 * Как понять, что приложение тормозит? - В logcat будут сообщения про skipped frames
@@ -1494,7 +1494,7 @@ https://www.youtube.com/watch?v=OPwJnx5p1tc
 https://developer.android.com/courses/jetpack-compose/course
 
 * Что такое Jetpack Compose? - Позволяет декларативно описывать интерфейс
-* Можно ли его применять где-то еще? - Есть Kotlin Compose, но это больше технология. Под конкретную платформу своя реализация. Например, Jetpack Compose - 
+* Можно ли его применять где-то еще? - Есть Kotlin Compose, но это больше технология. Под конкретную платформу своя реализация. Например, Jetpack Compose - для Android
 * Из каких компонентов состоит компоуз? - Runtime, Compile, Annotation, набор библиотек (Foundation в случае Jetpack Compose, Material)
 * Могли бы мы использовать Foundation на десктопе?
 * Что из себя представляет composable функция?
