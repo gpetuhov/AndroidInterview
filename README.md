@@ -377,7 +377,7 @@ https://howtodoinjava.com/java/basics/little-endian-big-endian/
 * Ковариантность (extends T), контрвариантность (super T), инвариантность (просто T)
 * Можно сделать так: instanceOf List<String> - нельзя из-за стирания типов
 * Почему дженерики компилируются в Object? - для обратной совместимости с предыдущими версиями Java 
-* Wildcards
+* Wildcards - https://jenkov.com/tutorials/java-generics/wildcards.html
 
 
 
