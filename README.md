@@ -337,7 +337,7 @@ https://www.baeldung.com/java-treemap
 * Левоассоциативность (И, ИЛИ) - https://ru.wikipedia.org/wiki/%D0%9E%D1%87%D0%B5%D1%80%D1%91%D0%B4%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B9
 * Аннотации - что это? - https://www.baeldung.com/java-custom-annotation
 * RetentionPolicy в аннотациях - https://www.java2novice.com/java-annotations/retention-policy/#:~:text=Description%3A,point%20annotation%20should%20be%20discarded.&text=Annotation%20with%20retention%20policy%20RUNTIME,pass%20the%20retention%20policy%20type.
-* RetentionPolicy SOURCE, CLASS, RUNTIME
+* RetentionPolicy SOURCE, CLASS, RUNTIME - https://www.geeksforgeeks.org/java-retention-annotations/
 * Аннотации NotNull/Nullable - https://www.jetbrains.com/help/idea/nullable-and-notnull-annotations.html
 * Как происходит кодогенерация?
 * Java Throwable Hierarchy (Errors and Exceptions) - https://rollbar.com/blog/java-exceptions-hierarchy-explained/
