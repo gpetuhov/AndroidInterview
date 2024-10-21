@@ -1479,6 +1479,7 @@ https://developer.android.com/reference/android/text/PrecomputedText
 https://medium.com/appnroll-publication/what-is-new-in-android-p-precomputedtext-2a62ec9e8613
 
 * Можем ли View обновить не из UI потока? - Нет - С чем это связано?
+* Как отобразить 3D-объекты?
 
 
 
@@ -1536,6 +1537,8 @@ https://stackoverflow.com/questions/76760860/what-is-disposableeffect-and-under-
 * Почему LocalContext.current можно вызывать только внутри компоуз-функции? Как LocalContext.current устроен под капотом?
 * Chaining animations - https://betterprogramming.pub/chaining-animations-with-jetpack-compose-b4ff6e2e047d
 * @Stable vs @Immutable
+* Что такое CompositionLocal? - https://developer.android.com/develop/ui/compose/compositionlocal
+* Что нужно сделать, чтобы сборка с Compose не лагала? - https://developer.android.com/develop/ui/compose/performance
 
 
 
