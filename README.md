@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2024.10.20
+Latest update: 2024.10.21
 
 ## Previous experience / Soft skills
 * Tell us about yourself and your previous experience.
@@ -787,7 +787,7 @@ https://blog.danlew.net/2020/01/28/coroutines-and-java-synchronization-dont-mix/
 https://jacquessmuts.github.io/post/coroutine_sync_mutex/ 
  
 * Что использовать вместо synchronized в корутинах? - Mutex - https://medium.com/mobile-app-development-publication/mutex-for-coroutines-5f4a4ca60763
-* Есть класс, у которого synchronized метод. Можно ли его вызвать из корутины?
+* Есть класс, у которого synchronized метод. Можно ли его вызвать из корутины? - https://blog.danlew.net/2020/01/28/coroutines-and-java-synchronization-dont-mix/
 * Flow - основные операторы, организация кода, переключение потоков
 
 https://www.javaadvent.com/2021/12/are-kotlin-coroutines-enough-to-replace-rxjava.html
