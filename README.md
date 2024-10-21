@@ -1538,7 +1538,7 @@ https://stackoverflow.com/questions/76760860/what-is-disposableeffect-and-under-
 * Chaining animations - https://betterprogramming.pub/chaining-animations-with-jetpack-compose-b4ff6e2e047d
 * @Stable vs @Immutable
 * Что такое CompositionLocal? - https://developer.android.com/develop/ui/compose/compositionlocal
-* Что нужно сделать, чтобы сборка с Compose не лагала? - https://developer.android.com/develop/ui/compose/performance
+* Что нужно сделать, чтобы сборка с Compose не лагала? - You should test for performance in release build mode with R8 enabled - release { minifyEnabled true } - https://developer.android.com/develop/ui/compose/performance === https://stackoverflow.com/questions/73316817/why-is-the-ui-made-by-android-jetpack-compose-loaded-so-slow
 
 
 
