@@ -984,6 +984,7 @@ https://russianblogs.com/article/58471210856/
 * Кто ответственен за передачу бандлов? - Binder
 * Как именно Binder лежит в основе Андроида?
 * Как создается главный поток приложения?
+* Как защищенно передать данные между приложениями? - механизм AndroidKeyStoreProvider и Trusted Execution Environment - https://source.android.com/docs/security/features/trusty === https://emteria.com/blog/android-tee
  
  
 
