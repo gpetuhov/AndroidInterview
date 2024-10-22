@@ -1318,6 +1318,10 @@ https://stackoverflow.com/questions/15222041/android-what-is-binder-thread
  
 https://medium.com/swlh/binder-threading-model-79077b7c892c
 
+* Как под капотом устроен FileProvider?
+* Что именно под капотом возвращает ContentProvider?
+* Как сделать так, чтобы данные передавались только между своими приложениями? - С помощью механизма своих пермишнов: создать свой пермишн и задать ему в манифесте protection level - signature - тогда запросить и получить это разрешение смогут только приложения, подписанные одним ключом разработчика.
+
 
 
 ### ViewModel
