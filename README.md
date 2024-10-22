@@ -1,7 +1,7 @@
 # Android Interview Questions and Code Samples
 Basic plan and some typical questions and code samples for Android interview.
 
-Latest update: 2024.10.21
+Latest update: 2024.10.22
 
 ## Previous experience / Soft skills
 * Tell us about yourself and your previous experience.
@@ -286,6 +286,7 @@ https://habr.com/ru/post/162017/
 * What is boxing, unboxing (Integer, Double, ...)
 * Можно ли примитивы класть в коллекции (int, double, ...) - нет
 * ArrayList vs LinkedList. Which one takes less time to add an item in the middle? Which one takes less time to get n-th element?
+* Какие накладные расходы для хранения двусвязного списка? - На каждую ноду: инстанс самой ноды, ссылка на следующий элемент, ссылка на предыдущий элемент.
 * ArrayList под капотом - это динамический массив с изначальным размером 10
 * List vs Set - https://www.geeksforgeeks.org/difference-between-list-and-set-in-java/
 * ArrayList vs Vector - https://www.geeksforgeeks.org/vector-vs-arraylist-java/
